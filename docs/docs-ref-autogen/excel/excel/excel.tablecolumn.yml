@@ -1,0 +1,237 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumn:class'
+    summary: Representa uma coluna em uma tabela.
+    name: Excel.TableColumn
+    fullName: Excel.TableColumn
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumn#context:member'
+      - 'excel!Excel.TableColumn#delete:member(1)'
+      - 'excel!Excel.TableColumn#filter:member'
+      - 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+      - 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+      - 'excel!Excel.TableColumn#getRange:member(1)'
+      - 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+      - 'excel!Excel.TableColumn#id:member'
+      - 'excel!Excel.TableColumn#index:member'
+      - 'excel!Excel.TableColumn#load:member(1)'
+      - 'excel!Excel.TableColumn#load:member(2)'
+      - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#set:member(1)'
+      - 'excel!Excel.TableColumn#values:member'
+  - uid: 'excel!Excel.TableColumn#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumn#delete:member(1)'
+    summary: Exclui a coluna da tabela.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableColumn#filter:member'
+    summary: Recupera o filtro aplicado à coluna. Somente leitura.
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filter: Excel.Filter;'
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+  - uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+    summary: Obtém o objeto de intervalo associado ao corpo de dados da coluna.
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+    summary: Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getRange:member(1)'
+    summary: Obtém o objeto de intervalo associado a toda a coluna.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+    summary: Obtém o objeto de intervalo associado à linha de totais da coluna.
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#id:member'
+    summary: Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumn#index:member'
+    summary: Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumn#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableColumn#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.TableColumn;
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.TableColumn#name:member'
+    summary: Representa o nome da coluna da tabela.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.TableColumn#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.TableColumn): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.TableColumn:class'
+  - uid: 'excel!Excel.TableColumn#values:member'
+    summary: 'Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Filter:class'
+    name: Filter
+    fullName: Excel.Filter
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.TableColumn:class'
+    name: TableColumn
+    fullName: Excel.TableColumn

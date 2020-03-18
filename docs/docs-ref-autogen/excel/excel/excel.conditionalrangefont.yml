@@ -1,0 +1,184 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFont:class'
+    summary: 'Este objeto representa os atributos de fonte (estilo da fonte, cor etc.) de um objeto.'
+    name: Excel.ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFont#bold:member'
+      - 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#color:member'
+      - 'excel!Excel.ConditionalRangeFont#context:member'
+      - 'excel!Excel.ConditionalRangeFont#italic:member'
+      - 'excel!Excel.ConditionalRangeFont#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#load:member(2)'
+      - 'excel!Excel.ConditionalRangeFont#set:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+      - 'excel!Excel.ConditionalRangeFont#underline:member'
+  - uid: 'excel!Excel.ConditionalRangeFont#bold:member'
+    summary: Representa o status da fonte em negrito.
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+    summary: Redefine os formatos de fonte.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFont#color:member'
+    summary: 'Representação de código de cor HTML para a cor do texto. Por exemplo \#FF0000 representa vermelho.'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeFont#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeFont#italic:member'
+    summary: Representa o status da fonte em itálico.
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFont;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalRangeFont;
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalRangeFont#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalRangeFont): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ConditionalRangeFont:class'
+  - uid: 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+    summary: Representa o status de tachado da fonte.
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#underline:member'
+    summary: Tipo de sublinhado aplicado à fonte. Consulte Excel. ConditionalRangeFontUnderlineStyle para obter detalhes.
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont#underline~0:complex'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ConditionalRangeFont:class'
+    name: ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
+  - uid: 'excel!Excel.ConditionalRangeFont#underline~0:complex'
+    name: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    fullName: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+        name: Excel.ConditionalRangeFontUnderlineStyle
+        fullName: Excel.ConditionalRangeFontUnderlineStyle
+      - name: ' | "None" | "Single" | "Double"'
+        fullName: ' | "None" | "Single" | "Double"'

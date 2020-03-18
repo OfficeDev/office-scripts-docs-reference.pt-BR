@@ -1,0 +1,158 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Setting:class'
+    summary: 'A configuração representa um par chave-valor de uma configuração persistente para o documento (por arquivo por suplemento). Esse par chave-valor personalizado pode ser usado para armazenar informações de estado ou de ciclo de vida necessárias para o conteúdo ou suplemento de painel de tarefas. Observe que as configurações são mantidas no documento e, portanto, não é um local para armazenar informações confidenciais ou protegidas, como informações de usuário e senha.'
+    name: Excel.Setting
+    fullName: Excel.Setting
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Setting#context:member'
+      - 'excel!Excel.Setting#delete:member(1)'
+      - 'excel!Excel.Setting#key:member'
+      - 'excel!Excel.Setting#load:member(1)'
+      - 'excel!Excel.Setting#load:member(2)'
+      - 'excel!Excel.Setting#set:member(1)'
+      - 'excel!Excel.Setting#value:member'
+  - uid: 'excel!Excel.Setting#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Setting#delete:member(1)'
+    summary: Exclui a configuração.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Setting#key:member'
+    summary: Retorna a chave que representa a id da configuração. Somente leitura.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Setting#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Setting#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Setting;
+      return:
+        type:
+          - 'excel!Excel.Setting:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Setting#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Setting): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Setting:class'
+  - uid: 'excel!Excel.Setting#value:member'
+    summary: Representa o valor armazenado para esta configuração.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Setting:class'
+    name: Setting
+    fullName: Excel.Setting

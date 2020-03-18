@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartGridlines:class'
+    summary: Representa linhas de grade principais ou secundárias em um eixo do gráfico.
+    name: Excel.ChartGridlines
+    fullName: Excel.ChartGridlines
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartGridlines#context:member'
+      - 'excel!Excel.ChartGridlines#format:member'
+      - 'excel!Excel.ChartGridlines#load:member(1)'
+      - 'excel!Excel.ChartGridlines#load:member(2)'
+      - 'excel!Excel.ChartGridlines#set:member(1)'
+      - 'excel!Excel.ChartGridlines#visible:member'
+  - uid: 'excel!Excel.ChartGridlines#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartGridlines#format:member'
+    summary: Representa a formatação de linhas de grade do gráfico. Somente leitura.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartGridlinesFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlinesFormat:class'
+  - uid: 'excel!Excel.ChartGridlines#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartGridlines;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlines:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartGridlines#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartGridlines;
+      return:
+        type:
+          - 'excel!Excel.ChartGridlines:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartGridlines#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartGridlines): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartGridlines#visible:member'
+    summary: Valor booleano que determina quando as linhas de grade do eixo ficam visível ou não.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartGridlinesFormat:class'
+    name: ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat
+  - uid: 'excel!Excel.ChartGridlines:class'
+    name: ChartGridlines
+    fullName: Excel.ChartGridlines

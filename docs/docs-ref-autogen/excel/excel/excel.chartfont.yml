@@ -1,0 +1,183 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartFont:class'
+    summary: 'Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.'
+    name: Excel.ChartFont
+    fullName: Excel.ChartFont
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartFont#bold:member'
+      - 'excel!Excel.ChartFont#color:member'
+      - 'excel!Excel.ChartFont#context:member'
+      - 'excel!Excel.ChartFont#italic:member'
+      - 'excel!Excel.ChartFont#load:member(1)'
+      - 'excel!Excel.ChartFont#load:member(2)'
+      - 'excel!Excel.ChartFont#name:member'
+      - 'excel!Excel.ChartFont#set:member(1)'
+      - 'excel!Excel.ChartFont#size:member'
+      - 'excel!Excel.ChartFont#underline:member'
+  - uid: 'excel!Excel.ChartFont#bold:member'
+    summary: Representa o status da fonte em negrito.
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartFont#color:member'
+    summary: 'Representação de código de cor HTML para a cor do texto. Por exemplo \#FF0000 representa vermelho.'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartFont#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartFont#italic:member'
+    summary: Representa o status da fonte em itálico.
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartFont#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartFont#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartFont;
+      return:
+        type:
+          - 'excel!Excel.ChartFont:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartFont#name:member'
+    summary: 'Nome da fonte (por exemplo, "Calibri")'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartFont#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartFont): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartFont:class'
+  - uid: 'excel!Excel.ChartFont#size:member'
+    summary: 'Tamanho da fonte, por exemplo, 11.'
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartFont#underline:member'
+    summary: Tipo de sublinhado aplicado à fonte. Consulte Excel. ChartUnderlineStyle para obter detalhes.
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: Excel.ChartUnderlineStyle | "None" | "Single";'
+      return:
+        type:
+          - 'excel!Excel.ChartFont#underline~0:complex'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartFont:class'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartFont#underline~0:complex'
+    name: Excel.ChartUnderlineStyle | "None" | "Single"
+    fullName: Excel.ChartUnderlineStyle | "None" | "Single"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartUnderlineStyle:enum'
+        name: Excel.ChartUnderlineStyle
+        fullName: Excel.ChartUnderlineStyle
+      - name: ' | "None" | "Single"'
+        fullName: ' | "None" | "Single"'
