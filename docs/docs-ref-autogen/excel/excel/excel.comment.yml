@@ -1,0 +1,304 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Comment:class'
+    summary: Representa um comentário na pasta de trabalho.
+    name: Excel.Comment
+    fullName: Excel.Comment
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Comment#authorEmail:member'
+      - 'excel!Excel.Comment#authorName:member'
+      - 'excel!Excel.Comment#content:member'
+      - 'excel!Excel.Comment#context:member'
+      - 'excel!Excel.Comment#creationDate:member'
+      - 'excel!Excel.Comment#delete:member(1)'
+      - 'excel!Excel.Comment#getLocation:member(1)'
+      - 'excel!Excel.Comment#id:member'
+      - 'excel!Excel.Comment#load:member(1)'
+      - 'excel!Excel.Comment#load:member(2)'
+      - 'excel!Excel.Comment#mentions:member'
+      - 'excel!Excel.Comment#replies:member'
+      - 'excel!Excel.Comment#richContent:member'
+      - 'excel!Excel.Comment#set:member(1)'
+      - 'excel!Excel.Comment#updateMentions:member(1)'
+  - uid: 'excel!Excel.Comment#authorEmail:member'
+    summary: Obtém o email do autor do comentário.
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorEmail: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Comment#authorName:member'
+    summary: Obtém o nome do autor do comentário.
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorName: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Comment#content:member'
+    summary: Obtém ou define o conteúdo do comentário. A cadeia de caracteres é de texto sem formatação.
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              comment.content = "PLEASE add headers here.";
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Comment#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Comment#creationDate:member'
+    summary: 'Obtém o horário de criação do comentário. Retorna null se o comentário foi convertido de uma nota, pois o comentário não possui uma data de criação.'
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Comment#delete:member(1)'
+    summary: Exclui o comentário e todas as respostas conectadas.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              context.workbook.comments.getItemByCell("Comments!A2").delete();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Comment#getLocation:member(1)'
+    summary: Obtém a célula em que este comentário está localizado.
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Comment#id:member'
+    summary: Representa o identificador de comentário. Somente leitura.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Comment#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Comment#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Comment;
+      return:
+        type:
+          - 'excel!Excel.Comment:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let comment = context.workbook.comments.getItemByCell("Comments!A2");
+              comment.load(["authorEmail", "authorName", "creationDate"]);
+              await context.sync();
+
+              console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Comment#mentions:member'
+    summary: 'Obtém as entidades (por exemplo, pessoas) mencionadas em comentários.'
+    name: mentions
+    fullName: mentions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly mentions: Excel.CommentMention[];'
+      return:
+        type:
+          - 'excel!Excel.Comment#mentions~0:complex'
+  - uid: 'excel!Excel.Comment#replies:member'
+    summary: Representa uma coleção de objetos de resposta associados ao comentário. Somente leitura.
+    name: replies
+    fullName: replies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly replies: Excel.CommentReplyCollection;'
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection:class'
+  - uid: 'excel!Excel.Comment#richContent:member'
+    summary: 'Obtém o conteúdo de comentário avançado (por exemplo, menciona em comentários). Essa cadeia de caracteres não deve ser exibida para os usuários finais. Seu suplemento só deve usar este para analisar conteúdo de comentário avançado.'
+    name: richContent
+    fullName: richContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly richContent: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Comment#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Comment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Comment:class'
+  - uid: 'excel!Excel.Comment#updateMentions:member(1)'
+    summary: Atualiza o conteúdo de comentários com uma cadeia de caracteres especialmente formatada e uma lista de menção.
+    name: updateMentions(contentWithMentions)
+    fullName: updateMentions(contentWithMentions)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'updateMentions(contentWithMentions: Excel.CommentRichContent): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: contentWithMentions
+          description: O conteúdo do comentário. Contém uma cadeia de caracteres formatada especialmente e uma lista de menção que será analisada na cadeia de caracteres quando exibida pelo Excel.
+          type:
+            - 'excel!Excel.CommentRichContent:interface'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Comment:class'
+    name: Comment
+    fullName: Excel.Comment
+  - uid: 'excel!Excel.Comment#mentions~0:complex'
+    name: 'Excel.CommentMention[]'
+    fullName: 'Excel.CommentMention[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentMention:interface'
+        name: Excel.CommentMention
+        fullName: Excel.CommentMention
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CommentReplyCollection:class'
+    name: CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
+  - uid: 'excel!Excel.CommentRichContent:interface'
+    name: CommentRichContent
+    fullName: Excel.CommentRichContent

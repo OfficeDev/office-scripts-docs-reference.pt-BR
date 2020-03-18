@@ -1,0 +1,148 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextRange:class'
+    summary: 'Contém o texto que é anexado a uma forma, bem como propriedades e métodos para manipular o texto.'
+    name: Excel.TextRange
+    fullName: Excel.TextRange
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.TextRange#context:member'
+      - 'excel!Excel.TextRange#font:member'
+      - 'excel!Excel.TextRange#getSubstring:member(1)'
+      - 'excel!Excel.TextRange#load:member(1)'
+      - 'excel!Excel.TextRange#load:member(2)'
+      - 'excel!Excel.TextRange#set:member(1)'
+      - 'excel!Excel.TextRange#text:member'
+  - uid: 'excel!Excel.TextRange#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TextRange#font:member'
+    summary: Retorna um objeto ShapeFont que representa os atributos de fonte do intervalo de texto. Somente leitura.
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ShapeFont;'
+      return:
+        type:
+          - 'excel!Excel.ShapeFont:class'
+  - uid: 'excel!Excel.TextRange#getSubstring:member(1)'
+    summary: Retorna um objeto TextRange para a subcadeia de caracteres no intervalo especificado.
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length?: number): Excel.TextRange;'
+      return:
+        type:
+          - 'excel!Excel.TextRange:class'
+        description: ''
+      parameters:
+        - id: start
+          description: O índice baseado em zero do primeiro caractere a ser obtido do intervalo de texto.
+          type:
+            - number
+        - id: length
+          description: 'Opcional. O número de caracteres a serem retornados no novo intervalo de texto. Se length for omitido, todos os caracteres de início ao fim do último parágrafo do intervalo de texto serão retornados.'
+          type:
+            - number
+  - uid: 'excel!Excel.TextRange#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TextRange;'
+      return:
+        type:
+          - 'excel!Excel.TextRange:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextRange#load:member(2)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.TextRange;
+      return:
+        type:
+          - 'excel!Excel.TextRange:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades a serem `propertyNamesAndPaths.expand` carregadas e é uma cadeia de caracteres delimitada por vírgula que especifica as propriedades de navegação a serem carregadas.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.TextRange#set:member(1)'
+    summary: 'Define várias propriedades no objeto ao mesmo tempo, com base em um objeto carregado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.TextRange): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.TextRange:class'
+  - uid: 'excel!Excel.TextRange#text:member'
+    summary: Representa o conteúdo de texto sem formatação do intervalo de texto.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ShapeFont:class'
+    name: ShapeFont
+    fullName: Excel.ShapeFont
+  - uid: 'excel!Excel.TextRange:class'
+    name: TextRange
+    fullName: Excel.TextRange

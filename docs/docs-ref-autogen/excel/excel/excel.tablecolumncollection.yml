@@ -1,0 +1,209 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    summary: Representa uma coleção de todas as colunas que fazem parte da tabela.
+    name: Excel.TableColumnCollection
+    fullName: Excel.TableColumnCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumnCollection#add:member(1)'
+      - 'excel!Excel.TableColumnCollection#context:member'
+      - 'excel!Excel.TableColumnCollection#count:member'
+      - 'excel!Excel.TableColumnCollection#getCount:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItem:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableColumnCollection#items:member'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#add:member(1)'
+    summary: Adiciona uma nova coluna à tabela.
+    name: 'add(index, values, name)'
+    fullName: 'add(index, values, name)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Opcional. Especifica a posição relativa da nova coluna. Se for null ou -1, a adição ocorre no final. Colunas com um índice superior serão deslocadas para o lado. Indexado com zero.'
+          type:
+            - number
+        - id: values
+          description: Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.
+          type:
+            - 'excel!Excel.TableColumnCollection#add~0:complex'
+        - id: name
+          description: 'Opcional. Especifica o nome da nova coluna. Se for null, o nome padrão será usado.'
+          type:
+            - string
+  - uid: 'excel!Excel.TableColumnCollection#context:member'
+    summary: O contexto de solicitação associado ao objeto. Isso conecta o processo do suplemento ao processo do aplicativo host do Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumnCollection#count:member'
+    summary: Retorna o número de colunas na tabela. Somente leitura.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumnCollection#getCount:member(1)'
+    summary: Obtém a quantidade de colunas na tabela.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
+    summary: Obtém um objeto de coluna por nome ou ID.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: number | string): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: key
+          description: ID ou nome da coluna.
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+    summary: Obtém uma coluna com base em sua posição na coleção.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+          type:
+            - number
+  - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtém um objeto column por nome ou ID. Se a coluna não existir, retornará um objeto null.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: number | string): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: key
+          description: ID ou nome da coluna.
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#items:member'
+    summary: Obtém os itens filhos carregados nesta coleção.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.TableColumn[];'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection#items~0:complex'
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableColumnCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.TableColumn:class'
+    name: TableColumn
+    fullName: Excel.TableColumn
+  - uid: 'excel!Excel.TableColumnCollection#add~0:complex'
+    name: Array<Array<boolean | string | number>> | boolean | string | number
+    fullName: Array<Array<boolean | string | number>> | boolean | string | number
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <boolean | string | number>> | boolean | string | number
+        fullName: <boolean | string | number>> | boolean | string | number
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.TableColumnCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.TableColumnCollection#items~0:complex'
+    name: 'Excel.TableColumn[]'
+    fullName: 'Excel.TableColumn[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.TableColumn:class'
+        name: Excel.TableColumn
+        fullName: Excel.TableColumn
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    name: TableColumnCollection
+    fullName: Excel.TableColumnCollection
