@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Workbook:class'
-    summary: 'Workbook é o objeto de nível superior que contém objetos de pasta de trabalho relacionados, como planilhas, tabelas, intervalos, etc. Para saber mais sobre o modelo de objeto de pasta de trabalho, leia [trabalhar com pastas de trabalho usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    summary: 'A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.'
     name: Excel.Workbook
     fullName: Excel.Workbook
     langs:
@@ -49,7 +49,7 @@ items:
       - 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
       - 'excel!Excel.Workbook#worksheets:member'
   - uid: 'excel!Excel.Workbook#application:member'
-    summary: Representa a instância do aplicativo Excel que contém esta pasta de trabalho. Somente leitura.
+    summary: Representa a instância do aplicativo Excel que contém esta pasta de trabalho. Apenas leitura.
     name: application
     fullName: application
     langs:
@@ -73,7 +73,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Workbook#bindings:member'
-    summary: Representa uma coleção de ligações que fazem parte da pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de ligações que fazem parte da pasta de trabalho. Apenas leitura.
     name: bindings
     fullName: bindings
     langs:
@@ -109,7 +109,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Workbook#comments:member'
-    summary: Representa uma coleção de comentários associados à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de comentários associados à pasta de trabalho. Apenas leitura.
     name: comments
     fullName: comments
     langs:
@@ -133,7 +133,7 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Workbook#customXmlParts:member'
-    summary: Representa a coleção de partes XML personalizadas contidas por esta pasta de trabalho. Somente leitura.
+    summary: Representa a coleção de partes XML personalizadas contidas por esta pasta de trabalho. Apenas leitura.
     name: customXmlParts
     fullName: customXmlParts
     langs:
@@ -145,7 +145,7 @@ items:
         type:
           - 'excel!Excel.CustomXmlPartCollection:class'
   - uid: 'excel!Excel.Workbook#dataConnections:member'
-    summary: Representa todas as conexões de dados na pasta de trabalho. Somente leitura.
+    summary: Representa todas as conexões de dados na pasta de trabalho. Apenas leitura.
     name: dataConnections
     fullName: dataConnections
     langs:
@@ -157,7 +157,7 @@ items:
         type:
           - 'excel!Excel.DataConnectionCollection:class'
   - uid: 'excel!Excel.Workbook#functions:member'
-    summary: Representa uma coleção de funções de planilha que podem ser usadas para cálculo. Somente leitura.
+    summary: Representa uma coleção de funções de planilha que podem ser usadas para cálculo. Apenas leitura.
     name: functions
     fullName: functions
     langs:
@@ -358,7 +358,7 @@ items:
                           expand?: string;
                       }
   - uid: 'excel!Excel.Workbook#name:member'
-    summary: Obtém o nome da pasta de trabalho. Somente leitura.
+    summary: Obtém o nome da pasta de trabalho. Apenas leitura.
     name: name
     fullName: name
     langs:
@@ -370,7 +370,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Workbook#names:member'
-    summary: Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.
+    summary: Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Apenas leitura.
     name: names
     fullName: names
     langs:
@@ -382,7 +382,7 @@ items:
         type:
           - 'excel!Excel.NamedItemCollection:class'
   - uid: 'excel!Excel.Workbook#pivotTables:member'
-    summary: Representa uma coleção de Tabelas Dinâmicas associadas à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de Tabelas Dinâmicas associadas à pasta de trabalho. Apenas leitura.
     name: pivotTables
     fullName: pivotTables
     langs:
@@ -394,7 +394,7 @@ items:
         type:
           - 'excel!Excel.PivotTableCollection:class'
   - uid: 'excel!Excel.Workbook#pivotTableStyles:member'
-    summary: Representa uma coleção de Tabelas Dinâmicas associadas à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de Tabelas Dinâmicas associadas à pasta de trabalho. Apenas leitura.
     name: pivotTableStyles
     fullName: pivotTableStyles
     langs:
@@ -473,7 +473,7 @@ items:
         type:
           - 'excel!Excel.WorkbookProtection:class'
   - uid: 'excel!Excel.Workbook#readOnly:member'
-    summary: True se a pasta de trabalho estiver aberta no modo somente leitura. Somente leitura.
+    summary: True se a pasta de trabalho estiver aberta no modo somente leitura. Apenas leitura.
     name: readOnly
     fullName: readOnly
     langs:
@@ -515,7 +515,7 @@ items:
         type:
           - 'excel!Excel.SettingCollection:class'
   - uid: 'excel!Excel.Workbook#slicers:member'
-    summary: Representa uma coleção de segmentações de dados associados à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de segmentações de dados associados à pasta de trabalho. Apenas leitura.
     name: slicers
     fullName: slicers
     langs:
@@ -527,7 +527,7 @@ items:
         type:
           - 'excel!Excel.SlicerCollection:class'
   - uid: 'excel!Excel.Workbook#slicerStyles:member'
-    summary: Representa uma coleção de SlicerStyles associados à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de SlicerStyles associados à pasta de trabalho. Apenas leitura.
     name: slicerStyles
     fullName: slicerStyles
     langs:
@@ -578,7 +578,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Workbook#tables:member'
-    summary: Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de tabelas associadas à pasta de trabalho. Apenas leitura.
     name: tables
     fullName: tables
     langs:
@@ -590,7 +590,7 @@ items:
         type:
           - 'excel!Excel.TableCollection:class'
   - uid: 'excel!Excel.Workbook#tableStyles:member'
-    summary: Representa uma coleção de TableStyles associadas à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de TableStyles associadas à pasta de trabalho. Apenas leitura.
     name: tableStyles
     fullName: tableStyles
     langs:
@@ -602,7 +602,7 @@ items:
         type:
           - 'excel!Excel.TableStyleCollection:class'
   - uid: 'excel!Excel.Workbook#timelineStyles:member'
-    summary: Representa uma coleção de TimelineStyles associados à pasta de trabalho. Somente leitura.
+    summary: Representa uma coleção de TimelineStyles associados à pasta de trabalho. Apenas leitura.
     name: timelineStyles
     fullName: timelineStyles
     langs:

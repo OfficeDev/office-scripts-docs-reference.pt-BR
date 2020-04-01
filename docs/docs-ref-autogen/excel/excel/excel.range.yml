@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Range:class'
-    summary: 'Intervalo representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc. Para saber mais sobre como os intervalos são usados em toda a API, leia [trabalhar com intervalos usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) e [trabalhe com intervalos usando a API JavaScript do Excel (avançado)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
+    summary: 'Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.'
     name: Excel.Range
     fullName: Excel.Range
     langs:
@@ -114,7 +114,7 @@ items:
       - 'excel!Excel.Range#width:member'
       - 'excel!Excel.Range#worksheet:member'
   - uid: 'excel!Excel.Range#address:member'
-    summary: 'Representa a referência do intervalo no estilo A1. O valor de endereço conterá a referência de planilha (por exemplo, "Planilha1! A1: B4 "). Somente leitura.'
+    summary: 'Representa a referência do intervalo no estilo A1. O valor de endereço conterá a referência de planilha (por exemplo, "Planilha1! A1: B4 "). Apenas leitura.'
     name: address
     fullName: address
     langs:
@@ -126,7 +126,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Range#addressLocal:member'
-    summary: Representa a referência de intervalo para o intervalo especificado no idioma do usuário. Somente leitura.
+    summary: Representa a referência de intervalo para o intervalo especificado no idioma do usuário. Apenas leitura.
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -264,7 +264,7 @@ items:
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: 'excel!Excel.Range#columnCount:member'
-    summary: Representa o número total de colunas no intervalo. Somente leitura.
+    summary: Representa o número total de colunas no intervalo. Apenas leitura.
     name: columnCount
     fullName: columnCount
     langs:
@@ -288,7 +288,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#columnIndex:member'
-    summary: Representa o número de colunas da primeira célula no intervalo. Indexados com zero. Somente leitura.
+    summary: Representa o número de colunas da primeira célula no intervalo. Indexados com zero. Apenas leitura.
     name: columnIndex
     fullName: columnIndex
     langs:
@@ -300,7 +300,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Range#conditionalFormats:member'
-    summary: Conjunto de ConditionalFormats que interseccionam o intervalo. Somente leitura.
+    summary: Conjunto de ConditionalFormats que interseccionam o intervalo. Apenas leitura.
     name: conditionalFormats
     fullName: conditionalFormats
     langs:
@@ -590,7 +590,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Range#format:member'
-    summary: 'Retorna um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo. Somente leitura.'
+    summary: 'Retorna um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo. Apenas leitura.'
     name: format
     fullName: format
     langs:
@@ -1447,7 +1447,7 @@ items:
           type:
             - '"ByRows" | "ByColumns"'
   - uid: 'excel!Excel.Range#height:member'
-    summary: 'Retorna a distância em pontos, para zoom de 100%, da borda superior do intervalo até a borda inferior do intervalo. Somente leitura.'
+    summary: 'Retorna a distância em pontos, para zoom de 100%, da borda superior do intervalo até a borda inferior do intervalo. Apenas leitura.'
     name: height
     fullName: height
     langs:
@@ -1610,7 +1610,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#left:member'
-    summary: 'Retorna a distância em pontos, para zoom de 100%, da borda esquerda da planilha para a borda esquerda do intervalo. Somente leitura.'
+    summary: 'Retorna a distância em pontos, para zoom de 100%, da borda esquerda da planilha para a borda esquerda do intervalo. Apenas leitura.'
     name: left
     fullName: left
     langs:
@@ -1622,7 +1622,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Range#linkedDataTypeState:member'
-    summary: Representa o estado do tipo de dados de cada célula. Somente leitura.
+    summary: Representa o estado do tipo de dados de cada célula. Apenas leitura.
     name: linkedDataTypeState
     fullName: linkedDataTypeState
     langs:
@@ -1803,7 +1803,7 @@ items:
           type:
             - 'excel!Excel.ReplaceCriteria:interface'
   - uid: 'excel!Excel.Range#rowCount:member'
-    summary: Retorna o número total de linhas no intervalo. Somente leitura.
+    summary: Retorna o número total de linhas no intervalo. Apenas leitura.
     name: rowCount
     fullName: rowCount
     langs:
@@ -1827,7 +1827,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#rowIndex:member'
-    summary: Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.
+    summary: Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Apenas leitura.
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -2174,7 +2174,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Range#text:member'
-    summary: 'Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A \# substituição de sinal que acontece na IU do Excel não afetará o valor de texto RETORNADO pela API. Somente leitura.'
+    summary: 'Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A \# substituição de sinal que acontece na IU do Excel não afetará o valor de texto RETORNADO pela API. Apenas leitura.'
     name: text
     fullName: text
     langs:
@@ -2302,7 +2302,7 @@ items:
         type:
           - 'any[][]'
   - uid: 'excel!Excel.Range#valueTypes:member'
-    summary: Representa o tipo de dados de cada célula. Somente leitura.
+    summary: Representa o tipo de dados de cada célula. Apenas leitura.
     name: valueTypes
     fullName: valueTypes
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.RangeAreas:class'
-    summary: 'RangeAreas representa uma coleção de um ou mais intervalos retangulares na mesma planilha. Para saber como usar intervalos do discontinguous, leia [trabalhar com vários intervalos simultaneamente em suplementos do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.'
+    summary: RangeAreas representa uma coleção de um ou mais intervalos retangulares na mesma planilha.
     name: Excel.RangeAreas
     fullName: Excel.RangeAreas
     langs:
@@ -48,7 +48,7 @@ items:
       - 'excel!Excel.RangeAreas#untrack:member(1)'
       - 'excel!Excel.RangeAreas#worksheet:member'
   - uid: 'excel!Excel.RangeAreas#address:member'
-    summary: 'Retorna a referência RageAreas no estilo A1. O valor do endereço conterá o nome da planilha para cada bloco retangular de células (por exemplo, "Sheet1!A1:B4, Sheet1!D1:D4"). Somente leitura.'
+    summary: 'Retorna a referência RageAreas no estilo A1. O valor do endereço conterá o nome da planilha para cada bloco retangular de células (por exemplo, "Sheet1!A1:B4, Sheet1!D1:D4"). Apenas leitura.'
     name: address
     fullName: address
     langs:
@@ -60,7 +60,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.RangeAreas#addressLocal:member'
-    summary: Retorna a referência RageAreas na localidade do usuário.  Somente leitura.
+    summary: Retorna a referência RageAreas na localidade do usuário.  Apenas leitura.
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -109,7 +109,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.RangeAreas#cellCount:member'
-    summary: Retorna o número de células no objeto RangeAreas somando as contagens de células de todos os intervalos retangulares individuais. Retornará -1 se a contagem de células exceder 2^31-1 (2.147.483.647). Somente leitura.
+    summary: Retorna o número de células no objeto RangeAreas somando as contagens de células de todos os intervalos retangulares individuais. Retornará -1 se a contagem de células exceder 2^31-1 (2.147.483.647). Apenas leitura.
     name: cellCount
     fullName: cellCount
     langs:
@@ -157,7 +157,7 @@ items:
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: 'excel!Excel.RangeAreas#conditionalFormats:member'
-    summary: Retorna uma coleção de ConditionalFormats que se cruza com qualquer célula nesse objeto RangeAreas. Somente leitura.
+    summary: Retorna uma coleção de ConditionalFormats que se cruza com qualquer célula nesse objeto RangeAreas. Apenas leitura.
     name: conditionalFormats
     fullName: conditionalFormats
     langs:

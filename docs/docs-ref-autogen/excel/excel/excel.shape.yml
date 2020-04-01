@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Shape:class'
-    summary: 'Representa um objeto Shape genérico na planilha. Uma forma pode ser uma forma geométrica, uma linha, um grupo de formas, etc. Para saber mais sobre o modelo de objeto Shape, leia [trabalhar com formas usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    summary: 'Representa um objeto Shape genérico na planilha. Uma forma pode ser uma forma geométrica, uma linha, um grupo de formas, etc.'
     name: Excel.Shape
     fullName: Excel.Shape
     langs:
@@ -76,7 +76,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Shape#connectionSiteCount:member'
-    summary: Retorna o número de locais de conexão nessa forma. Somente leitura.
+    summary: Retorna o número de locais de conexão nessa forma. Apenas leitura.
     name: connectionSiteCount
     fullName: connectionSiteCount
     langs:
@@ -150,7 +150,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Shape#fill:member'
-    summary: Retorna a formatação de preenchimento dessa forma. Somente leitura.
+    summary: Retorna a formatação de preenchimento dessa forma. Apenas leitura.
     name: fill
     fullName: fill
     langs:
@@ -820,7 +820,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Shape#type:member'
-    summary: 'Retorna o tipo dessa forma. Para saber detalhes, confira Excel.ShapeType. Somente leitura.'
+    summary: 'Retorna o tipo dessa forma. Para saber detalhes, confira Excel.ShapeType. Apenas leitura.'
     name: type
     fullName: type
     langs:

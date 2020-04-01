@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Worksheet:class'
-    summary: 'Uma planilha do Excel é uma grade de células. Ele pode conter dados, tabelas, gráficos, etc. Para saber mais sobre o modelo de objeto de planilha, leia [trabalhar com planilhas usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.'
+    summary: 'Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, gráficos, etc.'
     name: Excel.Worksheet
     fullName: Excel.Worksheet
     langs:
@@ -114,7 +114,7 @@ items:
           type:
             - boolean
   - uid: 'excel!Excel.Worksheet#charts:member'
-    summary: Retorna uma coleção de gráficos que fazem parte da planilha. Somente leitura.
+    summary: Retorna uma coleção de gráficos que fazem parte da planilha. Apenas leitura.
     name: charts
     fullName: charts
     langs:
@@ -302,7 +302,7 @@ items:
           type:
             - 'excel!Excel.WorksheetSearchCriteria:interface'
   - uid: 'excel!Excel.Worksheet#freezePanes:member'
-    summary: Obtém um objeto que pode ser usado para manipular painéis congelados na planilha. Somente leitura.
+    summary: Obtém um objeto que pode ser usado para manipular painéis congelados na planilha. Apenas leitura.
     name: freezePanes
     fullName: freezePanes
     langs:
@@ -708,7 +708,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Worksheet#protection:member'
-    summary: Retorna o objeto de proteção da planilha para uma planilha. Somente leitura.
+    summary: Retorna o objeto de proteção da planilha para uma planilha. Apenas leitura.
     name: protection
     fullName: protection
     langs:
@@ -857,7 +857,7 @@ items:
           type:
             - number
   - uid: 'excel!Excel.Worksheet#slicers:member'
-    summary: Retorna uma coleção de slicers que fazem parte da planilha. Somente leitura.
+    summary: Retorna uma coleção de slicers que fazem parte da planilha. Apenas leitura.
     name: slicers
     fullName: slicers
     langs:
