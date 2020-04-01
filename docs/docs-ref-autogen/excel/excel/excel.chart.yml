@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Chart:class'
-    summary: 'Representa um objeto chart em uma pasta de trabalho. Para saber mais sobre o modelo de objeto de gráfico, confira [trabalhar com gráficos usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.'
+    summary: Representa um objeto chart em uma pasta de trabalho.
     name: Excel.Chart
     fullName: Excel.Chart
     langs:
@@ -58,7 +58,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Chart#axes:member'
-    summary: Representa os eixos de um gráfico. Somente leitura.
+    summary: Representa os eixos de um gráfico. Apenas leitura.
     name: axes
     fullName: axes
     langs:
@@ -106,7 +106,7 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Chart#dataLabels:member'
-    summary: Representa os rótulos de dados no gráfico. Somente leitura.
+    summary: Representa os rótulos de dados no gráfico. Apenas leitura.
     name: dataLabels
     fullName: dataLabels
     langs:
@@ -143,7 +143,7 @@ items:
         type:
           - 'excel!Excel.Chart#displayBlanksAs~0:complex'
   - uid: 'excel!Excel.Chart#format:member'
-    summary: Encapsula as propriedades de formato da área do gráfico. Somente leitura.
+    summary: Encapsula as propriedades de formato da área do gráfico. Apenas leitura.
     name: format
     fullName: format
     langs:
@@ -243,7 +243,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Chart#legend:member'
-    summary: Representa a legenda do gráfico. Somente leitura.
+    summary: Representa a legenda do gráfico. Apenas leitura.
     name: legend
     fullName: legend
     langs:
@@ -359,7 +359,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Chart#series:member'
-    summary: Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.
+    summary: Representa uma única série ou uma coleção de séries no gráfico. Apenas leitura.
     name: series
     fullName: series
     langs:
@@ -503,7 +503,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Chart#title:member'
-    summary: 'Representa o título do gráfico especificado, incluindo o respectivo texto, a visibilidade, a posição e a formatação. Somente leitura.'
+    summary: 'Representa o título do gráfico especificado, incluindo o respectivo texto, a visibilidade, a posição e a formatação. Apenas leitura.'
     name: title
     fullName: title
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Table:class'
-    summary: 'Representa uma tabela do Excel. Para saber mais sobre o modelo de objeto de tabela, leia [trabalhar com tabelas usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.'
+    summary: Representa uma tabela do Excel.
     name: Excel.Table
     fullName: Excel.Table
     langs:
@@ -63,7 +63,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Table#columns:member'
-    summary: Representa uma coleção de todas as colunas na tabela. Somente leitura.
+    summary: Representa uma coleção de todas as colunas na tabela. Apenas leitura.
     name: columns
     fullName: columns
     langs:
@@ -282,7 +282,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Table#rows:member'
-    summary: Representa uma coleção de todas as linhas na tabela. Somente leitura.
+    summary: Representa uma coleção de todas as linhas na tabela. Apenas leitura.
     name: rows
     fullName: rows
     langs:

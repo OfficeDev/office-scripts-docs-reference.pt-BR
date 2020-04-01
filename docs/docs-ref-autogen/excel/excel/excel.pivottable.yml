@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.PivotTable:class'
-    summary: 'Representa uma Tabela Dinâmica do Excel. Para saber mais sobre o modelo de objeto de tabela dinâmica, leia [trabalhar com tabelas dinâmicas usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    summary: Representa uma Tabela Dinâmica do Excel.
     name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:
