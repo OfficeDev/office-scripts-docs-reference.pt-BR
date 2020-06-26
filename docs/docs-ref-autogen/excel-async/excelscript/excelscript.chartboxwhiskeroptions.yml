@@ -1,0 +1,99 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions:interface'
+    summary: Representa as propriedades de uma caixa e um gráfico de caixas estreita.
+    name: Excel.ChartBoxwhiskerOptions
+    fullName: Excel.ChartBoxwhiskerOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartBoxwhiskerOptions#load:member(1)'
+      - 'excel!Excel.ChartBoxwhiskerOptions#quartileCalculation:member'
+      - 'excel!Excel.ChartBoxwhiskerOptions#showInnerPoints:member'
+      - 'excel!Excel.ChartBoxwhiskerOptions#showMeanLine:member'
+      - 'excel!Excel.ChartBoxwhiskerOptions#showMeanMarker:member'
+      - 'excel!Excel.ChartBoxwhiskerOptions#showOutlierPoints:member'
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions#quartileCalculation:member'
+    summary: Especifica se o tipo de cálculo de quartil de uma caixa e um gráfico de caixa estreita.
+    name: quartileCalculation
+    fullName: quartileCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'quartileCalculation: ChartBoxQuartileCalculation;'
+      return:
+        type:
+          - 'excel!Excel.ChartBoxQuartileCalculation:enum'
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions#showInnerPoints:member'
+    summary: Especifica se os pontos internos são mostrados em um gráfico de caixa e estreita.
+    name: showInnerPoints
+    fullName: showInnerPoints
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showInnerPoints: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions#showMeanLine:member'
+    summary: Especifica se a linha de média é mostrada em um gráfico de caixa e estreitamento.
+    name: showMeanLine
+    fullName: showMeanLine
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showMeanLine: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions#showMeanMarker:member'
+    summary: Especifica se o marcador médio é mostrado em um gráfico de caixa e mais à estreita.
+    name: showMeanMarker
+    fullName: showMeanMarker
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showMeanMarker: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBoxwhiskerOptions#showOutlierPoints:member'
+    summary: Especifica se os pontos de exceção são mostrados em um gráfico de caixa e mais à estreita.
+    name: showOutlierPoints
+    fullName: showOutlierPoints
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showOutlierPoints: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartBoxQuartileCalculation:enum'
+    name: ChartBoxQuartileCalculation
+    fullName: Excel.ChartBoxQuartileCalculation

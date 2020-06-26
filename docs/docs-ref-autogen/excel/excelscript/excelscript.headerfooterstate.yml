@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+    name: ExcelScript.HeaderFooterState
+    fullName: ExcelScript.HeaderFooterState
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+      - 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+      - 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+      - 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+    summary: Somente um cabeçalho/rodapé geral é usado para todas as páginas impressas.
+    name: default
+    fullName: default
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+    summary: 'Há um cabeçalho/rodapé de primeira página separado, e um cabeçalho/rodapé geral usado para todas as outras páginas.'
+    name: firstAndDefault
+    fullName: firstAndDefault
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+    summary: 'Há um cabeçalho/rodapé de primeira página separado, então há um cabeçalho/rodapé separado para páginas pares e ímpares.'
+    name: firstOddAndEven
+    fullName: firstOddAndEven
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+    summary: Há um cabeçalho/rodapé diferente para páginas pares e ímpares.
+    name: oddAndEven
+    fullName: oddAndEven
+    langs:
+      - typeScript
+    type: field

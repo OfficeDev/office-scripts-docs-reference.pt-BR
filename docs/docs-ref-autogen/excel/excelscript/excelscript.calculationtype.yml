@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CalculationType:enum'
+    name: ExcelScript.CalculationType
+    fullName: ExcelScript.CalculationType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CalculationType.full:member'
+      - 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+      - 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+  - uid: 'ExcelScript!ExcelScript.CalculationType.full:member'
+    summary: ' Isso marcará todas as células como incorretas e as recalculará.'
+    name: full
+    fullName: full
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+    summary: 'Isso recriará a cadeia de dependências inteira, marcará todas as células como sujas e as recalculará.'
+    name: fullRebuild
+    fullName: fullRebuild
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+    summary: 'Recalcula todas as células que o Excel marcou como sujas, isto é, dependentes de dados voláteis ou alterados e células programaticamente marcadas como sujas.'
+    name: recalculate
+    fullName: recalculate
+    langs:
+      - typeScript
+    type: field

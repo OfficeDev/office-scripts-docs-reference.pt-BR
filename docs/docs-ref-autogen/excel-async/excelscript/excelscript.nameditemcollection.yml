@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemCollection:interface'
+    summary: 'Uma coleção de todos os objetos NamedItem que fazem parte da pasta de trabalho ou planilha, dependendo de como ela foi atingida.'
+    name: Excel.NamedItemCollection
+    fullName: Excel.NamedItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItemCollection#add:member(1)'
+      - 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
+      - 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.NamedItemCollection#load:member(1)'
+  - uid: 'excel!Excel.NamedItemCollection#add:member(1)'
+    summary: Adiciona um novo nome à coleção do escopo fornecido.
+    name: 'add(name, reference, comment)'
+    fullName: 'add(name, reference, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    name: string,
+                    reference: Range | string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'excel!Excel.NamedItem:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let headerRange = sheet.getRange("A1:D1");
+
+              sheet.names.add("ExpensesHeader", headerRange);
+              let namedItems = sheet.names.load("name, type");
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: name
+          description: O nome do item nomeado.
+          type:
+            - string
+        - id: reference
+          description: A fórmula ou o intervalo ao qual o nome fará referência.
+          type:
+            - 'excel!Excel.NamedItemCollection#add~0:complex'
+        - id: comment
+          description: Opcional. O comentário associado ao item nomeado.
+          type:
+            - string
+  - uid: 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
+    summary: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
+    name: 'addFormulaLocal(name, formula, comment)'
+    fullName: 'addFormulaLocal(name, formula, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addFormulaLocal(
+                    name: string,
+                    formula: string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'excel!Excel.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: O "nome" do item nomeado.
+          type:
+            - string
+        - id: formula
+          description: A fórmula na localidade do usuário à qual o nome se referirá.
+          type:
+            - string
+        - id: comment
+          description: Opcional. O comentário associado ao item nomeado.
+          type:
+            - string
+  - uid: 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtém um objeto NamedItem usando seu nome. Se o objeto getNamedItem não existir, retornará um objeto null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): NamedItem;'
+      return:
+        type:
+          - 'excel!Excel.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: NamedItem Name.
+          type:
+            - string
+  - uid: 'excel!Excel.NamedItemCollection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.NamedItem:interface'
+    name: NamedItem
+    fullName: Excel.NamedItem
+  - uid: 'excel!Excel.NamedItemCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'

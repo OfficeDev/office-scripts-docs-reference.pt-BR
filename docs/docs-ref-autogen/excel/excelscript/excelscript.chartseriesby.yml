@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
+    summary: 'Especifica se a série é por linhas ou por colunas. Na área de trabalho, a opção "auto" inspecionará a forma de dados de origem para adivinhar automaticamente se os dados são por linhas ou colunas; no Excel na Web, "auto" simplesmente terá como padrão "Columns".'
+    name: ExcelScript.ChartSeriesBy
+    fullName: ExcelScript.ChartSeriesBy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+    summary: 'Na área de trabalho, a opção "auto" inspecionará a forma de dados de origem para adivinhar automaticamente se os dados são por linhas ou colunas; no Excel na Web, "auto" simplesmente terá como padrão "Columns".'
+    name: auto
+    fullName: auto
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: field

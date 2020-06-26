@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxes:interface'
+    summary: Representa os eixos de um gráfico.
+    name: Excel.ChartAxes
+    fullName: Excel.ChartAxes
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxes#categoryAxis:member'
+      - 'excel!Excel.ChartAxes#getItem:member(1)'
+      - 'excel!Excel.ChartAxes#load:member(1)'
+      - 'excel!Excel.ChartAxes#seriesAxis:member'
+      - 'excel!Excel.ChartAxes#valueAxis:member'
+  - uid: 'excel!Excel.ChartAxes#categoryAxis:member'
+    summary: Representa o eixo de categoria em um gráfico.
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly categoryAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+  - uid: 'excel!Excel.ChartAxes#getItem:member(1)'
+    summary: Retorna o eixo específico identificado por tipo e grupo.
+    name: 'getItem(type, group)'
+    fullName: 'getItem(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Especifica o tipo de eixo. Consulte Excel. ChartAxisType para obter detalhes.
+          type:
+            - 'excel!Excel.ChartAxisType:enum'
+        - id: group
+          description: Opcional. Especifica o grupo de eixos. Consulte Excel. ChartAxisGroup para obter detalhes.
+          type:
+            - 'excel!Excel.ChartAxisGroup:enum'
+  - uid: 'excel!Excel.ChartAxes#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxes#seriesAxis:member'
+    summary: Representa o eixo das séries de um gráfico 3D.
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly seriesAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+  - uid: 'excel!Excel.ChartAxes#valueAxis:member'
+    summary: Representa o eixo dos valores em um eixo.
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+references:
+  - uid: 'excel!Excel.ChartAxis:interface'
+    name: ChartAxis
+    fullName: Excel.ChartAxis
+  - uid: 'excel!Excel.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: Excel.ChartAxisType
+  - uid: 'excel!Excel.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: Excel.ChartAxisGroup

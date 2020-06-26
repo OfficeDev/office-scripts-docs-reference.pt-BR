@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotItemCollection:interface'
+    summary: Representa uma coleção de todos os PivotItems relacionados ao PivotField pai.
+    name: Excel.PivotItemCollection
+    fullName: Excel.PivotItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotItemCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtém um PivotItem pelo nome. Se o PivotItem não existir, retornará um objeto NULL.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nome do PivotItem a ser recuperado.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotItemCollection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PivotItem:interface'
+    name: PivotItem
+    fullName: Excel.PivotItem
