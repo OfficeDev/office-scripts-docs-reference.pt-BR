@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorder:interface'
+    summary: Representa a borda de um objeto.
+    name: Excel.RangeBorder
+    fullName: Excel.RangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorder#color:member'
+      - 'excel!Excel.RangeBorder#load:member(1)'
+      - 'excel!Excel.RangeBorder#sideIndex:member'
+      - 'excel!Excel.RangeBorder#style:member'
+      - 'excel!Excel.RangeBorder#tintAndShade:member'
+      - 'excel!Excel.RangeBorder#weight:member'
+  - uid: 'excel!Excel.RangeBorder#color:member'
+    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja").'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeBorder#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorder#sideIndex:member'
+    summary: Valor constante que indica o lado específico da borda. Consulte Excel. BorderIndex para obter detalhes.
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: BorderIndex;'
+      return:
+        type:
+          - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorder#style:member'
+    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte Excel. BorderLineStyle para obter detalhes.
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: BorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.BorderLineStyle:enum'
+  - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para a borda do intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que a borda não tem configuração uniforme tintAndShade.'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorder#weight:member'
+    summary: Especifica o peso da borda em torno de um intervalo. Consulte Excel. BorderWeight para obter detalhes.
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: BorderWeight;'
+      return:
+        type:
+          - 'excel!Excel.BorderWeight:enum'
+references:
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex
+  - uid: 'excel!Excel.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: Excel.BorderLineStyle
+  - uid: 'excel!Excel.BorderWeight:enum'
+    name: BorderWeight
+    fullName: Excel.BorderWeight

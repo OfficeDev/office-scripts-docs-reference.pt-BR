@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
+    summary: Representa um formato de DataBar de formatação condicional para o lado positivo da barra de dados.
+    name: ExcelScript.ConditionalDataBarPositiveFormat
+    fullName: ExcelScript.ConditionalDataBarPositiveFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
+    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja"). "" (cadeia de caracteres vazia) se nenhuma borda estiver presente ou definida.'
+    name: getBorderColor()
+    fullName: getBorderColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorderColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
+    summary: 'Código de cor HTML que representa a cor de preenchimento, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").'
+    name: getFillColor()
+    fullName: getFillColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFillColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
+    summary: Especifica se o DataBar tem um gradiente.
+    name: getGradientFill()
+    fullName: getGradientFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGradientFill(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
+    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja"). "" (cadeia de caracteres vazia) se nenhuma borda estiver presente ou definida.'
+    name: setBorderColor(borderColor)
+    fullName: setBorderColor(borderColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBorderColor(borderColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: borderColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
+    summary: 'Código de cor HTML que representa a cor de preenchimento, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").'
+    name: setFillColor(fillColor)
+    fullName: setFillColor(fillColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFillColor(fillColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fillColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
+    summary: Especifica se o DataBar tem um gradiente.
+    name: setGradientFill(gradientFill)
+    fullName: setGradientFill(gradientFill)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setGradientFill(gradientFill: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: gradientFill
+          description: ''
+          type:
+            - boolean

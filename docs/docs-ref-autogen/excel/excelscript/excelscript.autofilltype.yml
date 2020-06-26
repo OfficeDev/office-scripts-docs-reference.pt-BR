@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
+    summary: Os tipos de comportamento quando o preenchimento automático é usado em um intervalo na pasta de trabalho.
+    name: ExcelScript.AutoFillType
+    fullName: ExcelScript.AutoFillType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
+      - 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
+    summary: Preenche as células adjacentes com dados baseados nos dados selecionados.
+    name: fillCopy
+    fullName: fillCopy
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
+    summary: 'Uma versão de "FillSeries" para datas que baseiam o padrão no dia do mês ou no dia da semana, dependendo do contexto.'
+    name: fillDays
+    fullName: fillDays
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
+    summary: Preenche as células adjacentes com base nos dados ao redor (o comportamento de preenchimento automático padrão).
+    name: fillDefault
+    fullName: fillDefault
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
+    summary: Preenche as células adjacentes com as fórmulas selecionadas.
+    name: fillFormats
+    fullName: fillFormats
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
+    summary: Uma versão de "FillSeries" para datas que baseiam o padrão no mês.
+    name: fillMonths
+    fullName: fillMonths
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
+    summary: Preenche as células adjacentes com dados que seguem um padrão nas células copiadas.
+    name: fillSeries
+    fullName: fillSeries
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
+    summary: Preenche as células adjacentes com os valores selecionados.
+    name: fillValues
+    fullName: fillValues
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
+    summary: Uma versão de "FillSeries" para datas que baseiam o padrão no dia da semana e incluem apenas dias da semana.
+    name: fillWeekdays
+    fullName: fillWeekdays
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
+    summary: Uma versão de "FillSeries" para datas que baseiam o padrão no ano.
+    name: fillYears
+    fullName: fillYears
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
+    summary: Preenche as células adjacentes usando o recurso FlashFill do Excel.
+    name: flashFill
+    fullName: flashFill
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
+    summary: Uma versão de "FillSeries" para números que preenche os valores nas células adjacentes de acordo com um modelo de tendência de crescimento.
+    name: growthTrend
+    fullName: growthTrend
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
+    summary: Uma versão de "FillSeries" para números que preenche os valores nas células adjacentes de acordo com um modelo de tendência linear.
+    name: linearTrend
+    fullName: linearTrend
+    langs:
+      - typeScript
+    type: field

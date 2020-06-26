@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
+    summary: Especifica o estouro vertical do quadro de texto em uma forma.
+    name: ExcelScript.ShapeTextVerticalOverflow
+    fullName: ExcelScript.ShapeTextVerticalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    summary: Oculte texto que não se ajusta verticalmente no quadro de texto.
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    summary: Oculte texto que não se ajusta verticalmente no quadro de texto e adicione reticências (...) ao final do texto visível.
+    name: ellipsis
+    fullName: ellipsis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    summary: 'Permita que o texto exceda o quadro de texto verticalmente (pode ser partindo da parte superior, inferior ou ambas, dependendo do alinhamento do texto).'
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field

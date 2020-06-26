@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeReference:interface'
+    summary: 'Representa uma referência de cadeia de caracteres do formulário sheetName! A1: B5 ou um intervalo nomeado global ou local.'
+    name: ExcelScript.RangeReference
+    fullName: ExcelScript.RangeReference
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeReference#address:member'
+  - uid: 'ExcelScript!ExcelScript.RangeReference#address:member'
+    summary: 'O endereço do intervalo; por exemplo, '' sheetName! A1: B5 ''.'
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string

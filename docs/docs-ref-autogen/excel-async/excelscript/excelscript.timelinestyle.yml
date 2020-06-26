@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    summary: 'Representa um estilo de linha do tempo, que define elementos de estilo por região na linha do tempo.'
+    name: Excel.TimelineStyle
+    fullName: Excel.TimelineStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TimelineStyle#delete:member(1)'
+      - 'excel!Excel.TimelineStyle#duplicate:member(1)'
+      - 'excel!Excel.TimelineStyle#load:member(1)'
+      - 'excel!Excel.TimelineStyle#name:member'
+      - 'excel!Excel.TimelineStyle#readOnly:member'
+  - uid: 'excel!Excel.TimelineStyle#delete:member(1)'
+    summary: Exclui o TableStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TimelineStyle#duplicate:member(1)'
+    summary: Cria uma duplicata deste TimelineStyle com cópias de todos os elementos de estilo.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TimelineStyle#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TimelineStyle#name:member'
+    summary: Obtém o nome do TimelineStyle.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.TimelineStyle#readOnly:member'
+    summary: Especifica se este objeto TimelineStyle é de somente leitura.
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle

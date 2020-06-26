@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
+    summary: Especifica o comportamento de classificação do slicer para a API slicer. sortBy.
+    name: ExcelScript.SlicerSortType
+    fullName: ExcelScript.SlicerSortType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    summary: Classificar itens de segmentação de itens em ordem crescente por legendas de item.
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    summary: Classificar itens de segmentação de dados na ordem fornecida pela fonte de dados.
+    name: dataSourceOrder
+    fullName: dataSourceOrder
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    summary: Classificar itens de segmentação de itens em ordem decrescente por legendas de item.
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

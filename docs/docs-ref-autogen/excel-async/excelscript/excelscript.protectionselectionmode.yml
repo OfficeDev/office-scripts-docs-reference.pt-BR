@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ProtectionSelectionMode:enum'
+    name: Excel.ProtectionSelectionMode
+    fullName: Excel.ProtectionSelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ProtectionSelectionMode.none:member'
+      - 'excel!Excel.ProtectionSelectionMode.normal:member'
+      - 'excel!Excel.ProtectionSelectionMode.unlocked:member'
+  - uid: 'excel!Excel.ProtectionSelectionMode.none:member'
+    summary: A seleção não é permitida para todas as células.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"none"'
+  - uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
+    summary: A seleção é permitida para todas as células.
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"normal"'
+  - uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
+    summary: A seleção só é permitida para células que não estão bloqueadas.
+    name: unlocked
+    fullName: unlocked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"unlocked"'

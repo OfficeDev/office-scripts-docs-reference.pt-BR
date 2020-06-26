@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetProtection:interface'
+    summary: Representa a proteção de um objeto sheet.
+    name: Excel.WorksheetProtection
+    fullName: Excel.WorksheetProtection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetProtection#load:member(1)'
+      - 'excel!Excel.WorksheetProtection#options:member'
+      - 'excel!Excel.WorksheetProtection#protect:member(1)'
+      - 'excel!Excel.WorksheetProtection#protected:member'
+      - 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.WorksheetProtection#options:member'
+    summary: Especifica as opções de proteção da planilha.
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly options: WorksheetProtectionOptions;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtectionOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
+    summary: Protege uma planilha. Falhará se a planilha já tiver sido protegida.
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect();
+              }
+          }
+          ```
+      parameters:
+        - id: options
+          description: Opcional. Opções de proteção da planilha.
+          type:
+            - 'excel!Excel.WorksheetProtectionOptions:interface'
+        - id: password
+          description: Opcional. Senha de proteção da planilha.
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetProtection#protected:member'
+    summary: Especifica se a planilha está protegida.
+    name: protected
+    fullName: protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+    summary: Desprotege uma planilha.
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```javascript
+          async function main(context: Excel.RequestContext) {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect();
+          }
+          ```
+      parameters:
+        - id: password
+          description: Senha de proteção para a planilha.
+          type:
+            - string
+references:
+  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions

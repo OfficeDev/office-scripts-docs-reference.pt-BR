@@ -1,0 +1,213 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
+    summary: 'Representa os atributos de fonte, como nome da fonte, tamanho da fonte e cor, para o objeto TextRange de uma forma.'
+    name: ExcelScript.ShapeFont
+    fullName: ExcelScript.ShapeFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+    summary: Representa o status da fonte em negrito. Retornará null se o TextRange incluir fragmentos de texto em negrito e não em negrito.
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+    summary: 'Representação do código de cor HTML da cor do texto (por exemplo, " \# FF0000" representa vermelho). Retornará null se o TextRange incluir fragmentos de texto com cores diferentes.'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+    summary: Representa o status da fonte em itálico. Retorna null se o TextRange incluir fragmentos de texto em itálico e que não está em itálico.
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+    summary: 'Representa o nome da fonte (por exemplo, "Calibri"). Se o texto estiver no idioma Script Complexo ou Leste Asiático, esse é o nome da fonte correspondente. Caso contrário, esse é o nome da fonte Latin.'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+    summary: 'Representa o tamanho da fonte em pontos (por exemplo, 11). Retorna nulo se o TextRange incluir fragmentos de texto com tamanhos de fontes diferentes.'
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+    summary: 'Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Para saber detalhes, confira Excel.ShapeFontUnderlineStyle.'
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): ShapeFontUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+    summary: Representa o status da fonte em negrito. Retornará null se o TextRange incluir fragmentos de texto em negrito e não em negrito.
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+    summary: 'Representação do código de cor HTML da cor do texto (por exemplo, " \# FF0000" representa vermelho). Retornará null se o TextRange incluir fragmentos de texto com cores diferentes.'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+    summary: Representa o status da fonte em itálico. Retorna null se o TextRange incluir fragmentos de texto em itálico e que não está em itálico.
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+    summary: 'Representa o nome da fonte (por exemplo, "Calibri"). Se o texto estiver no idioma Script Complexo ou Leste Asiático, esse é o nome da fonte correspondente. Caso contrário, esse é o nome da fonte Latin.'
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+    summary: 'Representa o tamanho da fonte em pontos (por exemplo, 11). Retorna nulo se o TextRange incluir fragmentos de texto com tamanhos de fontes diferentes.'
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+    summary: 'Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Para saber detalhes, confira Excel.ShapeFontUnderlineStyle.'
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+    name: ShapeFontUnderlineStyle
+    fullName: ExcelScript.ShapeFontUnderlineStyle

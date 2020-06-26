@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FormatProtection:interface'
+    summary: Representa a proteção de formatação de um objeto range.
+    name: Excel.FormatProtection
+    fullName: Excel.FormatProtection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FormatProtection#formulaHidden:member'
+      - 'excel!Excel.FormatProtection#load:member(1)'
+      - 'excel!Excel.FormatProtection#locked:member'
+  - uid: 'excel!Excel.FormatProtection#formulaHidden:member'
+    summary: Especifica se o Excel oculta a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.FormatProtection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FormatProtection#locked:member'
+    summary: Especifica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type:
+          - boolean

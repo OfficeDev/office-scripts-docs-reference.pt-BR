@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SettingCollection:interface'
+    summary: Representa uma coleção de objetos de configuração de pares chave-valor que fazem parte da pasta de trabalho. O escopo está limitado por arquivo e suplemento (a combinação de painel de tarefas ou conteúdo).
+    name: Excel.SettingCollection
+    fullName: Excel.SettingCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SettingCollection#add:member(1)'
+      - 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SettingCollection#load:member(1)'
+  - uid: 'excel!Excel.SettingCollection#add:member(1)'
+    summary: Define na pasta de trabalho ou adiciona a ela a configuração especificada.
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    key: string,
+                    value: string | number | boolean | Date | Array<any> | any
+                ): Setting;
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: A chave da nova configuração.
+          type:
+            - string
+        - id: value
+          description: O valor da nova configuração.
+          type:
+            - 'excel!Excel.SettingCollection#add~0:complex'
+  - uid: 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtém uma entrada de configuração por meio da tecla. Se a Configuração não existir, retornará um objeto null.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: key
+          description: A chave da configuração.
+          type:
+            - string
+  - uid: 'excel!Excel.SettingCollection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Setting:interface'
+    name: Setting
+    fullName: Excel.Setting
+  - uid: 'excel!Excel.SettingCollection#add~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <any> | any
+                  
+        fullName: |-
+          <any> | any

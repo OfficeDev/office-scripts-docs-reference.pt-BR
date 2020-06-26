@@ -1,0 +1,345 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeFont:interface'
+    summary: 'Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, dentre outros.'
+    name: ExcelScript.RangeFont
+    fullName: ExcelScript.RangeFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getBold:member(1)'
+    summary: Representa o status da fonte em negrito.
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
+    summary: 'Representação do código de cor HTML da cor do texto (por exemplo, \# FF0000 representa vermelho).'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getItalic:member(1)'
+    summary: Especifica o status de itálico da fonte.
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
+    summary: 'Nome da fonte (por exemplo, "Calibri")'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getSize:member(1)'
+    summary: Font Size
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)'
+    summary: Especifica o status tachado da fonte. Um valor nulo indica que todo o intervalo não tem configuração de tachado uniforme.
+    name: getStrikethrough()
+    fullName: getStrikethrough()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStrikethrough(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
+    summary: 'Especifica o status subscrito da fonte. Retorna true se todas as fontes do intervalo são subscrito. Retorna false se todas as fontes do intervalo forem sobrescritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.'
+    name: getSubscript()
+    fullName: getSubscript()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubscript(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
+    summary: 'Especifica o status sobrescrito da fonte. Retorna true se todas as fontes do intervalo forem sobrescritos. Retorna false se todas as fontes do intervalo são subscritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.'
+    name: getSuperscript()
+    fullName: getSuperscript()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSuperscript(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para a fonte do intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que o intervalo inteiro não tem a configuração tintAndShade de fonte uniforme.'
+    name: getTintAndShade()
+    fullName: getTintAndShade()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
+    summary: Tipo de sublinhado aplicado à fonte. Consulte Excel. RangeUnderlineStyle para obter detalhes.
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): RangeUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setBold:member(1)'
+    summary: Representa o status da fonte em negrito.
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
+    summary: 'Representação do código de cor HTML da cor do texto (por exemplo, \# FF0000 representa vermelho).'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setItalic:member(1)'
+    summary: Especifica o status de itálico da fonte.
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
+    summary: 'Nome da fonte (por exemplo, "Calibri")'
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setSize:member(1)'
+    summary: Font Size
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)'
+    summary: Especifica o status tachado da fonte. Um valor nulo indica que todo o intervalo não tem configuração de tachado uniforme.
+    name: setStrikethrough(strikethrough)
+    fullName: setStrikethrough(strikethrough)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStrikethrough(strikethrough: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: strikethrough
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
+    summary: 'Especifica o status subscrito da fonte. Retorna true se todas as fontes do intervalo são subscrito. Retorna false se todas as fontes do intervalo forem sobrescritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.'
+    name: setSubscript(subscript)
+    fullName: setSubscript(subscript)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubscript(subscript: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subscript
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
+    summary: 'Especifica o status sobrescrito da fonte. Retorna true se todas as fontes do intervalo forem sobrescritos. Retorna false se todas as fontes do intervalo são subscritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.'
+    name: setSuperscript(superscript)
+    fullName: setSuperscript(superscript)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSuperscript(superscript: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: superscript
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para a fonte do intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que o intervalo inteiro não tem a configuração tintAndShade de fonte uniforme.'
+    name: setTintAndShade(tintAndShade)
+    fullName: setTintAndShade(tintAndShade)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
+    summary: Tipo de sublinhado aplicado à fonte. Consulte Excel. RangeUnderlineStyle para obter detalhes.
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: RangeUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
+    name: RangeUnderlineStyle
+    fullName: ExcelScript.RangeUnderlineStyle

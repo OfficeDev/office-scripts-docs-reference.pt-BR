@@ -1,0 +1,209 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
+    summary: Este objeto representa os atributos de um objeto de rótulo de tendência de gráfico.
+    name: Excel.ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineLabel#autoText:member'
+      - 'excel!Excel.ChartTrendlineLabel#format:member'
+      - 'excel!Excel.ChartTrendlineLabel#formula:member'
+      - 'excel!Excel.ChartTrendlineLabel#height:member'
+      - 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
+      - 'excel!Excel.ChartTrendlineLabel#left:member'
+      - 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
+      - 'excel!Excel.ChartTrendlineLabel#load:member(1)'
+      - 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
+      - 'excel!Excel.ChartTrendlineLabel#text:member'
+      - 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
+      - 'excel!Excel.ChartTrendlineLabel#top:member'
+      - 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
+      - 'excel!Excel.ChartTrendlineLabel#width:member'
+  - uid: 'excel!Excel.ChartTrendlineLabel#autoText:member'
+    summary: Especifica se o rótulo de linhas de tendência gera automaticamente o texto apropriado com base no contexto.
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendlineLabel#format:member'
+    summary: O formato do rótulo de tendência do gráfico.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabelFormat:interface'
+  - uid: 'excel!Excel.ChartTrendlineLabel#formula:member'
+    summary: Valor de cadeia de caracteres que representa a fórmula do título do rótulo de linha de tendência usando a notação no estilo A1.
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#height:member'
+    summary: 'Retorna a altura, em pontos, do rótulo de linha de tendência do gráfico. Nulo se o rótulo de linha de tendência do gráfico não estiver visível.'
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
+    summary: 'Representa o alinhamento horizontal de rótulo de linha de tendência de gráfico. Consulte Excel. ChartTextHorizontalAlignment para obter detalhes. Esta propriedade é válida somente quando TextOrientation do rótulo de linhas de tendência é-90, 90 ou 180.'
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextHorizontalAlignment:enum'
+  - uid: 'excel!Excel.ChartTrendlineLabel#left:member'
+    summary: 'Representa a distância, em pontos, da borda esquerda do rótulo da linha de tendência do gráfico até a borda esquerda da área do gráfico. Nulo se o rótulo de linha de tendência do gráfico não estiver visível.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
+    summary: Especifica se o formato de número está vinculado às células (de modo que o formato de número seja alterado nos rótulos quando for alterado nas células).
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendlineLabel#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
+    summary: Valor de cadeia de caracteres que representa o código do formato do rótulo de linha de tendência.
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#text:member'
+    summary: Cadeia de caracteres que representa o texto do rótulo em um gráfico de linha de tendência.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
+    summary: Representa o ângulo no qual o texto é orientado para o rótulo de tendência do gráfico. O valor deve ser um inteiro de-90 a 90 ou o inteiro 180 para texto orientado verticalmente.
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#top:member'
+    summary: 'Representa a distância, em pontos, da borda superior do rótulo de linha de tendência do gráfico até a borda superior da área do gráfico. Nulo se o rótulo de linha de tendência do gráfico não estiver visível.'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
+    summary: Representa o alinhamento vertical do rótulo de linha de tendência de gráfico. Consulte Excel. ChartTextVerticalAlignment para obter detalhes. Esta propriedade é válida somente quando TextOrientation do rótulo de tendência é 0.
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextVerticalAlignment:enum'
+  - uid: 'excel!Excel.ChartTrendlineLabel#width:member'
+    summary: 'Retorna a largura, em pontos, do rótulo de linha de tendência do gráfico. Nulo se o rótulo de linha de tendência do gráfico não estiver visível.'
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
+    name: ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat
+  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: Excel.ChartTextHorizontalAlignment
+  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: Excel.ChartTextVerticalAlignment
