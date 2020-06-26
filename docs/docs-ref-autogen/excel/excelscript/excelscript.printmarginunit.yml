@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit:enum'
+    name: ExcelScript.PrintMarginUnit
+    fullName: ExcelScript.PrintMarginUnit
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member'
+      - 'ExcelScript!ExcelScript.PrintMarginUnit.inches:member'
+      - 'ExcelScript!ExcelScript.PrintMarginUnit.points:member'
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member'
+    summary: Atribua as margens da página em centímetros.
+    name: centimeters
+    fullName: centimeters
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit.inches:member'
+    summary: Atribua as margens da página em polegadas.
+    name: inches
+    fullName: inches
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit.points:member'
+    summary: Atribua as margens da página em pontos. Um ponto é 1/72 de uma polegada.
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: field

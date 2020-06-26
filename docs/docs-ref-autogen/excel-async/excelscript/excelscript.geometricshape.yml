@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.GeometricShape:interface'
+    summary: 'Representa uma forma geométrica dentro de uma planilha. Uma forma geométrica pode ser um retângulo, uma seta de bloco, um símbolo de equação, um item de fluxograma, uma estrela, uma faixa, um texto explicativo ou qualquer outra forma básica no Excel.'
+    name: Excel.GeometricShape
+    fullName: Excel.GeometricShape
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.GeometricShape#id:member'
+      - 'excel!Excel.GeometricShape#load:member(1)'
+  - uid: 'excel!Excel.GeometricShape#id:member'
+    summary: Retorna o identificador de forma.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.GeometricShape#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'

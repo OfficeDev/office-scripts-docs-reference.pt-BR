@@ -1,0 +1,288 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Filter:interface'
+    summary: Gerencia a filtragem da coluna de uma tabela.
+    name: ExcelScript.Filter
+    fullName: ExcelScript.Filter
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Filter#apply:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#clear:member(1)'
+      - 'ExcelScript!ExcelScript.Filter#getCriteria:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Filter#apply:member(1)'
+    summary: Aplica os critérios de filtro determinados à coluna fornecida.
+    name: apply(criteria)
+    fullName: apply(criteria)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'apply(criteria: FilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: O critério a ser aplicado.
+          type:
+            - 'ExcelScript!ExcelScript.FilterCriteria:interface'
+  - uid: 'ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)'
+    summary: Aplica um filtro "Item Inferior" à coluna para obter o número de elementos fornecido.
+    name: applyBottomItemsFilter(count)
+    fullName: applyBottomItemsFilter(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyBottomItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: O número de elementos da parte inferior a serem mostrados.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)'
+    summary: Aplica um filtro "Percentual Inferior" à coluna para obter a porcentagem de elementos fornecida.
+    name: applyBottomPercentFilter(percent)
+    fullName: applyBottomPercentFilter(percent)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyBottomPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: percent
+          description: A porcentagem de elementos da parte inferior a serem mostrados.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)'
+    summary: Aplica um filtro "Cor da Célula" à coluna para obter a cor fornecida.
+    name: applyCellColorFilter(color)
+    fullName: applyCellColorFilter(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCellColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: A cor de tela de fundo das células a serem mostradas.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)'
+    summary: Aplica um filtro "Icon" à coluna para obter as cadeias de caracteres de critérios fornecidas.
+    name: 'applyCustomFilter(criteria1, criteria2, oper)'
+    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        applyCustomFilter(
+                    criteria1: string,
+                    criteria2?: string,
+                    oper?: FilterOperator
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria1
+          description: A primeira cadeia de caracteres de critérios.
+          type:
+            - string
+        - id: criteria2
+          description: Opcional. A segunda cadeia de caracteres de critérios.
+          type:
+            - string
+        - id: oper
+          description: Opcional. O operador que descreve como os dois critérios são unidos.
+          type:
+            - 'ExcelScript!ExcelScript.FilterOperator:enum'
+  - uid: 'ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)'
+    summary: Aplica um filtro "Dinâmico" à coluna.
+    name: applyDynamicFilter(criteria)
+    fullName: applyDynamicFilter(criteria)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyDynamicFilter(criteria: DynamicFilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: O critério dinâmico a ser aplicado.
+          type:
+            - 'ExcelScript!ExcelScript.DynamicFilterCriteria:enum'
+  - uid: 'ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)'
+    summary: Aplica um filtro "Cor da Fonte" à coluna para obter a cor fornecida.
+    name: applyFontColorFilter(color)
+    fullName: applyFontColorFilter(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyFontColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: A cor da fonte das células a serem mostradas.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)'
+    summary: Aplicar um filtro "ícone" à coluna para o ícone dado.
+    name: applyIconFilter(icon)
+    fullName: applyIconFilter(icon)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyIconFilter(icon: Icon): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: icon
+          description: Os ícones das células a serem mostrados.
+          type:
+            - 'ExcelScript!ExcelScript.Icon:interface'
+  - uid: 'ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)'
+    summary: Aplica um filtro "Item Superior" à coluna para obter o número de elementos fornecido.
+    name: applyTopItemsFilter(count)
+    fullName: applyTopItemsFilter(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTopItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: O número de elementos da parte superior a serem mostrados.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)'
+    summary: Aplica um filtro "Percentual Superior" à coluna para obter a porcentagem de elementos fornecida.
+    name: applyTopPercentFilter(percent)
+    fullName: applyTopPercentFilter(percent)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTopPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: percent
+          description: A porcentagem de elementos da parte superior a serem mostrados.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)'
+    summary: Aplica um filtro "Valores" à coluna para obter os valores fornecidos.
+    name: applyValuesFilter(values)
+    fullName: applyValuesFilter(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: values
+          description: A lista de valores a serem mostrados. Deve ser uma matriz de cadeias de caracteres ou uma matriz de objetos Excel. FilterDateTime.
+          type:
+            - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'
+    summary: Limpa o filtro na coluna fornecida.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Filter#getCriteria:member(1)'
+    summary: O filtro aplicado no momento à coluna fornecida.
+    name: getCriteria()
+    fullName: getCriteria()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCriteria(): FilterCriteria;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterCriteria:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
+    name: FilterCriteria
+    fullName: ExcelScript.FilterCriteria
+  - uid: 'ExcelScript!ExcelScript.FilterOperator:enum'
+    name: FilterOperator
+    fullName: ExcelScript.FilterOperator
+  - uid: 'ExcelScript!ExcelScript.DynamicFilterCriteria:enum'
+    name: DynamicFilterCriteria
+    fullName: ExcelScript.DynamicFilterCriteria
+  - uid: 'ExcelScript!ExcelScript.Icon:interface'
+    name: Icon
+    fullName: ExcelScript.Icon
+  - uid: 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
+    name: Array<string | FilterDatetime>
+    fullName: Array<string | ExcelScript.FilterDatetime>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+        name: FilterDatetime
+        fullName: ExcelScript.FilterDatetime
+      - name: '>'
+        fullName: '>'

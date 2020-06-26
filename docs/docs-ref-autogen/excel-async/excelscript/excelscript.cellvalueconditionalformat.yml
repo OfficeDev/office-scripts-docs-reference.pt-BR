@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellValueConditionalFormat:interface'
+    summary: Representa um formato condicional de valor de célula.
+    name: Excel.CellValueConditionalFormat
+    fullName: Excel.CellValueConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellValueConditionalFormat#format:member'
+      - 'excel!Excel.CellValueConditionalFormat#load:member(1)'
+      - 'excel!Excel.CellValueConditionalFormat#rule:member'
+  - uid: 'excel!Excel.CellValueConditionalFormat#format:member'
+    summary: 'Retorna um objeto Format, encapsulando a fonte, o preenchimento, as bordas e outras propriedades de formatos condicionais.'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B21:E23");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.cellValue);
+              conditionalFormat.cellValue.format.font.color = "red";
+              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.CellValueConditionalFormat#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CellValueConditionalFormat#rule:member'
+    summary: Especifica o objeto Rule nesse formato condicional.
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: ConditionalCellValueRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalCellValueRule:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B21:E23");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.cellValue);
+              conditionalFormat.cellValue.format.font.color = "red";
+              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+              await context.sync();
+          }
+          ```
+references:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
+    name: ConditionalCellValueRule
+    fullName: Excel.ConditionalCellValueRule

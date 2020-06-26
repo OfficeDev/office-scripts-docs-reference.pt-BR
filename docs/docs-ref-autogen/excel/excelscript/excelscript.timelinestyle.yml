@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+    summary: 'Representa um estilo de linha do tempo, que define elementos de estilo por região na linha do tempo.'
+    name: ExcelScript.TimelineStyle
+    fullName: ExcelScript.TimelineStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
+    summary: Exclui o TableStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
+    summary: Cria uma duplicata deste TimelineStyle com cópias de todos os elementos de estilo.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TimelineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
+    summary: Obtém o nome do TimelineStyle.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
+    summary: Especifica se este objeto TimelineStyle é de somente leitura.
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
+    summary: Obtém o nome do TimelineStyle.
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: ExcelScript.TimelineStyle

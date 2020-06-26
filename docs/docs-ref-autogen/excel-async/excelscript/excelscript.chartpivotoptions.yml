@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartPivotOptions:interface'
+    summary: Encapsula as opções de gráfico dinâmico.
+    name: Excel.ChartPivotOptions
+    fullName: Excel.ChartPivotOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartPivotOptions#load:member(1)'
+      - 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
+  - uid: 'excel!Excel.ChartPivotOptions#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
+    summary: 'Especifica se os botões de campo de eixo devem ser exibidos em um gráfico dinâmico. A propriedade ShowAxisFieldButtons corresponde ao comando "Exibir Botões de Campo de Eixo" na lista suspensa "Botões de Campo" da guia "Analisar", que está disponível quando um gráfico dinâmico é selecionado.'
+    name: showAxisFieldButtons
+    fullName: showAxisFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAxisFieldButtons: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
+    summary: Especifica se os botões de campo de legenda devem ser exibidos em um gráfico dinâmico.
+    name: showLegendFieldButtons
+    fullName: showLegendFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendFieldButtons: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
+    summary: Especifica se os botões de campo de filtro de relatório devem ser exibidos em um gráfico dinâmico.
+    name: showReportFilterFieldButtons
+    fullName: showReportFilterFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showReportFilterFieldButtons: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
+    summary: Especifica se os botões de campo de valor de exibição devem ser exibidos em um gráfico dinâmico.
+    name: showValueFieldButtons
+    fullName: showValueFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValueFieldButtons: boolean;'
+      return:
+        type:
+          - boolean

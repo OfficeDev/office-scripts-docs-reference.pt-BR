@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    summary: Representa a formatação de preenchimento de um elemento do gráfico.
+    name: ExcelScript.ChartFill
+    fullName: ExcelScript.ChartFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+    summary: Limpa a cor de preenchimento de um elemento do gráfico.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+    summary: Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'Código de cor HTML que representa a cor do plano de fundo, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").'
+          type:
+            - string
