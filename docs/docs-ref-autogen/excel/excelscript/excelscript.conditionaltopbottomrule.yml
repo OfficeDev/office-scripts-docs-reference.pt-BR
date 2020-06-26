@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
+    summary: Representa a regra do formato condicional superior/inferior.
+    name: ExcelScript.ConditionalTopBottomRule
+    fullName: ExcelScript.ConditionalTopBottomRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+      - 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+    summary: A classificação entre 1 e 1000 para classificações numéricas ou 1 e 100 para classificações percentuais.
+    name: rank
+    fullName: rank
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rank: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+    summary: Formatar valores com base na classificação superior ou inferior.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalTopBottomCriterionType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
+    name: ConditionalTopBottomCriterionType
+    fullName: ExcelScript.ConditionalTopBottomCriterionType

@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineCollection:interface'
+    summary: Representa uma coleção de linhas de tendência de gráfico.
+    name: Excel.ChartTrendlineCollection
+    fullName: Excel.ChartTrendlineCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+    summary: Adiciona uma nova linha de tendência ao conjunto de linha de tendência.
+    name: add(type)
+    fullName: add(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type?: ChartTrendlineType): ChartTrendline;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendline:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let seriesCollection = sheet.charts.getItemAt(0).series;
+
+               // Add a trendline.  
+              seriesCollection.getItemAt(0).trendlines.add("Linear");
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: type
+          description: Especifica o tipo de tendência. O valor padrão é "linear". Consulte Excel. ChartTrendline para obter detalhes.
+          type:
+            - 'excel!Excel.ChartTrendlineType:enum'
+  - uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
+    summary: 'Obtém o objeto da linha de tendência por índice, que é a ordem de inserção na matriz de itens.'
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): ChartTrendline;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendline:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Representa a ordem de inserção na matriz de itens.
+          type:
+            - number
+  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartTrendline:interface'
+    name: ChartTrendline
+    fullName: Excel.ChartTrendline
+  - uid: 'excel!Excel.ChartTrendlineType:enum'
+    name: ChartTrendlineType
+    fullName: Excel.ChartTrendlineType

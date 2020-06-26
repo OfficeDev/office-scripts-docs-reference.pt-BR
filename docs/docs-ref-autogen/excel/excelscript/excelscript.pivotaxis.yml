@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotAxis:enum'
+    summary: Representa o eixo de onde obter o PivotItems.
+    name: ExcelScript.PivotAxis
+    fullName: ExcelScript.PivotAxis
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotAxis.column:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.data:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.row:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.column:member'
+    summary: O eixo das colunas.
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.data:member'
+    summary: O eixo dos dados.
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+    summary: O eixo do filtro.
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.row:member'
+    summary: O eixo da linha.
+    name: row
+    fullName: row
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+    summary: O eixo ou a região é desconhecido ou não tem suporte.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

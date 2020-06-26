@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
+    summary: 'Representa a subcadeia de caracteres em objetos relacionados ao gráfico que contém texto, como objeto ChartTitle, objeto ChartAxisTitle, etc.'
+    name: ExcelScript.ChartFormatString
+    fullName: ExcelScript.ChartFormatString
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    summary: 'Representa os atributos de fonte, como nome da fonte, tamanho da fonte, cor etc. do objeto de caracteres do gráfico.'
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFont:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    name: ChartFont
+    fullName: ExcelScript.ChartFont

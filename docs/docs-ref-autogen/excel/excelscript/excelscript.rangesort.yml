@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
+    summary: Gerencia operações de classificação em objetos Range.
+    name: ExcelScript.RangeSort
+    fullName: ExcelScript.RangeSort
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeSort#apply:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeSort#apply:member(1)'
+    summary: Executa uma operação de classificação.
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: A lista de condições para a classificação.
+          type:
+            - 'ExcelScript!ExcelScript.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.
+          type:
+            - boolean
+        - id: hasHeaders
+          description: Opcional. Se o intervalo tem um cabeçalho.
+          type:
+            - boolean
+        - id: orientation
+          description: Opcional. Se a operação classifica linhas ou colunas.
+          type:
+            - 'ExcelScript!ExcelScript.SortOrientation:enum'
+        - id: method
+          description: Opcional. O método de ordenação usado pelos caracteres chineses.
+          type:
+            - 'ExcelScript!ExcelScript.SortMethod:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.RangeSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'ExcelScript.SortField[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SortField:interface'
+        name: SortField
+        fullName: ExcelScript.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.SortOrientation:enum'
+    name: SortOrientation
+    fullName: ExcelScript.SortOrientation
+  - uid: 'ExcelScript!ExcelScript.SortMethod:enum'
+    name: SortMethod
+    fullName: ExcelScript.SortMethod

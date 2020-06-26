@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PictureFormat:enum'
+    summary: O formato da imagem.
+    name: Excel.PictureFormat
+    fullName: Excel.PictureFormat
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.PictureFormat.bmp:member'
+      - 'excel!Excel.PictureFormat.gif:member'
+      - 'excel!Excel.PictureFormat.jpeg:member'
+      - 'excel!Excel.PictureFormat.png:member'
+      - 'excel!Excel.PictureFormat.svg:member'
+      - 'excel!Excel.PictureFormat.unknown:member'
+  - uid: 'excel!Excel.PictureFormat.bmp:member'
+    summary: Imagem de bitmap.
+    name: bmp
+    fullName: bmp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"bmp"'
+  - uid: 'excel!Excel.PictureFormat.gif:member'
+    summary: Formato GIF.
+    name: gif
+    fullName: gif
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"gif"'
+  - uid: 'excel!Excel.PictureFormat.jpeg:member'
+    summary: Grupo de especialistas geográficos conjuntos.
+    name: jpeg
+    fullName: jpeg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"jpeg"'
+  - uid: 'excel!Excel.PictureFormat.png:member'
+    summary: Portable Network Graphics.
+    name: png
+    fullName: png
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"png"'
+  - uid: 'excel!Excel.PictureFormat.svg:member'
+    summary: Gráfico vetorial escalonável.
+    name: svg
+    fullName: svg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"svg"'
+  - uid: 'excel!Excel.PictureFormat.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"unknown"'

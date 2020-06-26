@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitleFormat:interface'
+    summary: Representa a formatação do título do eixo do gráfico.
+    name: Excel.ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitleFormat#border:member'
+      - 'excel!Excel.ChartAxisTitleFormat#fill:member'
+      - 'excel!Excel.ChartAxisTitleFormat#font:member'
+      - 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#border:member'
+    summary: 'Especifica o formato de borda do título do eixo do gráfico, que inclui cores, LineStyle e Weight.'
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:interface'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#fill:member'
+    summary: Especifica a formatação de preenchimento do título do eixo do gráfico.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
+    summary: 'Especifica os atributos de fonte do título do eixo do gráfico, como nome da fonte, tamanho da fonte, cor etc. do objeto title do eixo do gráfico.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartBorder:interface'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

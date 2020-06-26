@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
+    summary: Representa um objeto que contém valores e tipos de um item nomeado.
+    name: ExcelScript.NamedItemArrayValues
+    fullName: ExcelScript.NamedItemArrayValues
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)'
+  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)'
+    summary: Representa os tipos de cada item na matriz de itens nomeados
+    name: getTypes()
+    fullName: getTypes()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTypes(): RangeValueType[][];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)'
+    summary: Representa os valores de cada item na matriz de itens nomeados.
+    name: getValues()
+    fullName: getValues()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValues(): any[][];'
+      return:
+        type:
+          - 'any[][]'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes~0:complex'
+    name: 'RangeValueType[][]'
+    fullName: 'ExcelScript.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
+        name: RangeValueType
+        fullName: ExcelScript.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

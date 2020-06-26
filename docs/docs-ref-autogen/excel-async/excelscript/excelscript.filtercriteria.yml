@@ -1,0 +1,158 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    summary: Representa os critérios de filtragem aplicados a uma coluna.
+    name: Excel.FilterCriteria
+    fullName: Excel.FilterCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FilterCriteria#color:member'
+      - 'excel!Excel.FilterCriteria#criterion1:member'
+      - 'excel!Excel.FilterCriteria#criterion2:member'
+      - 'excel!Excel.FilterCriteria#dynamicCriteria:member'
+      - 'excel!Excel.FilterCriteria#filterOn:member'
+      - 'excel!Excel.FilterCriteria#icon:member'
+      - 'excel!Excel.FilterCriteria#operator:member'
+      - 'excel!Excel.FilterCriteria#subField:member'
+      - 'excel!Excel.FilterCriteria#values:member'
+  - uid: 'excel!Excel.FilterCriteria#color:member'
+    summary: A cadeia HTML de cor usada para filtrar células. Usada com a filtragem "cellColor" e "fontColor".
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#criterion1:member'
+    summary: |-
+      O primeiro critério usado para filtrar os dados. Usado como um operador no caso de filtragem "custom". Por exemplo "<!-- -->&gt;<!-- -->50 "para número maior que 50 ou" = * s "para valores que terminam em" s ".
+
+      Usada como um número no caso de itens superiores/inferiores/percentuais (por exemplo, "5" para os cinco itens principais se o filtro for definido como "topItems").
+    name: criterion1
+    fullName: criterion1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion1?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#criterion2:member'
+    summary: O segundo critério usado para filtrar os dados. Só é usado como um operador no caso de filtragem "custom".
+    name: criterion2
+    fullName: criterion2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion2?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#dynamicCriteria:member'
+    summary: Os critérios dinâmicos do conjunto Excel.DynamicFilterCriteria a serem aplicados nessa coluna. Usados com a filtragem "dynamic".
+    name: dynamicCriteria
+    fullName: dynamicCriteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dynamicCriteria?: DynamicFilterCriteria;'
+      return:
+        type:
+          - 'excel!Excel.DynamicFilterCriteria:enum'
+  - uid: 'excel!Excel.FilterCriteria#filterOn:member'
+    summary: A propriedade usada pelo filtro para determinar se os valores devem ficar visíveis.
+    name: filterOn
+    fullName: filterOn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filterOn: FilterOn;'
+      return:
+        type:
+          - 'excel!Excel.FilterOn:enum'
+  - uid: 'excel!Excel.FilterCriteria#icon:member'
+    summary: O ícone usado para filtrar células. Usado com a filtragem "icon".
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FilterCriteria#operator:member'
+    summary: O operador usado para combinar o critério 1 e 2 ao usar a filtragem "custom".
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator?: FilterOperator;'
+      return:
+        type:
+          - 'excel!Excel.FilterOperator:enum'
+  - uid: 'excel!Excel.FilterCriteria#subField:member'
+    summary: A propriedade usada pelo filtro para realizar a filtragem avançada em richvalues.
+    name: subField
+    fullName: subField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#values:member'
+    summary: O conjunto de valores a serem usados como parte da filtragem "values".
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: Array<string | FilterDatetime>;'
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria#values~0:complex'
+references:
+  - uid: 'excel!Excel.DynamicFilterCriteria:enum'
+    name: DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
+  - uid: 'excel!Excel.FilterOn:enum'
+    name: FilterOn
+    fullName: Excel.FilterOn
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon
+    fullName: Excel.Icon
+  - uid: 'excel!Excel.FilterOperator:enum'
+    name: FilterOperator
+    fullName: Excel.FilterOperator
+  - uid: 'excel!Excel.FilterCriteria#values~0:complex'
+    name: Array<string | FilterDatetime>
+    fullName: Array<string | Excel.FilterDatetime>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!Excel.FilterDatetime:interface'
+        name: FilterDatetime
+        fullName: Excel.FilterDatetime
+      - name: '>'
+        fullName: '>'

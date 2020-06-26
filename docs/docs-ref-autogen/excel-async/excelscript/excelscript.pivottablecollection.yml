@@ -1,0 +1,136 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableCollection:interface'
+    summary: Representa uma coleção de todas as Tabelas Dinâmicas que fazem parte da pasta de trabalho ou planilha.
+    name: Excel.PivotTableCollection
+    fullName: Excel.PivotTableCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableCollection#load:member(1)'
+      - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+  - uid: 'excel!Excel.PivotTableCollection#add:member(1)'
+    summary: Adicione uma tabela dinâmica com base nos dados de origem especificados e insira-a na célula superior esquerda do intervalo de destino.
+    name: 'add(name, source, destination)'
+    fullName: 'add(name, source, destination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
+              let rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
+              context.workbook.worksheets.getItem("Pivot").pivotTables.add("Farm Sales", rangeToAnalyze, rangeToPlacePivot);
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: name
+          description: O nome da nova tabela dinâmica.
+          type:
+            - string
+        - id: source
+          description: 'Os dados de origem da nova tabela dinâmica, podem ser um intervalo (ou um endereço de cadeia de caracteres incluindo o nome da planilha) ou uma tabela.'
+          type:
+            - 'excel!Excel.PivotTableCollection#add~0:complex'
+        - id: destination
+          description: A célula no canto superior esquerdo do intervalo de destino do relatório de tabela dinâmica (o intervalo na planilha em que o relatório resultante será inserido).
+          type:
+            - 'excel!Excel.PivotTableCollection#add~1:complex'
+  - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtém uma Tabela Dinâmica por nome. Se a tabela dinâmica não existir, retornará um objeto null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nome da Tabela Dinâmica a ser recuperada.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableCollection#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+    summary: Atualiza todas as tabelas dinâmicas da coleção.
+    name: refreshAll()
+    fullName: refreshAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.PivotTable:interface'
+    name: PivotTable
+    fullName: Excel.PivotTable
+  - uid: 'excel!Excel.PivotTableCollection#add~0:complex'
+    name: Range | string | Table
+    fullName: Excel.Range | string | Excel.Table
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string | '
+        fullName: ' | string | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.PivotTableCollection#add~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string

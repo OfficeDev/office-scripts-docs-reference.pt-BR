@@ -1,0 +1,127 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.HeaderFooterGroup:interface'
+    name: Excel.HeaderFooterGroup
+    fullName: Excel.HeaderFooterGroup
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
+      - 'excel!Excel.HeaderFooterGroup#evenPages:member'
+      - 'excel!Excel.HeaderFooterGroup#firstPage:member'
+      - 'excel!Excel.HeaderFooterGroup#load:member(1)'
+      - 'excel!Excel.HeaderFooterGroup#oddPages:member'
+      - 'excel!Excel.HeaderFooterGroup#state:member'
+      - 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
+      - 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
+  - uid: 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
+    summary: 'O cabeçalho/rodapé geral, usado em todas as páginas, a menos que seja especificada a página par/ímpar ou a primeira página.'
+    name: defaultForAllPages
+    fullName: defaultForAllPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly defaultForAllPages: HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:interface'
+  - uid: 'excel!Excel.HeaderFooterGroup#evenPages:member'
+    summary: 'O cabeçalho/rodapé a ser usado para páginas pares, o cabeçalho/rodapé ímpar deve ser especificado para páginas ímpares.'
+    name: evenPages
+    fullName: evenPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly evenPages: HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:interface'
+  - uid: 'excel!Excel.HeaderFooterGroup#firstPage:member'
+    summary: 'O cabeçalho/rodapé da primeira página. Para todas as outras páginas, geral ou par/ímpar é usado.'
+    name: firstPage
+    fullName: firstPage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly firstPage: HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:interface'
+  - uid: 'excel!Excel.HeaderFooterGroup#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.HeaderFooterGroup#oddPages:member'
+    summary: 'O cabeçalho/rodapé a ser usado para páginas ímpares, o cabeçalho/rodapé par deve ser especificado para páginas pares.'
+    name: oddPages
+    fullName: oddPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly oddPages: HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:interface'
+  - uid: 'excel!Excel.HeaderFooterGroup#state:member'
+    summary: 'O estado pelo qual os cabeçalhos/rodapés são definidos. Para saber detalhes, confira Excel.HeaderFooterState.'
+    name: state
+    fullName: state
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'state: HeaderFooterState;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooterState:enum'
+  - uid: 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
+    summary: Obtém ou define um sinalizador indicando se os cabeçalhos/rodapés estão alinhados com as margens da página que foram definidas nas opções de layout de página da planilha.
+    name: useSheetMargins
+    fullName: useSheetMargins
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSheetMargins: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
+    summary: Obtém ou define um sinalizador que indica se os cabeçalhos/rodapés devem ser dimensionados pela escala de porcentagem da página definida nas opções de layout de página da planilha.
+    name: useSheetScale
+    fullName: useSheetScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSheetScale: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.HeaderFooter:interface'
+    name: HeaderFooter
+    fullName: Excel.HeaderFooter
+  - uid: 'excel!Excel.HeaderFooterState:enum'
+    name: HeaderFooterState
+    fullName: Excel.HeaderFooterState

@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection:interface'
+    summary: Representa a proteção de um objeto sheet.
+    name: ExcelScript.WorksheetProtection
+    fullName: ExcelScript.WorksheetProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
+    summary: Especifica as opções de proteção da planilha.
+    name: getOptions()
+    fullName: getOptions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOptions(): WorksheetProtectionOptions;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
+    summary: Especifica se a planilha está protegida.
+    name: getProtected()
+    fullName: getProtected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
+    summary: Protege uma planilha. Falhará se a planilha já tiver sido protegida.
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: Opcional. Opções de proteção da planilha.
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+        - id: password
+          description: Opcional. Senha de proteção da planilha.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
+    summary: Desprotege uma planilha.
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: Senha de proteção para a planilha.
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: ExcelScript.WorksheetProtectionOptions

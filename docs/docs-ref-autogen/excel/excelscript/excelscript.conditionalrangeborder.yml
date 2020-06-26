@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+    summary: Representa a borda de um objeto.
+    name: ExcelScript.ConditionalRangeBorder
+    fullName: ExcelScript.ConditionalRangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)'
+    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja").'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
+    summary: Valor constante que indica o lado específico da borda. Consulte Excel. ConditionalRangeBorderIndex para obter detalhes.
+    name: getSideIndex()
+    fullName: getSideIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSideIndex(): ConditionalRangeBorderIndex;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
+    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte Excel. BorderLineStyle para obter detalhes.
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): ConditionalRangeBorderLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
+    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja").'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
+    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte Excel. BorderLineStyle para obter detalhes.
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: ConditionalRangeBorderLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: ExcelScript.ConditionalRangeBorderIndex
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
+    name: ConditionalRangeBorderLineStyle
+    fullName: ExcelScript.ConditionalRangeBorderLineStyle

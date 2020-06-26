@@ -1,0 +1,253 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+    summary: Representa o Excel PivotField.
+    name: ExcelScript.PivotField
+    fullName: ExcelScript.PivotField
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
+    summary: ID do PivotField..
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
+    summary: Retorna PivotFields associados ao PivotField.
+    name: getItems()
+    fullName: getItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItems(): PivotItem[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
+    summary: Nome do PivotField.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
+    summary: 'Obtém um PivotItem pelo nome. Se o PivotItem não existir, retornará um objeto NULL.'
+    name: getPivotItem(name)
+    fullName: getPivotItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotItem(name: string): PivotItem | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Nome do PivotItem a ser recuperado.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
+    summary: Determina se deseja mostrar todos os itens de PivotField.
+    name: getShowAllItems()
+    fullName: getShowAllItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowAllItems(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+    summary: Subtotais de PivotField.
+    name: getSubtotals()
+    fullName: getSubtotals()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubtotals(): Subtotals;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Subtotals:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
+    summary: Nome do PivotField.
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
+    summary: Determina se deseja mostrar todos os itens de PivotField.
+    name: setShowAllItems(showAllItems)
+    fullName: setShowAllItems(showAllItems)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowAllItems(showAllItems: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showAllItems
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
+    summary: Subtotais de PivotField.
+    name: setSubtotals(subtotals)
+    fullName: setSubtotals(subtotals)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubtotals(subtotals: Subtotals): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subtotals
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.Subtotals:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
+    summary: 'Classifica o PivotField. Se um DataPivotHierarchy for especificado, a classificação será aplicada com base nele, se a classificação não for baseada no campo PivotField.'
+    name: sortByLabels(sortBy)
+    fullName: sortByLabels(sortBy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: Especifica se a classificação é feita em ordem crescente ou decrescente.
+          type:
+            - 'ExcelScript!ExcelScript.SortBy:enum'
+  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+    summary: Classifica o Campo dinâmico por valores especificados em um determinado escopo. O escopo define quais valores específicos serão usados para classificar quando houver vários valores do mesmo DataPivotHierarchy.
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        sortByValues(
+                    sortBy: SortBy,
+                    valuesHierarchy: DataPivotHierarchy,
+                    pivotItemScope?: Array<PivotItem | string>
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: Especifica se a classificação é feita em ordem crescente ou decrescente.
+          type:
+            - 'ExcelScript!ExcelScript.SortBy:enum'
+        - id: valuesHierarchy
+          description: Especifica a hierarquia de valores no eixo dos dados a ser usado para a classificação.
+          type:
+            - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+        - id: pivotItemScope
+          description: 'Os itens que devem ser usados para o escopo da classificação. Eles serão os itens que compõem a linha ou coluna que você deseja classificar. Se uma cadeia de caracteres é usada em vez de um PivotItem, a cadeia de caracteres representa a ID do PivotItem. Se não houver nenhum item além da hierarquia de dados no eixo que você deseja classificar, isso poderá ficar vazio.'
+          type:
+            - 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
+    name: 'PivotItem[]'
+    fullName: 'ExcelScript.PivotItem[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
+    name: PivotItem | undefined
+    fullName: ExcelScript.PivotItem | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Subtotals:interface'
+    name: Subtotals
+    fullName: ExcelScript.Subtotals
+  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
+    name: SortBy
+    fullName: ExcelScript.SortBy
+  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: ExcelScript.DataPivotHierarchy
+  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<ExcelScript.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: |2-
+           | string>
+                  
+        fullName: |2-
+           | string>

@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitle:interface'
+    summary: Representa o título de um eixo do gráfico.
+    name: Excel.ChartAxisTitle
+    fullName: Excel.ChartAxisTitle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitle#format:member'
+      - 'excel!Excel.ChartAxisTitle#load:member(1)'
+      - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+      - 'excel!Excel.ChartAxisTitle#text:member'
+      - 'excel!Excel.ChartAxisTitle#textOrientation:member'
+      - 'excel!Excel.ChartAxisTitle#visible:member'
+  - uid: 'excel!Excel.ChartAxisTitle#format:member'
+    summary: Especifica a formatação do título do eixo do gráfico.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartAxisTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:interface'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+    summary: Um valor de cadeia de caracteres que representa a fórmula do título do eixo do gráfico usando a notação no estilo A1.
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: uma cadeia de caracteres que apresenta a fórmula a ser definida
+          type:
+            - string
+  - uid: 'excel!Excel.ChartAxisTitle#text:member'
+    summary: Especifica o título do eixo.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartAxisTitle#textOrientation:member'
+    summary: Especifica o ângulo no qual o texto é orientado para o título do eixo do gráfico. O valor deve ser um inteiro de-90 a 90 ou o inteiro 180 para texto orientado verticalmente.
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxisTitle#visible:member'
+    summary: Especifica se o título do eixo é visibile.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartAxisTitleFormat:interface'
+    name: ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat

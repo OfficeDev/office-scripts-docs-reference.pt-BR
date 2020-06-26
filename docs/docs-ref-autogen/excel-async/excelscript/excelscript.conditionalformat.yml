@@ -1,0 +1,294 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormat:interface'
+    summary: 'Um objeto que encapsula o intervalo, o formato, a regra e outras propriedades de um formato condicional. Para saber mais sobre o modelo de objeto de formatação condicional, leia [aplicar formatação condicional a intervalos do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.'
+    name: Excel.ConditionalFormat
+    fullName: Excel.ConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#customOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#delete:member(1)'
+      - 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.ConditionalFormat#getRanges:member(1)'
+      - 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#id:member'
+      - 'excel!Excel.ConditionalFormat#load:member(1)'
+      - 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#priority:member'
+      - 'excel!Excel.ConditionalFormat#stopIfTrue:member'
+      - 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#type:member'
+  - uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
+    summary: 'Retorna as propriedades do formato condicional do valor da célula se o formato condicional atual for um tipo Cellvalue. Por exemplo, para formatar todas as células entre 5 e 10.'
+    name: cellValueOrNullObject
+    fullName: cellValueOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellValueOrNullObject: CellValueConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CellValueConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
+    summary: Retorna as propriedades de formato condicional ColorScale se o formato condicional atual for um tipo ColorScale.
+    name: colorScaleOrNullObject
+    fullName: colorScaleOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly colorScaleOrNullObject: ColorScaleConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ColorScaleConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
+    summary: Retorna as propriedades de formato condicional personalizado se o formato condicional atual for um tipo personalizado.
+    name: customOrNullObject
+    fullName: customOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customOrNullObject: CustomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CustomConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
+    summary: Retorna as propriedades da barra de dados se o formato condicional atual for uma barra de dados.
+    name: dataBarOrNullObject
+    fullName: dataBarOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataBarOrNullObject: DataBarConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#delete:member(1)'
+    summary: Exclui esse formato condicional.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
+    summary: 'Retorna o intervalo ao qual o formato conditonal é aplicado, ou um objeto NULL, se o formato condicional for aplicado a vários intervalos.'
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.ConditionalFormat#getRanges:member(1)'
+    summary: 'Retorna o RangeAreas, compreendendo um ou mais intervalos retangulares, ao qual o formato condicional é aplicado.'
+    name: getRanges()
+    fullName: getRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRanges(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+  - uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
+    summary: Retorna as propriedades de formato condicional do Iconset se o formato condicional atual for um tipo de Íconeset.
+    name: iconSetOrNullObject
+    fullName: iconSetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iconSetOrNullObject: IconSetConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#id:member'
+    summary: A prioridade do formato condicional na atual ConditionalFormatCollection.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalFormat#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
+    summary: Retorna o formato condicional de critérios predefinidos. Confira Excel. PresetCriteriaConditionalFormat para obter mais detalhes.
+    name: presetOrNullObject
+    fullName: presetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly presetOrNullObject: PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.PresetCriteriaConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#priority:member'
+    summary: 'A prioridade (ou índice) dentro da coleção de formato condicional em que esse formato condicional existe atualmente no. Alterar isso também altera as prioridades de formatos condicionais, para permitir uma ordem de prioridade contígua. Use uma prioridade negativa para começar de trás. As prioridades maiores do que os limites serão obtidas e definidas com a prioridade máxima (ou mínima se negativa). Observe também que, se você alterar a prioridade, será necessário buscar novamente uma nova cópia do objeto nesse novo local de prioridade, se quiser fazer outras alterações.'
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ConditionalFormat#stopIfTrue:member'
+    summary: 'Se as condições desse formato condicional forem atendidas, nenhum formato de prioridade mais baixa terá efeito nessa célula. Nulo em databars, conjuntos de ícones e colorscales como não há o conceito de StopIfTrue para estes'
+    name: stopIfTrue
+    fullName: stopIfTrue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'stopIfTrue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
+    summary: 'Retorna as propriedades de formato condicional de texto específico se o formato condicional atual for um tipo de texto. Por exemplo, para formatar células que correspondem à palavra "text".'
+    name: textComparisonOrNullObject
+    fullName: textComparisonOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textComparisonOrNullObject: TextConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
+    summary: Retorna as propriedades de formato condicional superior/inferior se o formato condicional atual for um tipo TopBottom. Por exemplo para formatar os primeiros 10% ou 10 itens inferiores.
+    name: topBottomOrNullObject
+    fullName: topBottomOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly topBottomOrNullObject: TopBottomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TopBottomConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#type:member'
+    summary: Um tipo de formato condicional. Apenas um pode ser definido por vez.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: ConditionalFormatType;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatType:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let worksheetRange = sheet.getRange();
+              worksheetRange.conditionalFormats.load("type");
+
+              await context.sync();
+
+              let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+              worksheetRange.conditionalFormats.items.forEach(item => {
+                  cfRangePairs.push({
+                      cf: item,
+                      range: item.getRange().load("address")
+                  });
+              });
+
+              await context.sync();
+
+              if (cfRangePairs.length > 0) {
+                  cfRangePairs.forEach(item => {
+                      console.log(item.cf.type);
+                  });
+              } else {
+                  console.log("No conditional formats applied.");
+              }
+          }
+          ```
+references:
+  - uid: 'excel!Excel.CellValueConditionalFormat:interface'
+    name: CellValueConditionalFormat
+    fullName: Excel.CellValueConditionalFormat
+  - uid: 'excel!Excel.ColorScaleConditionalFormat:interface'
+    name: ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
+  - uid: 'excel!Excel.CustomConditionalFormat:interface'
+    name: CustomConditionalFormat
+    fullName: Excel.CustomConditionalFormat
+  - uid: 'excel!Excel.DataBarConditionalFormat:interface'
+    name: DataBarConditionalFormat
+    fullName: Excel.DataBarConditionalFormat
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.RangeAreas:interface'
+    name: RangeAreas
+    fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.IconSetConditionalFormat:interface'
+    name: IconSetConditionalFormat
+    fullName: Excel.IconSetConditionalFormat
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat:interface'
+    name: PresetCriteriaConditionalFormat
+    fullName: Excel.PresetCriteriaConditionalFormat
+  - uid: 'excel!Excel.TextConditionalFormat:interface'
+    name: TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
+  - uid: 'excel!Excel.TopBottomConditionalFormat:interface'
+    name: TopBottomConditionalFormat
+    fullName: Excel.TopBottomConditionalFormat
+  - uid: 'excel!Excel.ConditionalFormatType:enum'
+    name: ConditionalFormatType
+    fullName: Excel.ConditionalFormatType
