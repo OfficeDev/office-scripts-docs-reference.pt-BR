@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#load:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 'Opcional, o padrão é false. Se true, acrescentará números ao nome para torná-lo exclusivo, se necessário.'
           type:
             - boolean
+  - uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
+    summary: Obtém o número de estilos de PivotTable na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
     summary: Obtém a Tabela Dinâmica padrão para o escopo do objeto pai.
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.PivotTableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
+    summary: Obtém um PivotTableStyle por nome.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nome do PivotTable a ser recuperado.
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém um PivotTableStyle por nome. Se PivotTableStyle não existir, retornará um objeto null.'
     name: getItemOrNullObject(name)

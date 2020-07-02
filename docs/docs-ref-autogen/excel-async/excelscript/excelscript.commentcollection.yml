@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
+      - 'excel!Excel.CommentCollection#getCount:member(1)'
       - 'excel!Excel.CommentCollection#getItem:member(1)'
+      - 'excel!Excel.CommentCollection#getItemAt:member(1)'
       - 'excel!Excel.CommentCollection#getItemByCell:member(1)'
       - 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
       - 'excel!Excel.CommentCollection#load:member(1)'
@@ -58,6 +60,19 @@ items:
           description: Opcional. O tipo de conteúdo contido no comentário. O valor padrão é enum`ContentType.Plain`<!-- -->.
           type:
             - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentCollection#getCount:member(1)'
+    summary: Obtém o número de comentários na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: Obtém um comentário da coleção com base em seu ID.
     name: getItem(commentId)
@@ -76,6 +91,24 @@ items:
           description: O identificador para o comentário.
           type:
             - string
+  - uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
+    summary: Obtém um comentário da coleção com base em sua posição.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+          type:
+            - number
   - uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     summary: Obtém o comentário da célula especificada.
     name: getItemByCell(cellAddress)

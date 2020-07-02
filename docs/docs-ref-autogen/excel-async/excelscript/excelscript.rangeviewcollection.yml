@@ -9,7 +9,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeViewCollection#getCount:member(1)'
+      - 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeViewCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeViewCollection#getCount:member(1)'
+    summary: Obtém o número de objetos RangeView na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
+    summary: Obtém uma linha RangeView por meio de seu índice. Indexado com zero.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeView;'
+      return:
+        type:
+          - 'excel!Excel.RangeView:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Índice de linha visível.
+          type:
+            - number
   - uid: 'excel!Excel.RangeViewCollection#load:member(1)'
     summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
     name: load(propertyNames)
@@ -28,3 +61,7 @@ items:
           description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RangeView:interface'
+    name: RangeView
+    fullName: Excel.RangeView

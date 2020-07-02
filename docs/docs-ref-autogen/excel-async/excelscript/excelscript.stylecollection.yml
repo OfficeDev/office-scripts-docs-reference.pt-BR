@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#getCount:member(1)'
       - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#getItemAt:member(1)'
       - 'excel!Excel.StyleCollection#load:member(1)'
   - uid: 'excel!Excel.StyleCollection#add:member(1)'
     summary: Adiciona um novo estilo para o conjunto.
@@ -56,6 +58,19 @@ items:
           description: Nome do estilo a ser adicionado.
           type:
             - string
+  - uid: 'excel!Excel.StyleCollection#getCount:member(1)'
+    summary: Obtém o número de estilos na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
     summary: Obtém um estilo por nome.
     name: getItem(name)
@@ -100,6 +115,24 @@ items:
           description: Nome do estilo a ser recuperado.
           type:
             - string
+  - uid: 'excel!Excel.StyleCollection#getItemAt:member(1)'
+    summary: Obtém um estilo com base em sua posição na coleção.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice do objeto Style a ser recuperado. Indexados com zero.
+          type:
+            - number
   - uid: 'excel!Excel.StyleCollection#load:member(1)'
     summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
     name: load(propertyNames)

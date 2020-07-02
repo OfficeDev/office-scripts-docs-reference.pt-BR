@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
   - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
     summary: Adiciona um novo formato condicional à coleção na prioridade First/Top.
@@ -79,6 +81,19 @@ items:
               $(".conditional-formats").hide();
           }
           ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
+    summary: Retorna o número de formatos condicionais na pasta de trabalho.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
     summary: Retorna um formato condicional para o ID fornecido.
     name: getItem(id)
@@ -97,6 +112,24 @@ items:
           description: A ID da formatação condicional.
           type:
             - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
+    summary: Retorna um formato condicional no índice fornecido.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Índice dos formatos condicionais a serem recuperados.
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
     summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
     name: load(propertyNames)

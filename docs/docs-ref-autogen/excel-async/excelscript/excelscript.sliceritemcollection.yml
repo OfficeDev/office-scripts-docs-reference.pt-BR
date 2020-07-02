@@ -9,8 +9,60 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+    summary: Retorna o número de itens da segmentação de dados na segmentação de dados.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+    summary: Obtém um objeto de item da segmentação de dados usando sua chave ou nome.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: A chave ou o nome do item de segmentação de itens.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
+    summary: Obtém um item da segmentação de dados com base em sua posição na coleção.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+          type:
+            - number
   - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém um item da segmentação de dados usando sua chave ou nome. Se o item da segmentação de dados não existir, retornará um objeto null.'
     name: getItemOrNullObject(key)

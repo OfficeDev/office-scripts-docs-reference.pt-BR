@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableCollection#load:member(1)'
       - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
@@ -57,6 +59,37 @@ items:
           description: A célula no canto superior esquerdo do intervalo de destino do relatório de tabela dinâmica (o intervalo na planilha em que o relatório resultante será inserido).
           type:
             - 'excel!Excel.PivotTableCollection#add~1:complex'
+  - uid: 'excel!Excel.PivotTableCollection#getCount:member(1)'
+    summary: Obtém o número de tabelas dinâmicas na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotTableCollection#getItem:member(1)'
+    summary: Obtém uma Tabela Dinâmica por nome.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nome da Tabela Dinâmica a ser recuperada.
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém uma Tabela Dinâmica por nome. Se a tabela dinâmica não existir, retornará um objeto null.'
     name: getItemOrNullObject(name)

@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.DataValidation#clear:member(1)'
       - 'excel!Excel.DataValidation#errorAlert:member'
+      - 'excel!Excel.DataValidation#getInvalidCells:member(1)'
       - 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
       - 'excel!Excel.DataValidation#ignoreBlanks:member'
       - 'excel!Excel.DataValidation#load:member(1)'
@@ -77,6 +78,19 @@ items:
               await context.sync();
           }
           ```
+  - uid: 'excel!Excel.DataValidation#getInvalidCells:member(1)'
+    summary: 'Retorna um RangeAreas, que consiste em um ou mais intervalos retangulares, com valores inválidos de célula. Se todos os valores de célula forem válidos, essa função gerará um erro ItemNotFound.'
+    name: getInvalidCells()
+    fullName: getInvalidCells()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInvalidCells(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
   - uid: 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
     summary: 'Retorna um RangeAreas, que consiste em um ou mais intervalos retangulares, com valores inválidos de célula. Se todos os valores de célula forem válidos, essa função retornará null.'
     name: getInvalidCellsOrNullObject()

@@ -17,14 +17,18 @@ items:
       - 'excel!Excel.Worksheet#copy:member(1)'
       - 'excel!Excel.Worksheet#delete:member(1)'
       - 'excel!Excel.Worksheet#enableCalculation:member'
+      - 'excel!Excel.Worksheet#findAll:member(1)'
       - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#freezePanes:member'
       - 'excel!Excel.Worksheet#getCell:member(1)'
+      - 'excel!Excel.Worksheet#getNext:member(1)'
       - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getPrevious:member(1)'
       - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#getRange:member(1)'
       - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
       - 'excel!Excel.Worksheet#getRanges:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
       - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
       - 'excel!Excel.Worksheet#id:member'
@@ -198,6 +202,28 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
+    summary: 'Encontra todas as ocorrências de determinada cadeia de caracteres com base nos critérios especificados e as retorna como um objeto RangeAreas, compreendendo um ou mais intervalos retangulares.'
+    name: 'findAll(text, criteria)'
+    fullName: 'findAll(text, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: text
+          description: A cadeia de caracteres a ser localizada.
+          type:
+            - string
+        - id: criteria
+          description: 'Critérios de pesquisa adicionais, incluindo se a pesquisa precisa corresponder à célula inteira ou diferenciar maiúsculas de minúsculas.'
+          type:
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
   - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
     summary: 'Encontra todas as ocorrências de determinada cadeia de caracteres com base nos critérios especificados e as retorna como um objeto RangeAreas, compreendendo um ou mais intervalos retangulares.'
     name: 'findAllOrNullObject(text, criteria)'
@@ -279,6 +305,24 @@ items:
           description: O número da coluna da célula a ser recuperada. Indexado com zero.
           type:
             - number
+  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
+    summary: 'Obtém a planilha que segue esta. Se não houver planilhas após esta, este método gerará um erro.'
+    name: getNext(visibleOnly)
+    fullName: getNext(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Opcional. Se true, só considera planilhas visíveis, ignorando as ocultas.'
+          type:
+            - boolean
   - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
     summary: 'Obtém a planilha que segue esta. Se não houver planilhas após esta, este método retornará um objeto NULL.'
     name: getNextOrNullObject(visibleOnly)
@@ -288,6 +332,24 @@ items:
     type: method
     syntax:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Opcional. Se true, só considera planilhas visíveis, ignorando as ocultas.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
+    summary: 'Obtém a planilha que precede esta. Se não houver planilhas anteriores, este método gerará um erro.'
+    name: getPrevious(visibleOnly)
+    fullName: getPrevious(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
       return:
         type:
           - 'excel!Excel.Worksheet:interface'
@@ -401,6 +463,24 @@ items:
           description: 'Opcional. Uma cadeia de caracteres que contém os endereços ou nomes separados por vírgulas de intervalos individuais. Por exemplo, "a1: B2, A5: B5". Se não for especificado, será retornado um objeto RangeArea para a planilha inteira.'
           type:
             - string
+  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
+    summary: 'O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuída a elas. Se a planilha inteira estiver em branco, essa função retornará a célula superior esquerda (ou seja, *não* gerará um erro).'
+    name: getUsedRange(valuesOnly)
+    fullName: getUsedRange(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 'Opcional. Se true, considera apenas as células com valores como células usadas (ignorando a formatação).'
+          type:
+            - boolean
   - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
     summary: 'The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.'
     name: getUsedRangeOrNullObject(valuesOnly)

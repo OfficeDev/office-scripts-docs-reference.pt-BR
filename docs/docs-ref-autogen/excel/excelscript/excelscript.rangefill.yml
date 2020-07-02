@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 'Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento de intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o padrão tintAndShades não for uniforme, NULL será retornado.'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento de intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o padrão tintAndShades não for uniforme, NULL será retornado.'
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 'Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento de intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o padrão tintAndShades não for uniforme, NULL será retornado.'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento de intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o padrão tintAndShades não for uniforme, NULL será retornado.'
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:
