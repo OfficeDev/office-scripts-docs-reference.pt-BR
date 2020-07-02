@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
       - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
       - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
       - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
@@ -46,6 +48,24 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
         description: ''
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    summary: Obtém o número de planilhas na coleção.
+    name: getCount(visibleOnly)
+    fullName: getCount(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(visibleOnly?: boolean): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Opcional. Se true, só considera planilhas visíveis, ignorando as ocultas.'
+          type:
+            - boolean
   - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     summary: Obtém a primeira planilha na coleção.
     name: getFirst(visibleOnly)
@@ -94,6 +114,24 @@ items:
           description: 'Opcional. Se true, só considera planilhas visíveis, ignorando as ocultas.'
           type:
             - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    summary: Obtém um objeto worksheet usando o Nome ou ID dele.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: O Nome ou ID da planilha.
+          type:
+            - string
   - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém um objeto worksheet usando o Nome ou ID dele. Se a planilha não existir, retornará um objeto null.'
     name: getItemOrNullObject(key)

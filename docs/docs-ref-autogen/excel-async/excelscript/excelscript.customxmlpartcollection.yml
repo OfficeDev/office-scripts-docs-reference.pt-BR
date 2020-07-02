@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
       - 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomXmlPartCollection#load:member(1)'
   - uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
@@ -55,6 +58,55 @@ items:
           description: Conteúdo XML. Deve ser um fragmento XML válido.
           type:
             - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+    summary: Obtém uma nova coleção com escopo de partes XML personalizadas cujos namespaces correspondem ao namespace especificado.
+    name: getByNamespace(namespaceUri)
+    fullName: getByNamespace(namespaceUri)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespace(namespaceUri: string): CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: namespaceUri
+          description: 'Este deve ser um URI de esquema totalmente qualificado; por exemplo, " http://schemas.contoso.com/review/1.0 ".'
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+    summary: Obtém o número de partes CustomXml na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
+    summary: Obtém uma parte XML personalizada com base em sua ID.
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: ID do objeto a ser recuperado.
+          type:
+            - string
   - uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém uma parte XML personalizada com base em sua ID. Se o CustomXmlPart não existir, a propriedade isNull do objeto Return será true.'
     name: getItemOrNullObject(id)
@@ -95,3 +147,6 @@ references:
   - uid: 'excel!Excel.CustomXmlPart:interface'
     name: CustomXmlPart
     fullName: Excel.CustomXmlPart
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
+    name: CustomXmlPartScopedCollection
+    fullName: Excel.CustomXmlPartScopedCollection

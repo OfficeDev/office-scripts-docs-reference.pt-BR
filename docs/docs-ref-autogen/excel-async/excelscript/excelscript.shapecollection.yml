@@ -9,13 +9,34 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ShapeCollection#_GetItem:member(1)'
       - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
       - 'excel!Excel.ShapeCollection#addGroup:member(1)'
       - 'excel!Excel.ShapeCollection#addImage:member(1)'
       - 'excel!Excel.ShapeCollection#addLine:member(1)'
       - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#getCount:member(1)'
       - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.ShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#_GetItem:member(1)'
+    summary: Retorna uma forma identificada pela ID da forma.
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: O identificador da forma.
+          type:
+            - string
   - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
     summary: Adiciona uma forma geométrica à planilha. Retorna um objeto Shape que representa a nova forma.
     name: addGeometricShape(geometricShapeType)
@@ -212,6 +233,19 @@ items:
           description: Representa o texto que será mostrado na caixa de texto criado.
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
+    summary: Retorna o número de formas da planilha.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
     summary: Obtém uma forma usando seu nome ou ID.
     name: getItem(key)
@@ -230,6 +264,24 @@ items:
           description: Nome ou ID da forma a ser recuperada.
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
+    summary: Obtém uma forma usando sua posição na coleção.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: O índice com base em zero da forma a ser recuperada.
+          type:
+            - number
   - uid: 'excel!Excel.ShapeCollection#load:member(1)'
     summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
     name: load(propertyNames)

@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableRow:interface'
+    summary: |-
+      Representa uma linha em uma tabela.
+
+      Observe que, ao contrário de intervalos ou colunas, que serão ajustados se novas linhas/colunas forem adicionadas antes delas, um objeto TableRow representará o local físico da linha da tabela, mas não os dados. Ou seja, se os dados forem classificados ou se novas linhas forem adicionadas, uma linha de tabela continuará a apontar para o índice para o qual foi criada.
+    name: Excel.TableRow
+    fullName: Excel.TableRow
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableRow#delete:member(1)'
+      - 'excel!Excel.TableRow#getRange:member(1)'
+      - 'excel!Excel.TableRow#load:member(1)'
+      - 'excel!Excel.TableRow#values:member'
+  - uid: 'excel!Excel.TableRow#delete:member(1)'
+    summary: Exclui a linha da tabela.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableRow#getRange:member(1)'
+    summary: Retorna o objeto de intervalo associado a toda a linha.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.TableRow#load:member(1)'
+    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableRow#values:member'
+    summary: 'Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.TableStyleCollection#add:member(1)'
+      - 'excel!Excel.TableStyleCollection#getCount:member(1)'
       - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItem:member(1)'
       - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TableStyleCollection#load:member(1)'
       - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 'Opcional, o padrão é false. Se true, acrescentará números ao nome para torná-lo exclusivo, se necessário.'
           type:
             - boolean
+  - uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
+    summary: Obtém o número de estilos de tabelas na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
     summary: Obtém o padrão TableStyle para o escopo do objeto pai.
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.TableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
+    summary: Obtém um TableStyle por nome.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nome do TableStyle a ser recuperado.
+          type:
+            - string
   - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém um TableStyle por nome. Se o TableStyle não existir, retornará um objeto null.'
     name: getItemOrNullObject(name)

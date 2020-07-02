@@ -33,6 +33,7 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
@@ -431,6 +432,24 @@ items:
           description: 'Se CellType for Constants ou formulas, esse argumento será usado para determinar quais tipos de células incluir no resultado. Esses valores podem ser combinados em conjunto para retornar mais de um tipo. O padrão é selecionar todas as constantes ou as fórmulas, independente do tipo.'
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
+    summary: Retorna uma coleção de tabelas com escopo que se sobrepõe a qualquer intervalo neste objeto RangeAreas.
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Se true, retornará somente as tabelas que estão totalmente contidas dentro dos limites do intervalo. O padrão é false.'
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
     summary: 'Retorna o RangeAreas usado que compreende todas as áreas utilizadas de intervalos retangulares individuais no objeto RangeAreas. Se não houver células usadas no RangeAreas, um objeto NULL será retornado.'
     name: getUsedRangeAreas(valuesOnly)
@@ -567,6 +586,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: ExcelScript.SpecialCellValueType
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet

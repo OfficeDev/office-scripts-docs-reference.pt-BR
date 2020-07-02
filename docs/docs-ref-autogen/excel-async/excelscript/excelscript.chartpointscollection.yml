@@ -9,7 +9,53 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ChartPointsCollection#count:member'
+      - 'excel!Excel.ChartPointsCollection#getCount:member(1)'
+      - 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartPointsCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartPointsCollection#count:member'
+    summary: Retorna o número de pontos do gráfico da série.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPointsCollection#getCount:member(1)'
+    summary: Retorna o número de pontos do gráfico da série.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
+    summary: Recupera um ponto com base na respectiva posição dentro da série.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ChartPoint;'
+      return:
+        type:
+          - 'excel!Excel.ChartPoint:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+          type:
+            - number
   - uid: 'excel!Excel.ChartPointsCollection#load:member(1)'
     summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
     name: load(propertyNames)
@@ -28,3 +74,7 @@ items:
           description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartPoint:interface'
+    name: ChartPoint
+    fullName: Excel.ChartPoint

@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerCollection#load:member(1)'
   - uid: 'excel!Excel.SlicerCollection#add:member(1)'
@@ -58,6 +61,55 @@ items:
           description: Opcional. A planilha na qual a nova segmentação de trabalho será criada. Pode ser um objeto Worksheet ou o nome/ID de uma planilha. Esse parâmetro pode ser omitido se a coleção slicer for recuperada da planilha.
           type:
             - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
+    summary: Retorna o número de segmentações de dados na coleção.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
+    summary: Obtém um objeto de segmentação de dados usando seu respectivo nome ou ID.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'O nome ou a ID da segmentação de,.'
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
+    summary: Obtém uma segmentação de dados com base em sua posição na coleção.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+          type:
+            - number
   - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém uma segmentação de dados usando seu nome ou id. Se a ela não existir, retornará um objeto null.'
     name: getItemOrNullObject(key)

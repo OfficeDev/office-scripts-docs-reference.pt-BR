@@ -11,6 +11,8 @@ items:
     children:
       - 'excel!Excel.CustomPropertyCollection#add:member(1)'
       - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
       - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomPropertyCollection#load:member(1)'
   - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
@@ -48,6 +50,37 @@ items:
         type:
           - void
         description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+    summary: Obtém a contagem das propriedades personalizadas.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
+    summary: 'Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Lança se a propriedade personalizada não existe.'
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: A chave que identifica o objeto de propriedade personalizada.
+          type:
+            - string
   - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
     summary: 'Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Retorna um objeto NULL se a propriedade personalizada não existir.'
     name: getItemOrNullObject(key)

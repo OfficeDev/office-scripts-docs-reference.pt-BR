@@ -19,6 +19,7 @@ items:
       - 'excel!Excel.TableColumn#index:member'
       - 'excel!Excel.TableColumn#load:member(1)'
       - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#values:member'
   - uid: 'excel!Excel.TableColumn#delete:member(1)'
     summary: Exclui a coluna da tabela.
     name: delete()
@@ -150,6 +151,18 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.TableColumn#values:member'
+    summary: 'Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
 references:
   - uid: 'excel!Excel.Filter:interface'
     name: Filter

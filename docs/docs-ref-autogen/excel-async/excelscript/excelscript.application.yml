@@ -17,6 +17,8 @@ items:
       - 'excel!Excel.Application#decimalSeparator:member'
       - 'excel!Excel.Application#iterativeCalculation:member'
       - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
       - 'excel!Excel.Application#thousandsSeparator:member'
       - 'excel!Excel.Application#useSystemSeparators:member'
   - uid: 'excel!Excel.Application#calculate:member(1)'
@@ -127,6 +129,35 @@ items:
           description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+    summary: 'Suspends calculation until the next "context.sync()" is called. Once set, it is the developer''s responsibility to re-calc the workbook, to ensure that any dependencies are propagated.'
+    name: suspendApiCalculationUntilNextSync()
+    fullName: suspendApiCalculationUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendApiCalculationUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+    summary: |-
+      Suspende a atualização da tela até que o próximo `context.sync()` seja chamado.
+
+      **Observação**: não chame `suspendScreenUpdatingUntilNextSync` repetidamente (como em um loop). As chamadas repetidas farão com que a janela do Excel fique de piscar.
+    name: suspendScreenUpdatingUntilNextSync()
+    fullName: suspendScreenUpdatingUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendScreenUpdatingUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!Excel.Application#thousandsSeparator:member'
     summary: Obtém a cadeia de caracteres usada para separar grupos de dígitos à esquerda do decimal para valores numéricos. Isso é baseado nas configurações locais do Excel.
     name: thousandsSeparator
