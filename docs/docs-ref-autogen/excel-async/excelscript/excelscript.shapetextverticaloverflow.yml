@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"clip"'
+    numericValue: '"Clip"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
     summary: Oculte texto que não se ajusta verticalmente no quadro de texto e adicione reticências (...) ao final do texto visível.
     name: ellipsis
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ellipsis"'
+    numericValue: '"Ellipsis"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
     summary: 'Permita que o texto exceda o quadro de texto verticalmente (pode ser partindo da parte superior, inferior ou ambas, dependendo do alinhamento do texto).'
     name: overflow
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overflow"'
+    numericValue: '"Overflow"'
