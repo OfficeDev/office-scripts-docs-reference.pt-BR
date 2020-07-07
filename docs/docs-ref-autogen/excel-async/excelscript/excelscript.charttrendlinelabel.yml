@@ -79,10 +79,17 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'horizontalAlignment: ChartTextHorizontalAlignment;'
+      content: |-
+        horizontalAlignment:
+                    | ChartTextHorizontalAlignment
+                    | "Center"
+                    | "Left"
+                    | "Right"
+                    | "Justify"
+                    | "Distributed";
       return:
         type:
-          - 'excel!Excel.ChartTextHorizontalAlignment:enum'
+          - 'excel!Excel.ChartTrendlineLabel#horizontalAlignment~0:complex'
   - uid: 'excel!Excel.ChartTrendlineLabel#left:member'
     summary: 'Representa a distância, em pontos, da borda esquerda do rótulo da linha de tendência do gráfico até a borda esquerda da área do gráfico. Nulo se o rótulo de linha de tendência do gráfico não estiver visível.'
     name: left
@@ -181,10 +188,17 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'verticalAlignment: ChartTextVerticalAlignment;'
+      content: |-
+        verticalAlignment:
+                    | ChartTextVerticalAlignment
+                    | "Center"
+                    | "Bottom"
+                    | "Top"
+                    | "Justify"
+                    | "Distributed";
       return:
         type:
-          - 'excel!Excel.ChartTextVerticalAlignment:enum'
+          - 'excel!Excel.ChartTrendlineLabel#verticalAlignment~0:complex'
   - uid: 'excel!Excel.ChartTrendlineLabel#width:member'
     summary: 'Retorna a largura, em pontos, do rótulo de linha de tendência do gráfico. Nulo se o rótulo de linha de tendência do gráfico não estiver visível.'
     name: width
@@ -201,9 +215,73 @@ references:
   - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
     name: ChartTrendlineLabelFormat
     fullName: Excel.ChartTrendlineLabelFormat
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
-    name: ChartTextHorizontalAlignment
-    fullName: Excel.ChartTextHorizontalAlignment
-  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
-    name: ChartTextVerticalAlignment
-    fullName: Excel.ChartTextVerticalAlignment
+  - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment~0:complex'
+    name: |-
+      | ChartTextHorizontalAlignment
+                  | "Center"
+                  | "Left"
+                  | "Right"
+                  | "Justify"
+                  | "Distributed"
+    fullName: |-
+      | Excel.ChartTextHorizontalAlignment
+                  | "Center"
+                  | "Left"
+                  | "Right"
+                  | "Justify"
+                  | "Distributed"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+        name: ChartTextHorizontalAlignment
+        fullName: Excel.ChartTextHorizontalAlignment
+      - name: |2-
+
+                      | "Center"
+                      | "Left"
+                      | "Right"
+                      | "Justify"
+                      | "Distributed"
+        fullName: |2-
+
+                      | "Center"
+                      | "Left"
+                      | "Right"
+                      | "Justify"
+                      | "Distributed"
+  - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment~0:complex'
+    name: |-
+      | ChartTextVerticalAlignment
+                  | "Center"
+                  | "Bottom"
+                  | "Top"
+                  | "Justify"
+                  | "Distributed"
+    fullName: |-
+      | Excel.ChartTextVerticalAlignment
+                  | "Center"
+                  | "Bottom"
+                  | "Top"
+                  | "Justify"
+                  | "Distributed"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+        name: ChartTextVerticalAlignment
+        fullName: Excel.ChartTextVerticalAlignment
+      - name: |2-
+
+                      | "Center"
+                      | "Bottom"
+                      | "Top"
+                      | "Justify"
+                      | "Distributed"
+        fullName: |2-
+
+                      | "Center"
+                      | "Bottom"
+                      | "Top"
+                      | "Justify"
+                      | "Distributed"

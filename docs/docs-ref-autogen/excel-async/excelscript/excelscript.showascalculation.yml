@@ -32,7 +32,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"differenceFrom"'
+    numericValue: '"DifferenceFrom"'
   - uid: 'excel!Excel.ShowAsCalculation.index:member'
     summary: 'Calcula os valores da seguinte maneira: ((valor na célula) x (total geral de totais gerais))/((total da linha principal) x (total da coluna global))'
     name: index
@@ -40,7 +40,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"index"'
+    numericValue: '"Index"'
   - uid: 'excel!Excel.ShowAsCalculation.none:member'
     summary: Nenhum cálculo é aplicado.
     name: none
@@ -48,7 +48,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
     summary: Diferença do campo base especificado e do item base.
     name: percentDifferenceFrom
@@ -56,7 +56,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentDifferenceFrom"'
+    numericValue: '"PercentDifferenceFrom"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
     summary: Porcentagem do campo base especificado e do item base.
     name: percentOf
@@ -64,7 +64,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOf"'
+    numericValue: '"PercentOf"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
     summary: Porcentagem do total da coluna.
     name: percentOfColumnTotal
@@ -72,7 +72,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfColumnTotal"'
+    numericValue: '"PercentOfColumnTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
     summary: Porcentagem do total geral.
     name: percentOfGrandTotal
@@ -80,7 +80,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfGrandTotal"'
+    numericValue: '"PercentOfGrandTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
     summary: Porcentagem do total da coluna para o campo base especificado.
     name: percentOfParentColumnTotal
@@ -88,7 +88,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentColumnTotal"'
+    numericValue: '"PercentOfParentColumnTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
     summary: Porcentagem do total da linha do campo base especificado.
     name: percentOfParentRowTotal
@@ -96,7 +96,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentRowTotal"'
+    numericValue: '"PercentOfParentRowTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
     summary: Porcentagem do total geral do campo base especificado.
     name: percentOfParentTotal
@@ -104,7 +104,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentTotal"'
+    numericValue: '"PercentOfParentTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
     summary: Porcentagem do total da linha.
     name: percentOfRowTotal
@@ -112,7 +112,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfRowTotal"'
+    numericValue: '"PercentOfRowTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
     summary: Percentual de execução total do campo base especificado.
     name: percentRunningTotal
@@ -120,7 +120,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentRunningTotal"'
+    numericValue: '"PercentRunningTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
     summary: Classificação crescente do campo base especificado.
     name: rankAscending
@@ -128,7 +128,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rankAscending"'
+    numericValue: '"RankAscending"'
   - uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
     summary: Classificação decrescente do campo base especificado.
     name: rankDecending
@@ -136,7 +136,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rankDecending"'
+    numericValue: '"RankDecending"'
   - uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
     summary: Executando o total do campo base especificado.
     name: runningTotal
@@ -144,7 +144,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"runningTotal"'
+    numericValue: '"RunningTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.unknown:member'
     summary: O cálculo é desconhecido ou não tem suporte.
     name: unknown
@@ -152,4 +152,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'

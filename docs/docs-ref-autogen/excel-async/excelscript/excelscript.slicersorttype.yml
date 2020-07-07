@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ascending"'
+    numericValue: '"Ascending"'
   - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
     summary: Classificar itens de segmentação de dados na ordem fornecida pela fonte de dados.
     name: dataSourceOrder
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dataSourceOrder"'
+    numericValue: '"DataSourceOrder"'
   - uid: 'excel!Excel.SlicerSortType.descending:member'
     summary: Classificar itens de segmentação de itens em ordem decrescente por legendas de item.
     name: descending
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"descending"'
+    numericValue: '"Descending"'
