@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"compact"'
+    numericValue: '"Compact"'
   - uid: 'excel!Excel.PivotLayoutType.outline:member'
     summary: 'Os itens de campos internos estão na mesma linha dos campos externos, e os subtotais estão sempre na parte inferior.'
     name: outline
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"outline"'
+    numericValue: '"Outline"'
   - uid: 'excel!Excel.PivotLayoutType.tabular:member'
     summary: Os itens de campos internos estão sempre em uma nova linha em relação aos itens dos campos externos.
     name: tabular
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tabular"'
+    numericValue: '"Tabular"'

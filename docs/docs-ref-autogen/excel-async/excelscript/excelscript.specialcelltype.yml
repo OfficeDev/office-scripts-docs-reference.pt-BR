@@ -23,7 +23,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"blanks"'
+    numericValue: '"Blanks"'
   - uid: 'excel!Excel.SpecialCellType.conditionalFormats:member'
     summary: Todas as células com formatos condicionais
     name: conditionalFormats
@@ -31,7 +31,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"conditionalFormats"'
+    numericValue: '"ConditionalFormats"'
   - uid: 'excel!Excel.SpecialCellType.constants:member'
     summary: Células contendo constantes.
     name: constants
@@ -39,7 +39,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"constants"'
+    numericValue: '"Constants"'
   - uid: 'excel!Excel.SpecialCellType.dataValidations:member'
     summary: Células que possuem critérios de validação.
     name: dataValidations
@@ -47,7 +47,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dataValidations"'
+    numericValue: '"DataValidations"'
   - uid: 'excel!Excel.SpecialCellType.formulas:member'
     summary: Células contendo fórmulas.
     name: formulas
@@ -55,7 +55,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formulas"'
+    numericValue: '"Formulas"'
   - uid: 'excel!Excel.SpecialCellType.sameConditionalFormat:member'
     summary: Células com o mesmo formato condicional da primeira célula do intervalo.
     name: sameConditionalFormat
@@ -63,7 +63,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"sameConditionalFormat"'
+    numericValue: '"SameConditionalFormat"'
   - uid: 'excel!Excel.SpecialCellType.sameDataValidation:member'
     summary: Células com os mesmos critérios de validação de dados da primeira célula do intervalo.
     name: sameDataValidation
@@ -71,7 +71,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"sameDataValidation"'
+    numericValue: '"SameDataValidation"'
   - uid: 'excel!Excel.SpecialCellType.visible:member'
     summary: Células que estão visíveis.
     name: visible
@@ -79,4 +79,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"visible"'
+    numericValue: '"Visible"'

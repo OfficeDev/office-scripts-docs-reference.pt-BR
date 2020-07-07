@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automatic"'
+    numericValue: '"Automatic"'
   - uid: 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
     summary: O eixo agrupa os dados em uma escala de tempo.
     name: dateAxis
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dateAxis"'
+    numericValue: '"DateAxis"'
   - uid: 'excel!Excel.ChartAxisCategoryType.textAxis:member'
     summary: O eixo agrupa os dados por um conjunto arbitrário de categorias.
     name: textAxis
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textAxis"'
+    numericValue: '"TextAxis"'

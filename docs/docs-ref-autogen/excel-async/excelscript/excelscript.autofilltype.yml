@@ -28,7 +28,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillCopy"'
+    numericValue: '"FillCopy"'
   - uid: 'excel!Excel.AutoFillType.fillDays:member'
     summary: 'Uma versão de "FillSeries" para datas que baseiam o padrão no dia do mês ou no dia da semana, dependendo do contexto.'
     name: fillDays
@@ -36,7 +36,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDays"'
+    numericValue: '"FillDays"'
   - uid: 'excel!Excel.AutoFillType.fillDefault:member'
     summary: Preenche as células adjacentes com dados os dados selecionados.
     name: fillDefault
@@ -44,7 +44,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDefault"'
+    numericValue: '"FillDefault"'
   - uid: 'excel!Excel.AutoFillType.fillFormats:member'
     summary: Preenche as células adjacentes com as fórmulas selecionadas.
     name: fillFormats
@@ -52,7 +52,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillFormats"'
+    numericValue: '"FillFormats"'
   - uid: 'excel!Excel.AutoFillType.fillMonths:member'
     summary: Uma versão de "FillSeries" para datas que baseiam o padrão no mês.
     name: fillMonths
@@ -60,7 +60,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillMonths"'
+    numericValue: '"FillMonths"'
   - uid: 'excel!Excel.AutoFillType.fillSeries:member'
     summary: Preenche as células adjacentes com dados que seguem um padrão nas células copiadas.
     name: fillSeries
@@ -68,7 +68,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillSeries"'
+    numericValue: '"FillSeries"'
   - uid: 'excel!Excel.AutoFillType.fillValues:member'
     summary: Preenche as células adjacentes com os valores selecionados.
     name: fillValues
@@ -76,7 +76,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillValues"'
+    numericValue: '"FillValues"'
   - uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
     summary: Uma versão de "FillSeries" para datas que baseiam o padrão no dia da semana e incluem apenas dias da semana.
     name: fillWeekdays
@@ -84,7 +84,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillWeekdays"'
+    numericValue: '"FillWeekdays"'
   - uid: 'excel!Excel.AutoFillType.fillYears:member'
     summary: Uma versão de "FillSeries" para datas que baseiam o padrão no ano.
     name: fillYears
@@ -92,7 +92,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillYears"'
+    numericValue: '"FillYears"'
   - uid: 'excel!Excel.AutoFillType.flashFill:member'
     summary: Preenche as células adjacentes usando o recurso FlashFill do Excel.
     name: flashFill
@@ -100,7 +100,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"flashFill"'
+    numericValue: '"FlashFill"'
   - uid: 'excel!Excel.AutoFillType.growthTrend:member'
     summary: Uma versão de "FillSeries" para números que preenche os valores nas células adjacentes de acordo com um modelo de tendência de crescimento.
     name: growthTrend
@@ -108,7 +108,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"growthTrend"'
+    numericValue: '"GrowthTrend"'
   - uid: 'excel!Excel.AutoFillType.linearTrend:member'
     summary: Uma versão de "FillSeries" para números que preenche os valores nas células adjacentes de acordo com um modelo de tendência linear.
     name: linearTrend
@@ -116,4 +116,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"linearTrend"'
+    numericValue: '"LinearTrend"'

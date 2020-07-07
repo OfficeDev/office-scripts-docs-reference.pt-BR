@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"full"'
+    numericValue: '"Full"'
   - uid: 'excel!Excel.CalculationType.fullRebuild:member'
     summary: 'Isso recriará a cadeia de dependências inteira, marcará todas as células como sujas e as recalculará.'
     name: fullRebuild
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fullRebuild"'
+    numericValue: '"FullRebuild"'
   - uid: 'excel!Excel.CalculationType.recalculate:member'
     summary: 'Recalcula todas as células que o Excel marcou como sujas, isto é, dependentes de dados voláteis ou alterados e células programaticamente marcadas como sujas.'
     name: recalculate
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"recalculate"'
+    numericValue: '"Recalculate"'

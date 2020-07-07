@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
     summary: A seleção é permitida para todas as células.
     name: normal
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"normal"'
+    numericValue: '"Normal"'
   - uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
     summary: A seleção só é permitida para células que não estão bloqueadas.
     name: unlocked
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unlocked"'
+    numericValue: '"Unlocked"'
