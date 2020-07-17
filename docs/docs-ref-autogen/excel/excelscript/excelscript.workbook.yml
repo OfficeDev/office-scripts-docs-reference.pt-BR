@@ -106,7 +106,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: 'Intervalo para vincular a associação. Pode ser um objeto Range do Excel ou uma cadeia de caracteres. Se for uma cadeia de caracteres, deve conter o endereço completo, incluindo o nome da planilha'
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
@@ -410,7 +410,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: 'Cria uma nova tabela. O objeto de intervalo ou endereço de origem determina a planilha à qual a tabela será adicionada. Se a tabela não puder ser adicionada (por exemplo, porque o endereço é inválido ou a tabela se sobreporia a outra), será gerado um erro.'
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -428,7 +428,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 'Valor booliano que indica se os dados que estão sendo importados têm rótulos de coluna. Se a origem não contiver cabeçalhos (ou seja, quando essa propriedade estiver definida como falso), o Excel gerará automaticamente um cabeçalho, deslocando os dados uma linha para baixo.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
@@ -476,7 +476,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
-    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    summary: 'Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você quiser ativar a planilha recém-adicionada, chame “.activate()” nela.'
     name: addWorksheet(name)
     fullName: addWorksheet(name)
     langs:
@@ -490,7 +490,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          description: 'Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'

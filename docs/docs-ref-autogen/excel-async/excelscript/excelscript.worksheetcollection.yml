@@ -18,7 +18,7 @@ items:
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
   - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
-    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    summary: 'Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você quiser ativar a planilha recém-adicionada, chame “.activate()” nela.'
     name: add(name)
     fullName: add(name)
     langs:
@@ -32,7 +32,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          description: 'Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.'
           type:
             - string
   - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'

@@ -43,7 +43,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 'Opcional. Especifica a posição relativa da nova linha. Se for null ou -1, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.'
           type:
             - number
         - id: values
