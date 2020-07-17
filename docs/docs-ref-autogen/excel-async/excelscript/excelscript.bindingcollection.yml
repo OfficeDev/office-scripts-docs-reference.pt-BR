@@ -38,7 +38,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: 'Intervalo para vincular a associação. Pode ser um objeto Range do Excel ou uma cadeia de caracteres. Se for uma cadeia de caracteres, deve conter o endereço completo, incluindo o nome da planilha'
           type:
             - 'excel!Excel.BindingCollection#add~0:complex'
         - id: bindingType

@@ -566,7 +566,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Opcional. O número de colunas a serem incluídas no intervalo resultante. Em geral, use um número positivo para criar um intervalo fora do intervalo atual. Você também pode usar um número negativo para criar um intervalo dentro do intervalo atual. O valor padrão é 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
@@ -584,7 +584,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Opcional. O número de colunas a serem incluídas no intervalo resultante. Em geral, use um número positivo para criar um intervalo fora do intervalo atual. Você também pode usar um número negativo para criar um intervalo dentro do intervalo atual. O valor padrão é 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
@@ -723,7 +723,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.'
     name: getFormulasLocal()
     fullName: getFormulasLocal()
     langs:
@@ -975,7 +975,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
-    summary: 'Gets an object which represents a range that''s offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.'
+    summary: 'Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante for imposto para fora dos limites da grade da planilha, o sistema gerará um erro.'
     name: 'getOffsetRange(rowOffset, columnOffset)'
     fullName: 'getOffsetRange(rowOffset, columnOffset)'
     langs:
@@ -1020,11 +1020,11 @@ items:
           ```
       parameters:
         - id: rowOffset
-          description: 'The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.'
+          description: 'O número de linhas (positivo, negativo ou 0) com base no qual o intervalo deve ser deslocado. Os valores positivos são deslocados para baixo e os negativos, para cima.'
           type:
             - number
         - id: columnOffset
-          description: 'The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.'
+          description: 'O número de colunas (positivo, negativo ou 0) com base no qual o intervalo deve ser deslocado. Os valores positivos são deslocados para a direita e os negativos, para a esquerda.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
@@ -1099,7 +1099,7 @@ items:
           ```
       parameters:
         - id: deltaRows
-          description: 'The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.'
+          description: 'O número de linhas pelo qual expandir o canto inferior direito, referente ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo.'
           type:
             - number
         - id: deltaColumns
@@ -1212,7 +1212,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Opcional. O número de linhas a serem incluídas no intervalo resultante. Em geral, use um número positivo para criar um intervalo fora do intervalo atual. Você também pode usar um número negativo para criar um intervalo dentro do intervalo atual. O valor padrão é 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
@@ -1230,7 +1230,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Opcional. O número de linhas a serem incluídas no intervalo resultante. Em geral, use um número positivo para criar um intervalo fora do intervalo atual. Você também pode usar um número negativo para criar um intervalo dentro do intervalo atual. O valor padrão é 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
@@ -1343,7 +1343,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
-    summary: 'Returns the used range of the given range object. If there are no used cells within the range, this function will return a null object.'
+    summary: 'Retorna o intervalo usado do objeto range determinado. Se não houver nenhuma célula usada no intervalo, esta função retornará um objeto null.'
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange(valuesOnly)
     langs:
@@ -1507,7 +1507,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.GroupOption:enum'
   - uid: 'ExcelScript!ExcelScript.Range#insert:member(1)'
-    summary: 'Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.'
+    summary: 'Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.'
     name: insert(shift)
     fullName: insert(shift)
     langs:
@@ -1734,7 +1734,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.'
     name: setFormulasLocal(formulasLocal)
     fullName: setFormulasLocal(formulasLocal)
     langs:

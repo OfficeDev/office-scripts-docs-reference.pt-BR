@@ -68,7 +68,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.'
+          description: 'Opcional. Especifica a posição relativa da nova coluna. Se for null ou -1, a adição ocorre no final. Colunas com um índice superior serão deslocadas para o lado. Indexado com zero.'
           type:
             - number
         - id: values
@@ -94,7 +94,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 'Opcional. Especifica a posição relativa da nova linha. Se for null ou -1, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.'
           type:
             - number
         - id: values
@@ -116,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 'Opcional. Especifica a posição relativa da nova linha. Se for null ou -1, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.'
           type:
             - number
         - id: values
