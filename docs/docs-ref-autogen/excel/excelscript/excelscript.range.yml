@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: Converte as células de intervalo em um tipo de dados vinculado na planilha.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: A ID de serviço que será usada para consultar os dados.
-          type:
-            - number
-        - id: languageCulture
-          description: Cultura de idioma para consultar o serviço.
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: Copia a formatação ou dados da célula do intervalo de origem ou de RangeAreas para o intervalo atual. O intervalo de destino pode ser um tamanho diferente do intervalo de origem ou RangeAreas. O destino será expandido automaticamente se for menor do que a origem.
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 'Define o valor bruto do intervalo especificado. Os dados que estão sendo definidos podem ser do tipo String, Number ou Boolean. `null`o valor será ignorado (não definido ou substituído no Excel). Se o intervalo contiver várias células, cada célula no intervalo determinado será atualizada com os dados de entrada.'
+    summary: 'Define o valor bruto do intervalo especificado. Os dados que estão sendo definidos podem ser do tipo String, Number ou Boolean. `null` o valor será ignorado (não definido ou substituído no Excel). Se o intervalo contiver várias células, cada célula no intervalo determinado será atualizada com os dados de entrada.'
     name: setValue(value)
     fullName: setValue(value)
     langs:
