@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: 'A regra de validação de dados contém diferentes tipos de validação de dados. Você só pode usar uma delas por vez, de acordo com o Excel. datavalidationtype.'
+    summary: 'A regra de validação de dados contém diferentes tipos de validação de dados. Você só pode usar uma delas por vez, de acordo com o ExcelScript. datavalidationtype.'
     name: ExcelScript.DataValidationRule
     fullName: ExcelScript.DataValidationRule
     langs:

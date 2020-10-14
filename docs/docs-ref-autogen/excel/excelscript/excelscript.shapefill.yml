@@ -56,7 +56,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: 'Retorna o tipo de preenchimento da forma. Para saber detalhes, confira Excel.ShapeFillType.'
+    summary: Retorna o tipo de preenchimento da forma. Consulte ExcelScript. ShapeFillType para obter detalhes.
     name: getType()
     fullName: getType()
     langs:

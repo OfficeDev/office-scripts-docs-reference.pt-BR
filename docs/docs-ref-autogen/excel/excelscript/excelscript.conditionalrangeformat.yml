@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Valor de índice do objeto Border a ser recuperado. Consulte Excel. ConditionalRangeBorderIndex para obter detalhes.
+          description: Valor de índice do objeto Border a ser recuperado. Consulte ExcelScript. ConditionalRangeBorderIndex para obter detalhes.
           type:
             - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'

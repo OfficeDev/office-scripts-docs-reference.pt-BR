@@ -36,7 +36,7 @@ items:
         type:
           - 'ExcelScript!ExcelScript.PivotItem:interface'
   - uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
-    summary: O cálculo de ShowAs a ser usado para o Data PivotField. Consulte Excel. ShowAsCalculation para obter detalhes.
+    summary: O cálculo de ShowAs a ser usado para o Data PivotField. Consulte ExcelScript. ShowAsCalculation para obter detalhes.
     name: calculation
     fullName: calculation
     langs:

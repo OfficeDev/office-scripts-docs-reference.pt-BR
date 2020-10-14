@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    summary: 'Representa um objeto chart em uma pasta de trabalho. Para saber mais sobre o modelo de objeto de gráfico, confira [trabalhar com gráficos usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.'
+    summary: Representa um objeto chart em uma pasta de trabalho.
     name: ExcelScript.Chart
     fullName: ExcelScript.Chart
     langs:
@@ -128,7 +128,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Chart#getChartType:member(1)'
-    summary: Especifica o tipo do gráfico. Confira Excel. ChartType para obter detalhes.
+    summary: Especifica o tipo do gráfico. Confira ExcelScript. ChartType para obter detalhes.
     name: getChartType()
     fullName: getChartType()
     langs:
@@ -463,7 +463,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Chart#setChartType:member(1)'
-    summary: Especifica o tipo do gráfico. Confira Excel. ChartType para obter detalhes.
+    summary: Especifica o tipo do gráfico. Confira ExcelScript. ChartType para obter detalhes.
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -499,7 +499,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: 'Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções: auto (padrão), linhas e colunas. Consulte Excel. ChartSeriesBy para obter detalhes.'
+          description: 'Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções: auto (padrão), linhas e colunas. Consulte ExcelScript. ChartSeriesBy para obter detalhes.'
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)'

@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-    summary: 'Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Para saber detalhes, confira Excel.ShapeFontUnderlineStyle.'
+    summary: Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Consulte ExcelScript. ShapeFontUnderlineStyle para obter detalhes.
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-    summary: 'Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Para saber detalhes, confira Excel.ShapeFontUnderlineStyle.'
+    summary: Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Consulte ExcelScript. ShapeFontUnderlineStyle para obter detalhes.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

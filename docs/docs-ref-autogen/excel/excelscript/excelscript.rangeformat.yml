@@ -153,7 +153,7 @@ items:
           - 'ExcelScript!ExcelScript.RangeFont:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-    summary: Representa o alinhamento horizontal do objeto especificado. Consulte Excel. HorizontalAlignment para obter detalhes.
+    summary: Representa o alinhamento horizontal do objeto especificado. Consulte ExcelScript. HorizontalAlignment para obter detalhes.
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -206,11 +206,11 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Valor de índice do objeto Border a ser recuperado. Consulte Excel. BorderIndex para obter detalhes.
+          description: Valor de índice do objeto Border a ser recuperado. Consulte ExcelScript. BorderIndex para obter detalhes.
           type:
             - 'ExcelScript!ExcelScript.BorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-    summary: 'Especifica um duplo que clareia ou escurece uma cor para bordas de intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que as coleções de bordas inteiras não têm configuração tintAndShade uniformes.'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para bordas de intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que as coleções de bordas inteiras não têm configuração tintAndShade uniformes.'
     name: getRangeBorderTintAndShade()
     fullName: getRangeBorderTintAndShade()
     langs:
@@ -301,7 +301,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-    summary: Representa o alinhamento vertical do objeto especificado. Consulte Excel. VerticalAlignment para obter detalhes.
+    summary: Representa o alinhamento vertical do objeto especificado. Consulte ExcelScript. VerticalAlignment para obter detalhes.
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -363,7 +363,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-    summary: Representa o alinhamento horizontal do objeto especificado. Consulte Excel. HorizontalAlignment para obter detalhes.
+    summary: Representa o alinhamento horizontal do objeto especificado. Consulte ExcelScript. HorizontalAlignment para obter detalhes.
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -399,7 +399,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-    summary: 'Especifica um duplo que clareia ou escurece uma cor para bordas de intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que as coleções de bordas inteiras não têm configuração tintAndShade uniformes.'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para bordas de intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que as coleções de bordas inteiras não têm configuração tintAndShade uniformes.'
     name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     langs:
@@ -525,7 +525,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-    summary: Representa o alinhamento vertical do objeto especificado. Consulte Excel. VerticalAlignment para obter detalhes.
+    summary: Representa o alinhamento vertical do objeto especificado. Consulte ExcelScript. VerticalAlignment para obter detalhes.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

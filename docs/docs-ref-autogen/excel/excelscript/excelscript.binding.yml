@@ -81,7 +81,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: Retorna o tipo da associação. Consulte Excel. BindingType para obter detalhes.
+    summary: Retorna o tipo da associação. Consulte ExcelScript. BindingType para obter detalhes.
     name: getType()
     fullName: getType()
     langs:

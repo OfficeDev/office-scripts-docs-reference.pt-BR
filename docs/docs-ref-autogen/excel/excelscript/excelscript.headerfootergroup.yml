@@ -71,7 +71,7 @@ items:
           - 'ExcelScript!ExcelScript.HeaderFooter:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: 'O estado pelo qual os cabeçalhos/rodapés são definidos. Para saber detalhes, confira Excel.HeaderFooterState.'
+    summary: O estado pelo qual os cabeçalhos/rodapés são definidos. Consulte ExcelScript. HeaderFooterState para obter detalhes.
     name: getState()
     fullName: getState()
     langs:
@@ -110,7 +110,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: 'O estado pelo qual os cabeçalhos/rodapés são definidos. Para saber detalhes, confira Excel.HeaderFooterState.'
+    summary: O estado pelo qual os cabeçalhos/rodapés são definidos. Consulte ExcelScript. HeaderFooterState para obter detalhes.
     name: setState(state)
     fullName: setState(state)
     langs:

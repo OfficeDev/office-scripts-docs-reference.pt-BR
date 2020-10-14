@@ -32,7 +32,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    summary: Valor constante que indica o lado específico da borda. Consulte Excel. BorderIndex para obter detalhes.
+    summary: Valor constante que indica o lado específico da borda. Consulte ExcelScript. BorderIndex para obter detalhes.
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -45,7 +45,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte Excel. BorderLineStyle para obter detalhes.
+    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte ExcelScript. BorderLineStyle para obter detalhes.
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -58,7 +58,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    summary: 'Especifica um duplo que clareia ou escurece uma cor para a borda do intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que a borda não tem configuração uniforme tintAndShade.'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para a borda do intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que a borda não tem configuração uniforme tintAndShade.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -71,7 +71,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    summary: Especifica o peso da borda em torno de um intervalo. Consulte Excel. BorderWeight para obter detalhes.
+    summary: Especifica o peso da borda em torno de um intervalo. Consulte ExcelScript. BorderWeight para obter detalhes.
     name: getWeight()
     fullName: getWeight()
     langs:
@@ -102,7 +102,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte Excel. BorderLineStyle para obter detalhes.
+    summary: Uma das constantes de estilo de linha especificando o estilo de linha da borda. Consulte ExcelScript. BorderLineStyle para obter detalhes.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -120,7 +120,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    summary: 'Especifica um duplo que clareia ou escurece uma cor para a borda do intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que a borda não tem configuração uniforme tintAndShade.'
+    summary: 'Especifica um duplo que clareia ou escurece uma cor para a borda do intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que a borda não tem configuração uniforme tintAndShade.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -138,7 +138,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    summary: Especifica o peso da borda em torno de um intervalo. Consulte Excel. BorderWeight para obter detalhes.
+    summary: Especifica o peso da borda em torno de um intervalo. Consulte ExcelScript. BorderWeight para obter detalhes.
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

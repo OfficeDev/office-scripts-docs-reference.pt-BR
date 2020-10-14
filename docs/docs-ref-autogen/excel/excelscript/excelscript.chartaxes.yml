@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Especifica o tipo de eixo. Consulte Excel. ChartAxisType para obter detalhes.
+          description: Especifica o tipo de eixo. Consulte ExcelScript. ChartAxisType para obter detalhes.
           type:
             - 'ExcelScript!ExcelScript.ChartAxisType:enum'
         - id: group
-          description: Opcional. Especifica o grupo de eixos. Consulte Excel. ChartAxisGroup para obter detalhes.
+          description: Opcional. Especifica o grupo de eixos. Consulte ExcelScript. ChartAxisGroup para obter detalhes.
           type:
             - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'

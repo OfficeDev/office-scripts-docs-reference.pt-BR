@@ -100,7 +100,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-    summary: Representa a posição de título do gráfico. Consulte Excel. ChartTitlePosition para obter detalhes.
+    summary: Representa a posição de título do gráfico. Consulte ExcelScript. ChartTitlePosition para obter detalhes.
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -187,7 +187,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-    summary: Especifica o alinhamento vertical do título do gráfico. Consulte Excel. ChartTextVerticalAlignment para obter detalhes.
+    summary: Especifica o alinhamento vertical do título do gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obter detalhes.
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -301,7 +301,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-    summary: Representa a posição de título do gráfico. Consulte Excel. ChartTitlePosition para obter detalhes.
+    summary: Representa a posição de título do gráfico. Consulte ExcelScript. ChartTitlePosition para obter detalhes.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -391,7 +391,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-    summary: Especifica o alinhamento vertical do título do gráfico. Consulte Excel. ChartTextVerticalAlignment para obter detalhes.
+    summary: Especifica o alinhamento vertical do título do gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obter detalhes.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:
