@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
+    summary: Enumeração que representa todas as condições aceitas pelas quais um filtro de valor pode ser aplicado. Usado para configurar o tipo de PivotFilter que é aplicado ao campo. `PivotFilter.exclusive` pode ser definido como true para inverter muitas dessas condições.
+    name: ExcelScript.ValueFilterCondition
+    fullName: ExcelScript.ValueFilterCondition
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+    summary: |-
+      Entre `lowerBound` e `upperBound` critérios.
+
+      Critérios necessários: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+    summary: |-
+      Na parte inferior (`threshold`<!-- -->) \[ itens, porcentagem, soma \] de categoria de valor.
+
+      Critérios necessários: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+    name: bottomN
+    fullName: bottomN
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+    summary: |-
+      É igual a critério de comparativo.
+
+      Critérios necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+    name: equals
+    fullName: equals
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+    summary: |-
+      Critério maior do que o comparador.
+
+      Critérios necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    name: greaterThan
+    fullName: greaterThan
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+    summary: |-
+      É maior ou igual ao critério de comparador.
+
+      Critérios necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    name: greaterThanOrEqualTo
+    fullName: greaterThanOrEqualTo
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+    summary: |-
+      Critério de menor que comparador.
+
+      Critérios necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    name: lessThan
+    fullName: lessThan
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+    summary: |-
+      É menor ou igual ao critério de comparador.
+
+      Critérios necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    name: lessThanOrEqualTo
+    fullName: lessThanOrEqualTo
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+    summary: |-
+      Na parte superior (`threshold`<!-- -->) \[ itens, porcentagem, soma \] de categoria de valor.
+
+      Critérios necessários: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+    name: topN
+    fullName: topN
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+    summary: ValueFilterCondition é desconhecido ou não tem suporte.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

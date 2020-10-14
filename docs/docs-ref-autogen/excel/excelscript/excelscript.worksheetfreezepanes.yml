@@ -32,7 +32,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
-    summary: Congela a primeira colunas da planilha no local.
+    summary: Congele a primeira coluna ou colunas da planilha em vigor.
     name: freezeColumns(count)
     fullName: freezeColumns(count)
     langs:
@@ -50,7 +50,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
-    summary: Congela as linhas superiores da planilha no local.
+    summary: Congele a linha superior ou as linhas da planilha em vigor.
     name: freezeRows(count)
     fullName: freezeRows(count)
     langs:

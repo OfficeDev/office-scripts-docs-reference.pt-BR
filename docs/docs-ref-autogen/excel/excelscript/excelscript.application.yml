@@ -34,7 +34,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: Especifica o tipo de cálculo a usar. Consulte Excel. Calculatype para obter detalhes.
+          description: Especifica o tipo de cálculo a usar. Consulte ExcelScript. Calculatype para obter detalhes.
           type:
             - 'ExcelScript!ExcelScript.CalculationType:enum'
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
@@ -51,7 +51,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: 'Retorna o modo de cálculo usado na pasta de trabalho, conforme definido pelas constantes no Excel. Calculation. Os valores possíveis são:`Automatic`<!-- -->, onde o Excel controla o recálculo;`AutomaticExceptTables`<!-- -->, onde o Excel controla o recálculo, mas ignora as alterações nas tabelas;`Manual`<!-- -->, onde o cálculo é feito quando o usuário solicita.'
+    summary: 'Retorna o modo de cálculo usado na pasta de trabalho, conforme definido pelas constantes no ExcelScript. Calculation. Os valores possíveis são: `Automatic`<!-- -->, onde o Excel controla o recálculo; `AutomaticExceptTables`<!-- -->, onde o Excel controla o recálculo, mas ignora as alterações nas tabelas; `Manual`<!-- -->, onde o cálculo é feito quando o usuário solicita.'
     name: getCalculationMode()
     fullName: getCalculationMode()
     langs:
@@ -64,7 +64,7 @@ items:
           - 'ExcelScript!ExcelScript.CalculationMode:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: 'Retorna o estado de cálculo do aplicativo. Para saber detalhes, confira Excel.CalculationState.'
+    summary: Retorna o estado de cálculo do aplicativo. Confira ExcelScript. Calculable para obter detalhes.
     name: getCalculationState()
     fullName: getCalculationState()
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: 'Retorna o modo de cálculo usado na pasta de trabalho, conforme definido pelas constantes no Excel. Calculation. Os valores possíveis são:`Automatic`<!-- -->, onde o Excel controla o recálculo;`AutomaticExceptTables`<!-- -->, onde o Excel controla o recálculo, mas ignora as alterações nas tabelas;`Manual`<!-- -->, onde o cálculo é feito quando o usuário solicita.'
+    summary: 'Retorna o modo de cálculo usado na pasta de trabalho, conforme definido pelas constantes no ExcelScript. Calculation. Os valores possíveis são: `Automatic`<!-- -->, onde o Excel controla o recálculo; `AutomaticExceptTables`<!-- -->, onde o Excel controla o recálculo, mas ignora as alterações nas tabelas; `Manual`<!-- -->, onde o cálculo é feito quando o usuário solicita.'
     name: setCalculationMode(calculationMode)
     fullName: setCalculationMode(calculationMode)
     langs:

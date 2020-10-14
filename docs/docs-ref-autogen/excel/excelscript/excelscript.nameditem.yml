@@ -115,7 +115,7 @@ items:
           - 'ExcelScript!ExcelScript.NamedItemScope:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
-    summary: Especifica o tipo do valor retornado pela fórmula do nome. Consulte Excel. NamedItemType para obter detalhes.
+    summary: Especifica o tipo do valor retornado pela fórmula do nome. Consulte ExcelScript. NamedItemType para obter detalhes.
     name: getType()
     fullName: getType()
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Workbook:interface'
-    summary: 'Workbook é o objeto de nível superior que contém objetos de pasta de trabalho relacionados, como planilhas, tabelas, intervalos, etc. Para saber mais sobre o modelo de objeto de pasta de trabalho, leia [trabalhar com pastas de trabalho usando a API JavaScript do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    summary: 'A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.'
     name: ExcelScript.Workbook
     fullName: ExcelScript.Workbook
     langs:
@@ -110,7 +110,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
-          description: Tipo de associação. Consulte Excel. BindingType.
+          description: Tipo de associação. Consulte ExcelScript. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -141,7 +141,7 @@ items:
           type:
             - string
         - id: bindingType
-          description: Tipo de associação. Consulte Excel. BindingType.
+          description: Tipo de associação. Consulte ExcelScript. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -163,7 +163,7 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: Tipo de associação. Consulte Excel. BindingType.
+          description: Tipo de associação. Consulte ExcelScript. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: Opcional. O tipo de conteúdo contido no comentário. O valor padrão é enum`ContentType.Plain`<!-- -->.
+          description: Opcional. O tipo de conteúdo contido no comentário. O valor padrão é enum `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'

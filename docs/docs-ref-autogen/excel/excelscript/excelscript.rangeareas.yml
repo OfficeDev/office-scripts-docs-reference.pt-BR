@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: 'RangeAreas representa uma coleção de um ou mais intervalos retangulares na mesma planilha. Para saber como usar intervalos do discontinguous, leia [trabalhar com vários intervalos simultaneamente em suplementos do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.'
+    summary: RangeAreas representa uma coleção de um ou mais intervalos retangulares na mesma planilha.
     name: ExcelScript.RangeAreas
     fullName: ExcelScript.RangeAreas
     langs:
@@ -52,7 +52,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: O tipo de formato condicional que está sendo adicionado. Consulte Excel. Valorconditionalformattype para obter detalhes.
+          description: O tipo de formato condicional que está sendo adicionado. Consulte ExcelScript. Valorconditionalformattype para obter detalhes.
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
@@ -83,7 +83,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: Opcional. Determina o tipo de ação clara. Consulte Excel. ClearApplyTo para obter detalhes. O padrão é "All".
+          description: Opcional. Determina o tipo de ação clara. Consulte ExcelScript. ClearApplyTo para obter detalhes. O padrão é "All".
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'

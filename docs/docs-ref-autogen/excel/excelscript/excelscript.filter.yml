@@ -230,7 +230,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: A lista de valores a serem mostrados. Deve ser uma matriz de cadeias de caracteres ou uma matriz de objetos Excel. FilterDateTime.
+          description: A lista de valores a serem mostrados. Deve ser uma matriz de cadeias de caracteres ou uma matriz de objetos ExcelScript. FilterDateTime.
           type:
             - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
   - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'

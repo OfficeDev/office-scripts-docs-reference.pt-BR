@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
+    summary: Uma interface que representa todos os PivotFilters aplicados atualmente a um campo PivotField específico.
+    name: ExcelScript.PivotFilters
+    fullName: ExcelScript.PivotFilters
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+    summary: O filtro de data atualmente aplicado ao PivotField. Nulo se nenhum for aplicado.
+    name: dateFilter
+    fullName: dateFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateFilter?: PivotDateFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+    summary: O filtro de rótulo do PivotField atualmente aplicado. Nulo se nenhum for aplicado.
+    name: labelFilter
+    fullName: labelFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelFilter?: PivotLabelFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+    summary: O filtro manual aplicado no momento do PivotField. Nulo se nenhum for aplicado.
+    name: manualFilter
+    fullName: manualFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manualFilter?: PivotManualFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+    summary: O filtro de valor atualmente aplicado ao PivotField. Nulo se nenhum for aplicado.
+    name: valueFilter
+    fullName: valueFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueFilter?: PivotValueFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+    name: PivotDateFilter
+    fullName: ExcelScript.PivotDateFilter
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+    name: PivotLabelFilter
+    fullName: ExcelScript.PivotLabelFilter
+  - uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+    name: PivotManualFilter
+    fullName: ExcelScript.PivotManualFilter
+  - uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+    name: PivotValueFilter
+    fullName: ExcelScript.PivotValueFilter

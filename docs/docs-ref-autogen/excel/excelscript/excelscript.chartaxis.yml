@@ -79,7 +79,7 @@ items:
       - 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
       - 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
-    summary: Especifica o alinhamento para o rótulo de escala do eixo especificado. Consulte Excel. ChartTextHorizontalAlignment para obter detalhes.
+    summary: Especifica o alinhamento para o rótulo de escala do eixo especificado. Consulte ExcelScript. ChartTextHorizontalAlignment para obter detalhes.
     name: getAlignment()
     fullName: getAlignment()
     langs:
@@ -92,7 +92,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
-    summary: Especifica o grupo do eixo especificado. Consulte Excel. ChartAxisGroup para obter detalhes.
+    summary: Especifica o grupo do eixo especificado. Consulte ExcelScript. ChartAxisGroup para obter detalhes.
     name: getAxisGroup()
     fullName: getAxisGroup()
     langs:
@@ -144,7 +144,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
-    summary: Representa a unidade de exibição de eixo. Consulte Excel. ChartAxisDisplayUnit para obter detalhes.
+    summary: Representa a unidade de exibição de eixo. Consulte ExcelScript. ChartAxisDisplayUnit para obter detalhes.
     name: getDisplayUnit()
     fullName: getDisplayUnit()
     langs:
@@ -248,7 +248,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartGridlines:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
-    summary: Especifica o tipo de marca de escala principal para o eixo especificado. Consulte Excel. ChartAxisTickMark para obter detalhes.
+    summary: Especifica o tipo de marca de escala principal para o eixo especificado. Consulte ExcelScript. ChartAxisTickMark para obter detalhes.
     name: getMajorTickMark()
     fullName: getMajorTickMark()
     langs:
@@ -274,7 +274,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
-    summary: Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia. O valor retornado sempre é um número.
+    summary: Especifica o intervalo entre duas marcas de escala principais.
     name: getMajorUnit()
     fullName: getMajorUnit()
     langs:
@@ -287,7 +287,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
-    summary: Representa o valor máximo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.
+    summary: Especifica o valor máximo no eixo dos valores.
     name: getMaximum()
     fullName: getMaximum()
     langs:
@@ -300,7 +300,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
-    summary: Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.
+    summary: Especifica o valor mínimo no eixo dos valores.
     name: getMinimum()
     fullName: getMinimum()
     langs:
@@ -326,7 +326,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartGridlines:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
-    summary: Especifica o tipo de marca de escala secundária do eixo especificado. Consulte Excel. ChartAxisTickMark para obter detalhes.
+    summary: Especifica o tipo de marca de escala secundária do eixo especificado. Consulte ExcelScript. ChartAxisTickMark para obter detalhes.
     name: getMinorTickMark()
     fullName: getMinorTickMark()
     langs:
@@ -352,7 +352,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
-    summary: Representa o intervalo entre as duas marcas de escala secundárias. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.
+    summary: Especifica o intervalo entre duas marcas de escala secundárias.
     name: getMinorUnit()
     fullName: getMinorUnit()
     langs:
@@ -404,7 +404,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
-    summary: Especifica a posição do eixo especificado onde o outro eixo cruza. Consulte Excel. ChartAxisPosition para obter detalhes.
+    summary: Especifica a posição do eixo especificado onde o outro eixo cruza. Consulte ExcelScript. ChartAxisPosition para obter detalhes.
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -443,7 +443,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
-    summary: Especifica o tipo de escala do eixo dos valores. Consulte Excel. ChartAxisScaleType para obter detalhes.
+    summary: Especifica o tipo de escala do eixo dos valores. Consulte ExcelScript. ChartAxisScaleType para obter detalhes.
     name: getScaleType()
     fullName: getScaleType()
     langs:
@@ -482,7 +482,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
-    summary: Especifica a posição dos rótulos de marcas de escala no eixo especificado. Consulte Excel. ChartAxisTickLabelPosition para obter detalhes.
+    summary: Especifica a posição dos rótulos de marcas de escala no eixo especificado. Consulte ExcelScript. ChartAxisTickLabelPosition para obter detalhes.
     name: getTickLabelPosition()
     fullName: getTickLabelPosition()
     langs:
@@ -495,7 +495,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
-    summary: Especifica o número de categorias ou séries entre os rótulos de marca de escala. Pode ser um valor de 1 a 31999 ou uma cadeia de caracteres vazia para configuração automática. O valor retornado sempre é um número.
+    summary: Especifica o número de categorias ou séries entre os rótulos de marca de escala. Pode ter um valor de 1 a 31999.
     name: getTickLabelSpacing()
     fullName: getTickLabelSpacing()
     langs:
@@ -547,7 +547,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
-    summary: Especifica o tipo de eixo. Consulte Excel. ChartAxisType para obter detalhes.
+    summary: Especifica o tipo de eixo. Consulte ExcelScript. ChartAxisType para obter detalhes.
     name: getType()
     fullName: getType()
     langs:
@@ -586,7 +586,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
-    summary: Especifica o alinhamento para o rótulo de escala do eixo especificado. Consulte Excel. ChartTextHorizontalAlignment para obter detalhes.
+    summary: Especifica o alinhamento para o rótulo de escala do eixo especificado. Consulte ExcelScript. ChartTextHorizontalAlignment para obter detalhes.
     name: setAlignment(alignment)
     fullName: setAlignment(alignment)
     langs:
@@ -676,7 +676,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
-    summary: Representa a unidade de exibição de eixo. Consulte Excel. ChartAxisDisplayUnit para obter detalhes.
+    summary: Representa a unidade de exibição de eixo. Consulte ExcelScript. ChartAxisDisplayUnit para obter detalhes.
     name: setDisplayUnit(displayUnit)
     fullName: setDisplayUnit(displayUnit)
     langs:
@@ -748,7 +748,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
-    summary: Especifica o tipo de marca de escala principal para o eixo especificado. Consulte Excel. ChartAxisTickMark para obter detalhes.
+    summary: Especifica o tipo de marca de escala principal para o eixo especificado. Consulte ExcelScript. ChartAxisTickMark para obter detalhes.
     name: setMajorTickMark(majorTickMark)
     fullName: setMajorTickMark(majorTickMark)
     langs:
@@ -784,7 +784,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
-    summary: Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia. O valor retornado sempre é um número.
+    summary: Especifica o intervalo entre duas marcas de escala principais.
     name: setMajorUnit(majorUnit)
     fullName: setMajorUnit(majorUnit)
     langs:
@@ -802,7 +802,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
-    summary: Representa o valor máximo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.
+    summary: Especifica o valor máximo no eixo dos valores.
     name: setMaximum(maximum)
     fullName: setMaximum(maximum)
     langs:
@@ -820,7 +820,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
-    summary: Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.
+    summary: Especifica o valor mínimo no eixo dos valores.
     name: setMinimum(minimum)
     fullName: setMinimum(minimum)
     langs:
@@ -838,7 +838,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
-    summary: Especifica o tipo de marca de escala secundária do eixo especificado. Consulte Excel. ChartAxisTickMark para obter detalhes.
+    summary: Especifica o tipo de marca de escala secundária do eixo especificado. Consulte ExcelScript. ChartAxisTickMark para obter detalhes.
     name: setMinorTickMark(minorTickMark)
     fullName: setMinorTickMark(minorTickMark)
     langs:
@@ -874,7 +874,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
-    summary: Representa o intervalo entre as duas marcas de escala secundárias. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.
+    summary: Especifica o intervalo entre duas marcas de escala secundárias.
     name: setMinorUnit(minorUnit)
     fullName: setMinorUnit(minorUnit)
     langs:
@@ -946,7 +946,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
-    summary: Especifica a posição do eixo especificado onde o outro eixo cruza. Consulte Excel. ChartAxisPosition para obter detalhes.
+    summary: Especifica a posição do eixo especificado onde o outro eixo cruza. Consulte ExcelScript. ChartAxisPosition para obter detalhes.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -1000,7 +1000,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
-    summary: Especifica o tipo de escala do eixo dos valores. Consulte Excel. ChartAxisScaleType para obter detalhes.
+    summary: Especifica o tipo de escala do eixo dos valores. Consulte ExcelScript. ChartAxisScaleType para obter detalhes.
     name: setScaleType(scaleType)
     fullName: setScaleType(scaleType)
     langs:
@@ -1054,7 +1054,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
-    summary: Especifica a posição dos rótulos de marcas de escala no eixo especificado. Consulte Excel. ChartAxisTickLabelPosition para obter detalhes.
+    summary: Especifica a posição dos rótulos de marcas de escala no eixo especificado. Consulte ExcelScript. ChartAxisTickLabelPosition para obter detalhes.
     name: setTickLabelPosition(tickLabelPosition)
     fullName: setTickLabelPosition(tickLabelPosition)
     langs:
@@ -1075,7 +1075,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
-    summary: Especifica o número de categorias ou séries entre os rótulos de marca de escala. Pode ser um valor de 1 a 31999 ou uma cadeia de caracteres vazia para configuração automática. O valor retornado sempre é um número.
+    summary: Especifica o número de categorias ou séries entre os rótulos de marca de escala. Pode ter um valor de 1 a 31999.
     name: setTickLabelSpacing(tickLabelSpacing)
     fullName: setTickLabelSpacing(tickLabelSpacing)
     langs:

@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: Tipo de sublinhado aplicado à fonte. Consulte Excel. ChartUnderlineStyle para obter detalhes.
+    summary: Tipo de sublinhado aplicado à fonte. Consulte ExcelScript. ChartUnderlineStyle para obter detalhes.
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: Tipo de sublinhado aplicado à fonte. Consulte Excel. ChartUnderlineStyle para obter detalhes.
+    summary: Tipo de sublinhado aplicado à fonte. Consulte ExcelScript. ChartUnderlineStyle para obter detalhes.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

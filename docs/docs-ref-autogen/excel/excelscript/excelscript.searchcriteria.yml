@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
       - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 'Especifica se a correspondência precisa ser completa ou parcial. Uma correspondência completa corresponde a todo o conteúdo da célula. Uma correspondência parcial corresponde a uma subcadeia de caracteres dentro do conteúdo da célula (por exemplo, `cat` parcialmente corresponde `caterpillar` e`scatter`<!-- -->). O padrão é false (parcial).'
+    summary: 'Especifica se a correspondência precisa ser completa ou parcial. Uma correspondência completa corresponde a todo o conteúdo da célula. Uma correspondência parcial corresponde a uma subcadeia de caracteres dentro do conteúdo da célula (por exemplo, `cat` parcialmente corresponde `caterpillar` e `scatter`<!-- -->). O padrão é false (parcial).'
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -37,7 +37,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: Especifica a direção da pesquisa. O padrão é para frente. Confira Excel.SearchDirection.
+    summary: Especifica a direção da pesquisa. O padrão é para frente. Consulte ExcelScript. SearchDirection.
     name: searchDirection
     fullName: searchDirection
     langs:

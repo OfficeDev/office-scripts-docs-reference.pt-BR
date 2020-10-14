@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    summary: 'Representa a validação de dados aplicada ao intervalo atual. Para saber mais sobre o modelo de objeto de validação de dados, leia [Adicionar validação de dados para intervalos do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.'
+    summary: Representa a validação de dados aplicada ao intervalo atual.
     name: ExcelScript.DataValidation
     fullName: ExcelScript.DataValidation
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidationRule:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    summary: 'Tipo de validação de dados, confira Excel.DataValidationType para obter detalhes.'
+    summary: 'Tipo de validação de dados, confira ExcelScript. datavalidationtype para obter detalhes.'
     name: getType()
     fullName: getType()
     langs:
