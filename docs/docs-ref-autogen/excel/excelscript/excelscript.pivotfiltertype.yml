@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
-    summary: Uma enumeração simples que representa um tipo de filtro para um PivotField.
-    name: ExcelScript.PivotFilterType
-    fullName: ExcelScript.PivotFilterType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
-    summary: 'Filtra o PivotItems com uma data no lugar de um rótulo. Observação: um PivotField não pode ter um filtro de rótulo e um filtro de data aplicados simultaneamente.'
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
-    summary: 'Filtra o PivotItems com base em seus rótulos. Observação: um PivotField não pode ter um filtro de rótulo e um filtro de data aplicados simultaneamente.'
-    name: label
-    fullName: label
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
-    summary: Filtra os PivotItems selecionados manualmente da tabela dinâmica.
-    name: manual
-    fullName: manual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
-    summary: PivotFilterType é desconhecido ou não tem suporte.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
-    summary: Filtra com base no valor de um PivotItem com relação a um DataPivotHierarchy.
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PivotFilterType
+uid: ExcelScript!ExcelScript.PivotFilterType:enum
+package: ExcelScript!
+fullName: ExcelScript.PivotFilterType
+summary: Uma enumeração simples que representa um tipo de filtro para um PivotField.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: date
+  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
+  package: ExcelScript!
+  summary: 'Filtra o PivotItems com uma data no lugar de um rótulo. Observação: um PivotField não pode ter um filtro de rótulo e um filtro de data aplicados simultaneamente.'
+- name: label
+  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
+  package: ExcelScript!
+  summary: 'Filtra o PivotItems com base em seus rótulos. Observação: um PivotField não pode ter um filtro de rótulo e um filtro de data aplicados simultaneamente.'
+- name: manual
+  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
+  package: ExcelScript!
+  summary: Filtra os PivotItems selecionados manualmente da tabela dinâmica.
+- name: unknown
+  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
+  package: ExcelScript!
+  summary: PivotFilterType é desconhecido ou não tem suporte.
+- name: value
+  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
+  package: ExcelScript!
+  summary: Filtra com base no valor de um PivotItem com relação a um DataPivotHierarchy.
+metadata:
+  ms.openlocfilehash: 3c8b99c254d001d641d6a9cb6ae7de55c404b69a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415243"

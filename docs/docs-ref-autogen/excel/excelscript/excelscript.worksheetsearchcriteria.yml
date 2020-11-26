@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
-    summary: Representa os critérios de pesquisa da planilha a serem usados.
-    name: ExcelScript.WorksheetSearchCriteria
-    fullName: ExcelScript.WorksheetSearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-    summary: 'Especifica se a correspondência precisa ser completa ou parcial. Uma correspondência completa corresponde a todo o conteúdo da célula. Uma correspondência parcial corresponde a uma subcadeia de caracteres dentro do conteúdo da célula (por exemplo, `cat` parcialmente corresponde `caterpillar` e`scatter`<!-- -->). O padrão é false (parcial).'
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-    summary: Especifica se a correspondência diferencia maiúsculas de minúsculas. O padrão é false (não diferencia maiúsculas de minúsculas).
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.WorksheetSearchCriteria
+uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetSearchCriteria
+summary: Representa os critérios de pesquisa da planilha a serem usados.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: Especifica se a correspondência precisa ser completa ou parcial. Uma correspondência completa corresponde a todo o conteúdo da célula. Uma correspondência parcial corresponde a uma subcadeia de caracteres dentro do conteúdo da célula (por exemplo, `cat` parcialmente corresponde `caterpillar` e `scatter`<!-- -->). O padrão é false (parcial).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: Especifica se a correspondência diferencia maiúsculas de minúsculas. O padrão é false (não diferencia maiúsculas de minúsculas).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415124"
