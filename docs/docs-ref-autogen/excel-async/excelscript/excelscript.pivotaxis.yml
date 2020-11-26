@@ -1,56 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotAxis:enum'
-    summary: Representa o eixo de onde obter o PivotItems.
-    name: Excel.PivotAxis
-    fullName: Excel.PivotAxis
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PivotAxis.column:member'
-      - 'excel!Excel.PivotAxis.data:member'
-      - 'excel!Excel.PivotAxis.filter:member'
-      - 'excel!Excel.PivotAxis.row:member'
-      - 'excel!Excel.PivotAxis.unknown:member'
-  - uid: 'excel!Excel.PivotAxis.column:member'
-    summary: O eixo das colunas.
-    name: column
-    fullName: column
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Column"'
-  - uid: 'excel!Excel.PivotAxis.data:member'
-    summary: O eixo dos dados.
-    name: data
-    fullName: data
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Data"'
-  - uid: 'excel!Excel.PivotAxis.filter:member'
-    summary: O eixo do filtro.
-    name: filter
-    fullName: filter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Filter"'
-  - uid: 'excel!Excel.PivotAxis.row:member'
-    summary: O eixo da linha.
-    name: row
-    fullName: row
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Row"'
-  - uid: 'excel!Excel.PivotAxis.unknown:member'
-    summary: O eixo ou a região é desconhecido ou não tem suporte.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unknown"'
+### YamlMime:TSEnum
+name: Excel.PivotAxis
+uid: excel!Excel.PivotAxis:enum
+package: excel!
+fullName: Excel.PivotAxis
+summary: Representa o eixo de onde obter o PivotItems.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: column
+  uid: excel!Excel.PivotAxis.column:member
+  package: excel!
+  summary: O eixo das colunas.
+- name: data
+  uid: excel!Excel.PivotAxis.data:member
+  package: excel!
+  summary: O eixo dos dados.
+- name: filter
+  uid: excel!Excel.PivotAxis.filter:member
+  package: excel!
+  summary: O eixo do filtro.
+- name: row
+  uid: excel!Excel.PivotAxis.row:member
+  package: excel!
+  summary: O eixo da linha.
+- name: unknown
+  uid: excel!Excel.PivotAxis.unknown:member
+  package: excel!
+  summary: O eixo ou a região é desconhecido ou não tem suporte.
+metadata:
+  ms.openlocfilehash: 839736e21ec467c39a9c5c95cdd98072f8fe0576
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413430"

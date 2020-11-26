@@ -1,44 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeLineFormat:interface'
-    summary: 'Representa a formatação de linha para o objeto Shape. Para imagens e formas geométricas, a formatação de linha representa a borda da forma.'
-    name: Excel.ShapeLineFormat
-    fullName: Excel.ShapeLineFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeLineFormat#color:member'
-      - 'excel!Excel.ShapeLineFormat#dashStyle:member'
-      - 'excel!Excel.ShapeLineFormat#load:member(1)'
-      - 'excel!Excel.ShapeLineFormat#style:member'
-      - 'excel!Excel.ShapeLineFormat#transparency:member'
-      - 'excel!Excel.ShapeLineFormat#visible:member'
-      - 'excel!Excel.ShapeLineFormat#weight:member'
-  - uid: 'excel!Excel.ShapeLineFormat#color:member'
-    summary: 'Representa a cor da linha no formato de cor HTML, do formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").'
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ShapeLineFormat#dashStyle:member'
-    summary: 'Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos de traços inconsistentes. Para saber detalhes, confira Excel.ShapeLineStyle.'
-    name: dashStyle
-    fullName: dashStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        dashStyle:
-                    | ShapeLineDashStyle
+### YamlMime:TSType
+name: Excel.ShapeLineFormat
+uid: excel!Excel.ShapeLineFormat:interface
+package: excel!
+fullName: Excel.ShapeLineFormat
+summary: Representa a formatação de linha para o objeto Shape. Para imagens e formas geométricas, a formatação de linha representa a borda da forma.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.ShapeLineFormat#color:member
+  package: excel!
+  fullName: color
+  summary: Representa a cor da linha no formato de cor HTML, do formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: dashStyle
+  uid: excel!Excel.ShapeLineFormat#dashStyle:member
+  package: excel!
+  fullName: dashStyle
+  summary: Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos de traços inconsistentes. Para saber detalhes, confira Excel.ShapeLineStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      dashStyle:
+                  | ShapeLineDashStyle
+                  | "Dash"
+                  | "DashDot"
+                  | "DashDotDot"
+                  | "LongDash"
+                  | "LongDashDot"
+                  | "RoundDot"
+                  | "Solid"
+                  | "SquareDot"
+                  | "LongDashDotDot"
+                  | "SystemDash"
+                  | "SystemDot"
+                  | "SystemDashDot";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ShapeLineDashStyle:enum" />
                     | "Dash"
                     | "DashDot"
                     | "DashDotDot"
@@ -50,179 +59,90 @@ items:
                     | "LongDashDotDot"
                     | "SystemDash"
                     | "SystemDot"
-                    | "SystemDashDot";
-      return:
-        type:
-          - 'excel!Excel.ShapeLineFormat#dashStyle~0:complex'
-  - uid: 'excel!Excel.ShapeLineFormat#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ShapeLineFormat#style:member'
-    summary: 'Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos inconsistentes. Para saber detalhes, confira Excel.ShapeLineStyle.'
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        style:
-                    | ShapeLineStyle
+                    | "SystemDashDot"
+- name: style
+  uid: excel!Excel.ShapeLineFormat#style:member
+  package: excel!
+  fullName: style
+  summary: Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos inconsistentes. Para saber detalhes, confira Excel.ShapeLineStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      style:
+                  | ShapeLineStyle
+                  | "Single"
+                  | "ThickBetweenThin"
+                  | "ThickThin"
+                  | "ThinThick"
+                  | "ThinThin";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ShapeLineStyle:enum" />
                     | "Single"
                     | "ThickBetweenThin"
                     | "ThickThin"
                     | "ThinThick"
-                    | "ThinThin";
-      return:
-        type:
-          - 'excel!Excel.ShapeLineFormat#style~0:complex'
-  - uid: 'excel!Excel.ShapeLineFormat#transparency:member'
-    summary: 'Representa o grau de transparência da linha especificada como um valor de 0,0 (opaco) a 1,0 (claro). Retorna nulo quando a forma possui transparências inconsistentes.'
-    name: transparency
-    fullName: transparency
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'transparency: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ShapeLineFormat#visible:member'
-    summary: Especifica se a formatação de linha de um elemento Shape é visível. Retorna nulo quando a forma possui visibilidades inconsistentes.
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ShapeLineFormat#weight:member'
-    summary: 'Representa a espessura da linha, em pontos. Retorna nulo quando não a linha não estiver visível ou existirem espessuras de linha inconsistentes.'
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ShapeLineFormat#dashStyle~0:complex'
-    name: |-
-      | ShapeLineDashStyle
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "LongDash"
-                  | "LongDashDot"
-                  | "RoundDot"
-                  | "Solid"
-                  | "SquareDot"
-                  | "LongDashDotDot"
-                  | "SystemDash"
-                  | "SystemDot"
-                  | "SystemDashDot"
-    fullName: |-
-      | Excel.ShapeLineDashStyle
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "LongDash"
-                  | "LongDashDot"
-                  | "RoundDot"
-                  | "Solid"
-                  | "SquareDot"
-                  | "LongDashDotDot"
-                  | "SystemDash"
-                  | "SystemDot"
-                  | "SystemDashDot"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ShapeLineDashStyle:enum'
-        name: ShapeLineDashStyle
-        fullName: Excel.ShapeLineDashStyle
-      - name: |2-
-
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "LongDash"
-                      | "LongDashDot"
-                      | "RoundDot"
-                      | "Solid"
-                      | "SquareDot"
-                      | "LongDashDotDot"
-                      | "SystemDash"
-                      | "SystemDot"
-                      | "SystemDashDot"
-        fullName: |2-
-
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "LongDash"
-                      | "LongDashDot"
-                      | "RoundDot"
-                      | "Solid"
-                      | "SquareDot"
-                      | "LongDashDotDot"
-                      | "SystemDash"
-                      | "SystemDot"
-                      | "SystemDashDot"
-  - uid: 'excel!Excel.ShapeLineFormat#style~0:complex'
-    name: |-
-      | ShapeLineStyle
-                  | "Single"
-                  | "ThickBetweenThin"
-                  | "ThickThin"
-                  | "ThinThick"
-                  | "ThinThin"
-    fullName: |-
-      | Excel.ShapeLineStyle
-                  | "Single"
-                  | "ThickBetweenThin"
-                  | "ThickThin"
-                  | "ThinThick"
-                  | "ThinThin"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ShapeLineStyle:enum'
-        name: ShapeLineStyle
-        fullName: Excel.ShapeLineStyle
-      - name: |2-
-
-                      | "Single"
-                      | "ThickBetweenThin"
-                      | "ThickThin"
-                      | "ThinThick"
-                      | "ThinThin"
-        fullName: |2-
-
-                      | "Single"
-                      | "ThickBetweenThin"
-                      | "ThickThin"
-                      | "ThinThick"
-                      | "ThinThin"
+                    | "ThinThin"
+- name: transparency
+  uid: excel!Excel.ShapeLineFormat#transparency:member
+  package: excel!
+  fullName: transparency
+  summary: Representa o grau de transparência da linha especificada como um valor de 0,0 (opaco) a 1,0 (claro). Retorna nulo quando a forma possui transparências inconsistentes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'transparency: number;'
+    return:
+      type: number
+- name: visible
+  uid: excel!Excel.ShapeLineFormat#visible:member
+  package: excel!
+  fullName: visible
+  summary: Especifica se a formatação de linha de um elemento Shape é visível. Retorna nulo quando a forma possui visibilidades inconsistentes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'visible: boolean;'
+    return:
+      type: boolean
+- name: weight
+  uid: excel!Excel.ShapeLineFormat#weight:member
+  package: excel!
+  fullName: weight
+  summary: Representa a espessura da linha, em pontos. Retorna nulo quando não a linha não estiver visível ou existirem espessuras de linha inconsistentes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ShapeLineFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b515615048679ff32ba55d4e1bff177843c12a82
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413014"

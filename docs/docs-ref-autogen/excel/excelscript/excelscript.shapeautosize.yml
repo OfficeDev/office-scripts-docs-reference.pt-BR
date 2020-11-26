@@ -1,43 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize:enum'
-    summary: Determina o tipo de dimensionamento automático permitido.
-    name: ExcelScript.ShapeAutoSize
-    fullName: ExcelScript.ShapeAutoSize
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
-    summary: É usada uma combinação de esquemas de dimensionamento automático.
-    name: autoSizeMixed
-    fullName: autoSizeMixed
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
-    summary: Sem dimensionamento automático.
-    name: autoSizeNone
-    fullName: autoSizeNone
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
-    summary: A forma é ajustada ao texto.
-    name: autoSizeShapeToFitText
-    fullName: autoSizeShapeToFitText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
-    summary: O texto é ajustado à forma.
-    name: autoSizeTextToFitShape
-    fullName: autoSizeTextToFitShape
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeAutoSize
+uid: ExcelScript!ExcelScript.ShapeAutoSize:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeAutoSize
+summary: Determina o tipo de dimensionamento automático permitido.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: autoSizeMixed
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member
+  package: ExcelScript!
+  summary: É usada uma combinação de esquemas de dimensionamento automático.
+- name: autoSizeNone
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member
+  package: ExcelScript!
+  summary: Sem dimensionamento automático.
+- name: autoSizeShapeToFitText
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member
+  package: ExcelScript!
+  summary: A forma é ajustada ao texto.
+- name: autoSizeTextToFitShape
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member
+  package: ExcelScript!
+  summary: O texto é ajustado à forma.
+metadata:
+  ms.openlocfilehash: 0157f57366a64fa30466de86e56cfcd69ba2e3be
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411863"

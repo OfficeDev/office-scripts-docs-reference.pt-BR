@@ -1,288 +1,242 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Filter:interface'
-    summary: Gerencia a filtragem da coluna de uma tabela.
-    name: ExcelScript.Filter
-    fullName: ExcelScript.Filter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Filter#apply:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#clear:member(1)'
-      - 'ExcelScript!ExcelScript.Filter#getCriteria:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Filter#apply:member(1)'
-    summary: Aplica os critérios de filtro determinados à coluna fornecida.
-    name: apply(criteria)
-    fullName: apply(criteria)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'apply(criteria: FilterCriteria): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: criteria
-          description: O critério a ser aplicado.
-          type:
-            - 'ExcelScript!ExcelScript.FilterCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)'
-    summary: Aplica um filtro "Item Inferior" à coluna para obter o número de elementos fornecido.
-    name: applyBottomItemsFilter(count)
-    fullName: applyBottomItemsFilter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyBottomItemsFilter(count: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: count
-          description: O número de elementos da parte inferior a serem mostrados.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)'
-    summary: Aplica um filtro "Percentual Inferior" à coluna para obter a porcentagem de elementos fornecida.
-    name: applyBottomPercentFilter(percent)
-    fullName: applyBottomPercentFilter(percent)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyBottomPercentFilter(percent: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: percent
-          description: A porcentagem de elementos da parte inferior a serem mostrados.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)'
-    summary: Aplica um filtro "Cor da Célula" à coluna para obter a cor fornecida.
-    name: applyCellColorFilter(color)
-    fullName: applyCellColorFilter(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyCellColorFilter(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: A cor de tela de fundo das células a serem mostradas.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)'
-    summary: Aplica um filtro "Icon" à coluna para obter as cadeias de caracteres de critérios fornecidas.
-    name: 'applyCustomFilter(criteria1, criteria2, oper)'
-    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        applyCustomFilter(
-                    criteria1: string,
-                    criteria2?: string,
-                    oper?: FilterOperator
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: criteria1
-          description: A primeira cadeia de caracteres de critérios.
-          type:
-            - string
-        - id: criteria2
-          description: Opcional. A segunda cadeia de caracteres de critérios.
-          type:
-            - string
-        - id: oper
-          description: Opcional. O operador que descreve como os dois critérios são unidos.
-          type:
-            - 'ExcelScript!ExcelScript.FilterOperator:enum'
-  - uid: 'ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)'
-    summary: Aplica um filtro "Dinâmico" à coluna.
-    name: applyDynamicFilter(criteria)
-    fullName: applyDynamicFilter(criteria)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyDynamicFilter(criteria: DynamicFilterCriteria): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: criteria
-          description: O critério dinâmico a ser aplicado.
-          type:
-            - 'ExcelScript!ExcelScript.DynamicFilterCriteria:enum'
-  - uid: 'ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)'
-    summary: Aplica um filtro "Cor da Fonte" à coluna para obter a cor fornecida.
-    name: applyFontColorFilter(color)
-    fullName: applyFontColorFilter(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyFontColorFilter(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: A cor da fonte das células a serem mostradas.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)'
-    summary: Aplicar um filtro "ícone" à coluna para o ícone dado.
-    name: applyIconFilter(icon)
-    fullName: applyIconFilter(icon)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyIconFilter(icon: Icon): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: icon
-          description: Os ícones das células a serem mostrados.
-          type:
-            - 'ExcelScript!ExcelScript.Icon:interface'
-  - uid: 'ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)'
-    summary: Aplica um filtro "Item Superior" à coluna para obter o número de elementos fornecido.
-    name: applyTopItemsFilter(count)
-    fullName: applyTopItemsFilter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyTopItemsFilter(count: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: count
-          description: O número de elementos da parte superior a serem mostrados.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)'
-    summary: Aplica um filtro "Percentual Superior" à coluna para obter a porcentagem de elementos fornecida.
-    name: applyTopPercentFilter(percent)
-    fullName: applyTopPercentFilter(percent)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyTopPercentFilter(percent: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: percent
-          description: A porcentagem de elementos da parte superior a serem mostrados.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)'
-    summary: Aplica um filtro "Valores" à coluna para obter os valores fornecidos.
-    name: applyValuesFilter(values)
-    fullName: applyValuesFilter(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: values
-          description: A lista de valores a serem mostrados. Deve ser uma matriz de cadeias de caracteres ou uma matriz de objetos ExcelScript. FilterDateTime.
-          type:
-            - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'
-    summary: Limpa o filtro na coluna fornecida.
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Filter#getCriteria:member(1)'
-    summary: O filtro aplicado no momento à coluna fornecida.
-    name: getCriteria()
-    fullName: getCriteria()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCriteria(): FilterCriteria;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterCriteria:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
-    name: FilterCriteria
-    fullName: ExcelScript.FilterCriteria
-  - uid: 'ExcelScript!ExcelScript.FilterOperator:enum'
-    name: FilterOperator
-    fullName: ExcelScript.FilterOperator
-  - uid: 'ExcelScript!ExcelScript.DynamicFilterCriteria:enum'
-    name: DynamicFilterCriteria
-    fullName: ExcelScript.DynamicFilterCriteria
-  - uid: 'ExcelScript!ExcelScript.Icon:interface'
-    name: Icon
-    fullName: ExcelScript.Icon
-  - uid: 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
-    name: Array<string | FilterDatetime>
-    fullName: Array<string | ExcelScript.FilterDatetime>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: '<string | '
-        fullName: '<string | '
-      - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
-        name: FilterDatetime
-        fullName: ExcelScript.FilterDatetime
-      - name: '>'
-        fullName: '>'
+### YamlMime:TSType
+name: ExcelScript.Filter
+uid: ExcelScript!ExcelScript.Filter:interface
+package: ExcelScript!
+fullName: ExcelScript.Filter
+summary: Gerencia a filtragem da coluna de uma tabela.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: apply(criteria)
+  uid: ExcelScript!ExcelScript.Filter#apply:member(1)
+  package: ExcelScript!
+  fullName: apply(criteria)
+  summary: Aplica os critérios de filtro determinados à coluna fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'apply(criteria: FilterCriteria): void;'
+    parameters:
+    - id: criteria
+      description: O critério a ser aplicado.
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+    return:
+      type: void
+      description: ''
+- name: applyBottomItemsFilter(count)
+  uid: ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)
+  package: ExcelScript!
+  fullName: applyBottomItemsFilter(count)
+  summary: Aplica um filtro "Item Inferior" à coluna para obter o número de elementos fornecido.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyBottomItemsFilter(count: number): void;'
+    parameters:
+    - id: count
+      description: O número de elementos da parte inferior a serem mostrados.
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyBottomPercentFilter(percent)
+  uid: ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)
+  package: ExcelScript!
+  fullName: applyBottomPercentFilter(percent)
+  summary: Aplica um filtro "Percentual Inferior" à coluna para obter a porcentagem de elementos fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyBottomPercentFilter(percent: number): void;'
+    parameters:
+    - id: percent
+      description: A porcentagem de elementos da parte inferior a serem mostrados.
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyCellColorFilter(color)
+  uid: ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)
+  package: ExcelScript!
+  fullName: applyCellColorFilter(color)
+  summary: Aplica um filtro "Cor da Célula" à coluna para obter a cor fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyCellColorFilter(color: string): void;'
+    parameters:
+    - id: color
+      description: A cor de tela de fundo das células a serem mostradas.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: applyCustomFilter(criteria1, criteria2, oper)
+  uid: ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)
+  package: ExcelScript!
+  fullName: applyCustomFilter(criteria1, criteria2, oper)
+  summary: Aplica um filtro "Icon" à coluna para obter as cadeias de caracteres de critérios fornecidas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      applyCustomFilter(
+                  criteria1: string,
+                  criteria2?: string,
+                  oper?: FilterOperator
+              ): void;
+    parameters:
+    - id: criteria1
+      description: A primeira cadeia de caracteres de critérios.
+      type: string
+    - id: criteria2
+      description: Opcional. A segunda cadeia de caracteres de critérios.
+      type: string
+    - id: oper
+      description: Opcional. O operador que descreve como os dois critérios são unidos.
+      type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
+    return:
+      type: void
+      description: ''
+- name: applyDynamicFilter(criteria)
+  uid: ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)
+  package: ExcelScript!
+  fullName: applyDynamicFilter(criteria)
+  summary: Aplica um filtro "Dinâmico" à coluna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyDynamicFilter(criteria: DynamicFilterCriteria): void;'
+    parameters:
+    - id: criteria
+      description: O critério dinâmico a ser aplicado.
+      type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
+    return:
+      type: void
+      description: ''
+- name: applyFontColorFilter(color)
+  uid: ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)
+  package: ExcelScript!
+  fullName: applyFontColorFilter(color)
+  summary: Aplica um filtro "Cor da Fonte" à coluna para obter a cor fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyFontColorFilter(color: string): void;'
+    parameters:
+    - id: color
+      description: A cor da fonte das células a serem mostradas.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: applyIconFilter(icon)
+  uid: ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)
+  package: ExcelScript!
+  fullName: applyIconFilter(icon)
+  summary: Aplicar um filtro "ícone" à coluna para o ícone dado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyIconFilter(icon: Icon): void;'
+    parameters:
+    - id: icon
+      description: Os ícones das células a serem mostrados.
+      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
+    return:
+      type: void
+      description: ''
+- name: applyTopItemsFilter(count)
+  uid: ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)
+  package: ExcelScript!
+  fullName: applyTopItemsFilter(count)
+  summary: Aplica um filtro "Item Superior" à coluna para obter o número de elementos fornecido.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyTopItemsFilter(count: number): void;'
+    parameters:
+    - id: count
+      description: O número de elementos da parte superior a serem mostrados.
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyTopPercentFilter(percent)
+  uid: ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)
+  package: ExcelScript!
+  fullName: applyTopPercentFilter(percent)
+  summary: Aplica um filtro "Percentual Superior" à coluna para obter a porcentagem de elementos fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyTopPercentFilter(percent: number): void;'
+    parameters:
+    - id: percent
+      description: A porcentagem de elementos da parte superior a serem mostrados.
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyValuesFilter(values)
+  uid: ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)
+  package: ExcelScript!
+  fullName: applyValuesFilter(values)
+  summary: Aplica um filtro "Valores" à coluna para obter os valores fornecidos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
+    parameters:
+    - id: values
+      description: A lista de valores a serem mostrados. Deve ser uma matriz de cadeias de caracteres ou uma matriz de objetos ExcelScript. FilterDateTime.
+      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
+    return:
+      type: void
+      description: ''
+- name: clear()
+  uid: ExcelScript!ExcelScript.Filter#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: Limpa o filtro na coluna fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCriteria()
+  uid: ExcelScript!ExcelScript.Filter#getCriteria:member(1)
+  package: ExcelScript!
+  fullName: getCriteria()
+  summary: O filtro aplicado no momento à coluna fornecida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCriteria(): FilterCriteria;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 342de2634a064df6aaca42af8d6d475321ca9c0c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412577"
