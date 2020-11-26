@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
-    name: ExcelScript.PrintOrder
-    fullName: ExcelScript.PrintOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
-      - 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
-  - uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
-    summary: Processa as linhas antes de processar as páginas ou campos de página à direita.
-    name: downThenOver
-    fullName: downThenOver
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
-    summary: Processa as páginas ou campos de página à direita antes de mover para baixo nas linhas.
-    name: overThenDown
-    fullName: overThenDown
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PrintOrder
+uid: ExcelScript!ExcelScript.PrintOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.PrintOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: downThenOver
+  uid: ExcelScript!ExcelScript.PrintOrder.downThenOver:member
+  package: ExcelScript!
+  summary: Processa as linhas antes de processar as páginas ou campos de página à direita.
+- name: overThenDown
+  uid: ExcelScript!ExcelScript.PrintOrder.overThenDown:member
+  package: ExcelScript!
+  summary: Processa as páginas ou campos de página à direita antes de mover para baixo nas linhas.
+metadata:
+  ms.openlocfilehash: d4074993871b1449779ab8b6fd398cb84a0d06ae
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412031"

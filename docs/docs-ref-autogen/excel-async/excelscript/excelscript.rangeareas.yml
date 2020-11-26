@@ -1,380 +1,409 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeAreas:interface'
-    summary: 'RangeAreas representa uma coleção de um ou mais intervalos retangulares na mesma planilha. Para saber como usar intervalos do discontinguous, leia [trabalhar com vários intervalos simultaneamente em suplementos do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.'
-    name: Excel.RangeAreas
-    fullName: Excel.RangeAreas
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RangeAreas#address:member'
-      - 'excel!Excel.RangeAreas#addressLocal:member'
-      - 'excel!Excel.RangeAreas#areaCount:member'
-      - 'excel!Excel.RangeAreas#areas:member'
-      - 'excel!Excel.RangeAreas#calculate:member(1)'
-      - 'excel!Excel.RangeAreas#cellCount:member'
-      - 'excel!Excel.RangeAreas#clear:member(1)'
-      - 'excel!Excel.RangeAreas#conditionalFormats:member'
-      - 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
-      - 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
-      - 'excel!Excel.RangeAreas#copyFrom:member(1)'
-      - 'excel!Excel.RangeAreas#dataValidation:member'
-      - 'excel!Excel.RangeAreas#format:member'
-      - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
-      - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
-      - 'excel!Excel.RangeAreas#getIntersection:member(1)'
-      - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
-      - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
-      - 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
-      - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
-      - 'excel!Excel.RangeAreas#getTables:member(1)'
-      - 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
-      - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
-      - 'excel!Excel.RangeAreas#isEntireColumn:member'
-      - 'excel!Excel.RangeAreas#isEntireRow:member'
-      - 'excel!Excel.RangeAreas#load:member(1)'
-      - 'excel!Excel.RangeAreas#setDirty:member(1)'
-      - 'excel!Excel.RangeAreas#style:member'
-      - 'excel!Excel.RangeAreas#worksheet:member'
-  - uid: 'excel!Excel.RangeAreas#address:member'
-    summary: 'Retorna a referência RangeAreas em estilo a1. O valor de endereço conterá o nome da planilha para cada bloco retangular de células (por exemplo, "Planilha1! A1: B4, Planilha1! D1: D4 ").'
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly address: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeAreas#addressLocal:member'
-    summary: Retorna a referência RangeAreas na localidade do usuário.
-    name: addressLocal
-    fullName: addressLocal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly addressLocal: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeAreas#areaCount:member'
-    summary: Retorna o número de intervalos retangulares que compõem este objeto RangeAreas.
-    name: areaCount
-    fullName: areaCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly areaCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeAreas#areas:member'
-    summary: Retorna uma coleção de intervalos retangulares que compõem este objeto RangeAreas.
-    name: areas
-    fullName: areas
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly areas: RangeCollection;'
-      return:
-        type:
-          - 'excel!Excel.RangeCollection:interface'
-  - uid: 'excel!Excel.RangeAreas#calculate:member(1)'
-    summary: Calcula todas as células no RangeAreas.
-    name: calculate()
-    fullName: calculate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#cellCount:member'
-    summary: Retorna o número de células no objeto RangeAreas somando as contagens de células de todos os intervalos retangulares individuais. Retornará -1 se a contagem de células exceder 2^31-1 (2.147.483.647).
-    name: cellCount
-    fullName: cellCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly cellCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeAreas#clear:member(1)'
-    summary: 'Limpa valores, formato, preenchimento, borda, etc. em cada uma das áreas que compõe este objeto RangeAreas.'
-    name: clear(applyTo)
-    fullName: clear(applyTo)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        clear(
-                    applyTo?:
-                        | ClearApplyTo
-                        | "All"
-                        | "Formats"
-                        | "Contents"
-                        | "Hyperlinks"
-                        | "RemoveHyperlinks"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: applyTo
-          description: Opcional. Determina o tipo de ação clara. Consulte Excel. ClearApplyTo para obter detalhes. O padrão é "All".
-          type:
-            - 'excel!Excel.RangeAreas#clear~0:complex'
-  - uid: 'excel!Excel.RangeAreas#conditionalFormats:member'
-    summary: Retorna uma coleção de ConditionalFormats que se cruza com qualquer célula nesse objeto RangeAreas.
-    name: conditionalFormats
-    fullName: conditionalFormats
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly conditionalFormats: ConditionalFormatCollection;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalFormatCollection:interface'
-  - uid: 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
-    summary: Converte todas as células de RangeAreas com tipos de dados em texto.
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
-    summary: Converte todas as células de RangeAreas em tipos de dados vinculados.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: A ID de serviço que será usada para consultar os dados.
-          type:
-            - number
-        - id: languageCulture
-          description: Cultura de idioma para consultar o serviço.
-          type:
-            - string
-  - uid: 'excel!Excel.RangeAreas#copyFrom:member(1)'
-    summary: Copia a formatação ou dados da célula do intervalo de origem ou de RangeAreas para o RangeAreas atual. O rangeAreas de destino pode ter um tamanho diferente do intervalo de origem ou RangeAreas. O destino será expandido automaticamente se for menor do que a origem.
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?:
-                        | RangeCopyType
+### YamlMime:TSType
+name: Excel.RangeAreas
+uid: excel!Excel.RangeAreas:interface
+package: excel!
+fullName: Excel.RangeAreas
+summary: RangeAreas representa uma coleção de um ou mais intervalos retangulares na mesma planilha. Para saber como usar intervalos do discontinguous, leia [trabalhar com vários intervalos simultaneamente em suplementos do Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: address
+  uid: excel!Excel.RangeAreas#address:member
+  package: excel!
+  fullName: address
+  summary: 'Retorna a referência RangeAreas em estilo a1. O valor de endereço conterá o nome da planilha para cada bloco retangular de células (por exemplo, "Planilha1! A1: B4, Planilha1! D1: D4 ").'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly address: string;'
+    return:
+      type: string
+- name: addressLocal
+  uid: excel!Excel.RangeAreas#addressLocal:member
+  package: excel!
+  fullName: addressLocal
+  summary: Retorna a referência RangeAreas na localidade do usuário.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly addressLocal: string;'
+    return:
+      type: string
+- name: areaCount
+  uid: excel!Excel.RangeAreas#areaCount:member
+  package: excel!
+  fullName: areaCount
+  summary: Retorna o número de intervalos retangulares que compõem este objeto RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly areaCount: number;'
+    return:
+      type: number
+- name: areas
+  uid: excel!Excel.RangeAreas#areas:member
+  package: excel!
+  fullName: areas
+  summary: Retorna uma coleção de intervalos retangulares que compõem este objeto RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly areas: RangeCollection;'
+    return:
+      type: <xref uid="excel!Excel.RangeCollection:interface" />
+- name: cellCount
+  uid: excel!Excel.RangeAreas#cellCount:member
+  package: excel!
+  fullName: cellCount
+  summary: Retorna o número de células no objeto RangeAreas somando as contagens de células de todos os intervalos retangulares individuais. Retornará -1 se a contagem de células exceder 2^31-1 (2.147.483.647).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly cellCount: number;'
+    return:
+      type: number
+- name: conditionalFormats
+  uid: excel!Excel.RangeAreas#conditionalFormats:member
+  package: excel!
+  fullName: conditionalFormats
+  summary: Retorna uma coleção de ConditionalFormats que se cruza com qualquer célula nesse objeto RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly conditionalFormats: ConditionalFormatCollection;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalFormatCollection:interface" />
+- name: dataValidation
+  uid: excel!Excel.RangeAreas#dataValidation:member
+  package: excel!
+  fullName: dataValidation
+  summary: Retorna um objeto dataValidation para todos os intervalos no RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly dataValidation: DataValidation;'
+    return:
+      type: <xref uid="excel!Excel.DataValidation:interface" />
+- name: format
+  uid: excel!Excel.RangeAreas#format:member
+  package: excel!
+  fullName: format
+  summary: Retorna um objeto RangeFormat, encapsulando a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades para todos os intervalos no objeto RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: RangeFormat;'
+    return:
+      type: <xref uid="excel!Excel.RangeFormat:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let usedRange = sheet.getUsedRange();\n\n    // Find the ranges with formulas.\n    let formulaRanges = usedRange.getSpecialCells(\"Formulas\");\n    formulaRanges.format.fill.color = \"lightgreen\";\n\n    await context.sync();\n}\n```"
+- name: isEntireColumn
+  uid: excel!Excel.RangeAreas#isEntireColumn:member
+  package: excel!
+  fullName: isEntireColumn
+  summary: Especifica se todos os intervalos deste objeto RangeAreas representam colunas inteiras (por exemplo, "A:C, Q:Z").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isEntireColumn: boolean;'
+    return:
+      type: boolean
+- name: isEntireRow
+  uid: excel!Excel.RangeAreas#isEntireRow:member
+  package: excel!
+  fullName: isEntireRow
+  summary: Especifica se todos os intervalos deste objeto RangeAreas representam linhas inteiras (por exemplo, "1:3, 5:7").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isEntireRow: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: excel!Excel.RangeAreas#style:member
+  package: excel!
+  fullName: style
+  summary: Representa o estilo de todos os intervalos nesse objeto RangeAreas. Se os estilos das células forem inconsistentes, NULL será retornado. Para estilos personalizados, o nome do estilo será retornado. Para os estilos internos, uma cadeia de caracteres que representa um valor na enumeração BuiltInstyle será retornada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: string;'
+    return:
+      type: string
+- name: worksheet
+  uid: excel!Excel.RangeAreas#worksheet:member
+  package: excel!
+  fullName: worksheet
+  summary: Retorna a planilha para o RangeAreas atual.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheet: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+methods:
+- name: calculate()
+  uid: excel!Excel.RangeAreas#calculate:member(1)
+  package: excel!
+  fullName: calculate()
+  summary: Calcula todas as células no RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(): void;'
+    return:
+      type: void
+      description: ''
+- name: clear(applyTo)
+  uid: excel!Excel.RangeAreas#clear:member(1)
+  package: excel!
+  fullName: clear(applyTo)
+  summary: Limpa valores, formato, preenchimento, borda, etc. em cada uma das áreas que compõe este objeto RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      clear(
+                  applyTo?:
+                      | ClearApplyTo
+                      | "All"
+                      | "Formats"
+                      | "Contents"
+                      | "Hyperlinks"
+                      | "RemoveHyperlinks"
+              ): void;
+    parameters:
+    - id: applyTo
+      description: Opcional. Determina o tipo de ação clara. Consulte Excel. ClearApplyTo para obter detalhes. O padrão é "All".
+      type: "| <xref uid=\"excel!Excel.ClearApplyTo:enum\" />\n                | \"All\"\n                | \"Formats\"\n                | \"Contents\"\n                | \"Hyperlinks\"\n                | \"RemoveHyperlinks\"\n        "
+    return:
+      type: void
+      description: ''
+- name: convertDataTypeToText()
+  uid: excel!Excel.RangeAreas#convertDataTypeToText:member(1)
+  package: excel!
+  fullName: convertDataTypeToText()
+  summary: Converte todas as células de RangeAreas com tipos de dados em texto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertDataTypeToText(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertToLinkedDataType(serviceID, languageCulture)
+  uid: excel!Excel.RangeAreas#convertToLinkedDataType:member(1)
+  package: excel!
+  fullName: convertToLinkedDataType(serviceID, languageCulture)
+  summary: Converte todas as células de RangeAreas em tipos de dados vinculados.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      convertToLinkedDataType(
+                  serviceID: number,
+                  languageCulture: string
+              ): void;
+    parameters:
+    - id: serviceID
+      description: A ID de serviço que será usada para consultar os dados.
+      type: number
+    - id: languageCulture
+      description: Cultura de idioma para consultar o serviço.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  uid: excel!Excel.RangeAreas#copyFrom:member(1)
+  package: excel!
+  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  summary: Copia a formatação ou dados da célula do intervalo de origem ou de RangeAreas para o RangeAreas atual. O rangeAreas de destino pode ter um tamanho diferente do intervalo de origem ou RangeAreas. O destino será expandido automaticamente se for menor do que a origem.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copyFrom(
+                  sourceRange: Range | RangeAreas | string,
+                  copyType?:
+                      | RangeCopyType
+                      | "All"
+                      | "Formulas"
+                      | "Values"
+                      | "Formats",
+                  skipBlanks?: boolean,
+                  transpose?: boolean
+              ): void;
+    parameters:
+    - id: sourceRange
+      description: O intervalo de origem ou RangeAreas a ser copiado. Quando o RangeAreas de origem tem vários intervalos, seu formulário deve ser criado removendo linhas ou colunas completas de um intervalo retangular.
+      type: <xref uid="excel!Excel.Range:interface" /> | <xref uid="excel!Excel.RangeAreas:interface" /> | string
+    - id: copyType
+      description: O tipo de dados da célula ou formatação a ser copiada. O padrão é "All".
+      type: >-
+        | <xref uid="excel!Excel.RangeCopyType:enum" />
                         | "All"
                         | "Formulas"
                         | "Values"
-                        | "Formats",
-                    skipBlanks?: boolean,
-                    transpose?: boolean
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: 'O intervalo de origem ou RangeAreas a ser copiado. Quando o RangeAreas de origem tem vários intervalos, seu formulário deve ser criado removendo linhas ou colunas completas de um intervalo retangular.'
-          type:
-            - 'excel!Excel.RangeAreas#copyFrom~0:complex'
-        - id: copyType
-          description: O tipo de dados da célula ou formatação a ser copiada. O padrão é "All".
-          type:
-            - 'excel!Excel.RangeAreas#copyFrom~1:complex'
-        - id: skipBlanks
-          description: True se para ignorar células em branco no intervalo de origem ou RangeAreas. O padrão é false.
-          type:
-            - boolean
-        - id: transpose
-          description: True se para transpor as células no RangeAreas de destino. O padrão é false.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#dataValidation:member'
-    summary: Retorna um objeto dataValidation para todos os intervalos no RangeAreas.
-    name: dataValidation
-    fullName: dataValidation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly dataValidation: DataValidation;'
-      return:
-        type:
-          - 'excel!Excel.DataValidation:interface'
-  - uid: 'excel!Excel.RangeAreas#format:member'
-    summary: 'Retorna um objeto RangeFormat, encapsulando a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades para todos os intervalos no objeto RangeAreas.'
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: RangeFormat;'
-      return:
-        type:
-          - 'excel!Excel.RangeFormat:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let usedRange = sheet.getUsedRange();
-
-              // Find the ranges with formulas.
-              let formulaRanges = usedRange.getSpecialCells("Formulas");
-              formulaRanges.format.fill.color = "lightgreen";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
-    summary: 'Retorna um objeto RangeAreas que representa as colunas inteiras dos objetos RangeAreas (por exemplo, se o RangeAreas atual representa as células "B4:E11, H2", ele retorna um RangeAreas que representa as colunas "B:E, H:H").'
-    name: getEntireColumn()
-    fullName: getEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireColumn(): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#getEntireRow:member(1)'
-    summary: 'Retorna um objeto RangeAreas que representa as linhas inteiras dos objetos RangeAreas (por exemplo, se o RangeAreas atual representa as células "B4:E11", ele retorna um RangeAreas que representa as linhas "4:11").'
-    name: getEntireRow()
-    fullName: getEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireRow(): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
-    summary: 'Retorna o objeto RangeAreas que representa a interseção dos intervalos fornecidos ou RangeAreas. Se nenhuma interseção for encontrada, um erro ItemNotFound será gerado.'
-    name: getIntersection(anotherRange)
-    fullName: getIntersection(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 'O intervalo, o objeto RangeAreas ou o endereço do intervalo que será usado para determinar a interseção.'
-          type:
-            - 'excel!Excel.RangeAreas#getIntersection~0:complex'
-  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
-    summary: 'Retorna o objeto RangeAreas que representa a interseção dos intervalos fornecidos ou RangeAreas. Se nenhuma interseção for encontrada, um objeto null será retornado.'
-    name: getIntersectionOrNullObject(anotherRange)
-    fullName: getIntersectionOrNullObject(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getIntersectionOrNullObject(
-                    anotherRange: Range | RangeAreas | string
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 'O intervalo, RangeAreas ou endereço que será usado para determinar a interseção.'
-          type:
-            - 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
-  - uid: 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
-    summary: 'Retorna um objeto RangeAreas que é deslocado pelo deslocamento de linha e coluna específico. A dimensão do RangeAreas retornado corresponderá ao objeto original. Se o RangeAreas resultante for imposto para fora dos limites da grade da planilha, o sistema gerará um erro.'
-    name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getOffsetRangeAreas(
-                    rowOffset: number,
-                    columnOffset: number
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: rowOffset
-          description: 'O número de linhas (positivo, negativo ou 0) pelo qual o RangeAreas deve ser deslocado. Valores positivos estão deslocados para baixo, e os valores negativos para cima.'
-          type:
-            - number
-        - id: columnOffset
-          description: 'O número de colunas (positivo, negativo ou 0) pelo qual o RangeAreas deve ser deslocado. Valores positivos estão deslocados para a direita, e os valores negativos para a esquerda.'
-          type:
-            - number
-  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
-    summary: Retorna um objeto RangeAreas que representa todas as células que correspondem ao tipo e valor especificados. Gera um erro se nenhuma célula especial que corresponda aos critérios for encontrada.
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCells(
-                    cellType:
-                        | SpecialCellType
+                        | "Formats"
+    - id: skipBlanks
+      description: True se para ignorar células em branco no intervalo de origem ou RangeAreas. O padrão é false.
+      type: boolean
+    - id: transpose
+      description: True se para transpor as células no RangeAreas de destino. O padrão é false.
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: getEntireColumn()
+  uid: excel!Excel.RangeAreas#getEntireColumn:member(1)
+  package: excel!
+  fullName: getEntireColumn()
+  summary: Retorna um objeto RangeAreas que representa as colunas inteiras dos objetos RangeAreas (por exemplo, se o RangeAreas atual representa as células "B4:E11, H2", ele retorna um RangeAreas que representa as colunas "B:E, H:H").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireColumn(): RangeAreas;'
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getEntireRow()
+  uid: excel!Excel.RangeAreas#getEntireRow:member(1)
+  package: excel!
+  fullName: getEntireRow()
+  summary: Retorna um objeto RangeAreas que representa as linhas inteiras dos objetos RangeAreas (por exemplo, se o RangeAreas atual representa as células "B4:E11", ele retorna um RangeAreas que representa as linhas "4:11").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireRow(): RangeAreas;'
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getIntersection(anotherRange)
+  uid: excel!Excel.RangeAreas#getIntersection:member(1)
+  package: excel!
+  fullName: getIntersection(anotherRange)
+  summary: Retorna o objeto RangeAreas que representa a interseção dos intervalos fornecidos ou RangeAreas. Se nenhuma interseção for encontrada, um erro ItemNotFound será gerado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+    parameters:
+    - id: anotherRange
+      description: O intervalo, o objeto RangeAreas ou o endereço do intervalo que será usado para determinar a interseção.
+      type: <xref uid="excel!Excel.Range:interface" /> | <xref uid="excel!Excel.RangeAreas:interface" /> | string
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getIntersectionOrNullObject(anotherRange)
+  uid: excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)
+  package: excel!
+  fullName: getIntersectionOrNullObject(anotherRange)
+  summary: Retorna o objeto RangeAreas que representa a interseção dos intervalos fornecidos ou RangeAreas. Se nenhuma interseção for encontrada, um objeto null será retornado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getIntersectionOrNullObject(
+                  anotherRange: Range | RangeAreas | string
+              ): RangeAreas;
+    parameters:
+    - id: anotherRange
+      description: O intervalo, RangeAreas ou endereço que será usado para determinar a interseção.
+      type: "<xref uid=\"excel!Excel.Range:interface\" /> | <xref uid=\"excel!Excel.RangeAreas:interface\" /> | string\n        "
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getOffsetRangeAreas(rowOffset, columnOffset)
+  uid: excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)
+  package: excel!
+  fullName: getOffsetRangeAreas(rowOffset, columnOffset)
+  summary: Retorna um objeto RangeAreas que é deslocado pelo deslocamento de linha e coluna específico. A dimensão do RangeAreas retornado corresponderá ao objeto original. Se o RangeAreas resultante for imposto para fora dos limites da grade da planilha, o sistema gerará um erro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getOffsetRangeAreas(
+                  rowOffset: number,
+                  columnOffset: number
+              ): RangeAreas;
+    parameters:
+    - id: rowOffset
+      description: O número de linhas (positivo, negativo ou 0) pelo qual o RangeAreas deve ser deslocado. Valores positivos estão deslocados para baixo, e os valores negativos para cima.
+      type: number
+    - id: columnOffset
+      description: O número de colunas (positivo, negativo ou 0) pelo qual o RangeAreas deve ser deslocado. Valores positivos estão deslocados para a direita, e os valores negativos para a esquerda.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getSpecialCells(cellType, cellValueType)
+  uid: excel!Excel.RangeAreas#getSpecialCells:member(1)
+  package: excel!
+  fullName: getSpecialCells(cellType, cellValueType)
+  summary: Retorna um objeto RangeAreas que representa todas as células que correspondem ao tipo e valor especificados. Gera um erro se nenhuma célula especial que corresponda aos critérios for encontrada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCells(
+                  cellType:
+                      | SpecialCellType
+                      | "ConditionalFormats"
+                      | "DataValidations"
+                      | "Blanks"
+                      | "Constants"
+                      | "Formulas"
+                      | "SameConditionalFormat"
+                      | "SameDataValidation"
+                      | "Visible",
+                  cellValueType?:
+                      | SpecialCellValueType
+                      | "All"
+                      | "Errors"
+                      | "ErrorsLogical"
+                      | "ErrorsNumbers"
+                      | "ErrorsText"
+                      | "ErrorsLogicalNumber"
+                      | "ErrorsLogicalText"
+                      | "ErrorsNumberText"
+                      | "Logical"
+                      | "LogicalNumbers"
+                      | "LogicalText"
+                      | "LogicalNumbersText"
+                      | "Numbers"
+                      | "NumbersText"
+                      | "Text"
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: O tipo de células a serem incluídas.
+      type: >-
+        | <xref uid="excel!Excel.SpecialCellType:enum" />
                         | "ConditionalFormats"
                         | "DataValidations"
                         | "Blanks"
@@ -382,50 +411,57 @@ items:
                         | "Formulas"
                         | "SameConditionalFormat"
                         | "SameDataValidation"
-                        | "Visible",
-                    cellValueType?:
-                        | SpecialCellValueType
-                        | "All"
-                        | "Errors"
-                        | "ErrorsLogical"
-                        | "ErrorsNumbers"
-                        | "ErrorsText"
-                        | "ErrorsLogicalNumber"
-                        | "ErrorsLogicalText"
-                        | "ErrorsNumberText"
-                        | "Logical"
-                        | "LogicalNumbers"
-                        | "LogicalText"
-                        | "LogicalNumbersText"
-                        | "Numbers"
-                        | "NumbersText"
-                        | "Text"
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: O tipo de células a serem incluídas.
-          type:
-            - 'excel!Excel.RangeAreas#getSpecialCells~0:complex'
-        - id: cellValueType
-          description: 'Se CellType for Constants ou formulas, esse argumento será usado para determinar quais tipos de células incluir no resultado. Esses valores podem ser combinados em conjunto para retornar mais de um tipo. O padrão é selecionar todas as constantes ou as fórmulas, independente do tipo.'
-          type:
-            - 'excel!Excel.RangeAreas#getSpecialCells~1:complex'
-  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
-    summary: Retorna um objeto RangeAreas que representa todas as células que correspondem ao tipo e valor especificados. Retorna um objeto null se nenhuma célula especial que corresponda ao critério for encontrada.
-    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCellsOrNullObject(
-                    cellType:
-                        | SpecialCellType
+                        | "Visible"
+    - id: cellValueType
+      description: Se CellType for Constants ou formulas, esse argumento será usado para determinar quais tipos de células incluir no resultado. Esses valores podem ser combinados em conjunto para retornar mais de um tipo. O padrão é selecionar todas as constantes ou as fórmulas, independente do tipo.
+      type: "| <xref uid=\"excel!Excel.SpecialCellValueType:enum\" />\n                | \"All\"\n                | \"Errors\"\n                | \"ErrorsLogical\"\n                | \"ErrorsNumbers\"\n                | \"ErrorsText\"\n                | \"ErrorsLogicalNumber\"\n                | \"ErrorsLogicalText\"\n                | \"ErrorsNumberText\"\n                | \"Logical\"\n                | \"LogicalNumbers\"\n                | \"LogicalText\"\n                | \"LogicalNumbersText\"\n                | \"Numbers\"\n                | \"NumbersText\"\n                | \"Text\"\n        "
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getSpecialCellsOrNullObject(cellType, cellValueType)
+  uid: excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)
+  package: excel!
+  fullName: getSpecialCellsOrNullObject(cellType, cellValueType)
+  summary: Retorna um objeto RangeAreas que representa todas as células que correspondem ao tipo e valor especificados. Retorna um objeto null se nenhuma célula especial que corresponda ao critério for encontrada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCellsOrNullObject(
+                  cellType:
+                      | SpecialCellType
+                      | "ConditionalFormats"
+                      | "DataValidations"
+                      | "Blanks"
+                      | "Constants"
+                      | "Formulas"
+                      | "SameConditionalFormat"
+                      | "SameDataValidation"
+                      | "Visible",
+                  cellValueType?:
+                      | SpecialCellValueType
+                      | "All"
+                      | "Errors"
+                      | "ErrorsLogical"
+                      | "ErrorsNumbers"
+                      | "ErrorsText"
+                      | "ErrorsLogicalNumber"
+                      | "ErrorsLogicalText"
+                      | "ErrorsNumberText"
+                      | "Logical"
+                      | "LogicalNumbers"
+                      | "LogicalText"
+                      | "LogicalNumbersText"
+                      | "Numbers"
+                      | "NumbersText"
+                      | "Text"
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: O tipo de células a serem incluídas.
+      type: >-
+        | <xref uid="excel!Excel.SpecialCellType:enum" />
                         | "ConditionalFormats"
                         | "DataValidations"
                         | "Blanks"
@@ -433,552 +469,98 @@ items:
                         | "Formulas"
                         | "SameConditionalFormat"
                         | "SameDataValidation"
-                        | "Visible",
-                    cellValueType?:
-                        | SpecialCellValueType
-                        | "All"
-                        | "Errors"
-                        | "ErrorsLogical"
-                        | "ErrorsNumbers"
-                        | "ErrorsText"
-                        | "ErrorsLogicalNumber"
-                        | "ErrorsLogicalText"
-                        | "ErrorsNumberText"
-                        | "Logical"
-                        | "LogicalNumbers"
-                        | "LogicalText"
-                        | "LogicalNumbersText"
-                        | "Numbers"
-                        | "NumbersText"
-                        | "Text"
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: O tipo de células a serem incluídas.
-          type:
-            - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject~0:complex'
-        - id: cellValueType
-          description: 'Se CellType for Constants ou formulas, esse argumento será usado para determinar quais tipos de células incluir no resultado. Esses valores podem ser combinados em conjunto para retornar mais de um tipo. O padrão é selecionar todas as constantes ou as fórmulas, independente do tipo.'
-          type:
-            - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject~1:complex'
-  - uid: 'excel!Excel.RangeAreas#getTables:member(1)'
-    summary: Retorna uma coleção de tabelas com escopo que se sobrepõe a qualquer intervalo neste objeto RangeAreas.
-    name: getTables(fullyContained)
-    fullName: getTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableScopedCollection:interface'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 'Se true, retornará somente as tabelas que estão totalmente contidas dentro dos limites do intervalo. O padrão é false.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
-    summary: 'Retorna o RangeAreas usado que compreende todas as áreas utilizadas de intervalos retangulares individuais no objeto RangeAreas. Se não houver células usadas no RangeAreas, o erro ItemNotFound será lançado.'
-    name: getUsedRangeAreas(valuesOnly)
-    fullName: getUsedRangeAreas(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Se deve apenas considerar as células com valores como células usadas. O padrão é false.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
-    summary: 'Retorna o RangeAreas usado que compreende todas as áreas utilizadas de intervalos retangulares individuais no objeto RangeAreas. Se não houver células usadas no RangeAreas, um objeto NULL será retornado.'
-    name: getUsedRangeAreasOrNullObject(valuesOnly)
-    fullName: getUsedRangeAreasOrNullObject(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeAreasOrNullObject(valuesOnly?: boolean): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Se deve apenas considerar as células com valores como células usadas.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#isEntireColumn:member'
-    summary: 'Especifica se todos os intervalos deste objeto RangeAreas representam colunas inteiras (por exemplo, "A:C, Q:Z").'
-    name: isEntireColumn
-    fullName: isEntireColumn
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEntireColumn: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.RangeAreas#isEntireRow:member'
-    summary: 'Especifica se todos os intervalos deste objeto RangeAreas representam linhas inteiras (por exemplo, "1:3, 5:7").'
-    name: isEntireRow
-    fullName: isEntireRow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEntireRow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.RangeAreas#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeAreas#setDirty:member(1)'
-    summary: Define o RangeAreas que será recalculado quando o próximo recálculo ocorrer.
-    name: setDirty()
-    fullName: setDirty()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#style:member'
-    summary: 'Representa o estilo de todos os intervalos nesse objeto RangeAreas. Se os estilos das células forem inconsistentes, NULL será retornado. Para estilos personalizados, o nome do estilo será retornado. Para os estilos internos, uma cadeia de caracteres que representa um valor na enumeração BuiltInstyle será retornada.'
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeAreas#worksheet:member'
-    summary: Retorna a planilha para o RangeAreas atual.
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-references:
-  - uid: 'excel!Excel.RangeCollection:interface'
-    name: RangeCollection
-    fullName: Excel.RangeCollection
-  - uid: 'excel!Excel.RangeAreas#clear~0:complex'
-    name: |-
-      | ClearApplyTo
-                      | "All"
-                      | "Formats"
-                      | "Contents"
-                      | "Hyperlinks"
-                      | "RemoveHyperlinks"
-    fullName: |-
-      | Excel.ClearApplyTo
-                      | "All"
-                      | "Formats"
-                      | "Contents"
-                      | "Hyperlinks"
-                      | "RemoveHyperlinks"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ClearApplyTo:enum'
-        name: ClearApplyTo
-        fullName: Excel.ClearApplyTo
-      - name: |2-
-
-                          | "All"
-                          | "Formats"
-                          | "Contents"
-                          | "Hyperlinks"
-                          | "RemoveHyperlinks"
-                  
-        fullName: |2-
-
-                          | "All"
-                          | "Formats"
-                          | "Contents"
-                          | "Hyperlinks"
-                          | "RemoveHyperlinks"
-                  
-  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
-    name: ConditionalFormatCollection
-    fullName: Excel.ConditionalFormatCollection
-  - uid: 'excel!Excel.RangeAreas#copyFrom~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:interface'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.RangeAreas#copyFrom~1:complex'
-    name: |-
-      | RangeCopyType
-                      | "All"
-                      | "Formulas"
-                      | "Values"
-                      | "Formats"
-    fullName: |-
-      | Excel.RangeCopyType
-                      | "All"
-                      | "Formulas"
-                      | "Values"
-                      | "Formats"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.RangeCopyType:enum'
-        name: RangeCopyType
-        fullName: Excel.RangeCopyType
-      - name: |2-
-
-                          | "All"
-                          | "Formulas"
-                          | "Values"
-                          | "Formats"
-        fullName: |2-
-
-                          | "All"
-                          | "Formulas"
-                          | "Values"
-                          | "Formats"
-  - uid: 'excel!Excel.DataValidation:interface'
-    name: DataValidation
-    fullName: Excel.DataValidation
-  - uid: 'excel!Excel.RangeFormat:interface'
-    name: RangeFormat
-    fullName: Excel.RangeFormat
-  - uid: 'excel!Excel.RangeAreas:interface'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
-  - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:interface'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:interface'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
-  - uid: 'excel!Excel.RangeAreas#getSpecialCells~0:complex'
-    name: |-
-      | SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    fullName: |-
-      | Excel.SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellType:enum'
-        name: SpecialCellType
-        fullName: Excel.SpecialCellType
-      - name: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-        fullName: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-  - uid: 'excel!Excel.RangeAreas#getSpecialCells~1:complex'
-    name: |-
-      | SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    fullName: |-
-      | Excel.SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellValueType:enum'
-        name: SpecialCellValueType
-        fullName: Excel.SpecialCellValueType
-      - name: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-        fullName: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject~0:complex'
-    name: |-
-      | SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    fullName: |-
-      | Excel.SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellType:enum'
-        name: SpecialCellType
-        fullName: Excel.SpecialCellType
-      - name: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-        fullName: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject~1:complex'
-    name: |-
-      | SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    fullName: |-
-      | Excel.SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellValueType:enum'
-        name: SpecialCellValueType
-        fullName: Excel.SpecialCellValueType
-      - name: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-        fullName: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-  - uid: 'excel!Excel.TableScopedCollection:interface'
-    name: TableScopedCollection
-    fullName: Excel.TableScopedCollection
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
+                        | "Visible"
+    - id: cellValueType
+      description: Se CellType for Constants ou formulas, esse argumento será usado para determinar quais tipos de células incluir no resultado. Esses valores podem ser combinados em conjunto para retornar mais de um tipo. O padrão é selecionar todas as constantes ou as fórmulas, independente do tipo.
+      type: "| <xref uid=\"excel!Excel.SpecialCellValueType:enum\" />\n                | \"All\"\n                | \"Errors\"\n                | \"ErrorsLogical\"\n                | \"ErrorsNumbers\"\n                | \"ErrorsText\"\n                | \"ErrorsLogicalNumber\"\n                | \"ErrorsLogicalText\"\n                | \"ErrorsNumberText\"\n                | \"Logical\"\n                | \"LogicalNumbers\"\n                | \"LogicalText\"\n                | \"LogicalNumbersText\"\n                | \"Numbers\"\n                | \"NumbersText\"\n                | \"Text\"\n        "
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getTables(fullyContained)
+  uid: excel!Excel.RangeAreas#getTables:member(1)
+  package: excel!
+  fullName: getTables(fullyContained)
+  summary: Retorna uma coleção de tabelas com escopo que se sobrepõe a qualquer intervalo neste objeto RangeAreas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
+    parameters:
+    - id: fullyContained
+      description: Se true, retornará somente as tabelas que estão totalmente contidas dentro dos limites do intervalo. O padrão é false.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.TableScopedCollection:interface" />
+      description: ''
+- name: getUsedRangeAreas(valuesOnly)
+  uid: excel!Excel.RangeAreas#getUsedRangeAreas:member(1)
+  package: excel!
+  fullName: getUsedRangeAreas(valuesOnly)
+  summary: Retorna o RangeAreas usado que compreende todas as áreas utilizadas de intervalos retangulares individuais no objeto RangeAreas. Se não houver células usadas no RangeAreas, o erro ItemNotFound será lançado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+    parameters:
+    - id: valuesOnly
+      description: Se deve apenas considerar as células com valores como células usadas. O padrão é false.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getUsedRangeAreasOrNullObject(valuesOnly)
+  uid: excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)
+  package: excel!
+  fullName: getUsedRangeAreasOrNullObject(valuesOnly)
+  summary: Retorna o RangeAreas usado que compreende todas as áreas utilizadas de intervalos retangulares individuais no objeto RangeAreas. Se não houver células usadas no RangeAreas, um objeto NULL será retornado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeAreasOrNullObject(valuesOnly?: boolean): RangeAreas;'
+    parameters:
+    - id: valuesOnly
+      description: Se deve apenas considerar as células com valores como células usadas.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.RangeAreas#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setDirty()
+  uid: excel!Excel.RangeAreas#setDirty:member(1)
+  package: excel!
+  fullName: setDirty()
+  summary: Define o RangeAreas que será recalculado quando o próximo recálculo ocorrer.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDirty(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 18e087e4dbecc5e6c6b1b61849e11737b62ed499
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413227"

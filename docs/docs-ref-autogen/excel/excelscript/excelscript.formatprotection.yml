@@ -1,77 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
-    summary: Representa a proteção de formatação de um objeto range.
-    name: ExcelScript.FormatProtection
-    fullName: ExcelScript.FormatProtection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
-      - 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
-      - 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
-      - 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
-    summary: Especifica se o Excel oculta a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.
-    name: getFormulaHidden()
-    fullName: getFormulaHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulaHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
-    summary: Especifica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.
-    name: getLocked()
-    fullName: getLocked()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLocked(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
-    summary: Especifica se o Excel oculta a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.
-    name: setFormulaHidden(formulaHidden)
-    fullName: setFormulaHidden(formulaHidden)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulaHidden(formulaHidden: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulaHidden
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
-    summary: Especifica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.
-    name: setLocked(locked)
-    fullName: setLocked(locked)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLocked(locked: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: locked
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.FormatProtection
+uid: ExcelScript!ExcelScript.FormatProtection:interface
+package: ExcelScript!
+fullName: ExcelScript.FormatProtection
+summary: Representa a proteção de formatação de um objeto range.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormulaHidden()
+  uid: ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)
+  package: ExcelScript!
+  fullName: getFormulaHidden()
+  summary: Especifica se o Excel oculta a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulaHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLocked()
+  uid: ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)
+  package: ExcelScript!
+  fullName: getLocked()
+  summary: Especifica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocked(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setFormulaHidden(formulaHidden)
+  uid: ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)
+  package: ExcelScript!
+  fullName: setFormulaHidden(formulaHidden)
+  summary: Especifica se o Excel oculta a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulaHidden(formulaHidden: boolean): void;'
+    parameters:
+    - id: formulaHidden
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setLocked(locked)
+  uid: ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)
+  package: ExcelScript!
+  fullName: setLocked(locked)
+  summary: Especifica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLocked(locked: boolean): void;'
+    parameters:
+    - id: locked
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 91b7c8a1aebc842baacb87ae53c768d1cb0a097f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412465"

@@ -1,198 +1,127 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SlicerCollection:interface'
-    summary: Representa uma coleção de todos os objetos slicery na pasta de trabalho ou em uma planilha.
-    name: Excel.SlicerCollection
-    fullName: Excel.SlicerCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SlicerCollection#add:member(1)'
-      - 'excel!Excel.SlicerCollection#getCount:member(1)'
-      - 'excel!Excel.SlicerCollection#getItem:member(1)'
-      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.SlicerCollection#load:member(1)'
-  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
-    summary: Adiciona uma nova segmentação de dados à pasta de trabalho.
-    name: 'add(slicerSource, sourceField, slicerDestination)'
-    fullName: 'add(slicerSource, sourceField, slicerDestination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    slicerSource: string | PivotTable | Table,
-                    sourceField: string | PivotField | number | TableColumn,
-                    slicerDestination?: string | Worksheet
-                ): Slicer;
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Pivot");
-              let slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: slicerSource
-          description: 'A fonte de dados na qual o novo slicer será baseado. Pode ser um objeto PivotTable, um objeto Table ou uma cadeia de caracteres. Quando um objeto PivotTable é passado, a fonte de dados é a fonte do objeto PivotTable. Quando um objeto Table é passado, a fonte de dados é o objeto Table. Quando uma cadeia de caracteres é passada, ela é interpretada como o nome/ID de uma tabela dinâmica.'
-          type:
-            - 'excel!Excel.SlicerCollection#add~0:complex'
-        - id: sourceField
-          description: 'O campo na fonte de dados a ser filtrado. Pode ser um objeto PivotField, um objeto TableColumn, a ID de um PivotField ou a ID/nome de TableColumn.'
-          type:
-            - 'excel!Excel.SlicerCollection#add~1:complex'
-        - id: slicerDestination
-          description: Opcional. A planilha na qual a nova segmentação de trabalho será criada. Pode ser um objeto Worksheet ou o nome/ID de uma planilha. Esse parâmetro pode ser omitido se a coleção slicer for recuperada da planilha.
-          type:
-            - 'excel!Excel.SlicerCollection#add~2:complex'
-  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
-    summary: Retorna o número de segmentações de dados na coleção.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.SlicerCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
-    summary: Obtém um objeto de segmentação de dados usando seu respectivo nome ou ID.
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 'O nome ou a ID da segmentação de,.'
-          type:
-            - string
-  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-    summary: Obtém uma segmentação de dados com base em sua posição na coleção.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
-          type:
-            - number
-  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-    summary: 'Obtém uma segmentação de dados usando seu nome ou id. Se a ela não existir, retornará um objeto null.'
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Nome ou ID da segmentação de, a ser recuperada.'
-          type:
-            - string
-  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Slicer:interface'
-    name: Slicer
-    fullName: Excel.Slicer
-  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
-    name: string | PivotTable | Table
-    fullName: string | Excel.PivotTable | Excel.Table
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.PivotTable:interface'
-        name: PivotTable
-        fullName: Excel.PivotTable
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.Table:interface'
-        name: Table
-        fullName: Excel.Table
-  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
-    name: string | PivotField | number | TableColumn
-    fullName: string | Excel.PivotField | number | Excel.TableColumn
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.PivotField:interface'
-        name: PivotField
-        fullName: Excel.PivotField
-      - name: ' | number | '
-        fullName: ' | number | '
-      - uid: 'excel!Excel.TableColumn:interface'
-        name: TableColumn
-        fullName: Excel.TableColumn
-  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
-    name: string | Worksheet
-    fullName: string | Excel.Worksheet
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.Worksheet:interface'
-        name: Worksheet
-        fullName: Excel.Worksheet
-  - uid: 'excel!Excel.SlicerCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.SlicerCollection
+uid: excel!Excel.SlicerCollection:interface
+package: excel!
+fullName: Excel.SlicerCollection
+summary: Representa uma coleção de todos os objetos slicery na pasta de trabalho ou em uma planilha.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(slicerSource, sourceField, slicerDestination)
+  uid: excel!Excel.SlicerCollection#add:member(1)
+  package: excel!
+  fullName: add(slicerSource, sourceField, slicerDestination)
+  summary: Adiciona uma nova segmentação de dados à pasta de trabalho.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  slicerSource: string | PivotTable | Table,
+                  sourceField: string | PivotField | number | TableColumn,
+                  slicerDestination?: string | Worksheet
+              ): Slicer;
+    parameters:
+    - id: slicerSource
+      description: A fonte de dados na qual o novo slicer será baseado. Pode ser um objeto PivotTable, um objeto Table ou uma cadeia de caracteres. Quando um objeto PivotTable é passado, a fonte de dados é a fonte do objeto PivotTable. Quando um objeto Table é passado, a fonte de dados é o objeto Table. Quando uma cadeia de caracteres é passada, ela é interpretada como o nome/ID de uma tabela dinâmica.
+      type: string | <xref uid="excel!Excel.PivotTable:interface" /> | <xref uid="excel!Excel.Table:interface" />
+    - id: sourceField
+      description: O campo na fonte de dados a ser filtrado. Pode ser um objeto PivotField, um objeto TableColumn, a ID de um PivotField ou a ID/nome de TableColumn.
+      type: string | <xref uid="excel!Excel.PivotField:interface" /> | number | <xref uid="excel!Excel.TableColumn:interface" />
+    - id: slicerDestination
+      description: Opcional. A planilha na qual a nova segmentação de trabalho será criada. Pode ser um objeto Worksheet ou o nome/ID de uma planilha. Esse parâmetro pode ser omitido se a coleção slicer for recuperada da planilha.
+      type: string | <xref uid="excel!Excel.Worksheet:interface" />
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Pivot\");\n    let slicer = sheet.slicers.add(\n        \"Farm Sales\", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */\n        \"Type\" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */\n    );\n    slicer.name = \"Fruit Slicer\";\n    await context.sync();\n}\n```"
+- name: getCount()
+  uid: excel!Excel.SlicerCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Retorna o número de segmentações de dados na coleção.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.SlicerCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: Obtém um objeto de segmentação de dados usando seu respectivo nome ou ID.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Slicer;'
+    parameters:
+    - id: key
+      description: O nome ou a ID da segmentação de,.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.SlicerCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Obtém uma segmentação de dados com base em sua posição na coleção.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Slicer;'
+    parameters:
+    - id: index
+      description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.SlicerCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: Obtém uma segmentação de dados usando seu nome ou id. Se a ela não existir, retornará um objeto null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Slicer;'
+    parameters:
+    - id: key
+      description: Nome ou ID da segmentação de, a ser recuperada.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.SlicerCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 16f0f2674a5c30a3563a7c7ea618d2917d4525f5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412878"
