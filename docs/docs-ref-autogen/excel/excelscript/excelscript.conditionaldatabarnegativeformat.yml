@@ -1,143 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
-    summary: Representa um formato de DataBar de formatação condicional para o lado negativo da barra de dados.
-    name: ExcelScript.ConditionalDataBarNegativeFormat
-    fullName: ExcelScript.ConditionalDataBarNegativeFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
-    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja"). "Cadeia de caracteres vazia" se nenhuma borda estiver presente ou definida.'
-    name: getBorderColor()
-    fullName: getBorderColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorderColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
-    summary: 'Código de cor HTML que representa a cor de preenchimento, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").'
-    name: getFillColor()
-    fullName: getFillColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFillColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
-    summary: Especifica se o DataBar negativo tem a mesma cor de borda que o DataBar positivo.
-    name: getMatchPositiveBorderColor()
-    fullName: getMatchPositiveBorderColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMatchPositiveBorderColor(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
-    summary: Especifica se o DataBar negativo tem a mesma cor de preenchimento que o DataBar positivo.
-    name: getMatchPositiveFillColor()
-    fullName: getMatchPositiveFillColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMatchPositiveFillColor(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
-    summary: 'Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja"). "Cadeia de caracteres vazia" se nenhuma borda estiver presente ou definida.'
-    name: setBorderColor(borderColor)
-    fullName: setBorderColor(borderColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBorderColor(borderColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: borderColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
-    summary: 'Código de cor HTML que representa a cor de preenchimento, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").'
-    name: setFillColor(fillColor)
-    fullName: setFillColor(fillColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFillColor(fillColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: fillColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
-    summary: Especifica se o DataBar negativo tem a mesma cor de borda que o DataBar positivo.
-    name: setMatchPositiveBorderColor(matchPositiveBorderColor)
-    fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: matchPositiveBorderColor
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
-    summary: Especifica se o DataBar negativo tem a mesma cor de preenchimento que o DataBar positivo.
-    name: setMatchPositiveFillColor(matchPositiveFillColor)
-    fullName: setMatchPositiveFillColor(matchPositiveFillColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: matchPositiveFillColor
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.ConditionalDataBarNegativeFormat
+uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalDataBarNegativeFormat
+summary: Representa um formato de DataBar de formatação condicional para o lado negativo da barra de dados.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorderColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
+  package: ExcelScript!
+  fullName: getBorderColor()
+  summary: Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja"). "Cadeia de caracteres vazia" se nenhuma borda estiver presente ou definida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorderColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFillColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)
+  package: ExcelScript!
+  fullName: getFillColor()
+  summary: Código de cor HTML que representa a cor de preenchimento, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFillColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getMatchPositiveBorderColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)
+  package: ExcelScript!
+  fullName: getMatchPositiveBorderColor()
+  summary: Especifica se o DataBar negativo tem a mesma cor de borda que o DataBar positivo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMatchPositiveBorderColor(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getMatchPositiveFillColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)
+  package: ExcelScript!
+  fullName: getMatchPositiveFillColor()
+  summary: Especifica se o DataBar negativo tem a mesma cor de preenchimento que o DataBar positivo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMatchPositiveFillColor(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setBorderColor(borderColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
+  package: ExcelScript!
+  fullName: setBorderColor(borderColor)
+  summary: Código de cor HTML que representa a cor da linha de borda, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja"). "Cadeia de caracteres vazia" se nenhuma borda estiver presente ou definida.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBorderColor(borderColor: string): void;'
+    parameters:
+    - id: borderColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFillColor(fillColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)
+  package: ExcelScript!
+  fullName: setFillColor(fillColor)
+  summary: Código de cor HTML que representa a cor de preenchimento, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFillColor(fillColor: string): void;'
+    parameters:
+    - id: fillColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setMatchPositiveBorderColor(matchPositiveBorderColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)
+  package: ExcelScript!
+  fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
+  summary: Especifica se o DataBar negativo tem a mesma cor de borda que o DataBar positivo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
+    parameters:
+    - id: matchPositiveBorderColor
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setMatchPositiveFillColor(matchPositiveFillColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)
+  package: ExcelScript!
+  fullName: setMatchPositiveFillColor(matchPositiveFillColor)
+  summary: Especifica se o DataBar negativo tem a mesma cor de preenchimento que o DataBar positivo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
+    parameters:
+    - id: matchPositiveFillColor
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 95cd68ae74d6ea3c0765aa03717d71d3da0494ef
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416754"
