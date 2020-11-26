@@ -1,130 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-    name: ExcelScript.SpecialCellValueType
-    fullName: ExcelScript.SpecialCellValueType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
-    summary: 'Células que têm erros, verdadeiro/falso, numérico ou um valor de cadeia de caracteres.'
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
-    summary: Células com erros.
-    name: errors
-    fullName: errors
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
-    summary: Células que têm erros ou um valor verdadeiro/falso.
-    name: errorsLogical
-    fullName: errorsLogical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
-    summary: 'Células que têm erros, verdadeiro/falso ou um valor numérico.'
-    name: errorsLogicalNumber
-    fullName: errorsLogicalNumber
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
-    summary: 'Células que têm erros, verdadeiro/falso ou um valor de cadeia de caracteres.'
-    name: errorsLogicalText
-    fullName: errorsLogicalText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
-    summary: Células que têm erros ou um valor numérico.
-    name: errorsNumbers
-    fullName: errorsNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
-    summary: 'Células com erros, numéricos ou um valor de cadeia de caracteres.'
-    name: errorsNumberText
-    fullName: errorsNumberText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
-    summary: Células que têm erros ou um valor de cadeia de caracteres.
-    name: errorsText
-    fullName: errorsText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
-    summary: Células que têm um valor verdadeiro/falso.
-    name: logical
-    fullName: logical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
-    summary: Células que têm um verdadeiro/falso ou um valor numérico.
-    name: logicalNumbers
-    fullName: logicalNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
-    summary: 'Células que têm um valor verdadeiro/falso, numérico ou cadeia de caracteres.'
-    name: logicalNumbersText
-    fullName: logicalNumbersText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
-    summary: Células que têm um verdadeiro/falso ou um valor de cadeia de caracteres.
-    name: logicalText
-    fullName: logicalText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
-    summary: Células que têm um valor numérico.
-    name: numbers
-    fullName: numbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
-    summary: Células que têm um valor numérico ou uma cadeia de caracteres.
-    name: numbersText
-    fullName: numbersText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
-    summary: Células com um valor String.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SpecialCellValueType
+uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+package: ExcelScript!
+fullName: ExcelScript.SpecialCellValueType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: all
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
+  package: ExcelScript!
+  summary: Células que têm erros, verdadeiro/falso, numérico ou um valor de cadeia de caracteres.
+- name: errors
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
+  package: ExcelScript!
+  summary: Células com erros.
+- name: errorsLogical
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
+  package: ExcelScript!
+  summary: Células que têm erros ou um valor verdadeiro/falso.
+- name: errorsLogicalNumber
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
+  package: ExcelScript!
+  summary: Células que têm erros, verdadeiro/falso ou um valor numérico.
+- name: errorsLogicalText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
+  package: ExcelScript!
+  summary: Células que têm erros, verdadeiro/falso ou um valor de cadeia de caracteres.
+- name: errorsNumbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
+  package: ExcelScript!
+  summary: Células que têm erros ou um valor numérico.
+- name: errorsNumberText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
+  package: ExcelScript!
+  summary: Células com erros, numéricos ou um valor de cadeia de caracteres.
+- name: errorsText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
+  package: ExcelScript!
+  summary: Células que têm erros ou um valor de cadeia de caracteres.
+- name: logical
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
+  package: ExcelScript!
+  summary: Células que têm um valor verdadeiro/falso.
+- name: logicalNumbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
+  package: ExcelScript!
+  summary: Células que têm um verdadeiro/falso ou um valor numérico.
+- name: logicalNumbersText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
+  package: ExcelScript!
+  summary: Células que têm um valor verdadeiro/falso, numérico ou cadeia de caracteres.
+- name: logicalText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
+  package: ExcelScript!
+  summary: Células que têm um verdadeiro/falso ou um valor de cadeia de caracteres.
+- name: numbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
+  package: ExcelScript!
+  summary: Células que têm um valor numérico.
+- name: numbersText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
+  package: ExcelScript!
+  summary: Células que têm um valor numérico ou uma cadeia de caracteres.
+- name: text
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
+  package: ExcelScript!
+  summary: Células com um valor String.
+metadata:
+  ms.openlocfilehash: 904bfc40ae83c845e58f566d41db47e05e38af4a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420339"

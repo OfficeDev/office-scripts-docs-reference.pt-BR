@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
-    summary: Especifica o comportamento de classificação do slicer para a API slicer. sortBy.
-    name: ExcelScript.SlicerSortType
-    fullName: ExcelScript.SlicerSortType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
-      - 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
-      - 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
-    summary: Classificar itens de segmentação de itens em ordem crescente por legendas de item.
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
-    summary: Classificar itens de segmentação de dados na ordem fornecida pela fonte de dados.
-    name: dataSourceOrder
-    fullName: dataSourceOrder
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
-    summary: Classificar itens de segmentação de itens em ordem decrescente por legendas de item.
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SlicerSortType
+uid: ExcelScript!ExcelScript.SlicerSortType:enum
+package: ExcelScript!
+fullName: ExcelScript.SlicerSortType
+summary: Especifica o comportamento de classificação do slicer para a API slicer. sortBy.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
+  package: ExcelScript!
+  summary: Classificar itens de segmentação de itens em ordem crescente por legendas de item.
+- name: dataSourceOrder
+  uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
+  package: ExcelScript!
+  summary: Classificar itens de segmentação de dados na ordem fornecida pela fonte de dados.
+- name: descending
+  uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
+  package: ExcelScript!
+  summary: Classificar itens de segmentação de itens em ordem decrescente por legendas de item.
+metadata:
+  ms.openlocfilehash: 5b56c58547f73ee6fdbcc145985c6bfc2526d6c3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420472"
