@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ReadingOrder:enum'
-    name: Excel.ReadingOrder
-    fullName: Excel.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ReadingOrder.context:member'
-      - 'excel!Excel.ReadingOrder.leftToRight:member'
-      - 'excel!Excel.ReadingOrder.rightToLeft:member'
-  - uid: 'excel!Excel.ReadingOrder.context:member'
-    summary: 'O sentido de leitura é determinado pelo idioma do primeiro caractere inserido. Se o caractere de um idioma da direita para a esquerda for inserido primeiro, o sentido de leitura será da direita para a esquerda. Se o caractere de um idioma da esquerda para a direita for inserido primeiro, o sentido de leitura será da esquerda para a direita.'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Context"'
-  - uid: 'excel!Excel.ReadingOrder.leftToRight:member'
-    summary: Ordem de leitura da esquerda para a direita
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LeftToRight"'
-  - uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
-    summary: Sentido de leitura da direita para a esquerda
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RightToLeft"'
+### YamlMime:TSEnum
+name: Excel.ReadingOrder
+uid: excel!Excel.ReadingOrder:enum
+package: excel!
+fullName: Excel.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: excel!Excel.ReadingOrder.context:member
+  package: excel!
+  summary: O sentido de leitura é determinado pelo idioma do primeiro caractere inserido. Se o caractere de um idioma da direita para a esquerda for inserido primeiro, o sentido de leitura será da direita para a esquerda. Se o caractere de um idioma da esquerda para a direita for inserido primeiro, o sentido de leitura será da esquerda para a direita.
+- name: leftToRight
+  uid: excel!Excel.ReadingOrder.leftToRight:member
+  package: excel!
+  summary: Ordem de leitura da esquerda para a direita
+- name: rightToLeft
+  uid: excel!Excel.ReadingOrder.rightToLeft:member
+  package: excel!
+  summary: Sentido de leitura da direita para a esquerda
+metadata:
+  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418664"

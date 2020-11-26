@@ -1,29 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SortBy:enum'
-    summary: Representa a direção da classificação.
-    name: Excel.SortBy
-    fullName: Excel.SortBy
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.SortBy.ascending:member'
-      - 'excel!Excel.SortBy.descending:member'
-  - uid: 'excel!Excel.SortBy.ascending:member'
-    summary: Classificação crescente. Menor ou maior ou a a Z.
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ascending"'
-  - uid: 'excel!Excel.SortBy.descending:member'
-    summary: Classificação decrescente. Maior ou menor que Z a A.
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Descending"'
+### YamlMime:TSEnum
+name: Excel.SortBy
+uid: excel!Excel.SortBy:enum
+package: excel!
+fullName: Excel.SortBy
+summary: Representa a direção da classificação.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: excel!Excel.SortBy.ascending:member
+  package: excel!
+  summary: Classificação crescente. Menor ou maior ou a a Z.
+- name: descending
+  uid: excel!Excel.SortBy.descending:member
+  package: excel!
+  summary: Classificação decrescente. Maior ou menor que Z a A.
+metadata:
+  ms.openlocfilehash: 42e9b274b6b8706ce2d4d78bfc0f7bccaaf06f86
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418370"
