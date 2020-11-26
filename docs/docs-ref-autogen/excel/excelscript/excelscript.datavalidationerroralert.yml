@@ -1,67 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
-    summary: Representa as propriedades de alerta de erro para a validação de dados.
-    name: ExcelScript.DataValidationErrorAlert
-    fullName: ExcelScript.DataValidationErrorAlert
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
-    summary: Representa a mensagem de alerta de erro.
-    name: message
-    fullName: message
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'message: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
-    summary: Especifica se uma caixa de diálogo de alerta de erro deve ser exibida quando um usuário insere dados inválidos. O padrão é verdadeiro.
-    name: showAlert
-    fullName: showAlert
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showAlert: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    summary: 'Tipo de alerta de validação de dados, confira ExcelScript. DataValidationAlertStyle para obter detalhes.'
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: DataValidationAlertStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
-    summary: Representa o título da caixa de diálogo de alerta de erro.
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'title: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
-    name: DataValidationAlertStyle
-    fullName: ExcelScript.DataValidationAlertStyle
+### YamlMime:TSType
+name: ExcelScript.DataValidationErrorAlert
+uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
+package: ExcelScript!
+fullName: ExcelScript.DataValidationErrorAlert
+summary: Representa as propriedades de alerta de erro para a validação de dados.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: message
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
+  package: ExcelScript!
+  fullName: message
+  summary: Representa a mensagem de alerta de erro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'message: string;'
+    return:
+      type: string
+- name: showAlert
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
+  package: ExcelScript!
+  fullName: showAlert
+  summary: Especifica se uma caixa de diálogo de alerta de erro deve ser exibida quando um usuário insere dados inválidos. O padrão é verdadeiro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showAlert: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
+  package: ExcelScript!
+  fullName: style
+  summary: Tipo de alerta de validação de dados, confira ExcelScript. DataValidationAlertStyle para obter detalhes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: DataValidationAlertStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
+- name: title
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
+  package: ExcelScript!
+  fullName: title
+  summary: Representa o título da caixa de diálogo de alerta de erro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'title: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 03292fc7608c01c280e7eb5e22dc9fe5bb89f659
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415544"

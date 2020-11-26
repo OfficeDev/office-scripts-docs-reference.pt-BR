@@ -1,254 +1,192 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.BindingCollection:interface'
-    summary: Representa a coleção de todos os objetos Binding que fazem parte da pasta de trabalho.
-    name: Excel.BindingCollection
-    fullName: Excel.BindingCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.BindingCollection#add:member(1)'
-      - 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
-      - 'excel!Excel.BindingCollection#addFromSelection:member(1)'
-      - 'excel!Excel.BindingCollection#count:member'
-      - 'excel!Excel.BindingCollection#getCount:member(1)'
-      - 'excel!Excel.BindingCollection#getItem:member(1)'
-      - 'excel!Excel.BindingCollection#getItemAt:member(1)'
-      - 'excel!Excel.BindingCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.BindingCollection#load:member(1)'
-  - uid: 'excel!Excel.BindingCollection#add:member(1)'
-    summary: Adiciona uma nova associação a um intervalo específico.
-    name: 'add(range, bindingType, id)'
-    fullName: 'add(range, bindingType, id)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    range: Range | string,
-                    bindingType: BindingType | "Range" | "Table" | "Text",
-                    id: string
-                ): Binding;
-      return:
-        type:
-          - 'excel!Excel.Binding:interface'
-        description: ''
-      parameters:
-        - id: range
-          description: 'Intervalo para vincular a associação. Pode ser um objeto Range do Excel ou uma cadeia de caracteres. Se for uma cadeia de caracteres, deve conter o endereço completo, incluindo o nome da planilha'
-          type:
-            - 'excel!Excel.BindingCollection#add~0:complex'
-        - id: bindingType
-          description: Tipo de associação. Consulte Excel. BindingType.
-          type:
-            - 'excel!Excel.BindingCollection#add~1:complex'
-        - id: id
-          description: Nome da associação.
-          type:
-            - string
-  - uid: 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
-    summary: 'Adiciona uma nova associação com base em um item nomeado na pasta de trabalho. Se o item nomeado fizer referência a várias áreas, o erro "InvalidReference" será retornado.'
-    name: 'addFromNamedItem(name, bindingType, id)'
-    fullName: 'addFromNamedItem(name, bindingType, id)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addFromNamedItem(
-                    name: string,
-                    bindingType: BindingType | "Range" | "Table" | "Text",
-                    id: string
-                ): Binding;
-      return:
-        type:
-          - 'excel!Excel.Binding:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Nome do qual deseja criar a associação.
-          type:
-            - string
-        - id: bindingType
-          description: Tipo de associação. Consulte Excel. BindingType.
-          type:
-            - 'excel!Excel.BindingCollection#addFromNamedItem~0:complex'
-        - id: id
-          description: Nome da associação.
-          type:
-            - string
-  - uid: 'excel!Excel.BindingCollection#addFromSelection:member(1)'
-    summary: 'Adiciona uma nova associação com base na seleção atual. Se a seleção tiver várias áreas, o erro "InvalidReference" será retornado.'
-    name: 'addFromSelection(bindingType, id)'
-    fullName: 'addFromSelection(bindingType, id)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addFromSelection(
-                    bindingType: BindingType | "Range" | "Table" | "Text",
-                    id: string
-                ): Binding;
-      return:
-        type:
-          - 'excel!Excel.Binding:interface'
-        description: ''
-      parameters:
-        - id: bindingType
-          description: Tipo de associação. Consulte Excel. BindingType.
-          type:
-            - 'excel!Excel.BindingCollection#addFromSelection~0:complex'
-        - id: id
-          description: Nome da associação.
-          type:
-            - string
-  - uid: 'excel!Excel.BindingCollection#count:member'
-    summary: Retorna o número de associações da coleção.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.BindingCollection#getCount:member(1)'
-    summary: Obtém o número de associações da coleção.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.BindingCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.BindingCollection#getItem:member(1)'
-    summary: Obtém um objeto de associação pela ID.
-    name: getItem(id)
-    fullName: getItem(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(id: string): Binding;'
-      return:
-        type:
-          - 'excel!Excel.Binding:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: ID do objeto de associação a ser recuperado.
-          type:
-            - string
-  - uid: 'excel!Excel.BindingCollection#getItemAt:member(1)'
-    summary: Obtém um objeto de associação com base em sua posição na matriz dos itens.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Binding;'
-      return:
-        type:
-          - 'excel!Excel.Binding:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Valor de índice do objeto a ser recuperado. Indexados com zero.
-          type:
-            - number
-  - uid: 'excel!Excel.BindingCollection#getItemOrNullObject:member(1)'
-    summary: 'Obtém um objeto binding pela ID. Se o objeto binding não existir, retornará um objeto null.'
-    name: getItemOrNullObject(id)
-    fullName: getItemOrNullObject(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(id: string): Binding;'
-      return:
-        type:
-          - 'excel!Excel.Binding:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: ID do objeto de associação a ser recuperado.
-          type:
-            - string
-  - uid: 'excel!Excel.BindingCollection#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Binding:interface'
-    name: Binding
-    fullName: Excel.Binding
-  - uid: 'excel!Excel.BindingCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.BindingCollection#add~1:complex'
-    name: BindingType | "Range" | "Table" | "Text"
-    fullName: Excel.BindingType | "Range" | "Table" | "Text"
-    spec.typeScript:
-      - uid: 'excel!Excel.BindingType:enum'
-        name: BindingType
-        fullName: Excel.BindingType
-      - name: ' | "Range" | "Table" | "Text"'
-        fullName: ' | "Range" | "Table" | "Text"'
-  - uid: 'excel!Excel.BindingCollection#addFromNamedItem~0:complex'
-    name: BindingType | "Range" | "Table" | "Text"
-    fullName: Excel.BindingType | "Range" | "Table" | "Text"
-    spec.typeScript:
-      - uid: 'excel!Excel.BindingType:enum'
-        name: BindingType
-        fullName: Excel.BindingType
-      - name: ' | "Range" | "Table" | "Text"'
-        fullName: ' | "Range" | "Table" | "Text"'
-  - uid: 'excel!Excel.BindingCollection#addFromSelection~0:complex'
-    name: BindingType | "Range" | "Table" | "Text"
-    fullName: Excel.BindingType | "Range" | "Table" | "Text"
-    spec.typeScript:
-      - uid: 'excel!Excel.BindingType:enum'
-        name: BindingType
-        fullName: Excel.BindingType
-      - name: ' | "Range" | "Table" | "Text"'
-        fullName: ' | "Range" | "Table" | "Text"'
-  - uid: 'excel!Excel.BindingCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.BindingCollection
+uid: excel!Excel.BindingCollection:interface
+package: excel!
+fullName: Excel.BindingCollection
+summary: Representa a coleção de todos os objetos Binding que fazem parte da pasta de trabalho.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: count
+  uid: excel!Excel.BindingCollection#count:member
+  package: excel!
+  fullName: count
+  summary: Retorna o número de associações da coleção.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+methods:
+- name: add(range, bindingType, id)
+  uid: excel!Excel.BindingCollection#add:member(1)
+  package: excel!
+  fullName: add(range, bindingType, id)
+  summary: Adiciona uma nova associação a um intervalo específico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  range: Range | string,
+                  bindingType: BindingType | "Range" | "Table" | "Text",
+                  id: string
+              ): Binding;
+    parameters:
+    - id: range
+      description: Intervalo para vincular a associação. Pode ser um objeto Range do Excel ou uma cadeia de caracteres. Se for uma cadeia de caracteres, deve conter o endereço completo, incluindo o nome da planilha
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: bindingType
+      description: Tipo de associação. Consulte Excel. BindingType.
+      type: <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"
+    - id: id
+      description: Nome da associação.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Binding:interface" />
+      description: ''
+- name: addFromNamedItem(name, bindingType, id)
+  uid: excel!Excel.BindingCollection#addFromNamedItem:member(1)
+  package: excel!
+  fullName: addFromNamedItem(name, bindingType, id)
+  summary: Adiciona uma nova associação com base em um item nomeado na pasta de trabalho. Se o item nomeado fizer referência a várias áreas, o erro "InvalidReference" será retornado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addFromNamedItem(
+                  name: string,
+                  bindingType: BindingType | "Range" | "Table" | "Text",
+                  id: string
+              ): Binding;
+    parameters:
+    - id: name
+      description: Nome do qual deseja criar a associação.
+      type: string
+    - id: bindingType
+      description: Tipo de associação. Consulte Excel. BindingType.
+      type: <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"
+    - id: id
+      description: Nome da associação.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Binding:interface" />
+      description: ''
+- name: addFromSelection(bindingType, id)
+  uid: excel!Excel.BindingCollection#addFromSelection:member(1)
+  package: excel!
+  fullName: addFromSelection(bindingType, id)
+  summary: Adiciona uma nova associação com base na seleção atual. Se a seleção tiver várias áreas, o erro "InvalidReference" será retornado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addFromSelection(
+                  bindingType: BindingType | "Range" | "Table" | "Text",
+                  id: string
+              ): Binding;
+    parameters:
+    - id: bindingType
+      description: Tipo de associação. Consulte Excel. BindingType.
+      type: <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"
+    - id: id
+      description: Nome da associação.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Binding:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.BindingCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Obtém o número de associações da coleção.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(id)
+  uid: excel!Excel.BindingCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(id)
+  summary: Obtém um objeto de associação pela ID.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(id: string): Binding;'
+    parameters:
+    - id: id
+      description: ID do objeto de associação a ser recuperado.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Binding:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.BindingCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Obtém um objeto de associação com base em sua posição na matriz dos itens.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Binding;'
+    parameters:
+    - id: index
+      description: Valor de índice do objeto a ser recuperado. Indexados com zero.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Binding:interface" />
+      description: ''
+- name: getItemOrNullObject(id)
+  uid: excel!Excel.BindingCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(id)
+  summary: Obtém um objeto binding pela ID. Se o objeto binding não existir, retornará um objeto null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(id: string): Binding;'
+    parameters:
+    - id: id
+      description: ID do objeto de associação a ser recuperado.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Binding:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.BindingCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e382728262de58b6bd1ce0baa4adedabb57db147
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414458"
