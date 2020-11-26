@@ -1,105 +1,96 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Binding:interface'
-    summary: Representa uma associação do Office.js definida na pasta de trabalho.
-    name: ExcelScript.Binding
-    fullName: ExcelScript.Binding
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Binding#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getTable:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getText:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Binding#delete:member(1)'
-    summary: Especifica a associação.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getId:member(1)'
-    summary: Representa um identificador de associação.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getRange:member(1)'
-    summary: Retorna o intervalo representado pela associação. Gera um erro quando a associação não é do tipo correto.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getTable:member(1)'
-    summary: Retorna a tabela representada pela associação. Gera um erro quando a associação não é do tipo correto.
-    name: getTable()
-    fullName: getTable()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTable(): Table;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getText:member(1)'
-    summary: Retorna o texto representado pela associação. Gera um erro quando a associação não é do tipo correto.
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: Retorna o tipo da associação. Consulte ExcelScript. BindingType para obter detalhes.
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): BindingType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BindingType:enum'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.Table:interface'
-    name: Table
-    fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.BindingType:enum'
-    name: BindingType
-    fullName: ExcelScript.BindingType
+### YamlMime:TSType
+name: ExcelScript.Binding
+uid: ExcelScript!ExcelScript.Binding:interface
+package: ExcelScript!
+fullName: ExcelScript.Binding
+summary: Representa uma associação do Office.js definida na pasta de trabalho.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.Binding#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Especifica a associação.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Binding#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Representa um identificador de associação.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.Binding#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Retorna o intervalo representado pela associação. Gera um erro quando a associação não é do tipo correto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getTable()
+  uid: ExcelScript!ExcelScript.Binding#getTable:member(1)
+  package: ExcelScript!
+  fullName: getTable()
+  summary: Retorna a tabela representada pela associação. Gera um erro quando a associação não é do tipo correto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTable(): Table;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.Binding#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: Retorna o texto representado pela associação. Gera um erro quando a associação não é do tipo correto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.Binding#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Retorna o tipo da associação. Consulte ExcelScript. BindingType para obter detalhes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): BindingType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
+      description: ''
+metadata:
+  ms.openlocfilehash: dbc040f8940983d3292d272d4d19d7f21a794d9e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418083"

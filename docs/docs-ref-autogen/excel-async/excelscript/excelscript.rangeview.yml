@@ -1,216 +1,193 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeView:interface'
-    summary: RangeView representa um conjunto de células visíveis do intervalo pai.
-    name: Excel.RangeView
-    fullName: Excel.RangeView
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RangeView#cellAddresses:member'
-      - 'excel!Excel.RangeView#columnCount:member'
-      - 'excel!Excel.RangeView#formulas:member'
-      - 'excel!Excel.RangeView#formulasLocal:member'
-      - 'excel!Excel.RangeView#formulasR1C1:member'
-      - 'excel!Excel.RangeView#getRange:member(1)'
-      - 'excel!Excel.RangeView#index:member'
-      - 'excel!Excel.RangeView#load:member(1)'
-      - 'excel!Excel.RangeView#numberFormat:member'
-      - 'excel!Excel.RangeView#rowCount:member'
-      - 'excel!Excel.RangeView#rows:member'
-      - 'excel!Excel.RangeView#text:member'
-      - 'excel!Excel.RangeView#values:member'
-      - 'excel!Excel.RangeView#valueTypes:member'
-  - uid: 'excel!Excel.RangeView#cellAddresses:member'
-    summary: Representa os endereços de célula da RangeView.
-    name: cellAddresses
-    fullName: cellAddresses
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly cellAddresses: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.RangeView#columnCount:member'
-    summary: O número de colunas visíveis.
-    name: columnCount
-    fullName: columnCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly columnCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeView#formulas:member'
-    summary: Representa a fórmula em notação A1.
-    name: formulas
-    fullName: formulas
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulas: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.RangeView#formulasLocal:member'
-    summary: 'Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.'
-    name: formulasLocal
-    fullName: formulasLocal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulasLocal: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.RangeView#formulasR1C1:member'
-    summary: Representa a fórmula em notação no estilo L1C1.
-    name: formulasR1C1
-    fullName: formulasR1C1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulasR1C1: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.RangeView#getRange:member(1)'
-    summary: Obtém o intervalo pai associado à RangeView atual.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.RangeView#index:member'
-    summary: Retorna um valor que representa o índice da RangeView.
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly index: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeView#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeView#numberFormat:member'
-    summary: Representa o código de formato de número do Excel para determinada célula.
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'numberFormat: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.RangeView#rowCount:member'
-    summary: O número de linhas visíveis.
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rowCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeView#rows:member'
-    summary: Representa uma coleção de exibições de tabelas associadas ao intervalo.
-    name: rows
-    fullName: rows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rows: RangeViewCollection;'
-      return:
-        type:
-          - 'excel!Excel.RangeViewCollection:interface'
-  - uid: 'excel!Excel.RangeView#text:member'
-    summary: Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A \# substituição de sinal que acontece na IU do Excel não afetará o valor de texto retornado pela API.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly text: string[][];'
-      return:
-        type:
-          - 'string[][]'
-  - uid: 'excel!Excel.RangeView#values:member'
-    summary: 'Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'values: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.RangeView#valueTypes:member'
-    summary: Representa o tipo de dados de cada célula.
-    name: valueTypes
-    fullName: valueTypes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly valueTypes: RangeValueType[][];'
-      return:
-        type:
-          - 'excel!Excel.RangeView#valueTypes~0:complex'
-references:
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.RangeViewCollection:interface'
-    name: RangeViewCollection
-    fullName: Excel.RangeViewCollection
-  - uid: 'excel!Excel.RangeView#valueTypes~0:complex'
-    name: 'RangeValueType[][]'
-    fullName: 'Excel.RangeValueType[][]'
-    spec.typeScript:
-      - uid: 'excel!Excel.RangeValueType:enum'
-        name: RangeValueType
-        fullName: Excel.RangeValueType
-      - name: '[][]'
-        fullName: '[][]'
+### YamlMime:TSType
+name: Excel.RangeView
+uid: excel!Excel.RangeView:interface
+package: excel!
+fullName: Excel.RangeView
+summary: RangeView representa um conjunto de células visíveis do intervalo pai.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: cellAddresses
+  uid: excel!Excel.RangeView#cellAddresses:member
+  package: excel!
+  fullName: cellAddresses
+  summary: Representa os endereços de célula da RangeView.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly cellAddresses: any[][];'
+    return:
+      type: any[][]
+- name: columnCount
+  uid: excel!Excel.RangeView#columnCount:member
+  package: excel!
+  fullName: columnCount
+  summary: O número de colunas visíveis.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly columnCount: number;'
+    return:
+      type: number
+- name: formulas
+  uid: excel!Excel.RangeView#formulas:member
+  package: excel!
+  fullName: formulas
+  summary: Representa a fórmula em notação A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulas: any[][];'
+    return:
+      type: any[][]
+- name: formulasLocal
+  uid: excel!Excel.RangeView#formulasLocal:member
+  package: excel!
+  fullName: formulasLocal
+  summary: Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulasLocal: any[][];'
+    return:
+      type: any[][]
+- name: formulasR1C1
+  uid: excel!Excel.RangeView#formulasR1C1:member
+  package: excel!
+  fullName: formulasR1C1
+  summary: Representa a fórmula em notação no estilo L1C1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulasR1C1: any[][];'
+    return:
+      type: any[][]
+- name: index
+  uid: excel!Excel.RangeView#index:member
+  package: excel!
+  fullName: index
+  summary: Retorna um valor que representa o índice da RangeView.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly index: number;'
+    return:
+      type: number
+- name: numberFormat
+  uid: excel!Excel.RangeView#numberFormat:member
+  package: excel!
+  fullName: numberFormat
+  summary: Representa o código de formato de número do Excel para determinada célula.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'numberFormat: any[][];'
+    return:
+      type: any[][]
+- name: rowCount
+  uid: excel!Excel.RangeView#rowCount:member
+  package: excel!
+  fullName: rowCount
+  summary: O número de linhas visíveis.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rowCount: number;'
+    return:
+      type: number
+- name: rows
+  uid: excel!Excel.RangeView#rows:member
+  package: excel!
+  fullName: rows
+  summary: Representa uma coleção de exibições de tabelas associadas ao intervalo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rows: RangeViewCollection;'
+    return:
+      type: <xref uid="excel!Excel.RangeViewCollection:interface" />
+- name: text
+  uid: excel!Excel.RangeView#text:member
+  package: excel!
+  fullName: text
+  summary: Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A \# substituição de sinal que acontece na IU do Excel não afetará o valor de texto retornado pela API.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly text: string[][];'
+    return:
+      type: string[][]
+- name: values
+  uid: excel!Excel.RangeView#values:member
+  package: excel!
+  fullName: values
+  summary: 'Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values: any[][];'
+    return:
+      type: any[][]
+- name: valueTypes
+  uid: excel!Excel.RangeView#valueTypes:member
+  package: excel!
+  fullName: valueTypes
+  summary: Representa o tipo de dados de cada célula.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly valueTypes: RangeValueType[][];'
+    return:
+      type: <xref uid="excel!Excel.RangeValueType:enum" />[][]
+methods:
+- name: getRange()
+  uid: excel!Excel.RangeView#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: Obtém o intervalo pai associado à RangeView atual.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.RangeView#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 2e482ca7dce8573944c01ecf5baa5d171a1d9785
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418671"

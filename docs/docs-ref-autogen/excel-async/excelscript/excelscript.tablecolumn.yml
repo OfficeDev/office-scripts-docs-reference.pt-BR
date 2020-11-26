@@ -1,172 +1,161 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableColumn:interface'
-    summary: Representa uma coluna em uma tabela.
-    name: Excel.TableColumn
-    fullName: Excel.TableColumn
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableColumn#delete:member(1)'
-      - 'excel!Excel.TableColumn#filter:member'
-      - 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
-      - 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
-      - 'excel!Excel.TableColumn#getRange:member(1)'
-      - 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
-      - 'excel!Excel.TableColumn#id:member'
-      - 'excel!Excel.TableColumn#index:member'
-      - 'excel!Excel.TableColumn#load:member(1)'
-      - 'excel!Excel.TableColumn#name:member'
-      - 'excel!Excel.TableColumn#values:member'
-  - uid: 'excel!Excel.TableColumn#delete:member(1)'
-    summary: Exclui a coluna da tabela.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.TableColumn#filter:member'
-    summary: Recupera o filtro aplicado à coluna.
-    name: filter
-    fullName: filter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly filter: Filter;'
-      return:
-        type:
-          - 'excel!Excel.Filter:interface'
-  - uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
-    summary: Obtém o objeto de intervalo associado ao corpo de dados da coluna.
-    name: getDataBodyRange()
-    fullName: getDataBodyRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataBodyRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
-    summary: Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.
-    name: getHeaderRowRange()
-    fullName: getHeaderRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeaderRowRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.TableColumn#getRange:member(1)'
-    summary: Obtém o objeto de intervalo associado a toda a coluna.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
-    summary: Obtém o objeto de intervalo associado à linha de totais da coluna.
-    name: getTotalRowRange()
-    fullName: getTotalRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTotalRowRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.TableColumn#id:member'
-    summary: Retorna uma chave exclusiva que identifica a coluna na tabela.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableColumn#index:member'
-    summary: Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero.
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly index: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableColumn#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableColumn#name:member'
-    summary: Especifica o nome da coluna da tabela.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.TableColumn#values:member'
-    summary: 'Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'values: any[][];'
-      return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'excel!Excel.Filter:interface'
-    name: Filter
-    fullName: Excel.Filter
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
+### YamlMime:TSType
+name: Excel.TableColumn
+uid: excel!Excel.TableColumn:interface
+package: excel!
+fullName: Excel.TableColumn
+summary: Representa uma coluna em uma tabela.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: filter
+  uid: excel!Excel.TableColumn#filter:member
+  package: excel!
+  fullName: filter
+  summary: Recupera o filtro aplicado à coluna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly filter: Filter;'
+    return:
+      type: <xref uid="excel!Excel.Filter:interface" />
+- name: id
+  uid: excel!Excel.TableColumn#id:member
+  package: excel!
+  fullName: id
+  summary: Retorna uma chave exclusiva que identifica a coluna na tabela.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: number;'
+    return:
+      type: number
+- name: index
+  uid: excel!Excel.TableColumn#index:member
+  package: excel!
+  fullName: index
+  summary: Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly index: number;'
+    return:
+      type: number
+- name: name
+  uid: excel!Excel.TableColumn#name:member
+  package: excel!
+  fullName: name
+  summary: Especifica o nome da coluna da tabela.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: values
+  uid: excel!Excel.TableColumn#values:member
+  package: excel!
+  fullName: values
+  summary: 'Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values: any[][];'
+    return:
+      type: any[][]
+methods:
+- name: delete()
+  uid: excel!Excel.TableColumn#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Exclui a coluna da tabela.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getDataBodyRange()
+  uid: excel!Excel.TableColumn#getDataBodyRange:member(1)
+  package: excel!
+  fullName: getDataBodyRange()
+  summary: Obtém o objeto de intervalo associado ao corpo de dados da coluna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataBodyRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getHeaderRowRange()
+  uid: excel!Excel.TableColumn#getHeaderRowRange:member(1)
+  package: excel!
+  fullName: getHeaderRowRange()
+  summary: Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeaderRowRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRange()
+  uid: excel!Excel.TableColumn#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: Obtém o objeto de intervalo associado a toda a coluna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getTotalRowRange()
+  uid: excel!Excel.TableColumn#getTotalRowRange:member(1)
+  package: excel!
+  fullName: getTotalRowRange()
+  summary: Obtém o objeto de intervalo associado à linha de totais da coluna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTotalRowRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableColumn#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b26b27cb9760c245b7194deaf6ac0301ce244594
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418258"

@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
-    summary: Representa as dimensões ao obter valores da série do gráfico.
-    name: ExcelScript.ChartSeriesDimension
-    fullName: ExcelScript.ChartSeriesDimension
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
-    summary: O eixo da série do gráfico para os tamanhos das bolhas em gráficos de bolha.
-    name: bubbleSizes
-    fullName: bubbleSizes
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
-    summary: O eixo das séries do gráfico para as categorias.
-    name: categories
-    fullName: categories
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
-    summary: O eixo da série do gráfico para os valores.
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
-    summary: O eixo da série do gráfico para os valores do eixo x em gráficos de dispersão e de bolha.
-    name: xvalues
-    fullName: xvalues
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
-    summary: O eixo da série do gráfico para os valores do eixo y em gráficos de dispersão e de bolha.
-    name: yvalues
-    fullName: yvalues
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartSeriesDimension
+uid: ExcelScript!ExcelScript.ChartSeriesDimension:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartSeriesDimension
+summary: Representa as dimensões ao obter valores da série do gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bubbleSizes
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member
+  package: ExcelScript!
+  summary: O eixo da série do gráfico para os tamanhos das bolhas em gráficos de bolha.
+- name: categories
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.categories:member
+  package: ExcelScript!
+  summary: O eixo das séries do gráfico para as categorias.
+- name: values
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.values:member
+  package: ExcelScript!
+  summary: O eixo da série do gráfico para os valores.
+- name: xvalues
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member
+  package: ExcelScript!
+  summary: O eixo da série do gráfico para os valores do eixo x em gráficos de dispersão e de bolha.
+- name: yvalues
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member
+  package: ExcelScript!
+  summary: O eixo da série do gráfico para os valores do eixo y em gráficos de dispersão e de bolha.
+metadata:
+  ms.openlocfilehash: 62dbf9658e63772b83fed5d065b58bce1c013d89
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419548"

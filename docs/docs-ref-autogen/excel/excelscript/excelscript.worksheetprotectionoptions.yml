@@ -1,197 +1,186 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
-    summary: Representa as opções de proteção da planilha.
-    name: ExcelScript.WorksheetProtectionOptions
-    fullName: ExcelScript.WorksheetProtectionOptions
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member'
-      - 'ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member'
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member'
-    summary: Indica a opção de proteção de planilha para permitir a utilização do recurso de filtro automático.
-    name: allowAutoFilter
-    fullName: allowAutoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowAutoFilter?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member'
-    summary: Indica a opção de proteção de planilha para permitir a exclusão de colunas.
-    name: allowDeleteColumns
-    fullName: allowDeleteColumns
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowDeleteColumns?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member'
-    summary: Indica a opção de proteção de planilha para permitir a exclusão de linhas.
-    name: allowDeleteRows
-    fullName: allowDeleteRows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowDeleteRows?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member'
-    summary: Indica a opção de proteção de planilha para permitir a edição de objetos.
-    name: allowEditObjects
-    fullName: allowEditObjects
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowEditObjects?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member'
-    summary: Indica a opção de proteção de planilha para permitir a edição de cenários.
-    name: allowEditScenarios
-    fullName: allowEditScenarios
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowEditScenarios?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member'
-    summary: Indica a opção de proteção de planilha para permitir a formatação de células.
-    name: allowFormatCells
-    fullName: allowFormatCells
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowFormatCells?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member'
-    summary: Indica a opção de proteção de planilha para permitir a formatação de colunas.
-    name: allowFormatColumns
-    fullName: allowFormatColumns
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowFormatColumns?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member'
-    summary: Indica a opção de proteção de planilha para permitir a formatação de linhas.
-    name: allowFormatRows
-    fullName: allowFormatRows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowFormatRows?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member'
-    summary: Indica a opção de proteção de planilha para permitir a inserção de colunas.
-    name: allowInsertColumns
-    fullName: allowInsertColumns
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowInsertColumns?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member'
-    summary: Indica a opção de proteção de planilha para permitir a inserção de hiperlinks.
-    name: allowInsertHyperlinks
-    fullName: allowInsertHyperlinks
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowInsertHyperlinks?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member'
-    summary: Indica a opção de proteção de planilha para permitir a inserção de linhas.
-    name: allowInsertRows
-    fullName: allowInsertRows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowInsertRows?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member'
-    summary: Indica a opção de proteção de planilha para permitir a utilização do recurso de Tabela Dinâmica.
-    name: allowPivotTables
-    fullName: allowPivotTables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowPivotTables?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member'
-    summary: Indica a opção de proteção de planilha para permitir a utilização do recurso de classificação.
-    name: allowSort
-    fullName: allowSort
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowSort?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member'
-    summary: Representa a opção de proteção da planilha do modo de seleção.
-    name: selectionMode
-    fullName: selectionMode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'selectionMode?: ProtectionSelectionMode;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
-    name: ProtectionSelectionMode
-    fullName: ExcelScript.ProtectionSelectionMode
+### YamlMime:TSType
+name: ExcelScript.WorksheetProtectionOptions
+uid: ExcelScript!ExcelScript.WorksheetProtectionOptions:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetProtectionOptions
+summary: Representa as opções de proteção da planilha.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: allowAutoFilter
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
+  package: ExcelScript!
+  fullName: allowAutoFilter
+  summary: Indica a opção de proteção de planilha para permitir a utilização do recurso de filtro automático.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowAutoFilter?: boolean;'
+    return:
+      type: boolean
+- name: allowDeleteColumns
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
+  package: ExcelScript!
+  fullName: allowDeleteColumns
+  summary: Indica a opção de proteção de planilha para permitir a exclusão de colunas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowDeleteColumns?: boolean;'
+    return:
+      type: boolean
+- name: allowDeleteRows
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
+  package: ExcelScript!
+  fullName: allowDeleteRows
+  summary: Indica a opção de proteção de planilha para permitir a exclusão de linhas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowDeleteRows?: boolean;'
+    return:
+      type: boolean
+- name: allowEditObjects
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
+  package: ExcelScript!
+  fullName: allowEditObjects
+  summary: Indica a opção de proteção de planilha para permitir a edição de objetos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowEditObjects?: boolean;'
+    return:
+      type: boolean
+- name: allowEditScenarios
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
+  package: ExcelScript!
+  fullName: allowEditScenarios
+  summary: Indica a opção de proteção de planilha para permitir a edição de cenários.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowEditScenarios?: boolean;'
+    return:
+      type: boolean
+- name: allowFormatCells
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
+  package: ExcelScript!
+  fullName: allowFormatCells
+  summary: Indica a opção de proteção de planilha para permitir a formatação de células.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowFormatCells?: boolean;'
+    return:
+      type: boolean
+- name: allowFormatColumns
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member
+  package: ExcelScript!
+  fullName: allowFormatColumns
+  summary: Indica a opção de proteção de planilha para permitir a formatação de colunas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowFormatColumns?: boolean;'
+    return:
+      type: boolean
+- name: allowFormatRows
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
+  package: ExcelScript!
+  fullName: allowFormatRows
+  summary: Indica a opção de proteção de planilha para permitir a formatação de linhas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowFormatRows?: boolean;'
+    return:
+      type: boolean
+- name: allowInsertColumns
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
+  package: ExcelScript!
+  fullName: allowInsertColumns
+  summary: Indica a opção de proteção de planilha para permitir a inserção de colunas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowInsertColumns?: boolean;'
+    return:
+      type: boolean
+- name: allowInsertHyperlinks
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
+  package: ExcelScript!
+  fullName: allowInsertHyperlinks
+  summary: Indica a opção de proteção de planilha para permitir a inserção de hiperlinks.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowInsertHyperlinks?: boolean;'
+    return:
+      type: boolean
+- name: allowInsertRows
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
+  package: ExcelScript!
+  fullName: allowInsertRows
+  summary: Indica a opção de proteção de planilha para permitir a inserção de linhas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowInsertRows?: boolean;'
+    return:
+      type: boolean
+- name: allowPivotTables
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
+  package: ExcelScript!
+  fullName: allowPivotTables
+  summary: Indica a opção de proteção de planilha para permitir a utilização do recurso de Tabela Dinâmica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowPivotTables?: boolean;'
+    return:
+      type: boolean
+- name: allowSort
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
+  package: ExcelScript!
+  fullName: allowSort
+  summary: Indica a opção de proteção de planilha para permitir a utilização do recurso de classificação.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowSort?: boolean;'
+    return:
+      type: boolean
+- name: selectionMode
+  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member
+  package: ExcelScript!
+  fullName: selectionMode
+  summary: Representa a opção de proteção da planilha do modo de seleção.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'selectionMode?: ProtectionSelectionMode;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
+metadata:
+  ms.openlocfilehash: d4d1d23a781e1be35d76429ab5af1d60d5d696c5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419226"
