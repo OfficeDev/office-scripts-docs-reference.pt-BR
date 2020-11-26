@@ -1,132 +1,115 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CustomPropertyCollection:interface'
-    summary: Contém a coleção de objetos CustomProperty.
-    name: Excel.CustomPropertyCollection
-    fullName: Excel.CustomPropertyCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CustomPropertyCollection#add:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#load:member(1)'
-  - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
-    summary: Cria uma nova propriedade personalizada ou define uma existente.
-    name: 'add(key, value)'
-    fullName: 'add(key, value)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(key: string, value: any): CustomProperty;'
-      return:
-        type:
-          - 'excel!Excel.CustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Obrigatório. A chave da propriedade personalizada, que não diferencia maiúsculas de minúsculas. A chave está limitada a 255 caracteres fora do Excel na Web (chaves maiores são automaticamente aparadas para 255 caracteres em outras plataformas).'
-          type:
-            - string
-        - id: value
-          description: Obrigatório. O valor da propriedade personalizada. O valor é limitado a 255 caracteres fora do Excel na Web (valores maiores são automaticamente cortados para 255 caracteres em outras plataformas).
-          type:
-            - any
-  - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
-    summary: Exclui todas as propriedades personalizadas nesta coleção.
-    name: deleteAll()
-    fullName: deleteAll()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'deleteAll(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
-    summary: Obtém a contagem das propriedades personalizadas.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
-    summary: 'Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Lança se a propriedade personalizada não existe.'
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): CustomProperty;'
-      return:
-        type:
-          - 'excel!Excel.CustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: A chave que identifica o objeto de propriedade personalizada.
-          type:
-            - string
-  - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
-    summary: 'Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Retorna um objeto NULL se a propriedade personalizada não existir.'
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): CustomProperty;'
-      return:
-        type:
-          - 'excel!Excel.CustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Obrigatório. A chave que identifica o objeto de propriedade personalizada.
-          type:
-            - string
-  - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
-    summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.CustomProperty:interface'
-    name: CustomProperty
-    fullName: Excel.CustomProperty
-  - uid: 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.CustomPropertyCollection
+uid: excel!Excel.CustomPropertyCollection:interface
+package: excel!
+fullName: Excel.CustomPropertyCollection
+summary: Contém a coleção de objetos CustomProperty.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(key, value)
+  uid: excel!Excel.CustomPropertyCollection#add:member(1)
+  package: excel!
+  fullName: add(key, value)
+  summary: Cria uma nova propriedade personalizada ou define uma existente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(key: string, value: any): CustomProperty;'
+    parameters:
+    - id: key
+      description: Obrigatório. A chave da propriedade personalizada, que não diferencia maiúsculas de minúsculas. A chave está limitada a 255 caracteres fora do Excel na Web (chaves maiores são automaticamente aparadas para 255 caracteres em outras plataformas).
+      type: string
+    - id: value
+      description: Obrigatório. O valor da propriedade personalizada. O valor é limitado a 255 caracteres fora do Excel na Web (valores maiores são automaticamente cortados para 255 caracteres em outras plataformas).
+      type: any
+    return:
+      type: <xref uid="excel!Excel.CustomProperty:interface" />
+      description: ''
+- name: deleteAll()
+  uid: excel!Excel.CustomPropertyCollection#deleteAll:member(1)
+  package: excel!
+  fullName: deleteAll()
+  summary: Exclui todas as propriedades personalizadas nesta coleção.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'deleteAll(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCount()
+  uid: excel!Excel.CustomPropertyCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Obtém a contagem das propriedades personalizadas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.CustomPropertyCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Lança se a propriedade personalizada não existe.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): CustomProperty;'
+    parameters:
+    - id: key
+      description: A chave que identifica o objeto de propriedade personalizada.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomProperty:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Retorna um objeto NULL se a propriedade personalizada não existir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): CustomProperty;'
+    parameters:
+    - id: key
+      description: Obrigatório. A chave que identifica o objeto de propriedade personalizada.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomProperty:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.CustomPropertyCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Coloca um comando na fila para carregar as propriedades especificadas do objeto. Você deve chamar `context.sync()` antes de ler as propriedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Uma cadeia de caracteres delimitada por vírgula ou uma matriz de cadeias de caracteres que especificam as propriedades a serem carregadas.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 43032a7b03ba0ae75c6e527876ccef5e12e4e2ce
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416341"
