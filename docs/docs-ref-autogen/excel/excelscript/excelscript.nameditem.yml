@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Retorna o objeto Range associado ao nome. Retornará um objeto null se o tipo do item nomeado não for um intervalo.
+  summary: Retorna o objeto Range associado ao nome. Se o tipo do item nomeado não for um intervalo, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Retorna a planilha em que o item nomeado tem escopo. Retornará um objeto null se o item tiver escopo para a pasta de trabalho em vez disso.
+  summary: Retorna a planilha à qual o item nomeado tem escopo. Se o item estiver no escopo da pasta de trabalho, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 00abdcecbb6352d4585620ff18b0df6b0e4b7d81
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415355"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554754"

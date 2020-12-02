@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.CalculationType.full:member
   package: excel!
   summary: " Isso marcará todas as células como incorretas e as recalculará."
+  value: "\"Full\""
 - name: fullRebuild
   uid: excel!Excel.CalculationType.fullRebuild:member
   package: excel!
   summary: Isso recriará a cadeia de dependências inteira, marcará todas as células como sujas e as recalculará.
+  value: "\"FullRebuild\""
 - name: recalculate
   uid: excel!Excel.CalculationType.recalculate:member
   package: excel!
   summary: Recalcula todas as células que o Excel marcou como sujas, isto é, dependentes de dados voláteis ou alterados e células programaticamente marcadas como sujas.
+  value: "\"Recalculate\""
 metadata:
-  ms.openlocfilehash: 25fe7b5eb154651f83bdc01d22904022063d32f6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4b1050d010df8c010056647d1b628cbac8c2d765
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414416"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553554"

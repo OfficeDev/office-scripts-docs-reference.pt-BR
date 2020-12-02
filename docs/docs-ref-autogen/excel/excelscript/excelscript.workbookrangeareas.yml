@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: Retorna o objeto RangeAreas com base no nome ou na ID da planilha na coleção. Se a planilha não existir, retornará um objeto null.
+  summary: Retorna o objeto RangeAreas com base no nome ou na ID da planilha na coleção. Se a planilha não existir, esta função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 5a9a420a2442ca49d5134e53ae4b8f944c59f843
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419219"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554747"

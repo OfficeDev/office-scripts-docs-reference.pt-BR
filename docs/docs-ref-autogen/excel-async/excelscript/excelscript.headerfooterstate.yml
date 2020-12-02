@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.HeaderFooterState.default:member
   package: excel!
   summary: Somente um cabeçalho/rodapé geral é usado para todas as páginas impressas.
+  value: "\"Default\""
 - name: firstAndDefault
   uid: excel!Excel.HeaderFooterState.firstAndDefault:member
   package: excel!
   summary: Há um cabeçalho/rodapé de primeira página separado, e um cabeçalho/rodapé geral usado para todas as outras páginas.
+  value: "\"FirstAndDefault\""
 - name: firstOddAndEven
   uid: excel!Excel.HeaderFooterState.firstOddAndEven:member
   package: excel!
   summary: Há um cabeçalho/rodapé de primeira página separado, então há um cabeçalho/rodapé separado para páginas pares e ímpares.
+  value: "\"FirstOddAndEven\""
 - name: oddAndEven
   uid: excel!Excel.HeaderFooterState.oddAndEven:member
   package: excel!
   summary: Há um cabeçalho/rodapé diferente para páginas pares e ímpares.
+  value: "\"OddAndEven\""
 metadata:
-  ms.openlocfilehash: 1a8c7b34c962f89abd69eb6516c42cdd74de7bfa
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d569d6574f6014a14dd41cf0df5d76b5e7f33005
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419108"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553777"
