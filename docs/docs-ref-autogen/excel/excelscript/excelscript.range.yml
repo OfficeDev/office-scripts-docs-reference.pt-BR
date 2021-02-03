@@ -130,10 +130,10 @@ methods:
       description: O tipo de dados de célula ou formatação a ser copiado. O padrão é "All".
       type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
     - id: skipBlanks
-      description: True se ignorar células em branco no intervalo de origem. O padrão é falso.
+      description: True se ignorar células em branco no intervalo de origem. O padrão é false.
       type: boolean
     - id: transpose
-      description: True se para transpor as células no intervalo de destino. O padrão é falso.
+      description: True se para transpor as células no intervalo de destino. O padrão é false.
       type: boolean
     return:
       type: void
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Localiza certa cadeia de caracteres com base em critérios especificados. Se o intervalo atual for maior do que uma única célula, a pesquisa será limitada a esse intervalo; caso mais, a pesquisa cobrirá toda a planilha começando após essa célula. Se não houver nenhuma corresponde, esta função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Localiza certa cadeia de caracteres com base em critérios especificados. Se o intervalo atual for maior do que uma única célula, a pesquisa será limitada a esse intervalo, caso mais a pesquisa cobrirá toda a planilha começando após essa célula. Se não houver nenhuma corresponde, esta função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -750,7 +750,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Representa o código de formato de número da célula do Excel para o intervalo determinado. Se o intervalo contiver várias células, os dados da primeira célula (representados pelo índice de linha 0 e índice de coluna de 0) serão retornados.
+  summary: Representa o código de formato de número da célula excel para o intervalo determinado. Se o intervalo contiver várias células, os dados da primeira célula (representados pelo índice de linha 0 e índice de coluna de 0) serão retornados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -772,11 +772,24 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
       description: ''
+- name: getNumberFormatCategory()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategory()
+  summary: Especifica a categoria de formato de número da primeira célula no intervalo (representada pelo índice de linha de 0 e índice de coluna de 0).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
+      description: ''
 - name: getNumberFormatLocal()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Representa o código de formato de número da célula excel para o intervalo determinado, com base nas configurações de idioma do usuário. O Excel não executa nenhuma coerção de idioma ou formato ao obter ou definir a `numberFormatLocal` propriedade. Qualquer texto retornado usa as cadeias de caracteres formatadas localmente com base no idioma especificado nas configurações do sistema. Se o intervalo contiver várias células, os dados da primeira célula (representados pelo índice de linha 0 e índice de coluna de 0) serão retornados.
+  summary: Representa o código de formato de número do Excel da célula para o intervalo determinado, com base nas configurações de idioma do usuário. O Excel não executa nenhuma coerção de idioma ou formato ao obter ou definir a `numberFormatLocal` propriedade. Qualquer texto retornado usa as cadeias de caracteres formatadas localmente com base no idioma especificado nas configurações do sistema. Se o intervalo contiver várias células, os dados da primeira célula (representados pelo índice de linha 0 e índice de coluna de 0) serão retornados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -835,7 +848,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
   fullName: getPivotTables(fullyContained)
-  summary: Obtém uma coleção com escopo de tabelas dinâmicas que se sobrepõem ao intervalo.
+  summary: Obtém uma coleção de tabelas dinâmicas com escopo que se sobrepõe ao intervalo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1051,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtém o objeto range que contém a célula âncora para a célula que está sendo se preparando. Se não for uma célula de ressução ou mais de uma célula for determinada, essa função retornará um objeto com sua propriedade `isNullObject` definida como `true`<!-- -->.
+  summary: Obtém o objeto range que contém a célula âncora para a célula que está sendo se preparando. Se não for uma célula de ressução ou mais de uma célula for determinada, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1328,7 +1341,7 @@ methods:
       description: As colunas dentro do intervalo que podem conter duplicatas. Pelo menos uma coluna precisa ser especificada. Indexados com zero.
       type: number[]
     - id: includesHeader
-      description: True se os dados de entrada contiver o header. O padrão é falso.
+      description: True se os dados de entrada contiver o header. O padrão é false.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
@@ -1720,9 +1733,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
-  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
+  ms.openlocfilehash: 0f16a00124cd360f9a0ac72ab7a7bcf96af7930a
+  ms.sourcegitcommit: 2224b5a1c9da58cc58b310ccbdc0b58c63ab501b
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "49784454"
+  ms.lasthandoff: 02/03/2021
+  ms.locfileid: "50091812"
