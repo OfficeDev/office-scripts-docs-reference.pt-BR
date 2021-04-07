@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Especifica o operando direito quando a Propriedade Operator é definida como um operador binário como GreaterThan (o operando esquerdo é o valor que o usuário tenta inserir na célula). Com os operadores ternários between e não between, especifica o operando de limite inferior. Ao definir o valor, ele pode ser passado como uma data, um objeto Range ou uma fórmula de cadeia de caracteres (onde a cadeia de caracteres é uma data/hora em formato no formato ISO8601, uma referência de célula como "= a1" ou uma fórmula como "= MIN (a1, B1)"). Ao recuperar o valor, ele sempre será retornado como uma fórmula de cadeia de caracteres, por exemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
+  summary: 'Especifica o operador à direita quando a propriedade operator é definida como um operador binário como GreaterThan (o operand à esquerda é o valor que o usuário tenta inserir na célula). Com os operadores ternários Between e NotBetween, especifica o operand de limite inferior. Ao definir o valor, ele pode ser passado como uma Data, um objeto Range ou uma fórmula de cadeia de caracteres (onde a cadeia de caracteres é uma data/hora stringificada no formato ISO8601, uma referência de célula como "=A1" ou uma fórmula como "=MIN(A1, B1)"). Ao recuperar o valor, ele sempre será retornado como uma fórmula de cadeia de caracteres, por exemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: 'Com os operadores ternários between e não between, especifica o operando de limite superior. Não é usado com os operadores binários, como GreaterThan. Ao definir o valor, ele pode ser passado como uma data, um objeto Range ou uma cadeia de caracteres (onde a cadeia de caracteres é uma data/hora em formato no formato ISO8601, uma referência de célula como "= a1" ou uma fórmula como "= MIN (a1, B1)"). Ao recuperar o valor, ele sempre será retornado como uma fórmula de cadeia de caracteres, por exemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
+  summary: 'Com os operadores ternários Between e NotBetween, especifica o operand superior ligado. Não é usado com os operadores binários, como GreaterThan. Ao definir o valor, ele pode ser passado como uma Data, um objeto Range ou uma cadeia de caracteres (onde a cadeia de caracteres é uma data/hora stringificada no formato ISO8601, uma referência de célula como "=A1" ou uma fórmula como "=MIN(A1, B1)"). Ao recuperar o valor, ele sempre será retornado como uma fórmula de cadeia de caracteres, por exemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: e996fdc017fd932a17031a0bb57255f84f01759c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c1b292157a719eed4f7ba1716623d9e64f359ae2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415425"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607036"

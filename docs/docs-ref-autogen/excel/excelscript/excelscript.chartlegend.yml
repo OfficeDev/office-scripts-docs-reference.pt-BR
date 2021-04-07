@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Especifica a altura, em pontos, da legenda no gráfico. NULL se a legenda não estiver visível.
+  summary: Especifica a altura, em pontos, da legenda no gráfico. O valor `null` é se a legenda não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Especifica a esquerda, em pontos, da legenda no gráfico. NULL se a legenda não estiver visível.
+  summary: Especifica o valor esquerdo, em pontos, da legenda no gráfico. O valor `null` é se a legenda não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Especifica a posição da legenda no gráfico. Consulte ExcelScript. ChartLegendPosition para obter detalhes.
+  summary: Especifica a posição da legenda no gráfico. Consulte `ExcelScript.ChartLegendPosition` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Especifica se o ChartLegend está visível.
+  summary: Especifica se a legenda do gráfico está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Especifica a largura, em pontos, da legenda no gráfico. NULL se a legenda não estiver visível.
+  summary: Especifica a largura, em pontos, da legenda no gráfico. O valor `null` é se a legenda não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Especifica a altura, em pontos, da legenda no gráfico. NULL se a legenda não estiver visível.
+  summary: Especifica a altura, em pontos, da legenda no gráfico. O valor `null` é se a legenda não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Especifica a esquerda, em pontos, da legenda no gráfico. NULL se a legenda não estiver visível.
+  summary: Especifica o valor esquerdo, em pontos, da legenda no gráfico. O valor `null` é se a legenda não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Especifica a posição da legenda no gráfico. Consulte ExcelScript. ChartLegendPosition para obter detalhes.
+  summary: Especifica a posição da legenda no gráfico. Consulte `ExcelScript.ChartLegendPosition` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Especifica se o ChartLegend está visível.
+  summary: Especifica se a legenda do gráfico está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Especifica a largura, em pontos, da legenda no gráfico. NULL se a legenda não estiver visível.
+  summary: Especifica a largura, em pontos, da legenda no gráfico. O valor `null` é se a legenda não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,9 +276,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a9523d4791f4725323ac5527c5bcc708f2922d8e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eab9ab999ce36aee22186b9febbeaca8cd935fd5
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419779"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606569"

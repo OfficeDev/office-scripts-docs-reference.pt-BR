@@ -29,7 +29,7 @@ methods:
       description: Opcional. Especifica a posição relativa da nova coluna. Se for null ou -1, a adição ocorre no final. Colunas com um índice superior serão deslocadas para o lado. Indexado com zero.
       type: number
     - id: values
-      description: Opcional. Uma matriz unidimensional de valores não formatados da coluna da tabela.
+      description: Opcional. Uma matriz 1 dimensional de valores não formatados da coluna de tabela.
       type: (boolean | string | number)[]
     - id: name
       description: Opcional. Especifica o nome da nova coluna. Se for null, o nome padrão será usado.
@@ -52,7 +52,7 @@ methods:
       description: Opcional. Especifica a posição relativa da nova linha. Se for null ou -1, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.
       type: number
     - id: values
-      description: Opcional. Uma matriz de 1 dimensão de valores não formatados da linha da tabela.
+      description: Opcional. Uma matriz dimensional 1 de valores não formatados da linha de tabela.
       type: (boolean | string | number)[]
     return:
       type: void
@@ -120,7 +120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
   package: ExcelScript!
   fullName: deleteRowsAt(index, count)
-  summary: Excluir um número especificado de linhas em um determinado índice.
+  summary: Exclua um número especificado de linhas em um determinado índice.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: 'O valor de índice da linha a ser excluída. Cuidado: o índice da linha pode ter sido movido da hora que você determinou o valor a ser usado para remoção.'
+      description: 'O valor de índice da linha a ser excluída. Cuidado: o índice da linha pode ter sido movido a partir do momento em que você determinou o valor a ser usado para remoção.'
       type: number
     - id: count
-      description: Número de linhas a serem excluídas. Por padrão, uma única linha será excluída.
+      description: 'Número de linhas a ser excluído. Por padrão, uma única linha será excluída. Observação: a exclusão de mais de 1.000 linhas ao mesmo tempo pode resultar em um tempo de tempo de Power Automate.'
       type: number
     return:
       type: void
@@ -140,7 +140,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: Representa o objeto AutoFilter da tabela.
+  summary: Representa o `AutoFilter` objeto da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Obtém um objeto de coluna por nome ou ID. Se a coluna não existir, esta função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém um objeto de coluna por nome ou ID. Se a coluna não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -161,7 +161,7 @@ methods:
     content: 'getColumn(key: number | string): TableColumn | undefined;'
     parameters:
     - id: key
-      description: ID ou nome da coluna.
+      description: Nome da coluna ou ID.
       type: number | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: Obtém um objeto Column por ID. Se a coluna não existir, retornará indefinido.
+  summary: Obtém um objeto column por ID. Se a coluna não existir, retornará indefinidamente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Obtém um objeto Column por nome. Se a coluna não existir, retornará indefinido.
+  summary: Obtém um objeto column por Name. Se a coluna não existir, retornará indefinidamente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedTableStyle()
-  summary: 'Valor da constante que representa o estilo de Tabela. Os valores possíveis são: "TableStyleLight1" por meio de "TableStyleLight21", "TableStyleMedium1" até "TableStyleMedium28", "TableStyleDark1" até "TableStyleDark11". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
+  summary: 'Valor constante que representa o estilo da tabela. Os valores possíveis são: "TableStyleLight1" por "TableStyleLight21", "TableStyleMedium1" por "TableStyleMedium28", "TableStyleDark1" por "TableStyleDark11". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: Especifica se as colunas mostram a formatação em tiras nas quais as colunas ímpares são realçadas de forma diferente de mesmo para tornar a leitura da tabela mais fácil.
+  summary: Especifica se as colunas mostram formatação em faixa na qual as colunas ímpares são realçadas de forma diferente de outras, para facilitar a leitura da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: Especifica se as linhas mostram a formatação em tiras nas quais as linhas ímpares são realçadas de forma diferente de mesmo para tornar a leitura da tabela mais fácil.
+  summary: Especifica se as linhas mostram formatação em faixa na qual linhas ímpares são realçadas de forma diferente de outras, para facilitar a leitura da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
   package: ExcelScript!
   fullName: getShowFilterButton()
-  summary: Especifica se os botões de filtro estão visíveis na parte superior de cada cabeçalho de coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.
+  summary: Especifica se os botões de filtro estão visíveis na parte superior de cada header de coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
   package: ExcelScript!
   fullName: getShowHeaders()
-  summary: Especifica se a linha de cabeçalho está visível. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.
+  summary: Especifica se a linha de header está visível. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
   package: ExcelScript!
   fullName: getShowTotals()
-  summary: Especifica se a linha de total está visível. Esse valor pode ser definido para mostrar ou remover a linha do total.
+  summary: Especifica se a linha total está visível. Esse valor pode ser definido para mostrar ou remover a linha do total.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -515,7 +515,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Valor da constante que representa o estilo de Tabela. Os valores possíveis são: "TableStyleLight1" por meio de "TableStyleLight21", "TableStyleMedium1" até "TableStyleMedium28", "TableStyleDark1" até "TableStyleDark11". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
+  summary: 'Valor constante que representa o estilo da tabela. Os valores possíveis são: "TableStyleLight1" por "TableStyleLight21", "TableStyleMedium1" por "TableStyleMedium28", "TableStyleDark1" por "TableStyleDark11". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: Especifica se as colunas mostram a formatação em tiras nas quais as colunas ímpares são realçadas de forma diferente de mesmo para tornar a leitura da tabela mais fácil.
+  summary: Especifica se as colunas mostram formatação em faixa na qual as colunas ímpares são realçadas de forma diferente de outras, para facilitar a leitura da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: Especifica se as linhas mostram a formatação em tiras nas quais as linhas ímpares são realçadas de forma diferente de mesmo para tornar a leitura da tabela mais fácil.
+  summary: Especifica se as linhas mostram formatação em faixa na qual linhas ímpares são realçadas de forma diferente de outras, para facilitar a leitura da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
   package: ExcelScript!
   fullName: setShowFilterButton(showFilterButton)
-  summary: Especifica se os botões de filtro estão visíveis na parte superior de cada cabeçalho de coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.
+  summary: Especifica se os botões de filtro estão visíveis na parte superior de cada header de coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -583,7 +583,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
   package: ExcelScript!
   fullName: setShowHeaders(showHeaders)
-  summary: Especifica se a linha de cabeçalho está visível. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.
+  summary: Especifica se a linha de header está visível. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -600,7 +600,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
   package: ExcelScript!
   fullName: setShowTotals(showTotals)
-  summary: Especifica se a linha de total está visível. Esse valor pode ser definido para mostrar ou remover a linha do total.
+  summary: Especifica se a linha total está visível. Esse valor pode ser definido para mostrar ou remover a linha do total.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -614,9 +614,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ecc5b6e0aacfab67e2748147c15fb32e2f7dbd59
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: fda7deca11fe0eae9282d9c9c54ac289e4e39df4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554740"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605245"

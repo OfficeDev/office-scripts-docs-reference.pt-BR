@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationType
 uid: ExcelScript!ExcelScript.DataValidationType:enum
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
-summary: Representa a enumeração de tipo de validação de dados.
+summary: Representa o número do tipo de validação de dados.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,47 +11,47 @@ fields:
 - name: custom
   uid: ExcelScript!ExcelScript.DataValidationType.custom:member
   package: ExcelScript!
-  summary: Tipo de validação de dados personalizados
+  summary: O tipo de validação de dados personalizado.
 - name: date
   uid: ExcelScript!ExcelScript.DataValidationType.date:member
   package: ExcelScript!
-  summary: Tipo de validação de dados de data
+  summary: O tipo de validação de dados de data.
 - name: decimal
   uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
   package: ExcelScript!
-  summary: Tipo de validação de dados decimais
+  summary: O tipo de validação de dados decimais.
 - name: inconsistent
   uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
   package: ExcelScript!
-  summary: Inconsistente significa que o intervalo tem validação de dados inconsistente (há diferentes regras em células diferentes)
+  summary: Inconsistente significa que o intervalo tem validação de dados inconsistentes, indicando que há regras diferentes em células diferentes.
 - name: list
   uid: ExcelScript!ExcelScript.DataValidationType.list:member
   package: ExcelScript!
-  summary: Tipo de validação de dados de lista
+  summary: O tipo de validação de dados de lista.
 - name: mixedCriteria
   uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
   package: ExcelScript!
-  summary: MixedCriteria significa que o intervalo tem validação de dados presente em algumas, mas não todas as células
+  summary: Critérios mistos significa que o intervalo tem validação de dados presente em algumas, mas não em todas as células.
 - name: none
   uid: ExcelScript!ExcelScript.DataValidationType.none:member
   package: ExcelScript!
-  summary: Nenhum significa permitir qualquer valor e, portanto, não há validação de dados no intervalo.
+  summary: Nenhum significa permitir qualquer valor, indicando que não há validação de dados no intervalo.
 - name: textLength
   uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
   package: ExcelScript!
-  summary: Tipo de validação de dados de comprimento de texto
+  summary: O tipo de validação de dados de comprimento de texto.
 - name: time
   uid: ExcelScript!ExcelScript.DataValidationType.time:member
   package: ExcelScript!
-  summary: Tipo de validação de dados de hora
+  summary: O tipo de validação de dados de hora.
 - name: wholeNumber
   uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
   package: ExcelScript!
-  summary: Tipo de validação de dados de número inteiro
+  summary: O tipo de validação de dados de número inteiro.
 metadata:
-  ms.openlocfilehash: a8c45f27ff01ae3d2cdd162b58f74388bdb1484a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f812a19bb9b22a0f84176ac9dbf8dc92c6086f75
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415453"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607141"

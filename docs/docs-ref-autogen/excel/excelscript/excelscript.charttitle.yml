@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Representa a altura, em pontos, do título do gráfico. NULL se o título do gráfico não estiver visível.
+  summary: Representa a altura, em pontos, do título do gráfico. O valor `null` é se o título do gráfico não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Especifica o alinhamento horizontal do título do gráfico.
+  summary: Especifica o alinhamento horizontal para o título do gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Especifica a distância, em pontos, da borda esquerda do título do gráfico até a borda esquerda da área do gráfico. NULL se o título do gráfico não estiver visível.
+  summary: Especifica a distância, em pontos, da borda esquerda do título do gráfico até a borda esquerda da área do gráfico. O valor `null` é se o título do gráfico não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)
   package: ExcelScript!
   fullName: getOverlay()
-  summary: Especifica se o título do gráfico será sobreposto ao gráfico.
+  summary: Especifica se o título do gráfico sobrepõe o gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Representa a posição de título do gráfico. Consulte ExcelScript. ChartTitlePosition para obter detalhes.
+  summary: Representa a posição de título do gráfico. Consulte `ExcelScript.ChartTitlePosition` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)
   package: ExcelScript!
   fullName: getSubstring(start, length)
-  summary: Obter a subcadeia de caracteres de um título de gráfico. Quebra de linha '<!-- -->\\<!-- -->n ' também conta um caractere.
+  summary: Obter a subdistragem de um título de gráfico. Quebra de linha '<!-- -->\\<!-- -->n' conta um caractere.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,10 +112,10 @@ methods:
     content: 'getSubstring(start: number, length: number): ChartFormatString;'
     parameters:
     - id: start
-      description: Posição inicial da subcadeia de caracteres a ser recuperada. Posição inicial com 0.
+      description: Posição inicial da subdistragem a ser recuperada. Indexados com zero.
       type: number
     - id: length
-      description: Comprimento da subcadeia de caracteres a ser recuperada.
+      description: Comprimento da subdistragem a ser recuperada.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Especifica o ângulo no qual o texto é orientado para o título do gráfico. O valor deve ser um inteiro de-90 a 90 ou o inteiro 180 para texto orientado verticalmente.
+  summary: Especifica o ângulo para o qual o texto é orientado para o título do gráfico. O valor deve ser um inteiro de -90 a 90 ou o inteiro 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Especifica a distância, em pontos, da borda superior do título do gráfico até a parte superior da área do gráfico. NULL se o título do gráfico não estiver visível.
+  summary: Especifica a distância, em pontos, da borda superior do título do gráfico até a parte superior da área do gráfico. O valor `null` é se o título do gráfico não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Especifica o alinhamento vertical do título do gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obter detalhes.
+  summary: Especifica o alinhamento vertical do título do gráfico. Consulte `ExcelScript.ChartTextVerticalAlignment` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -189,7 +189,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Especifica a largura, em pontos, do título do gráfico. NULL se o título do gráfico não estiver visível.
+  summary: Especifica a largura, em pontos, do título do gráfico. O valor `null` é se o título do gráfico não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -219,7 +219,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Especifica o alinhamento horizontal do título do gráfico.
+  summary: Especifica o alinhamento horizontal para o título do gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Especifica a distância, em pontos, da borda esquerda do título do gráfico até a borda esquerda da área do gráfico. NULL se o título do gráfico não estiver visível.
+  summary: Especifica a distância, em pontos, da borda esquerda do título do gráfico até a borda esquerda da área do gráfico. O valor `null` é se o título do gráfico não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -256,7 +256,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)
   package: ExcelScript!
   fullName: setOverlay(overlay)
-  summary: Especifica se o título do gráfico será sobreposto ao gráfico.
+  summary: Especifica se o título do gráfico sobrepõe o gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Representa a posição de título do gráfico. Consulte ExcelScript. ChartTitlePosition para obter detalhes.
+  summary: Representa a posição de título do gráfico. Consulte `ExcelScript.ChartTitlePosition` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Especifica o ângulo no qual o texto é orientado para o título do gráfico. O valor deve ser um inteiro de-90 a 90 ou o inteiro 180 para texto orientado verticalmente.
+  summary: Especifica o ângulo para o qual o texto é orientado para o título do gráfico. O valor deve ser um inteiro de -90 a 90 ou o inteiro 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -341,7 +341,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Especifica a distância, em pontos, da borda superior do título do gráfico até a parte superior da área do gráfico. NULL se o título do gráfico não estiver visível.
+  summary: Especifica a distância, em pontos, da borda superior do título do gráfico até a parte superior da área do gráfico. O valor `null` é se o título do gráfico não estiver visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -358,7 +358,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Especifica o alinhamento vertical do título do gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obter detalhes.
+  summary: Especifica o alinhamento vertical do título do gráfico. Consulte `ExcelScript.ChartTextVerticalAlignment` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -392,9 +392,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 068cdd5d4997a8dcbd9b8aa9c66996f10ec1078f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a11e3c2b3d30f2807b1e5385eadc6d355bfbecf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416859"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606833"

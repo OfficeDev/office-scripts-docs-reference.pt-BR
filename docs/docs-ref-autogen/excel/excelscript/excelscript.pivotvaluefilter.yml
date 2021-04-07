@@ -3,7 +3,7 @@ name: ExcelScript.PivotValueFilter
 uid: ExcelScript!ExcelScript.PivotValueFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotValueFilter
-summary: Modelo configurável para um filtro de valor aplicar a um PivotField. O `condition` define quais critérios precisam ser definidos para que o filtro opere.
+summary: Modelo configurável para um filtro de valor a ser aplicado a um PivotField. O `condition` define quais critérios precisam ser definidos para que o filtro funcione.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: O comparador é o valor estático ao qual outros valores são comparados. O tipo de comparação é definido pela condição. Por exemplo, se o comparador for "50" e a condição for "GreaterThan", todos os valores de item que não forem maiores do que 50 serão removidos pelo filtro.
+  summary: O comparador é o valor estático ao qual outros valores são comparados. O tipo de comparação é definido pela condição. Por exemplo, se o comparador for "50" e a condição for "greaterThan", todos os valores de item que não sejam maiores que 50 serão removidos pelo filtro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Especifica a condição para o filtro, que define os critérios de filtragem necessários.
+  summary: Especifica a condição do filtro, que define os critérios de filtragem necessários.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Se true, Filter *excluirá* itens que atendem aos critérios. O padrão é false (filtrar para incluir itens que atendam aos critérios).
+  summary: Se `true`<!-- -->, filter *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendem aos critérios).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: O limite inferior do intervalo para a condição de `Between` filtro.
+  summary: O limite inferior do intervalo para a condição `between` de filtro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
   package: ExcelScript!
   fullName: selectionType
-  summary: Especifica se o filtro é para os N itens superiores/inferiores, N superior/inferior% ou soma superior/inferior N.
+  summary: Especifica se o filtro é para os itens N superior/inferior, N por cento superior/inferior ou N superior/inferior.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
   package: ExcelScript!
   fullName: threshold
-  summary: O número de limite de "N" de itens, porcentagem ou soma a ser filtrado para uma condição de filtro Top/Bottom.
+  summary: O número limite "N" de itens, porcentagem ou soma a ser filtrado para uma condição de filtro superior/inferior.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: O limite superior do intervalo para a condição de `Between` filtro.
+  summary: O limite superior do intervalo para a condição `between` de filtro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -106,9 +106,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 3c35fae98f6ae6e897b205b57d818601ad71a0cc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f788cd8ae30fd40cb31cdb383b7929a79c40ca4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416705"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606207"

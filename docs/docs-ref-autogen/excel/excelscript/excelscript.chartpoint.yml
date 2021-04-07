@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)
   package: ExcelScript!
   fullName: getHasDataLabel()
-  summary: Indica se um ponto de dados tem um rótulo de dados. Não aplicável para gráficos de superfície.
+  summary: Representa se um ponto de dados tem um rótulo de dados. Não aplicável para gráficos de superfície.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: Representação do código de cor HTML da cor de plano de fundo do marcador do ponto de dados (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor de plano de fundo do marcador de um ponto de dados (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: Representação do código de cor HTML da cor de primeiro plano do marcador do ponto de dados (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor do marcador em primeiro plano de um ponto de dados (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)
   package: ExcelScript!
   fullName: getMarkerSize()
-  summary: Representa o tamanho do marcador do ponto de dados.
+  summary: Representa o tamanho do marcador de um ponto de dados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Representa estilo do marcador de um ponto de dados do gráfico. Consulte ExcelScript. ChartMarkerStyle para obter detalhes.
+  summary: Representa estilo do marcador de um ponto de dados do gráfico. Consulte `ExcelScript.ChartMarkerStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)
   package: ExcelScript!
   fullName: setHasDataLabel(hasDataLabel)
-  summary: Indica se um ponto de dados tem um rótulo de dados. Não aplicável para gráficos de superfície.
+  summary: Representa se um ponto de dados tem um rótulo de dados. Não aplicável para gráficos de superfície.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: Representação do código de cor HTML da cor de plano de fundo do marcador do ponto de dados (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor de plano de fundo do marcador de um ponto de dados (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: Representação do código de cor HTML da cor de primeiro plano do marcador do ponto de dados (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor do marcador em primeiro plano de um ponto de dados (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)
   package: ExcelScript!
   fullName: setMarkerSize(markerSize)
-  summary: Representa o tamanho do marcador do ponto de dados.
+  summary: Representa o tamanho do marcador de um ponto de dados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Representa estilo do marcador de um ponto de dados do gráfico. Consulte ExcelScript. ChartMarkerStyle para obter detalhes.
+  summary: Representa estilo do marcador de um ponto de dados do gráfico. Consulte `ExcelScript.ChartMarkerStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,9 +199,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d11ca64902c23c50ed0f8ae592d26c935e90319d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: aad9a80594512307275935c6921b43f74220bd16
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419618"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606861"

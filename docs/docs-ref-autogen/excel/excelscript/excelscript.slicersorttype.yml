@@ -3,7 +3,7 @@ name: ExcelScript.SlicerSortType
 uid: ExcelScript!ExcelScript.SlicerSortType:enum
 package: ExcelScript!
 fullName: ExcelScript.SlicerSortType
-summary: Especifica o comportamento de classificação do slicer para a API slicer. sortBy.
+summary: Especifica o comportamento de classificação de slicer para `Slicer.sortBy`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,19 +11,19 @@ fields:
 - name: ascending
   uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
   package: ExcelScript!
-  summary: Classificar itens de segmentação de itens em ordem crescente por legendas de item.
+  summary: Classificar itens de slicer em ordem crescente por legendas de item.
 - name: dataSourceOrder
   uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
   package: ExcelScript!
-  summary: Classificar itens de segmentação de dados na ordem fornecida pela fonte de dados.
+  summary: Classificar itens de slicer na ordem fornecida pela fonte de dados.
 - name: descending
   uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
   package: ExcelScript!
-  summary: Classificar itens de segmentação de itens em ordem decrescente por legendas de item.
+  summary: Classificar itens de slicer em ordem decrescente por legendas de item.
 metadata:
-  ms.openlocfilehash: 5b56c58547f73ee6fdbcc145985c6bfc2526d6c3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: db45ddcb1ff4913f4f4d76e9303660517f95a4a4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420472"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606001"

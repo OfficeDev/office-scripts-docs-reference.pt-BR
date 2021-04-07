@@ -3,7 +3,7 @@ name: ExcelScript.PivotFilters
 uid: ExcelScript!ExcelScript.PivotFilters:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotFilters
-summary: Uma interface que representa todos os PivotFilters aplicados atualmente a um campo PivotField específico.
+summary: Uma interface que representa todos os PivotFilters atualmente aplicados a um determinado PivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#dateFilter:member
   package: ExcelScript!
   fullName: dateFilter
-  summary: O filtro de data atualmente aplicado ao PivotField. Nulo se nenhum for aplicado.
+  summary: O filtro de data aplicado no momento do PivotField. Essa propriedade é `null` se nenhum filtro de valor for aplicado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#labelFilter:member
   package: ExcelScript!
   fullName: labelFilter
-  summary: O filtro de rótulo do PivotField atualmente aplicado. Nulo se nenhum for aplicado.
+  summary: O filtro de rótulo aplicado no momento do PivotField. Essa propriedade é `null` se nenhum filtro de valor for aplicado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#manualFilter:member
   package: ExcelScript!
   fullName: manualFilter
-  summary: O filtro manual aplicado no momento do PivotField. Nulo se nenhum for aplicado.
+  summary: O filtro manual aplicado no momento do PivotField. Essa propriedade é `null` se nenhum filtro de valor for aplicado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
   package: ExcelScript!
   fullName: valueFilter
-  summary: O filtro de valor atualmente aplicado ao PivotField. Nulo se nenhum for aplicado.
+  summary: O filtro de valor aplicado no momento do PivotField. Essa propriedade é `null` se nenhum filtro de valor for aplicado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
 metadata:
-  ms.openlocfilehash: 7f7476fe423978732f5e56e547ef9f44e9c1df0a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4227afb078b084fa529039e7b77587a01635e689
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415257"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607197"

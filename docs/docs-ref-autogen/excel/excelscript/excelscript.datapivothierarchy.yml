@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataPivotHierarchy#getSummarizeBy:member(1)
   package: ExcelScript!
   fullName: getSummarizeBy()
-  summary: Especifica se todos os itens do DataPivotHierarchy são exibidos.
+  summary: Especifica se todos os itens do DataPivotHierarchy são mostrados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -172,7 +172,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataPivotHierarchy#setSummarizeBy:member(1)
   package: ExcelScript!
   fullName: setSummarizeBy(summarizeBy)
-  summary: Especifica se todos os itens do DataPivotHierarchy são exibidos.
+  summary: Especifica se todos os itens do DataPivotHierarchy são mostrados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,9 +199,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 670371dcff2c8743a996a5663ff51b5e8817e618
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6ba2d7d4728f1ea6f3510714e5f868fe1544dfda
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415572"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607043"

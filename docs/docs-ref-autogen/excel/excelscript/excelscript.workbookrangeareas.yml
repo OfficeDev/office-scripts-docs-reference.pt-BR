@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: 'Retorna uma matriz de endereço em estilo a1. O valor de endereço conterá o nome da planilha para cada bloco retangular de células (por exemplo, "Planilha1! A1: B4, Planilha1! D1: D4 "). Somente leitura.'
+  summary: Retorna uma matriz de endereços no estilo A1. Os valores de endereço contêm o nome da planilha para cada bloco retangular de células (por exemplo, "Sheet1! A1:B4, Sheet1! D1:D4"). Somente leitura.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
   package: ExcelScript!
   fullName: getAreas()
-  summary: Retorna o objeto RangeAreasCollection, cada RangeAreas na coleção representa um ou mais intervalos de retângulo em uma planilha.
+  summary: Retorna o `RangeAreasCollection` objeto. Cada `RangeAreas` um na coleção representa um ou mais intervalos de retângulos em uma planilha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: Retorna o objeto RangeAreas com base no nome ou na ID da planilha na coleção. Se a planilha não existir, esta função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Retorna o objeto com base no nome `RangeAreas` da planilha ou na ID da coleção. Se a planilha não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: Retorna intervalos que compõem este objeto em um objeto Rangecollection.
+  summary: Retorna intervalos que compõem esse objeto em um `RangeCollection` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 2a4a022464cf1f54246d451331da6d84f2d57ec3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554747"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605301"

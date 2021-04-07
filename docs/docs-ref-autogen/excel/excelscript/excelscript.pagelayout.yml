@@ -3,7 +3,7 @@ name: ExcelScript.PageLayout
 uid: ExcelScript!ExcelScript.PageLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayout
-summary: Representa as configurações de layout e impressão que não dependem de nenhuma implementação específica da impressora. Essas configurações incluem margens, orientação, numeração de página, linhas de título e a área de impressão.
+summary: Representa configurações de layout e impressão que não dependem de nenhuma implementação específica da impressora. Essas configurações incluem margens, orientação, numeração de página, linhas de título e a área de impressão.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBottomMargin:member(1)
   package: ExcelScript!
   fullName: getBottomMargin()
-  summary: A margem inferior da página da planilha a ser usada para impressão em pontos.
+  summary: A margem de página inferior da planilha a ser usada para impressão em pontos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: getCenterHorizontally()
-  summary: O sinalizador da planilha centralizado horizontalmente. Esse sinalizador determina se a planilha será centralizada horizontalmente quando for impressa.
+  summary: O sinalizador horizontal do centro da planilha. Esse sinalizador determina se a planilha será centralizada horizontalmente quando for impressa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)
   package: ExcelScript!
   fullName: getCenterVertically()
-  summary: O sinalizador da planilha centralizado verticalmente. Esse sinalizador determina se a planilha será centralizada verticalmente quando for impressa.
+  summary: O sinalizador vertical do centro da planilha. Esse sinalizador determina se a planilha será centralizada verticalmente quando for impressa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)
   package: ExcelScript!
   fullName: getDraftMode()
-  summary: A opção de modo de rascunho da planilha. Se for true, a planilha será impressa sem gráficos.
+  summary: A opção de modo de rascunho da planilha. Se `true`<!-- -->, a planilha será impressa sem elementos gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: getFirstPageNumber()
-  summary: O número da primeira página da planilha a ser impressa. O valor null representa a numeração "automática" de páginas.
+  summary: O número da primeira página da planilha a ser impressa. Um valor representa a numeração de `null` página "automática".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
   package: ExcelScript!
   fullName: getFooterMargin()
-  summary: A margem de rodapé da planilha, em pontos, para uso na impressão.
+  summary: A margem do rodapé da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)
   package: ExcelScript!
   fullName: getHeaderMargin()
-  summary: A margem do cabeçalho da planilha, em pontos, para uso na impressão.
+  summary: A margem do header da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)
   package: ExcelScript!
   fullName: getLeftMargin()
-  summary: A margem esquerda da planilha, em pontos, para uso na impressão.
+  summary: A margem esquerda da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPaperSize:member(1)
   package: ExcelScript!
   fullName: getPaperSize()
-  summary: O tamanho de papel da página da planilha.
+  summary: O tamanho do papel da página da planilha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: Obtém o objeto RangeAreas, compreendendo um ou mais intervalos retangulares, que representa a área de impressão da planilha. Se não houver nenhuma área de impressão, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém `RangeAreas` o objeto, compreendendo um ou mais intervalos retangulares, que representa a área de impressão da planilha. Se não houver área de impressão, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintComments:member(1)
   package: ExcelScript!
   fullName: getPrintComments()
-  summary: Especifica se os comentários da planilha devem ser exibidos ao imprimir.
+  summary: Especifica se os comentários da planilha devem ser exibidos durante a impressão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)
   package: ExcelScript!
   fullName: getPrintErrors()
-  summary: A opção de erros de impressão da planilha.
+  summary: A opção erros de impressão da planilha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
   package: ExcelScript!
   fullName: getPrintTitleColumns()
-  summary: Obtém o objeto range que representa as colunas de título. Se não for definido, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém o objeto range que representa as colunas de título. Se não estiver definida, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
   package: ExcelScript!
   fullName: getPrintTitleRows()
-  summary: Obtém o objeto range representando as linhas do título. Se não for definido, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém o objeto range representando as linhas do título. Se não estiver definida, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)
   package: ExcelScript!
   fullName: getRightMargin()
-  summary: A margem direita da planilha, em pontos, para uso na impressão.
+  summary: A margem direita da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)
   package: ExcelScript!
   fullName: getTopMargin()
-  summary: A margem superior da planilha, em pontos, para uso na impressão.
+  summary: A margem superior da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
   package: ExcelScript!
   fullName: getZoom()
-  summary: As opções de zoom de impressão da planilha. O `PageLayoutZoomOptions` objeto deve ser definido como um objeto JSON (use `x.zoom = {...}` em vez de `x.zoom.scale = ...`<!-- -->).
+  summary: As opções de zoom de impressão da planilha. O `PageLayoutZoomOptions` objeto deve ser definido como um objeto JSON (use em vez `x.zoom = {...}` de `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBottomMargin:member(1)
   package: ExcelScript!
   fullName: setBottomMargin(bottomMargin)
-  summary: A margem inferior da página da planilha a ser usada para impressão em pontos.
+  summary: A margem de página inferior da planilha a ser usada para impressão em pontos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: setCenterHorizontally(centerHorizontally)
-  summary: O sinalizador da planilha centralizado horizontalmente. Esse sinalizador determina se a planilha será centralizada horizontalmente quando for impressa.
+  summary: O sinalizador horizontal do centro da planilha. Esse sinalizador determina se a planilha será centralizada horizontalmente quando for impressa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)
   package: ExcelScript!
   fullName: setCenterVertically(centerVertically)
-  summary: O sinalizador da planilha centralizado verticalmente. Esse sinalizador determina se a planilha será centralizada verticalmente quando for impressa.
+  summary: O sinalizador vertical do centro da planilha. Esse sinalizador determina se a planilha será centralizada verticalmente quando for impressa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -380,7 +380,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)
   package: ExcelScript!
   fullName: setDraftMode(draftMode)
-  summary: A opção de modo de rascunho da planilha. Se for true, a planilha será impressa sem gráficos.
+  summary: A opção de modo de rascunho da planilha. Se `true`<!-- -->, a planilha será impressa sem elementos gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: setFirstPageNumber(firstPageNumber)
-  summary: O número da primeira página da planilha a ser impressa. O valor null representa a numeração "automática" de páginas.
+  summary: O número da primeira página da planilha a ser impressa. Um valor representa a numeração de `null` página "automática".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -414,7 +414,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
   package: ExcelScript!
   fullName: setFooterMargin(footerMargin)
-  summary: A margem de rodapé da planilha, em pontos, para uso na impressão.
+  summary: A margem do rodapé da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)
   package: ExcelScript!
   fullName: setHeaderMargin(headerMargin)
-  summary: A margem do cabeçalho da planilha, em pontos, para uso na impressão.
+  summary: A margem do header da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -448,7 +448,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)
   package: ExcelScript!
   fullName: setLeftMargin(leftMargin)
-  summary: A margem esquerda da planilha, em pontos, para uso na impressão.
+  summary: A margem esquerda da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -482,7 +482,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPaperSize:member(1)
   package: ExcelScript!
   fullName: setPaperSize(paperSize)
-  summary: O tamanho de papel da página da planilha.
+  summary: O tamanho do papel da página da planilha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
     content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
     parameters:
     - id: printArea
-      description: O intervalo ou RangeAreas do conteúdo a ser impresso.
+      description: O intervalo ou intervalos do conteúdo a ser impresso.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: void
@@ -516,7 +516,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintComments:member(1)
   package: ExcelScript!
   fullName: setPrintComments(printComments)
-  summary: Especifica se os comentários da planilha devem ser exibidos ao imprimir.
+  summary: Especifica se os comentários da planilha devem ser exibidos durante a impressão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -533,7 +533,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
   package: ExcelScript!
   fullName: setPrintErrors(printErrors)
-  summary: A opção de erros de impressão da planilha.
+  summary: A opção erros de impressão da planilha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -596,10 +596,10 @@ methods:
               ): void;
     parameters:
     - id: unit
-      description: Unidade de medida das margens fornecidas.
+      description: Unidade de medida para as margens fornecidas.
       type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
     - id: marginOptions
-      description: Os valores de margem a serem definidos, as margens não fornecidas permanecerão inalteradas.
+      description: Valores de margem a definir. As margens não fornecidas permanecem inalteradas.
       type: <xref uid="ExcelScript!ExcelScript.PageLayoutMarginOptions:interface" />
     return:
       type: void
@@ -633,7 +633,7 @@ methods:
     content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
     parameters:
     - id: printTitleColumns
-      description: As colunas a serem repetidas à esquerda de cada página, o intervalo deve ocupar a coluna inteira para ser válido.
+      description: As colunas a serem repetidas à esquerda de cada página. O intervalo deve abranger toda a coluna para ser válido.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -650,7 +650,7 @@ methods:
     content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
     parameters:
     - id: printTitleRows
-      description: As linhas a serem repetidas na parte superior de cada página, o intervalo deve abranger a linha inteira para ser válida.
+      description: As linhas a serem repetidas na parte superior de cada página. O intervalo deve abranger a linha inteira para ser válido.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)
   package: ExcelScript!
   fullName: setRightMargin(rightMargin)
-  summary: A margem direita da planilha, em pontos, para uso na impressão.
+  summary: A margem direita da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -676,7 +676,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)
   package: ExcelScript!
   fullName: setTopMargin(topMargin)
-  summary: A margem superior da planilha, em pontos, para uso na impressão.
+  summary: A margem superior da planilha, em pontos, para uso ao imprimir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
   package: ExcelScript!
   fullName: setZoom(zoom)
-  summary: As opções de zoom de impressão da planilha. O `PageLayoutZoomOptions` objeto deve ser definido como um objeto JSON (use `x.zoom = {...}` em vez de `x.zoom.scale = ...`<!-- -->).
+  summary: As opções de zoom de impressão da planilha. O `PageLayoutZoomOptions` objeto deve ser definido como um objeto JSON (use em vez `x.zoom = {...}` de `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c66cd735b4fd357bcd164da80cd31bf6c71e7272
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: aae80d1e742b409dc59fde56b83a1f03f64fc177
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554619"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606410"

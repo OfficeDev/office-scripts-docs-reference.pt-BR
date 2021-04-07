@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Código de cor HTML que representa a cor do plano de fundo, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja")
+  summary: Código de cor HTML que representa a cor do plano de fundo, no formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
   package: ExcelScript!
   fullName: getPattern()
-  summary: O padrão de um intervalo. Consulte ExcelScript. FillPattern para obter detalhes. LinearGradient e RectangularGradient não são compatíveis. Um valor nulo indica que o intervalo inteiro não tem configuração de padrão uniforme.
+  summary: O padrão de um intervalo. Consulte `ExcelScript.FillPattern` para obter detalhes. LinearGradient e RectangularGradient não são compatíveis. Um `null` valor indica que o intervalo inteiro não tem uma configuração de padrão uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
   package: ExcelScript!
   fullName: getPatternColor()
-  summary: O código de cor HTML que representa a cor do padrão de intervalo, do formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja").
+  summary: O código de cor HTML que representa a cor do padrão de intervalo, no formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: getPatternTintAndShade()
-  summary: Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento de intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o padrão tintAndShades não for uniforme, NULL será retornado.
+  summary: Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento do intervalo. O valor está entre -1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um `null` valor indica que o intervalo não tem configurações `patternTintAndShade` uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Especifica um duplo que clareia ou escurece uma cor para o preenchimento de intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o tintAndShades não for uniforme, NULL será retornado.
+  summary: Especifica um duplo que clareia ou escurece uma cor para o preenchimento do intervalo. O valor está entre -1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um `null` valor indica que o intervalo não tem configurações `tintAndShade` uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Código de cor HTML que representa a cor do plano de fundo, da forma \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja")
+  summary: Código de cor HTML que representa a cor do plano de fundo, no formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
   package: ExcelScript!
   fullName: setPattern(pattern)
-  summary: O padrão de um intervalo. Consulte ExcelScript. FillPattern para obter detalhes. LinearGradient e RectangularGradient não são compatíveis. Um valor nulo indica que o intervalo inteiro não tem configuração de padrão uniforme.
+  summary: O padrão de um intervalo. Consulte `ExcelScript.FillPattern` para obter detalhes. LinearGradient e RectangularGradient não são compatíveis. Um `null` valor indica que o intervalo inteiro não tem uma configuração de padrão uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
   package: ExcelScript!
   fullName: setPatternColor(patternColor)
-  summary: O código de cor HTML que representa a cor do padrão de intervalo, do formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor de HTML nomeada (por exemplo, "laranja").
+  summary: O código de cor HTML que representa a cor do padrão de intervalo, no formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento de intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o padrão tintAndShades não for uniforme, NULL será retornado.
+  summary: Especifica um duplo que clareia ou escurece uma cor de padrão para o preenchimento do intervalo. O valor está entre -1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um `null` valor indica que o intervalo não tem configurações `patternTintAndShade` uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Especifica um duplo que clareia ou escurece uma cor para o preenchimento de intervalo. O valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Se o tintAndShades não for uniforme, NULL será retornado.
+  summary: Especifica um duplo que clareia ou escurece uma cor para o preenchimento do intervalo. O valor está entre -1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um `null` valor indica que o intervalo não tem configurações `tintAndShade` uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b9076fea426531db99f583e031e3474e5b30e5e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6bf9cb6b2e535971d2b4323e3c078d50e0df6894
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411933"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607169"

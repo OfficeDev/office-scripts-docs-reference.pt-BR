@@ -3,7 +3,7 @@ name: ExcelScript.ChartPlotAreaFormat
 uid: ExcelScript!ExcelScript.ChartPlotAreaFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartPlotAreaFormat
-summary: Representa as propriedades de formato do plotArea do gráfico.
+summary: Representa as propriedades de formato de uma área de plotagem de gráfico.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Especifica os atributos de borda de um plotArea de gráfico.
+  summary: Especifica os atributos de borda de uma área de plotagem de gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Especifica o formato de preenchimento de um objeto, que inclui informações de formatação de plano de fundo.
+  summary: Especifica o formato de preenchimento de um objeto, que inclui informações de formatação em segundo plano.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: b6992c45251b55c0b3d0329b1e1d29e21bfdf566
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c346f4fb13140639199528de6f7876897f645bf8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416114"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606868"

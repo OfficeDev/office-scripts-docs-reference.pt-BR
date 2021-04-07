@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Especifica o formato de borda do título do eixo do gráfico, que inclui cores, LineStyle e Weight.
+  summary: Especifica o formato de borda do título do eixo do gráfico, que inclui cor, estilo de linha e peso.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Especifica os atributos de fonte do título do eixo do gráfico, como nome da fonte, tamanho da fonte, cor etc. do objeto title do eixo do gráfico.
+  summary: Especifica os atributos de fonte do título do eixo do gráfico, como nome da fonte, tamanho da fonte ou cor, do objeto title do eixo do gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: aa3d5e5f80de2db848dd49faa79439f0a0490d45
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a8b4cfada09ede9adb3bf5501b9032ad26247ea
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420059"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606597"

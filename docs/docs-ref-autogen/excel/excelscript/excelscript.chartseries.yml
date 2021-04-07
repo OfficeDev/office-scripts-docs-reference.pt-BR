@@ -21,7 +21,7 @@ methods:
     content: 'addChartTrendline(type?: ChartTrendlineType): ChartTrendline;'
     parameters:
     - id: type
-      description: Especifica o tipo de tendência. O valor padrão é "linear". Consulte ExcelScript. ChartTrendline para obter detalhes.
+      description: Especifica o tipo de linha de tendência. O valor padrão é "Linear". Consulte `ExcelScript.ChartTrendline` para obter detalhes.
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getAxisGroup:member(1)
   package: ExcelScript!
   fullName: getAxisGroup()
-  summary: Especifica o grupo para a série especificada.
+  summary: Especifica o grupo da série especificada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)
   package: ExcelScript!
   fullName: getChartTrendline(index)
-  summary: Obtém o objeto da linha de tendência por índice, que é a ordem de inserção na matriz de itens.
+  summary: Obtém um objeto trendline por índice, que é a ordem de inserção na matriz de itens.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: Representa o tipo de gráfico de uma série. Confira ExcelScript. ChartType para obter detalhes.
+  summary: Representa o tipo de gráfico de uma série. Consulte `ExcelScript.ChartType` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDataLabels:member(1)
   package: ExcelScript!
   fullName: getDataLabels()
-  summary: Representa uma coleção de todos os dataLabels da série.
+  summary: Representa uma coleção de todos os rótulos de dados na série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)
   package: ExcelScript!
   fullName: getDimensionValues(dimension)
-  summary: Obtém os valores de uma única dimensão da série de gráficos. Podem ser valores de categoria ou valores de dados, dependendo da dimensão especificada e de como os dados são mapeados para a série de gráficos.
+  summary: Obtém os valores de uma única dimensão da série de gráficos. Eles podem ser valores de categoria ou valores de dados, dependendo da dimensão especificada e de como os dados são mapeados para a série de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -146,7 +146,7 @@ methods:
     content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
     parameters:
     - id: dimension
-      description: a dimensão do eixo onde os dados de
+      description: A dimensão do eixo de onde os dados são.
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesDimension:enum" />
     return:
       type: string[]
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: getDoughnutHoleSize()
-  summary: Representa o tamanho do furo de rosca de uma série de gráficos. Válida apenas em gráficos de rosca e doughnutExploded. Gera uma exceção de argumento inválida em gráficos inválidos.
+  summary: Representa o tamanho do furo de rosca de uma série de gráficos. Válido somente em gráficos de rosca e rosca. Lança um `InvalidArgument` erro em gráficos inválidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)
   package: ExcelScript!
   fullName: getExplosion()
-  summary: Especifica o valor de explosão para uma fatia de gráfico de pizza ou de rosca. Retorna 0 (zero) se não houver explosão (a ponta da fatia está no centro da pizza).
+  summary: Especifica o valor de explosão para uma fatia de gráfico de pizza ou gráfico de rosca. Retorna 0 (zero) se não houver explosão (a ponta da fatia está no centro da pizza).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: getFirstSliceAngle()
-  summary: Especifica o ângulo da primeira fatia do gráfico de pizza ou rosca, em graus (no sentido horário a partir da vertical). Aplica-se apenas a pizza, torta 3-D e gráficos de rosca.. Pode ser um valor de 0 a 360.
+  summary: Especifica o ângulo da primeira fatia do gráfico de pizza ou do gráfico de rosca, em graus (no sentido horário da vertical). Aplica-se apenas a pizza, torta 3-D e gráficos de rosca.. Pode ser um valor de 0 a 360.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGapWidth:member(1)
   package: ExcelScript!
   fullName: getGapWidth()
-  summary: Representa a largura do espaçamento de uma série de gráfico. Só é válido em gráficos de barras e de colunas, bem como classes específicas de gráficos de linha e de pizza. Gera uma exceção de argumento inválida em gráficos inválidos.
+  summary: Representa a largura do espaçamento de uma série de gráfico. Válido somente em gráficos de barras e colunas, bem como classes específicas de gráficos de linha e pizza. Lança uma exceção de argumento inválido em gráficos inválidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumColor()
-  summary: Especifica a cor para o valor máximo de uma série de gráficos do mapa de região.
+  summary: Especifica a cor para o valor máximo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -246,7 +246,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumType()
-  summary: Especifica o tipo de valor máximo de uma série de gráfico do mapa de região.
+  summary: Especifica o tipo para o valor máximo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumValue()
-  summary: Especifica o valor máximo de uma série de gráficos de mapas de região.
+  summary: Especifica o valor máximo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -272,7 +272,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointColor()
-  summary: Especifica a cor do valor intermediário de uma série de gráficos do mapa de região.
+  summary: Especifica a cor do valor do ponto médio de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -285,7 +285,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointType()
-  summary: Especifica o tipo de valor de ponto médio de uma série de gráficos de mapas de região.
+  summary: Especifica o tipo para o valor do ponto médio de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -298,7 +298,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointValue()
-  summary: Especifica o valor de ponto médio de uma série de gráficos de mapas de região.
+  summary: Especifica o valor do ponto médio de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumColor()
-  summary: Especifica a cor do valor mínimo de uma série de gráfico do mapa de região.
+  summary: Especifica a cor do valor mínimo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumType()
-  summary: Especifica o tipo de valor mínimo de uma série de gráfico do mapa de região.
+  summary: Especifica o tipo para o valor mínimo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -337,7 +337,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumValue()
-  summary: Especifica o valor mínimo de uma série de gráficos de mapas de região.
+  summary: Especifica o valor mínimo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -376,7 +376,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertColor:member(1)
   package: ExcelScript!
   fullName: getInvertColor()
-  summary: Especifica a cor de preenchimento de pontos de dados negativos em uma série.
+  summary: Especifica a cor de preenchimento para pontos de dados negativos em uma série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: getInvertIfNegative()
-  summary: True se o Excel inverte o padrão no item quando ele corresponde a um número negativo.
+  summary: True se o Excel inverte o padrão no item quando corresponde a um número negativo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -415,7 +415,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: Especifica a cor de plano de fundo dos marcadores de uma série de gráficos.
+  summary: Especifica a cor de plano de fundo do marcador de uma série de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -428,7 +428,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: Especifica a cor de primeiro plano de marcadores de uma série de gráficos.
+  summary: Especifica a cor do marcador em primeiro plano de uma série de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -454,7 +454,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Especifica o estilo de marcador de uma série de gráficos. Consulte ExcelScript. ChartMarkerStyle para obter detalhes.
+  summary: Especifica o estilo de marcador de uma série de gráficos. Consulte `ExcelScript.ChartMarkerStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -467,7 +467,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Especifica o nome de uma série em um gráfico. O comprimento do nome não deve ser maior que 255 caracteres.
+  summary: Especifica o nome de uma série em um gráfico. O comprimento do nome não deve ter mais de 255 caracteres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -480,7 +480,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getOverlap:member(1)
   package: ExcelScript!
   fullName: getOverlap()
-  summary: Especifica como barras e colunas são posicionadas. Pode ser um valor entre – 100 e 100. Se aplicam apenas às barras 2D e gráficos de colunas 2D.
+  summary: Especifica como barras e colunas são posicionadas. Pode ser um valor entre –100 e 100. Se aplicam apenas às barras 2D e gráficos de colunas 2D.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: getParentLabelStrategy()
-  summary: Especifica a área de estratégia de rótulo pai da série para um gráfico de mapa de região.
+  summary: Especifica a área de estratégia de rótulo pai da série para um gráfico de mapa de árvore.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getPlotOrder:member(1)
   package: ExcelScript!
   fullName: getPlotOrder()
-  summary: Especifica a ordem de plotagem de uma série de gráfico dentro do grupo de gráficos.
+  summary: Especifica a ordem de plotagem de uma série de gráficos dentro do grupo de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: getSecondPlotSize()
-  summary: Especifica o tamanho da seção secundária de um gráfico pizza de pizza ou um gráfico de barra de pizza, como uma porcentagem do tamanho da pizza principal. Pode ser um valor de 5 de 200.
+  summary: Especifica o tamanho da seção secundária de um gráfico de pizza de pizza ou um gráfico de barras de pizza, como uma porcentagem do tamanho da pizza primária. Pode ser um valor de 5 de 200.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -545,7 +545,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: getShowConnectorLines()
-  summary: Especifica se as linhas de conexão são mostradas em gráficos de cascata.
+  summary: Especifica se as linhas do conector são mostradas em gráficos de cascata.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -558,7 +558,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: getShowLeaderLines()
-  summary: Especifica se as linhas de preenchimento são exibidas para cada rótulo de dados na série.
+  summary: Especifica se as linhas de líder são exibidas para cada rótulo de dados na série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -584,7 +584,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSmooth:member(1)
   package: ExcelScript!
   fullName: getSmooth()
-  summary: Especifica se a série é suave. Só se aplica a gráficos de linhas e de dispersão.
+  summary: Especifica se a série é suave. Aplicável apenas a gráficos de linha e dispersão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -597,7 +597,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitType:member(1)
   package: ExcelScript!
   fullName: getSplitType()
-  summary: Especifica a maneira como as duas seções de um gráfico de pizza de pizza ou de barra de pizza são divididas.
+  summary: Especifica a maneira como as duas seções de um gráfico de pizza de pizza ou um gráfico de barras de pizza são divididas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitValue:member(1)
   package: ExcelScript!
   fullName: getSplitValue()
-  summary: Especifica o valor de limite que separa duas seções de um gráfico de pizza de pizza ou de barra de pizza.
+  summary: Especifica o valor limite que separa duas seções de um gráfico de pizza de pizza ou um gráfico de barras de pizza.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -636,7 +636,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getVaryByCategories:member(1)
   package: ExcelScript!
   fullName: getVaryByCategories()
-  summary: True se o Excel atribui uma cor ou padrão diferente para cada marcador de dados. O gráfico deve conter apenas uma série.
+  summary: True se o Excel atribuir uma cor ou padrão diferente a cada marcador de dados. O gráfico deve conter apenas uma série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,7 +675,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setAxisGroup:member(1)
   package: ExcelScript!
   fullName: setAxisGroup(axisGroup)
-  summary: Especifica o grupo para a série especificada.
+  summary: Especifica o grupo da série especificada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -717,7 +717,7 @@ methods:
     content: 'setBubbleSizes(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: O objeto Range correspondente aos dados de origem.
+      description: O `Range` objeto correspondente aos dados de origem.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -726,7 +726,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: Representa o tipo de gráfico de uma série. Confira ExcelScript. ChartType para obter detalhes.
+  summary: Representa o tipo de gráfico de uma série. Consulte `ExcelScript.ChartType` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -743,7 +743,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: setDoughnutHoleSize(doughnutHoleSize)
-  summary: Representa o tamanho do furo de rosca de uma série de gráficos. Válida apenas em gráficos de rosca e doughnutExploded. Gera uma exceção de argumento inválida em gráficos inválidos.
+  summary: Representa o tamanho do furo de rosca de uma série de gráficos. Válido somente em gráficos de rosca e rosca. Lança um `InvalidArgument` erro em gráficos inválidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -760,7 +760,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setExplosion:member(1)
   package: ExcelScript!
   fullName: setExplosion(explosion)
-  summary: Especifica o valor de explosão para uma fatia de gráfico de pizza ou de rosca. Retorna 0 (zero) se não houver explosão (a ponta da fatia está no centro da pizza).
+  summary: Especifica o valor de explosão para uma fatia de gráfico de pizza ou gráfico de rosca. Retorna 0 (zero) se não houver explosão (a ponta da fatia está no centro da pizza).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -794,7 +794,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: setFirstSliceAngle(firstSliceAngle)
-  summary: Especifica o ângulo da primeira fatia do gráfico de pizza ou rosca, em graus (no sentido horário a partir da vertical). Aplica-se apenas a pizza, torta 3-D e gráficos de rosca.. Pode ser um valor de 0 a 360.
+  summary: Especifica o ângulo da primeira fatia do gráfico de pizza ou do gráfico de rosca, em graus (no sentido horário da vertical). Aplica-se apenas a pizza, torta 3-D e gráficos de rosca.. Pode ser um valor de 0 a 360.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -811,7 +811,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGapWidth:member(1)
   package: ExcelScript!
   fullName: setGapWidth(gapWidth)
-  summary: Representa a largura do espaçamento de uma série de gráfico. Só é válido em gráficos de barras e de colunas, bem como classes específicas de gráficos de linha e de pizza. Gera uma exceção de argumento inválida em gráficos inválidos.
+  summary: Representa a largura do espaçamento de uma série de gráfico. Válido somente em gráficos de barras e colunas, bem como classes específicas de gráficos de linha e pizza. Lança uma exceção de argumento inválido em gráficos inválidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -828,7 +828,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumColor(gradientMaximumColor)
-  summary: Especifica a cor para o valor máximo de uma série de gráficos do mapa de região.
+  summary: Especifica a cor para o valor máximo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumType(gradientMaximumType)
-  summary: Especifica o tipo de valor máximo de uma série de gráfico do mapa de região.
+  summary: Especifica o tipo para o valor máximo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -865,7 +865,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumValue(gradientMaximumValue)
-  summary: Especifica o valor máximo de uma série de gráficos de mapas de região.
+  summary: Especifica o valor máximo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -882,7 +882,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointColor(gradientMidpointColor)
-  summary: Especifica a cor do valor intermediário de uma série de gráficos do mapa de região.
+  summary: Especifica a cor do valor do ponto médio de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -899,7 +899,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointType(gradientMidpointType)
-  summary: Especifica o tipo de valor de ponto médio de uma série de gráficos de mapas de região.
+  summary: Especifica o tipo para o valor do ponto médio de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -919,7 +919,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointValue(gradientMidpointValue)
-  summary: Especifica o valor de ponto médio de uma série de gráficos de mapas de região.
+  summary: Especifica o valor do ponto médio de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -936,7 +936,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumColor(gradientMinimumColor)
-  summary: Especifica a cor do valor mínimo de uma série de gráfico do mapa de região.
+  summary: Especifica a cor do valor mínimo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -953,7 +953,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumType(gradientMinimumType)
-  summary: Especifica o tipo de valor mínimo de uma série de gráfico do mapa de região.
+  summary: Especifica o tipo para o valor mínimo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -973,7 +973,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumValue(gradientMinimumValue)
-  summary: Especifica o valor mínimo de uma série de gráficos de mapas de região.
+  summary: Especifica o valor mínimo de uma série de gráficos de mapa de região.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1024,7 +1024,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertColor:member(1)
   package: ExcelScript!
   fullName: setInvertColor(invertColor)
-  summary: Especifica a cor de preenchimento de pontos de dados negativos em uma série.
+  summary: Especifica a cor de preenchimento para pontos de dados negativos em uma série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1041,7 +1041,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: setInvertIfNegative(invertIfNegative)
-  summary: True se o Excel inverte o padrão no item quando ele corresponde a um número negativo.
+  summary: True se o Excel inverte o padrão no item quando corresponde a um número negativo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1058,7 +1058,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: Especifica a cor de plano de fundo dos marcadores de uma série de gráficos.
+  summary: Especifica a cor de plano de fundo do marcador de uma série de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1075,7 +1075,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: Especifica a cor de primeiro plano de marcadores de uma série de gráficos.
+  summary: Especifica a cor do marcador em primeiro plano de uma série de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1109,7 +1109,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Especifica o estilo de marcador de uma série de gráficos. Consulte ExcelScript. ChartMarkerStyle para obter detalhes.
+  summary: Especifica o estilo de marcador de uma série de gráficos. Consulte `ExcelScript.ChartMarkerStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1126,7 +1126,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Especifica o nome de uma série em um gráfico. O comprimento do nome não deve ser maior que 255 caracteres.
+  summary: Especifica o nome de uma série em um gráfico. O comprimento do nome não deve ter mais de 255 caracteres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1143,7 +1143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setOverlap:member(1)
   package: ExcelScript!
   fullName: setOverlap(overlap)
-  summary: Especifica como barras e colunas são posicionadas. Pode ser um valor entre – 100 e 100. Se aplicam apenas às barras 2D e gráficos de colunas 2D.
+  summary: Especifica como barras e colunas são posicionadas. Pode ser um valor entre –100 e 100. Se aplicam apenas às barras 2D e gráficos de colunas 2D.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1160,7 +1160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: setParentLabelStrategy(parentLabelStrategy)
-  summary: Especifica a área de estratégia de rótulo pai da série para um gráfico de mapa de região.
+  summary: Especifica a área de estratégia de rótulo pai da série para um gráfico de mapa de árvore.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1180,7 +1180,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setPlotOrder:member(1)
   package: ExcelScript!
   fullName: setPlotOrder(plotOrder)
-  summary: Especifica a ordem de plotagem de uma série de gráfico dentro do grupo de gráficos.
+  summary: Especifica a ordem de plotagem de uma série de gráficos dentro do grupo de gráficos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1197,7 +1197,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: setSecondPlotSize(secondPlotSize)
-  summary: Especifica o tamanho da seção secundária de um gráfico pizza de pizza ou um gráfico de barra de pizza, como uma porcentagem do tamanho da pizza principal. Pode ser um valor de 5 de 200.
+  summary: Especifica o tamanho da seção secundária de um gráfico de pizza de pizza ou um gráfico de barras de pizza, como uma porcentagem do tamanho da pizza primária. Pode ser um valor de 5 de 200.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1214,7 +1214,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: setShowConnectorLines(showConnectorLines)
-  summary: Especifica se as linhas de conexão são mostradas em gráficos de cascata.
+  summary: Especifica se as linhas do conector são mostradas em gráficos de cascata.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1231,7 +1231,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: setShowLeaderLines(showLeaderLines)
-  summary: Especifica se as linhas de preenchimento são exibidas para cada rótulo de dados na série.
+  summary: Especifica se as linhas de líder são exibidas para cada rótulo de dados na série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1265,7 +1265,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSmooth:member(1)
   package: ExcelScript!
   fullName: setSmooth(smooth)
-  summary: Especifica se a série é suave. Só se aplica a gráficos de linhas e de dispersão.
+  summary: Especifica se a série é suave. Aplicável apenas a gráficos de linha e dispersão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1282,7 +1282,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitType:member(1)
   package: ExcelScript!
   fullName: setSplitType(splitType)
-  summary: Especifica a maneira como as duas seções de um gráfico de pizza de pizza ou de barra de pizza são divididas.
+  summary: Especifica a maneira como as duas seções de um gráfico de pizza de pizza ou um gráfico de barras de pizza são divididas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1299,7 +1299,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitValue:member(1)
   package: ExcelScript!
   fullName: setSplitValue(splitValue)
-  summary: Especifica o valor de limite que separa duas seções de um gráfico de pizza de pizza ou de barra de pizza.
+  summary: Especifica o valor limite que separa duas seções de um gráfico de pizza de pizza ou um gráfico de barras de pizza.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1316,7 +1316,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(sourceData)
-  summary: Define os valores de uma série de gráficos. Para gráfico de dispersão, isso significa valores do eixo Y.
+  summary: Define os valores de uma série de gráficos. Para gráficos de dispersão, ele se refere aos valores do eixo y.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1324,7 +1324,7 @@ methods:
     content: 'setValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: O objeto Range correspondente aos dados de origem.
+      description: O `Range` objeto correspondente aos dados de origem.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setVaryByCategories:member(1)
   package: ExcelScript!
   fullName: setVaryByCategories(varyByCategories)
-  summary: True se o Excel atribui uma cor ou padrão diferente para cada marcador de dados. O gráfico deve conter apenas uma série.
+  summary: True se o Excel atribuir uma cor ou padrão diferente a cada marcador de dados. O gráfico deve conter apenas uma série.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setXAxisValues:member(1)
   package: ExcelScript!
   fullName: setXAxisValues(sourceData)
-  summary: Define os valores do eixo X para uma série de gráficos. Funciona apenas para gráficos de dispersão.
+  summary: Define os valores do eixo x para uma série de gráficos. Funciona apenas para gráficos de dispersão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1358,15 +1358,15 @@ methods:
     content: 'setXAxisValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: O objeto Range correspondente aos dados de origem.
+      description: O `Range` objeto correspondente aos dados de origem.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8b9c62141ae265c4c4435ac88caf93de77fd4d84
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 81c5a9a881511db17fcc6ac1650410ef94dc472d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419597"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606847"

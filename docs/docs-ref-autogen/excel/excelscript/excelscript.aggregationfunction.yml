@@ -3,7 +3,7 @@ name: ExcelScript.AggregationFunction
 uid: ExcelScript!ExcelScript.AggregationFunction:enum
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
-summary: Função de agregação para o campo de dados dinâmicos.
+summary: Função Aggregation para DataPivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,55 +15,55 @@ fields:
 - name: average
   uid: ExcelScript!ExcelScript.AggregationFunction.average:member
   package: ExcelScript!
-  summary: Aggregate usando a média dos dados, equivalentes à função média.
+  summary: Agregar usando a média dos dados, equivalente à função AVERAGE.
 - name: count
   uid: ExcelScript!ExcelScript.AggregationFunction.count:member
   package: ExcelScript!
-  summary: Agregar usando a contagem de itens nos dados, equivalente à função CONT.
+  summary: Agregar usando a contagem de itens nos dados, equivalente à função COUNTA.
 - name: countNumbers
   uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
   package: ExcelScript!
-  summary: Aggregate usando a contagem de números nos dados, equivalente à função COUNT.
+  summary: Agregar usando a contagem de números nos dados, equivalente à função COUNT.
 - name: max
   uid: ExcelScript!ExcelScript.AggregationFunction.max:member
   package: ExcelScript!
-  summary: Agregado usando o valor máximo dos dados, equivalente à função máximo.
+  summary: Agregar usando o valor máximo dos dados, equivalente à função MAX.
 - name: min
   uid: ExcelScript!ExcelScript.AggregationFunction.min:member
   package: ExcelScript!
-  summary: Agregado usando o valor mínimo dos dados, equivalente à função mín.
+  summary: Agregar usando o valor mínimo dos dados, equivalente à função MIN.
 - name: product
   uid: ExcelScript!ExcelScript.AggregationFunction.product:member
   package: ExcelScript!
-  summary: Agregar usando o produto dos dados, equivalente à função de produto.
+  summary: Agregar usando o produto dos dados, equivalente à função PRODUCT.
 - name: standardDeviation
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
   package: ExcelScript!
-  summary: Agregar usando o desvio padrão dos dados, equivalente à função DESVPAD.
+  summary: Agregar usando o desvio padrão dos dados, equivalente à função STDEV.
 - name: standardDeviationP
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
   package: ExcelScript!
-  summary: Aggregate usando o desvio padrão dos dados, equivalente à função DESVPADP.
+  summary: Agregar usando o desvio padrão dos dados, equivalente à função STDEVP.
 - name: sum
   uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
   package: ExcelScript!
-  summary: Aggregate usando a soma dos dados, equivalente à função soma.
+  summary: Agregar usando a soma dos dados, equivalente à função SUM.
 - name: unknown
   uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
   package: ExcelScript!
-  summary: A função de agregação é desconhecida ou não tem suporte.
+  summary: A função de agregação é desconhecida ou sem suporte.
 - name: variance
   uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
   package: ExcelScript!
-  summary: Agregar usando a variância dos dados, equivalente à função VAR.
+  summary: Agregar usando a variação dos dados, equivalente à função VAR.
 - name: varianceP
   uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
   package: ExcelScript!
-  summary: Aggregate usando a variância dos dados, equivalente à função VARP.
+  summary: Agregar usando a variação dos dados, equivalente à função VARP.
 metadata:
-  ms.openlocfilehash: fd80d4534a8db2e7a409a6b8e45e529b9bfcaddc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e7c0e255ebfdaf6446c2c8cca20171cff0fdcbcf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417366"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606693"

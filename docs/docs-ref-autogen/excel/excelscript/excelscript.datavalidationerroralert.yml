@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
   package: ExcelScript!
   fullName: showAlert
-  summary: Especifica se uma caixa de diálogo de alerta de erro deve ser exibida quando um usuário insere dados inválidos. O padrão é verdadeiro.
+  summary: Especifica se será exibida uma caixa de diálogo de alerta de erro quando um usuário inserir dados inválidos. O padrão é `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
   package: ExcelScript!
   fullName: style
-  summary: Tipo de alerta de validação de dados, confira ExcelScript. DataValidationAlertStyle para obter detalhes.
+  summary: O tipo de alerta de validação de dados, consulte `ExcelScript.DataValidationAlertStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 03292fc7608c01c280e7eb5e22dc9fe5bb89f659
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 64aa138911f1d67dd1bf48512168281cbacfda3b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415544"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606520"

@@ -3,7 +3,7 @@ name: ExcelScript.PivotLayout
 uid: ExcelScript!ExcelScript.PivotLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLayout
-summary: Representa o layout visual da tabela dinâmica.
+summary: Representa o layout visual da Tabela Dinâmica.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
   package: ExcelScript!
   fullName: getAutoFormat()
-  summary: Especifica se a formatação será formatada automaticamente quando for atualizada ou quando os campos forem movidos.
+  summary: Especifica se a formatação será formatada automaticamente quando for atualizada ou quando os campos são movidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
     content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
     parameters:
     - id: cell
-      description: Uma única célula dentro do corpo de dados da tabela dinâmica.
+      description: Uma única célula dentro do corpo de dados de tabela dinâmica.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)
   package: ExcelScript!
   fullName: getEnableFieldList()
-  summary: Especifica se a lista de campos pode ser exibida na interface do usuário.
+  summary: Especifica se a lista de campos pode ser mostrada na interface do usuário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: getPreserveFormatting()
-  summary: Especifica se a formatação é preservada quando o relatório é atualizado ou recalculado por operações como dinamização, classificação ou alteração de itens de campo de página.
+  summary: Especifica se a formatação é preservada quando o relatório é atualizado ou recalculado por operações como pivoting, classificação ou alteração de itens de campo de página.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowColumnGrandTotals()
-  summary: Especifica se o relatório de tabela dinâmica mostra os totais gerais para colunas.
+  summary: Especifica se o relatório de tabela dinâmica mostra totais grandes para colunas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowRowGrandTotals()
-  summary: Especifica se o relatório de tabela dinâmica mostra os totais gerais para as linhas.
+  summary: Especifica se o relatório de tabela dinâmica mostra totais grandes para linhas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: getSubtotalLocation()
-  summary: Essa propriedade indica SubtotalLocationType de todos os campos da Tabela Dinâmica. Se os campos têm diferentes estados, ele será nulo.
+  summary: Essa propriedade indica o `SubtotalLocationType` de todos os campos na Tabela Dinâmica. Se os campos têm estados diferentes, isso será `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
   package: ExcelScript!
   fullName: setAutoFormat(autoFormat)
-  summary: Especifica se a formatação será formatada automaticamente quando for atualizada ou quando os campos forem movidos.
+  summary: Especifica se a formatação será formatada automaticamente quando for atualizada ou quando os campos são movidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
     content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
     parameters:
     - id: cell
-      description: Uma única célula a ser usada para obter os critérios para a aplicação da AutoClassificação.
+      description: Uma única célula a ser usada obterá os critérios para aplicar a autossortação.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: sortBy
       description: A direção da classificação.
@@ -223,7 +223,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)
   package: ExcelScript!
   fullName: setEnableFieldList(enableFieldList)
-  summary: Especifica se a lista de campos pode ser exibida na interface do usuário.
+  summary: Especifica se a lista de campos pode ser mostrada na interface do usuário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -257,7 +257,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: setPreserveFormatting(preserveFormatting)
-  summary: Especifica se a formatação é preservada quando o relatório é atualizado ou recalculado por operações como dinamização, classificação ou alteração de itens de campo de página.
+  summary: Especifica se a formatação é preservada quando o relatório é atualizado ou recalculado por operações como pivoting, classificação ou alteração de itens de campo de página.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -274,7 +274,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowColumnGrandTotals(showColumnGrandTotals)
-  summary: Especifica se o relatório de tabela dinâmica mostra os totais gerais para colunas.
+  summary: Especifica se o relatório de tabela dinâmica mostra totais grandes para colunas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -291,7 +291,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowRowGrandTotals(showRowGrandTotals)
-  summary: Especifica se o relatório de tabela dinâmica mostra os totais gerais para as linhas.
+  summary: Especifica se o relatório de tabela dinâmica mostra totais grandes para linhas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: setSubtotalLocation(subtotalLocation)
-  summary: Essa propriedade indica SubtotalLocationType de todos os campos da Tabela Dinâmica. Se os campos têm diferentes estados, ele será nulo.
+  summary: Essa propriedade indica o `SubtotalLocationType` de todos os campos na Tabela Dinâmica. Se os campos têm estados diferentes, isso será `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: edb6b050eb6f004b74bf38c57764bf5292367016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4612183d3dca994b991b7f65659024e46fb06a13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416733"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607190"

@@ -3,7 +3,7 @@ name: ExcelScript.TableSort
 uid: ExcelScript!ExcelScript.TableSort:interface
 package: ExcelScript!
 fullName: ExcelScript.TableSort
-summary: Gerencia operações de classificação em objetos Table.
+summary: Gerencia operações de classificação em `Table` objetos.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -67,7 +67,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableSort#getMatchCase:member(1)
   package: ExcelScript!
   fullName: getMatchCase()
-  summary: Especifica se o capital próprio impacta o último tipo da tabela.
+  summary: Especifica se a caixa afeta o último tipo da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -80,7 +80,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableSort#getMethod:member(1)
   package: ExcelScript!
   fullName: getMethod()
-  summary: Indica o último método de ordenação de caracteres chineses usado para classificar a tabela.
+  summary: Representa o método de ordenação de caracteres chinês usado pela última vez para classificar a tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -103,9 +103,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 9413405e10e29eb2da40f194e2d53a3fc4d10847
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1915c44c5d549450c2a58e3c9b423bbb8e979c2e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420241"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605224"
