@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFont
 uid: ExcelScript!ExcelScript.ShapeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFont
-summary: Representa os atributos de fonte, como nome da fonte, tamanho da fonte e cor, para o objeto TextRange de uma forma.
+summary: Representa os atributos de fonte, como nome da fonte, tamanho da fonte e cor, para o objeto de uma `TextRange` forma.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Representa o status da fonte em negrito. Retornará null se o TextRange incluir fragmentos de texto em negrito e não em negrito.
+  summary: Representa o status da fonte em negrito. Retorna se o incluir fragmentos de texto em negrito e não `null` `TextRange` negrito.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Representação do código de cor HTML da cor do texto (por exemplo, " \# FF0000" representa vermelho). Retornará null se o TextRange incluir fragmentos de texto com cores diferentes.
+  summary: Representação de código de cor HTML da cor do texto (por exemplo, " \# FF0000" representa vermelho). Retorna `null` se o incluir fragmentos de texto com cores `TextRange` diferentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Representa o status da fonte em itálico. Retorna null se o TextRange incluir fragmentos de texto em itálico e que não está em itálico.
+  summary: Representa o status da fonte em itálico. Retorna se o incluir fragmentos de texto itálico e não `null` `TextRange` itálico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Representa o nome da fonte (por exemplo, "Calibri"). Se o texto estiver no idioma Script Complexo ou Leste Asiático, esse é o nome da fonte correspondente. Caso contrário, esse é o nome da fonte Latin.
+  summary: Representa o nome da fonte (por exemplo, "Calibri"). Se o texto for um script complexo ou idioma do leste asiático, este será o nome da fonte correspondente; caso contrário, é o nome da fonte latino.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getSize:member(1)
   package: ExcelScript!
   fullName: getSize()
-  summary: Representa o tamanho da fonte em pontos (por exemplo, 11). Retorna nulo se o TextRange incluir fragmentos de texto com tamanhos de fontes diferentes.
+  summary: Representa o tamanho da fonte em pontos (por exemplo, 11). Retorna `null` se o incluir fragmentos de texto com `TextRange` tamanhos de fonte diferentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Consulte ExcelScript. ShapeFontUnderlineStyle para obter detalhes.
+  summary: Tipo de sublinhado aplicado à fonte. Retorna `null` se o incluir fragmentos de texto com estilos `TextRange` sublinhados diferentes. Consulte `ExcelScript.ShapeFontUnderlineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Representa o status da fonte em negrito. Retornará null se o TextRange incluir fragmentos de texto em negrito e não em negrito.
+  summary: Representa o status da fonte em negrito. Retorna se o incluir fragmentos de texto em negrito e não `null` `TextRange` negrito.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Representação do código de cor HTML da cor do texto (por exemplo, " \# FF0000" representa vermelho). Retornará null se o TextRange incluir fragmentos de texto com cores diferentes.
+  summary: Representação de código de cor HTML da cor do texto (por exemplo, " \# FF0000" representa vermelho). Retorna `null` se o incluir fragmentos de texto com cores `TextRange` diferentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Representa o status da fonte em itálico. Retorna null se o TextRange incluir fragmentos de texto em itálico e que não está em itálico.
+  summary: Representa o status da fonte em itálico. Retorna se o incluir fragmentos de texto itálico e não `null` `TextRange` itálico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Representa o nome da fonte (por exemplo, "Calibri"). Se o texto estiver no idioma Script Complexo ou Leste Asiático, esse é o nome da fonte correspondente. Caso contrário, esse é o nome da fonte Latin.
+  summary: Representa o nome da fonte (por exemplo, "Calibri"). Se o texto for um script complexo ou idioma do leste asiático, este será o nome da fonte correspondente; caso contrário, é o nome da fonte latino.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setSize:member(1)
   package: ExcelScript!
   fullName: setSize(size)
-  summary: Representa o tamanho da fonte em pontos (por exemplo, 11). Retorna nulo se o TextRange incluir fragmentos de texto com tamanhos de fontes diferentes.
+  summary: Representa o tamanho da fonte em pontos (por exemplo, 11). Retorna `null` se o incluir fragmentos de texto com `TextRange` tamanhos de fonte diferentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Tipo de sublinhado aplicado à fonte. Retorna nulo se o TextRange incluir fragmentos de texto com estilos de sublinhado diferentes. Consulte ExcelScript. ShapeFontUnderlineStyle para obter detalhes.
+  summary: Tipo de sublinhado aplicado à fonte. Retorna `null` se o incluir fragmentos de texto com estilos `TextRange` sublinhados diferentes. Consulte `ExcelScript.ShapeFontUnderlineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6b66c4e96e389d47663061a6e517e950dca9b0d2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 924be3475b94ead2e38bc97980c97bb046cb5707
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420647"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607379"

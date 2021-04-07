@@ -3,7 +3,7 @@ name: ExcelScript.Shape
 uid: ExcelScript!ExcelScript.Shape:interface
 package: ExcelScript!
 fullName: ExcelScript.Shape
-summary: Representa um objeto Shape genérico na planilha. Uma forma pode ser uma forma geométrica, uma linha, um grupo de formas, etc.
+summary: Representa um objeto de forma genérica na planilha. Uma forma pode ser uma forma geométrica, uma linha, um grupo de formas, etc.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
   package: ExcelScript!
   fullName: copyTo(destinationSheet)
-  summary: Copia e cola um objeto Forma. A forma colada é copiada para o mesmo local de pixel que esta forma.
+  summary: Copia e colará um `Shape` objeto. A forma colar é copiada para o mesmo local de pixel dessa forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
     parameters:
     - id: destinationSheet
-      description: A planilha à qual o objeto Shape será colado. O valor padrão é a planilha da forma copiada.
+      description: A planilha à qual o objeto shape será passado. O valor padrão é a planilha da forma copiada.
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)
   package: ExcelScript!
   fullName: getAltTextDescription()
-  summary: Especifica o texto de descrição alternativa para um objeto Shape.
+  summary: Especifica o texto de descrição alternativo para um `Shape` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)
   package: ExcelScript!
   fullName: getAltTextTitle()
-  summary: Especifica o texto de título alternativo para um objeto Shape.
+  summary: Especifica o texto de título alternativo para um `Shape` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAsImage:member(1)
   package: ExcelScript!
   fullName: getAsImage(format)
-  summary: Converte a forma em uma imagem e retorna a imagem como uma cadeia de caracteres de base 64. O DPI é 96. Os únicos formatos suportados são `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->, e `ExcelScript.PictureFormat.GIF`<!-- -->.
+  summary: Converte a forma em uma imagem e retorna a imagem como uma cadeia de caracteres de base 64. O DPI é 96. Os únicos formatos com suporte são `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->e `ExcelScript.PictureFormat.GIF`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: getGeometricShapeType()
-  summary: Especifica o tipo de forma geométrica dessa forma geométrica. Consulte ExcelScript. GeometricShapeType para obter detalhes. Retorna nulo se o tipo de forma não for "GeometricShape".
+  summary: Especifica o tipo de forma geométrica dessa forma geométrica. Consulte `ExcelScript.GeometricShapeType` para obter detalhes. Retorna `null` se o tipo de forma não for "GeometricShape".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Especifica a altura, em pontos, da forma. Gera uma exceção de argumento inválida quando definida com um valor negativo ou zero como entrada.
+  summary: Especifica a altura, em pontos, da forma. Lança uma `InvalidArgument` exceção quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -164,7 +164,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Especifica o identificador da forma.
+  summary: Especifica o identificador de forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: A distância, em pontos, da lateral esquerda da forma do lado  esquerdo da planilha. Gera uma exceção de argumento inválida quando definida com um valor negativo como entrada.
+  summary: A distância, em pontos, da lateral esquerda da forma do lado  esquerdo da planilha. Lança uma `InvalidArgument` exceção quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: getLockAspectRatio()
-  summary: Especifica se a taxa de proporção desta forma está bloqueada.
+  summary: Especifica se a proporção dessa forma está bloqueada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getParentGroup:member(1)
   package: ExcelScript!
   fullName: getParentGroup()
-  summary: Especifica o grupo pai desta forma.
+  summary: Especifica o grupo pai dessa forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,7 +320,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: A distância, em pontos, da borda superior da forma até a borda superior da planilha. Gera uma exceção de argumento inválida quando definida com um valor negativo como entrada.
+  summary: A distância, em pontos, da borda superior da forma até a borda superior da planilha. Lança uma `InvalidArgument` exceção quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -333,7 +333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Retorna o tipo dessa forma. Confira ExcelScript. ShapeType para obter detalhes.
+  summary: Retorna o tipo dessa forma. Consulte `ExcelScript.ShapeType` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -359,7 +359,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Especifica a largura, em pontos, da forma. Gera uma exceção de argumento inválida quando definida com um valor negativo ou zero como entrada.
+  summary: Especifica a largura, em pontos, da forma. Lança uma `InvalidArgument` exceção quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -393,7 +393,7 @@ methods:
     content: 'incrementLeft(increment: number): void;'
     parameters:
     - id: increment
-      description: 'O incremento, em pontos, a forma será horizontalmente movida. Um valor positivo move a forma para a direita e um valor negativo a move para a esquerda. Se a planilha for orientada da direita para a esquerda, ela será revertida: os valores positivos moverão a forma para a esquerda e os valores negativos a moverão para a direita.'
+      description: 'O incremento, em pontos, a forma será movida horizontalmente. Um valor positivo move a forma para a direita e um valor negativo a move para a esquerda. Se a planilha for orientada para a direita para a esquerda, isso será revertido: os valores positivos moverão a forma para a esquerda e os valores negativos a moverão para a direita.'
       type: number
     return:
       type: void
@@ -410,7 +410,7 @@ methods:
     content: 'incrementRotation(increment: number): void;'
     parameters:
     - id: increment
-      description: Quantos graus a forma será girada. Um valor positivo gira a forma no sentido horário; um valor negativo a gira no sentido anti-horário.
+      description: Quantos graus a forma será girada. Um valor positivo gira a forma no sentido horário e um valor negativo a gira no sentido anti-horário.
       type: number
     return:
       type: void
@@ -427,7 +427,7 @@ methods:
     content: 'incrementTop(increment: number): void;'
     parameters:
     - id: increment
-      description: O incremento, em pontos, a forma será movida verticalmente. em pontos. Um valor positivo move a forma para baixo e um valor negativo a move para cima.
+      description: O incremento, em pontos, a forma será movida verticalmente. Um valor positivo move a forma para baixo e um valor negativo a move para cima.
       type: number
     return:
       type: void
@@ -452,10 +452,10 @@ methods:
       description: Especifica a proporção entre a altura da forma após você redimensioná-la e a altura atual ou original.
       type: number
     - id: scaleType
-      description: Especifica se a forma é dimensionada em relação ao seu tamanho original ou atual. A opção de escala de tamanho original só funciona para imagens.
+      description: Especifica se a forma é dimensionada em relação ao tamanho original ou atual. A opção de dimensionamento de tamanho original só funciona para imagens.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: Opcional. Especifica qual parte da forma mantém sua posição quando a forma é dimensionada. Se for omitido, representará o canto superior esquerdo da forma mantém sua posição.
+      description: Opcional. Especifica qual parte da forma mantém sua posição quando a forma é dimensionada. Se omitido, ele representa o canto superior esquerdo da forma mantém sua posição.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -480,10 +480,10 @@ methods:
       description: Especifica a proporção entre a largura da forma após você redimensioná-la e a largura atual ou original.
       type: number
     - id: scaleType
-      description: Especifica se a forma é dimensionada em relação ao seu tamanho original ou atual. A opção de escala de tamanho original só funciona para imagens.
+      description: Especifica se a forma é dimensionada em relação ao tamanho original ou atual. A opção de dimensionamento de tamanho original só funciona para imagens.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: Opcional. Especifica qual parte da forma mantém sua posição quando a forma é dimensionada. Se for omitido, representará o canto superior esquerdo da forma mantém sua posição.
+      description: Opcional. Especifica qual parte da forma mantém sua posição quando a forma é dimensionada. Se omitido, ele representa o canto superior esquerdo da forma mantém sua posição.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -492,7 +492,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)
   package: ExcelScript!
   fullName: setAltTextDescription(altTextDescription)
-  summary: Especifica o texto de descrição alternativa para um objeto Shape.
+  summary: Especifica o texto de descrição alternativo para um `Shape` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -509,7 +509,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)
   package: ExcelScript!
   fullName: setAltTextTitle(altTextTitle)
-  summary: Especifica o texto de título alternativo para um objeto Shape.
+  summary: Especifica o texto de título alternativo para um `Shape` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -526,7 +526,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: setGeometricShapeType(geometricShapeType)
-  summary: Especifica o tipo de forma geométrica dessa forma geométrica. Consulte ExcelScript. GeometricShapeType para obter detalhes. Retorna nulo se o tipo de forma não for "GeometricShape".
+  summary: Especifica o tipo de forma geométrica dessa forma geométrica. Consulte `ExcelScript.GeometricShapeType` para obter detalhes. Retorna `null` se o tipo de forma não for "GeometricShape".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -543,7 +543,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Especifica a altura, em pontos, da forma. Gera uma exceção de argumento inválida quando definida com um valor negativo ou zero como entrada.
+  summary: Especifica a altura, em pontos, da forma. Lança uma `InvalidArgument` exceção quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -560,7 +560,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: A distância, em pontos, da lateral esquerda da forma do lado  esquerdo da planilha. Gera uma exceção de argumento inválida quando definida com um valor negativo como entrada.
+  summary: A distância, em pontos, da lateral esquerda da forma do lado  esquerdo da planilha. Lança uma `InvalidArgument` exceção quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -577,7 +577,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: setLockAspectRatio(lockAspectRatio)
-  summary: Especifica se a taxa de proporção desta forma está bloqueada.
+  summary: Especifica se a proporção dessa forma está bloqueada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -645,7 +645,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: A distância, em pontos, da borda superior da forma até a borda superior da planilha. Gera uma exceção de argumento inválida quando definida com um valor negativo como entrada.
+  summary: A distância, em pontos, da borda superior da forma até a borda superior da planilha. Lança uma `InvalidArgument` exceção quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -679,7 +679,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Especifica a largura, em pontos, da forma. Gera uma exceção de argumento inválida quando definida com um valor negativo ou zero como entrada.
+  summary: Especifica a largura, em pontos, da forma. Lança uma `InvalidArgument` exceção quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -704,15 +704,15 @@ methods:
     content: 'setZOrder(position: ShapeZOrder): void;'
     parameters:
     - id: position
-      description: Onde mover a forma na pilha da ordem z em relação às outras formas. Consulte ExcelScript. ShapeZOrder para obter detalhes.
+      description: Onde mover a forma na pilha de ordem z em relação às outras formas. Consulte `ExcelScript.ShapeZOrder` para obter detalhes.
       type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f91e5e56a6070dafa9e07a6b9d4d48328abfca6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 36a7bebbdc04c3cd25b9e093008cfdb50e67a4c1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420661"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607393"
