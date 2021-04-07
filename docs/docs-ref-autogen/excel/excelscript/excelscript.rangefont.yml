@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Representa o status da fonte em negrito.
+  summary: Representa o status em negrito da fonte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Representação do código de cor HTML da cor do texto (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor do texto (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Especifica o status de itálico da fonte.
+  summary: Especifica o status itálico da fonte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Nome da fonte (por exemplo, "Calibri"). O comprimento do nome não deve ser maior que 31 caracteres.
+  summary: Nome da fonte (por exemplo, "Calibri"). O comprimento do nome não deve ser maior do que 31 caracteres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Especifica o status tachado da fonte. Um valor nulo indica que todo o intervalo não tem configuração de tachado uniforme.
+  summary: Especifica o status tachado da fonte. Um `null` valor indica que o intervalo inteiro não tem uma configuração tachado uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
   package: ExcelScript!
   fullName: getSubscript()
-  summary: Especifica o status subscrito da fonte. Retorna true se todas as fontes do intervalo são subscrito. Retorna false se todas as fontes do intervalo forem sobrescritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.
+  summary: Especifica o status de subscrito da fonte. Retorna `true` se todas as fontes do intervalo são subscrito. Retorna `false` se todas as fontes do intervalo são sobrescrito ou normal (nem sobrescrito, nem subscrito). Retorna `null` caso contrário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
   package: ExcelScript!
   fullName: getSuperscript()
-  summary: Especifica o status sobrescrito da fonte. Retorna true se todas as fontes do intervalo forem sobrescritos. Retorna false se todas as fontes do intervalo são subscritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.
+  summary: Especifica o status sobrescrito da fonte. Retorna `true` se todas as fontes do intervalo são sobrescrito. Retorna se todas as fontes do intervalo são subscrito ou `false` normal (nem sobrescrito, nem subscrito). Retorna `null` caso contrário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Especifica um duplo que clareia ou escurece uma cor para a fonte do intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que o intervalo inteiro não tem a configuração tintAndShade de fonte uniforme.
+  summary: Especifica um duplo que clareia ou escurece uma cor para a fonte de intervalo. O valor está entre -1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um `null` valor indica que o intervalo inteiro não tem uma configuração de fonte `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Tipo de sublinhado aplicado à fonte. Consulte ExcelScript. RangeUnderlineStyle para obter detalhes.
+  summary: Tipo de sublinhado aplicado à fonte. Consulte `ExcelScript.RangeUnderlineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Representa o status da fonte em negrito.
+  summary: Representa o status em negrito da fonte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Representação do código de cor HTML da cor do texto (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor do texto (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Especifica o status de itálico da fonte.
+  summary: Especifica o status itálico da fonte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Nome da fonte (por exemplo, "Calibri"). O comprimento do nome não deve ser maior que 31 caracteres.
+  summary: Nome da fonte (por exemplo, "Calibri"). O comprimento do nome não deve ser maior do que 31 caracteres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Especifica o status tachado da fonte. Um valor nulo indica que todo o intervalo não tem configuração de tachado uniforme.
+  summary: Especifica o status tachado da fonte. Um `null` valor indica que o intervalo inteiro não tem uma configuração tachado uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
   package: ExcelScript!
   fullName: setSubscript(subscript)
-  summary: Especifica o status subscrito da fonte. Retorna true se todas as fontes do intervalo são subscrito. Retorna false se todas as fontes do intervalo forem sobrescritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.
+  summary: Especifica o status de subscrito da fonte. Retorna `true` se todas as fontes do intervalo são subscrito. Retorna `false` se todas as fontes do intervalo são sobrescrito ou normal (nem sobrescrito, nem subscrito). Retorna `null` caso contrário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
   package: ExcelScript!
   fullName: setSuperscript(superscript)
-  summary: Especifica o status sobrescrito da fonte. Retorna true se todas as fontes do intervalo forem sobrescritos. Retorna false se todas as fontes do intervalo são subscritos ou normais (nem sobrescrito, nem subscrito). Caso contrário, retorna NULL.
+  summary: Especifica o status sobrescrito da fonte. Retorna `true` se todas as fontes do intervalo são sobrescrito. Retorna se todas as fontes do intervalo são subscrito ou `false` normal (nem sobrescrito, nem subscrito). Retorna `null` caso contrário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Especifica um duplo que clareia ou escurece uma cor para a fonte do intervalo, o valor é entre-1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um valor nulo indica que o intervalo inteiro não tem a configuração tintAndShade de fonte uniforme.
+  summary: Especifica um duplo que clareia ou escurece uma cor para a fonte de intervalo. O valor está entre -1 (mais escuro) e 1 (mais brilhante), com 0 para a cor original. Um `null` valor indica que o intervalo inteiro não tem uma configuração de fonte `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -296,7 +296,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Tipo de sublinhado aplicado à fonte. Consulte ExcelScript. RangeUnderlineStyle para obter detalhes.
+  summary: Tipo de sublinhado aplicado à fonte. Consulte `ExcelScript.RangeUnderlineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,9 +310,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 781829703544f58260b7c42b429af492f6d99846
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7f26828af5dee973e65c3e48089a1c2ce1b2ebd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416614"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607428"

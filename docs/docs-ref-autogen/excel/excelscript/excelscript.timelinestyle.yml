@@ -3,7 +3,7 @@ name: ExcelScript.TimelineStyle
 uid: ExcelScript!ExcelScript.TimelineStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TimelineStyle
-summary: Representa um estilo de linha do tempo, que define elementos de estilo por região na linha do tempo.
+summary: Representa um `TimelineStyle`<!-- -->, que define elementos de estilo por região na linha do tempo.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Exclui o TableStyle.
+  summary: Exclui o estilo da tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: Cria uma duplicata deste TimelineStyle com cópias de todos os elementos de estilo.
+  summary: Cria uma duplicata desse estilo de linha do tempo com cópias de todos os elementos de estilo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtém o nome do TimelineStyle.
+  summary: Obtém o nome do estilo da linha do tempo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: Especifica se este objeto TimelineStyle é de somente leitura.
+  summary: Especifica se esse `TimelineStyle` objeto é somente leitura.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Obtém o nome do TimelineStyle.
+  summary: Obtém o nome do estilo da linha do tempo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a4d97d4186cb7205120ef385bc86dc38baaccdd3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a671d8ba98954f11ace4057a0918a04c88feb0a0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411730"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607302"

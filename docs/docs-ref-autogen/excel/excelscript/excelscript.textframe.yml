@@ -3,7 +3,7 @@ name: ExcelScript.TextFrame
 uid: ExcelScript!ExcelScript.TextFrame:interface
 package: ExcelScript!
 fullName: ExcelScript.TextFrame
-summary: Representa o quadro de texto de um objeto Shape.
+summary: Representa o quadro de texto de um objeto shape.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: getAutoSizeSetting()
-  summary: As configurações de dimensionamento automático do quadro de texto. Um quadro de texto pode ser configurado para ajustar automaticamente o texto ao quadro de texto, para ajustar automaticamente o quadro do texto ao texto ou não executar qualquer dimensionamento automático.
+  summary: As configurações de redação automáticas do quadro de texto. Um quadro de texto pode ser configurado para ajustar automaticamente o texto ao quadro de texto, para ajustar automaticamente o quadro do texto ao texto ou não executar qualquer dimensionamento automático.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Representa o alinhamento horizontal do quadro de texto. Consulte ExcelScript. ShapeTextHorizontalAlignment para obter detalhes.
+  summary: Representa o alinhamento horizontal do quadro de texto. Consulte `ExcelScript.ShapeTextHorizontalAlignment` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: getHorizontalOverflow()
-  summary: Representa o comportamento de excedente horizontal do quadro de texto. Consulte ExcelScript. ShapeTextHorizontalOverflow para obter detalhes.
+  summary: Representa o comportamento de excedente horizontal do quadro de texto. Consulte `ExcelScript.ShapeTextHorizontalOverflow` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Representa o ângulo no qual o texto é orientado para o quadro de texto. Consulte ExcelScript. ShapeTextOrientation para obter detalhes.
+  summary: Representa o ângulo para o qual o texto é orientado para o quadro de texto. Consulte `ExcelScript.ShapeTextOrientation` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)
   package: ExcelScript!
   fullName: getReadingOrder()
-  summary: Representa a ordem de leitura do quadro de texto, da direita para a esquerda ou da direita para a esquerda. Consulte ExcelScript. ShapeTextReadingOrder para obter detalhes.
+  summary: Representa a ordem de leitura do quadro de texto, da direita para a esquerda ou da direita para a esquerda. Consulte `ExcelScript.ShapeTextReadingOrder` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)
   package: ExcelScript!
   fullName: getTextRange()
-  summary: Representa o texto que está anexado a uma forma, bem como propriedades e métodos para manipular o texto. Consulte ExcelScript. TextRange para obter detalhes.
+  summary: Representa o texto que está anexado a uma forma, bem como propriedades e métodos para manipular o texto. Consulte `ExcelScript.TextRange` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Representa o alinhamento vertical do quadro de texto. Consulte ExcelScript. ShapeTextVerticalAlignment para obter detalhes.
+  summary: Representa o alinhamento vertical do quadro de texto. Consulte `ExcelScript.ShapeTextVerticalAlignment` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: getVerticalOverflow()
-  summary: Representa o comportamento de excedente vertical do quadro de texto. Consulte ExcelScript. ShapeTextVerticalOverflow para obter detalhes.
+  summary: Representa o comportamento de excedente vertical do quadro de texto. Consulte `ExcelScript.ShapeTextVerticalOverflow` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: setAutoSizeSetting(autoSizeSetting)
-  summary: As configurações de dimensionamento automático do quadro de texto. Um quadro de texto pode ser configurado para ajustar automaticamente o texto ao quadro de texto, para ajustar automaticamente o quadro do texto ao texto ou não executar qualquer dimensionamento automático.
+  summary: As configurações de redação automáticas do quadro de texto. Um quadro de texto pode ser configurado para ajustar automaticamente o texto ao quadro de texto, para ajustar automaticamente o quadro do texto ao texto ou não executar qualquer dimensionamento automático.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Representa o alinhamento horizontal do quadro de texto. Consulte ExcelScript. ShapeTextHorizontalAlignment para obter detalhes.
+  summary: Representa o alinhamento horizontal do quadro de texto. Consulte `ExcelScript.ShapeTextHorizontalAlignment` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: setHorizontalOverflow(horizontalOverflow)
-  summary: Representa o comportamento de excedente horizontal do quadro de texto. Consulte ExcelScript. ShapeTextHorizontalOverflow para obter detalhes.
+  summary: Representa o comportamento de excedente horizontal do quadro de texto. Consulte `ExcelScript.ShapeTextHorizontalOverflow` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Representa o ângulo no qual o texto é orientado para o quadro de texto. Consulte ExcelScript. ShapeTextOrientation para obter detalhes.
+  summary: Representa o ângulo para o qual o texto é orientado para o quadro de texto. Consulte `ExcelScript.ShapeTextOrientation` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)
   package: ExcelScript!
   fullName: setReadingOrder(readingOrder)
-  summary: Representa a ordem de leitura do quadro de texto, da direita para a esquerda ou da direita para a esquerda. Consulte ExcelScript. ShapeTextReadingOrder para obter detalhes.
+  summary: Representa a ordem de leitura do quadro de texto, da direita para a esquerda ou da direita para a esquerda. Consulte `ExcelScript.ShapeTextReadingOrder` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -354,7 +354,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Representa o alinhamento vertical do quadro de texto. Consulte ExcelScript. ShapeTextVerticalAlignment para obter detalhes.
+  summary: Representa o alinhamento vertical do quadro de texto. Consulte `ExcelScript.ShapeTextVerticalAlignment` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -374,7 +374,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: setVerticalOverflow(verticalOverflow)
-  summary: Representa o comportamento de excedente vertical do quadro de texto. Consulte ExcelScript. ShapeTextVerticalOverflow para obter detalhes.
+  summary: Representa o comportamento de excedente vertical do quadro de texto. Consulte `ExcelScript.ShapeTextVerticalOverflow` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -388,9 +388,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ecc8ca404ec0d89960a592962c74e1f4e0fd5ce
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cea8dceea74129d42e754dfb4acde0c1518acd90
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419261"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607309"

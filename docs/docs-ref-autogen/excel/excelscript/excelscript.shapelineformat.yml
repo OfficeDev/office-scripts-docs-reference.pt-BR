@@ -3,7 +3,7 @@ name: ExcelScript.ShapeLineFormat
 uid: ExcelScript!ExcelScript.ShapeLineFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineFormat
-summary: Representa a formatação de linha para o objeto Shape. Para imagens e formas geométricas, a formatação de linha representa a borda da forma.
+summary: Representa a formatação de linha do objeto shape. Para imagens e formas geométricas, a formatação de linha representa a borda da forma.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Representa a cor da linha no formato de cor HTML, do formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
+  summary: Representa a cor da linha no formato de cor HTML, no formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)
   package: ExcelScript!
   fullName: getDashStyle()
-  summary: Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos de traços inconsistentes. Consulte ExcelScript. ShapeLineStyle para obter detalhes.
+  summary: Representa o estilo de linha da forma. Retorna `null` quando a linha não está visível ou há estilos de traço inconsistentes. Consulte `ExcelScript.ShapeLineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos inconsistentes. Consulte ExcelScript. ShapeLineStyle para obter detalhes.
+  summary: Representa o estilo de linha da forma. Retorna `null` quando a linha não está visível ou há estilos inconsistentes. Consulte `ExcelScript.ShapeLineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: Representa o grau de transparência da linha especificada como um valor de 0,0 (opaco) a 1,0 (claro). Retorna nulo quando a forma possui transparências inconsistentes.
+  summary: Representa o grau de transparência da linha especificada como um valor de 0,0 (opaco) a 1,0 (claro). Retorna `null` quando a forma tem transparências inconsistentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Especifica se a formatação de linha de um elemento Shape é visível. Retorna nulo quando a forma possui visibilidades inconsistentes.
+  summary: Especifica se a formatação de linha de um elemento de forma está visível. Retorna `null` quando a forma tem visibilidades inconsistentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: Representa a espessura da linha, em pontos. Retorna nulo quando não a linha não estiver visível ou existirem espessuras de linha inconsistentes.
+  summary: Representa a espessura da linha, em pontos. Retorna `null` quando a linha não está visível ou há pesos de linha inconsistentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Representa a cor da linha no formato de cor HTML, do formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
+  summary: Representa a cor da linha no formato de cor HTML, no formato \# RRGGBB (por exemplo, "FFA500") ou como uma cor HTML nomeada (por exemplo, "laranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)
   package: ExcelScript!
   fullName: setDashStyle(dashStyle)
-  summary: Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos de traços inconsistentes. Consulte ExcelScript. ShapeLineStyle para obter detalhes.
+  summary: Representa o estilo de linha da forma. Retorna `null` quando a linha não está visível ou há estilos de traço inconsistentes. Consulte `ExcelScript.ShapeLineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Representa o estilo de linha da forma. Retorna nulo quando a linha não estiver visível ou quando existirem estilos inconsistentes. Consulte ExcelScript. ShapeLineStyle para obter detalhes.
+  summary: Representa o estilo de linha da forma. Retorna `null` quando a linha não está visível ou há estilos inconsistentes. Consulte `ExcelScript.ShapeLineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: Representa o grau de transparência da linha especificada como um valor de 0,0 (opaco) a 1,0 (claro). Retorna nulo quando a forma possui transparências inconsistentes.
+  summary: Representa o grau de transparência da linha especificada como um valor de 0,0 (opaco) a 1,0 (claro). Retorna `null` quando a forma tem transparências inconsistentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Especifica se a formatação de linha de um elemento Shape é visível. Retorna nulo quando a forma possui visibilidades inconsistentes.
+  summary: Especifica se a formatação de linha de um elemento de forma está visível. Retorna `null` quando a forma tem visibilidades inconsistentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: Representa a espessura da linha, em pontos. Retorna nulo quando não a linha não estiver visível ou existirem espessuras de linha inconsistentes.
+  summary: Representa a espessura da linha, em pontos. Retorna `null` quando a linha não está visível ou há pesos de linha inconsistentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bad1df9e2238ca401ec4f8ca3d3e30198db219d8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2ea61848a51fe162e684d79d1b1439a1ffdf5356
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420626"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607365"

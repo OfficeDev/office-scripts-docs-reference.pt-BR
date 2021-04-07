@@ -3,7 +3,7 @@ name: ExcelScript.ShapeGroup
 uid: ExcelScript!ExcelScript.ShapeGroup:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
-summary: Representa um grupo de formas dentro de uma planilha. Para obter o objeto Shape correspondente, use `ShapeGroup.shape`<!-- -->.
+summary: Representa um grupo de formas dentro de uma planilha. Para obter o objeto `Shape` correspondente, use `ShapeGroup.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
   package: ExcelScript!
   fullName: getGroupShape()
-  summary: Retorna o objeto de forma associado ao grupo.
+  summary: Retorna o `Shape` objeto associado ao grupo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Especifica o identificador da forma.
+  summary: Especifica o identificador de forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
   package: ExcelScript!
   fullName: getShapes()
-  summary: Retorna uma coleção de objetos de forma.
+  summary: Retorna a coleção de `Shape` objetos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7aa8ade3b8eb551378ae316ced0864f037bee30f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cc1e9a9a08dfbf3710f374a5e254984a8314df9c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420633"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607372"
