@@ -3,7 +3,7 @@ name: ExcelScript.Slicer
 uid: ExcelScript!ExcelScript.Slicer:interface
 package: ExcelScript!
 fullName: ExcelScript.Slicer
-summary: Representa um objeto slicer na pasta de trabalho.
+summary: Representa um `Slicer` objeto na área de trabalho.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getCaption:member(1)
   package: ExcelScript!
   fullName: getCaption()
-  summary: Representa a legenda da segmentação de dados.
+  summary: Representa a legenda da slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Representa a altura, em pontos, da segmentação de dados. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo ou zero como entrada.
+  summary: Representa a altura, em pontos, da segmentação de dados. Lança uma `InvalidArgument` exceção quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Representa a id exclusiva da segmentação de dados.
+  summary: Representa a ID exclusiva da slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)
   package: ExcelScript!
   fullName: getIsFilterCleared()
-  summary: Verdadeiro se todos os filtros atualmente aplicados na segmentação de dados estiverem desmarcados.
+  summary: O valor `true` é se todos os filtros atualmente aplicados à slicer são limpos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Representa a distância, em pontos, da lateral esquerda da segmentação de dados à esquerda da planilha. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo como entrada.
+  summary: Representa a distância, em pontos, da lateral esquerda da segmentação de dados à esquerda da planilha. Lança um `InvalidArgument` erro quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Representa o nome da segmentação de dados.
+  summary: Representa o nome da slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: Obtém um item da segmentação de dados usando sua chave ou nome. Se o item de segmentação de itens não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém um item da segmentação de dados usando sua chave ou nome. Se o item da slicer não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
     content: 'getSlicerItem(key: string): SlicerItem | undefined;'
     parameters:
     - id: key
-      description: Chave ou nome da segmentação de nomes a ser recuperada.
+      description: Chave ou nome da slicer a ser recuperada.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
   package: ExcelScript!
   fullName: getSlicerItems()
-  summary: Representa a coleção de SlicerItems que faz parte da segmentação de dados.
+  summary: Representa a coleção de itens de slicer que fazem parte da slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSortBy:member(1)
   package: ExcelScript!
   fullName: getSortBy()
-  summary: 'Representa a ordem de classificação dos itens na segmentação de dados. Os valores possíveis são: "DataSourceOrder", "crescente", "decrescente".'
+  summary: 'Representa a ordem de classificação dos itens na segmentação de dados. Os valores possíveis são: "DataSourceOrder", "Ascending", "Descending".'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 'Valor da constante que representa o estilo da Segmentação de dados. Os valores possíveis são: "SlicerStyleLight1" por meio de "SlicerStyleLight6", "TableStyleOther1" até "TableStyleOther2", "SlicerStyleDark1" até "SlicerStyleDark6". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
+  summary: 'Valor constante que representa o estilo da slicer. Os valores possíveis são: "SlicerStyleLight1" por "SlicerStyleLight6", "TableStyleOther1" por "TableStyleOther2", "SlicerStyleDark1" por "SlicerStyleDark6". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Representa a distância, em pontos, da borda superior da segmentação de dados na parte superior da planilha. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo como entrada.
+  summary: Representa a distância, em pontos, da borda superior da segmentação de dados na parte superior da planilha. Lança um `InvalidArgument` erro quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Representa a largura, em pontos, da segmentação de dados. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo ou zero como entrada.
+  summary: Representa a largura, em pontos, da segmentação de dados. Lança um `InvalidArgument` erro quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#selectItems:member(1)
   package: ExcelScript!
   fullName: selectItems(items)
-  summary: Seleciona itens de segmentação de itens com base em suas chaves. As seleções anteriores estão desmarcadas. Todos os itens serão selecionados por padrão se a matriz estiver vazia.
+  summary: Seleciona itens de slicer com base em suas chaves. As seleções anteriores são limpas. Todos os itens serão selecionados por padrão se a matriz estiver vazia.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
     content: 'selectItems(items?: string[]): void;'
     parameters:
     - id: items
-      description: Opcional. Os nomes de item de segmentação de itens especificados a serem selecionados.
+      description: Opcional. Os nomes de item de slicer especificados a serem selecionados.
       type: string[]
     return:
       type: void
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setCaption:member(1)
   package: ExcelScript!
   fullName: setCaption(caption)
-  summary: Representa a legenda da segmentação de dados.
+  summary: Representa a legenda da slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Representa a altura, em pontos, da segmentação de dados. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo ou zero como entrada.
+  summary: Representa a altura, em pontos, da segmentação de dados. Lança uma `InvalidArgument` exceção quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,7 +276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Representa a distância, em pontos, da lateral esquerda da segmentação de dados à esquerda da planilha. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo como entrada.
+  summary: Representa a distância, em pontos, da lateral esquerda da segmentação de dados à esquerda da planilha. Lança um `InvalidArgument` erro quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -293,7 +293,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Representa o nome da segmentação de dados.
+  summary: Representa o nome da slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,7 +310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setSortBy:member(1)
   package: ExcelScript!
   fullName: setSortBy(sortBy)
-  summary: 'Representa a ordem de classificação dos itens na segmentação de dados. Os valores possíveis são: "DataSourceOrder", "crescente", "decrescente".'
+  summary: 'Representa a ordem de classificação dos itens na segmentação de dados. Os valores possíveis são: "DataSourceOrder", "Ascending", "Descending".'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -327,7 +327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 'Valor da constante que representa o estilo da Segmentação de dados. Os valores possíveis são: "SlicerStyleLight1" por meio de "SlicerStyleLight6", "TableStyleOther1" até "TableStyleOther2", "SlicerStyleDark1" até "SlicerStyleDark6". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
+  summary: 'Valor constante que representa o estilo da slicer. Os valores possíveis são: "SlicerStyleLight1" por "SlicerStyleLight6", "TableStyleOther1" por "TableStyleOther2", "SlicerStyleDark1" por "SlicerStyleDark6". Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Representa a distância, em pontos, da borda superior da segmentação de dados na parte superior da planilha. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo como entrada.
+  summary: Representa a distância, em pontos, da borda superior da segmentação de dados na parte superior da planilha. Lança um `InvalidArgument` erro quando definido com um valor negativo como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Representa a largura, em pontos, da segmentação de dados. Gera um "o argumento é inválido ou está ausente ou tem um formato incorreto." exceção quando definida com valor negativo ou zero como entrada.
+  summary: Representa a largura, em pontos, da segmentação de dados. Lança um `InvalidArgument` erro quando definido com um valor negativo ou zero como uma entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4136caf5e44c73d4f4a4ef5d7379a80e370d5ef9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: e77939566a567014410472a3a707d5c624220469
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554768"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606008"

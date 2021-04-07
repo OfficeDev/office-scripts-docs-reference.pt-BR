@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalIconCriterion
 uid: ExcelScript!ExcelScript.ConditionalIconCriterion:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalIconCriterion
-summary: Representa um critério de ícone que contém um tipo, um valor, um operador e um ícone personalizado opcional, se não estiver usando um Iconset.
+summary: Representa um critério de ícone que contém um tipo, um valor, um operador e um ícone personalizado opcional, se não estiver usando um conjunto de ícones.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member
   package: ExcelScript!
   fullName: customIcon
-  summary: O ícone personalizado para o critério atual, se diferente do IconSet padrão; caso contrário, será retornado nulo.
+  summary: O ícone personalizado do critério atual, se diferente do conjunto de ícones padrão, será `null` retornado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member
   package: ExcelScript!
   fullName: operator
-  summary: GreaterThan ou GreaterThanOrEqual para cada tipo de regra para o formato condicional de ícone.
+  summary: '`greaterThan` ou `greaterThanOrEqual` para cada um dos tipos de regra para o formato condicional do ícone.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />
 metadata:
-  ms.openlocfilehash: 9b3036c3ec274c8ee615228c09544491621f56b8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b083df158cdb7cae996211669a2da4cc707b7d58
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419457"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607078"

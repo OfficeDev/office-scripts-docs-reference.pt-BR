@@ -3,7 +3,7 @@ name: ExcelScript.IconSetConditionalFormat
 uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
-summary: Representa um critério Iconset para formatação condicional.
+summary: Representa um critério de conjunto de ícones para formatação condicional.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: Uma matriz de critérios e IconSets para as regras e possíveis ícones personalizados para ícones condicionais. Observe que, para o primeiro critério, apenas o ícone personalizado pode ser modificado, enquanto Type, Formula e Operator serão ignorados quando set.
+  summary: Uma matriz de critérios e conjuntos de ícones para as regras e ícones personalizados potenciais para ícones condicionais. Observe que, para o primeiro critério, somente o ícone personalizado pode ser modificado, enquanto o tipo, a fórmula e o operador serão ignorados quando definido.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: getReverseIconOrder()
-  summary: Se true, inverte as ordens de ícone para o Iconset. Observe que isso não poderá ser definido se os ícones personalizados forem usados.
+  summary: Se `true`<!-- -->, inverte as ordens de ícone para o conjunto de ícones. Observe que isso não pode ser definido se ícones personalizados são usados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
   package: ExcelScript!
   fullName: getShowIconOnly()
-  summary: Caso verdadeiro, oculta os valores e mostra somente ícones.
+  summary: Se `true`<!-- -->, oculta os valores e mostra apenas ícones.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Se definido, exibe a opção Iconset para o formato condicional.
+  summary: Se definido, exibe a opção de conjunto de ícones para o formato condicional.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: Uma matriz de critérios e IconSets para as regras e possíveis ícones personalizados para ícones condicionais. Observe que, para o primeiro critério, apenas o ícone personalizado pode ser modificado, enquanto Type, Formula e Operator serão ignorados quando set.
+  summary: Uma matriz de critérios e conjuntos de ícones para as regras e ícones personalizados potenciais para ícones condicionais. Observe que, para o primeiro critério, somente o ícone personalizado pode ser modificado, enquanto o tipo, a fórmula e o operador serão ignorados quando definido.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: setReverseIconOrder(reverseIconOrder)
-  summary: Se true, inverte as ordens de ícone para o Iconset. Observe que isso não poderá ser definido se os ícones personalizados forem usados.
+  summary: Se `true`<!-- -->, inverte as ordens de ícone para o conjunto de ícones. Observe que isso não pode ser definido se ícones personalizados são usados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
   package: ExcelScript!
   fullName: setShowIconOnly(showIconOnly)
-  summary: Caso verdadeiro, oculta os valores e mostra somente ícones.
+  summary: Se `true`<!-- -->, oculta os valores e mostra apenas ícones.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Se definido, exibe a opção Iconset para o formato condicional.
+  summary: Se definido, exibe a opção de conjunto de ícones para o formato condicional.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 097baba5d4e77c03e543300da7c48c70638dd62c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0fd12949aad6fc518834dfe02a0fd9aa01dae20a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412325"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607225"

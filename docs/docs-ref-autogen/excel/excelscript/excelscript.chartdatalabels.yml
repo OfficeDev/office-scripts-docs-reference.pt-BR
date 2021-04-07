@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Especifica o formato dos rótulos de dados do gráfico, que inclui a formatação de fonte e preenchimento.
+  summary: Especifica o formato dos rótulos de dados do gráfico, que inclui a formatação de preenchimento e fonte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Especifica o alinhamento horizontal para o rótulo de dados do gráfico. Consulte ExcelScript. ChartTextHorizontalAlignment para obter detalhes. Esta propriedade é válida somente quando TextOrientation do rótulo de dados é 0.
+  summary: Especifica o alinhamento horizontal para o rótulo de dados do gráfico. Consulte `ExcelScript.ChartTextHorizontalAlignment` para obter detalhes. Essa propriedade só é válida quando o `TextOrientation` rótulo de dados é 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Especifica se o formato de número está vinculado às células. Se verdadeiro, o formato numérico será alterado nos rótulos quando ele for alterado nas células.
+  summary: Especifica se o formato de número está vinculado às células. Se `true`<!-- -->, o formato de número mudará nos rótulos quando ele mudar nas células.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Especifica o código de formatação para os rótulos de dados.
+  summary: Especifica o código de formato para rótulos de dados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Valor de DataLabelPosition que representa a posição do rótulo de dados. Consulte ExcelScript. ChartDataLabelPosition para obter detalhes.
+  summary: Valor que representa a posição do rótulo de dados. Consulte `ExcelScript.ChartDataLabelPosition` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)
   package: ExcelScript!
   fullName: getShowBubbleSize()
-  summary: Especifica se o tamanho da bolha do rótulo de dados é visível.
+  summary: Especifica se o tamanho da bolha do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)
   package: ExcelScript!
   fullName: getShowLegendKey()
-  summary: Especifica se a tecla de legenda do rótulo de dados está visível.
+  summary: Especifica se a chave de legenda do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowPercentage:member(1)
   package: ExcelScript!
   fullName: getShowPercentage()
-  summary: Especifica se o percentual do rótulo de dados está visível.
+  summary: Especifica se a porcentagem do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)
   package: ExcelScript!
   fullName: getShowSeriesName()
-  summary: Especifica se o nome da série do rótulo de dados é visível.
+  summary: Especifica se o nome da série de rótulos de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowValue:member(1)
   package: ExcelScript!
   fullName: getShowValue()
-  summary: Especifica se o valor do rótulo de dados é visível.
+  summary: Especifica se o valor do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Representa o ângulo no qual o texto é orientado para os rótulos de dados. O valor deve ser um inteiro de-90 a 90 ou o inteiro 180 para texto orientado verticalmente.
+  summary: Representa o ângulo para o qual o texto é orientado para rótulos de dados. O valor deve ser um inteiro de -90 a 90 ou o inteiro 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Representa o alinhamento vertical do rótulo de dados do gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obter detalhes. Esta propriedade é válida somente quando TextOrientation do rótulo de dados é-90, 90 ou 180.
+  summary: Representa o alinhamento vertical do rótulo de dados do gráfico. Consulte `ExcelScript.ChartTextVerticalAlignment` para obter detalhes. Essa propriedade só é válida quando `TextOrientation` o rótulo de dados é -90, 90 ou 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Especifica o alinhamento horizontal para o rótulo de dados do gráfico. Consulte ExcelScript. ChartTextHorizontalAlignment para obter detalhes. Esta propriedade é válida somente quando TextOrientation do rótulo de dados é 0.
+  summary: Especifica o alinhamento horizontal para o rótulo de dados do gráfico. Consulte `ExcelScript.ChartTextHorizontalAlignment` para obter detalhes. Essa propriedade só é válida quando o `TextOrientation` rótulo de dados é 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Especifica se o formato de número está vinculado às células. Se verdadeiro, o formato numérico será alterado nos rótulos quando ele for alterado nas células.
+  summary: Especifica se o formato de número está vinculado às células. Se `true`<!-- -->, o formato de número mudará nos rótulos quando ele mudar nas células.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Especifica o código de formatação para os rótulos de dados.
+  summary: Especifica o código de formato para rótulos de dados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Valor de DataLabelPosition que representa a posição do rótulo de dados. Consulte ExcelScript. ChartDataLabelPosition para obter detalhes.
+  summary: Valor que representa a posição do rótulo de dados. Consulte `ExcelScript.ChartDataLabelPosition` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -313,7 +313,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)
   package: ExcelScript!
   fullName: setShowBubbleSize(showBubbleSize)
-  summary: Especifica se o tamanho da bolha do rótulo de dados é visível.
+  summary: Especifica se o tamanho da bolha do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)
   package: ExcelScript!
   fullName: setShowLegendKey(showLegendKey)
-  summary: Especifica se a tecla de legenda do rótulo de dados está visível.
+  summary: Especifica se a chave de legenda do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowPercentage:member(1)
   package: ExcelScript!
   fullName: setShowPercentage(showPercentage)
-  summary: Especifica se o percentual do rótulo de dados está visível.
+  summary: Especifica se a porcentagem do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -381,7 +381,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)
   package: ExcelScript!
   fullName: setShowSeriesName(showSeriesName)
-  summary: Especifica se o nome da série do rótulo de dados é visível.
+  summary: Especifica se o nome da série de rótulos de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -398,7 +398,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowValue:member(1)
   package: ExcelScript!
   fullName: setShowValue(showValue)
-  summary: Especifica se o valor do rótulo de dados é visível.
+  summary: Especifica se o valor do rótulo de dados está visível.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -415,7 +415,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Representa o ângulo no qual o texto é orientado para os rótulos de dados. O valor deve ser um inteiro de-90 a 90 ou o inteiro 180 para texto orientado verticalmente.
+  summary: Representa o ângulo para o qual o texto é orientado para rótulos de dados. O valor deve ser um inteiro de -90 a 90 ou o inteiro 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -432,7 +432,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Representa o alinhamento vertical do rótulo de dados do gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obter detalhes. Esta propriedade é válida somente quando TextOrientation do rótulo de dados é-90, 90 ou 180.
+  summary: Representa o alinhamento vertical do rótulo de dados do gráfico. Consulte `ExcelScript.ChartTextVerticalAlignment` para obter detalhes. Essa propriedade só é válida quando `TextOrientation` o rótulo de dados é -90, 90 ou 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,9 +449,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 87f3332eb1117170cf55d85aa4d78ec99c04d964
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 37ac26179da2d14e0172d354ecaac9be23fda9fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416936"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606903"

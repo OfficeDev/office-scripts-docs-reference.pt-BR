@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#addChartSeries:member(1)
   package: ExcelScript!
   fullName: addChartSeries(name, index)
-  summary: Adiciona uma nova série para o conjunto. A nova série adicionada não fica visível até que Set Values/x Axis Values/tamanho da bolha (dependendo do tipo de gráfico).
+  summary: Adiciona uma nova série para o conjunto. A nova série adicionada não será visível até que valores, valores de eixo x ou tamanhos de bolha para ela sejam definidos (dependendo do tipo de gráfico).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: getCategoryLabelLevel()
-  summary: Especifica uma constante de enumeração ChartCategoryLabelLevel referindo-se ao nível de onde os rótulos de categoria estão sendo originados.
+  summary: Especifica uma constante de enumeração de nível de rótulo de categoria de gráfico, referindo-se ao nível dos rótulos de categoria de origem.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: Especifica o tipo do gráfico. Confira ExcelScript. ChartType para obter detalhes.
+  summary: Especifica o tipo do gráfico. Consulte `ExcelScript.ChartType` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Especifica a altura, em pontos, do objeto de gráfico.
+  summary: Especifica a altura, em pontos, do objeto chart.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Id exclusiva do gráfico.
+  summary: A ID exclusiva do gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getImage:member(1)
   package: ExcelScript!
   fullName: getImage(width, height, fittingMode)
-  summary: Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas. A taxa de proporção é preservada como parte do redimensionamento.
+  summary: Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas. A taxa de proporção é preservada como parte do resizing.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,13 +176,13 @@ methods:
               ): string;
     parameters:
     - id: width
-      description: (Opcional) A largura desejada da imagem resultante.
+      description: Opcional. A largura desejada da imagem resultante.
       type: number
     - id: height
-      description: (Opcional) A altura desejada da imagem resultante.
+      description: Opcional. A altura desejada da imagem resultante.
       type: number
     - id: fittingMode
-      description: Opcion O método usado para dimensionar o gráfico para o especificado para as dimensões especificadas (se a altura e a largura forem definidas).
+      description: Opcional. O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e a largura estão definidas).
       type: <xref uid="ExcelScript!ExcelScript.ImageFittingMode:enum" />
     return:
       type: string
@@ -217,7 +217,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Especifica o nome de um objeto de gráfico.
+  summary: Especifica o nome de um objeto chart.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getPlotArea:member(1)
   package: ExcelScript!
   fullName: getPlotArea()
-  summary: Representa a plotArea para o gráfico.
+  summary: Representa a área de plotagem do gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: getSeriesNameLevel()
-  summary: Especifica uma constante de enumeração ChartSeriesNameLevel referindo-se ao nível de onde os nomes das séries estão sendo originados.
+  summary: Especifica uma constante de enumeração de nível de nome de série de gráfico, referindo-se ao nível dos nomes da série de origem.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowAllFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowAllFieldButtons()
-  summary: Especifica se todos os botões de campo devem ser exibidos em um gráfico dinâmico.
+  summary: Especifica se todos os botões de campo serão exibidos em um Gráfico Dinâmica.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: getShowDataLabelsOverMaximum()
-  summary: Especifica se os rótulos de dados devem ser mostrados quando o valor for maior do que o valor máximo no eixo dos valores. Se o eixo dos valores tornar-se menor do que o tamanho dos pontos de dados, você poderá usar essa propriedade para definir se os rótulos de dados serão exibidos. Essa propriedade se aplica somente a gráficos 2D.
+  summary: Especifica se os rótulos de dados serão indicados quando o valor for maior do que o valor máximo no eixo do valor. Se o eixo dos valores ficar menor do que o tamanho dos pontos de dados, você poderá usar essa propriedade para definir se os rótulos de dados serão mostrar. Essa propriedade se aplica somente a gráficos 2D.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -334,7 +334,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Especifica o estilo de gráfico para o gráfico.
+  summary: Especifica o estilo do gráfico para o gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: Especifica o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação do título.
+  summary: Representa o título do gráfico especificado, incluindo o respectivo texto, a visibilidade, a posição e a formatação.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Especifica a largura, em pontos, do objeto de gráfico.
+  summary: Especifica a largura, em pontos, do objeto chart.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: setCategoryLabelLevel(categoryLabelLevel)
-  summary: Especifica uma constante de enumeração ChartCategoryLabelLevel referindo-se ao nível de onde os rótulos de categoria estão sendo originados.
+  summary: Especifica uma constante de enumeração de nível de rótulo de categoria de gráfico, referindo-se ao nível dos rótulos de categoria de origem.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: Especifica o tipo do gráfico. Confira ExcelScript. ChartType para obter detalhes.
+  summary: Especifica o tipo do gráfico. Consulte `ExcelScript.ChartType` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -441,10 +441,10 @@ methods:
     content: 'setData(sourceData: Range, seriesBy?: ChartSeriesBy): void;'
     parameters:
     - id: sourceData
-      description: O objeto Range correspondente aos dados de origem.
+      description: O objeto range correspondente aos dados de origem.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: 'Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções: auto (padrão), linhas e colunas. Consulte ExcelScript. ChartSeriesBy para obter detalhes.'
+      description: 'Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser um dos seguintes: Auto (padrão), Linhas e Colunas. Consulte `ExcelScript.ChartSeriesBy` para obter detalhes.'
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: void
@@ -470,7 +470,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Especifica a altura, em pontos, do objeto de gráfico.
+  summary: Especifica a altura, em pontos, do objeto chart.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -504,7 +504,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Especifica o nome de um objeto de gráfico.
+  summary: Especifica o nome de um objeto chart.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
       description: A célula inicial. Esse é o local para o qual o gráfico será movido. A célula inicial é a célula superior esquerda ou direita, dependendo das configurações de exibição do usuário, da esquerda para a direita.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: endCell
-      description: (Opcional) Na célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.
+      description: Opcional. A célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: setSeriesNameLevel(seriesNameLevel)
-  summary: Especifica uma constante de enumeração ChartSeriesNameLevel referindo-se ao nível de onde os nomes das séries estão sendo originados.
+  summary: Especifica uma constante de enumeração de nível de nome de série de gráfico, referindo-se ao nível dos nomes da série de origem.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -592,7 +592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowAllFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowAllFieldButtons(showAllFieldButtons)
-  summary: Especifica se todos os botões de campo devem ser exibidos em um gráfico dinâmico.
+  summary: Especifica se todos os botões de campo serão exibidos em um Gráfico Dinâmica.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -609,7 +609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
-  summary: Especifica se os rótulos de dados devem ser mostrados quando o valor for maior do que o valor máximo no eixo dos valores. Se o eixo dos valores tornar-se menor do que o tamanho dos pontos de dados, você poderá usar essa propriedade para definir se os rótulos de dados serão exibidos. Essa propriedade se aplica somente a gráficos 2D.
+  summary: Especifica se os rótulos de dados serão indicados quando o valor for maior do que o valor máximo no eixo do valor. Se o eixo dos valores ficar menor do que o tamanho dos pontos de dados, você poderá usar essa propriedade para definir se os rótulos de dados serão mostrar. Essa propriedade se aplica somente a gráficos 2D.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -626,7 +626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Especifica o estilo de gráfico para o gráfico.
+  summary: Especifica o estilo do gráfico para o gráfico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -660,7 +660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Especifica a largura, em pontos, do objeto de gráfico.
+  summary: Especifica a largura, em pontos, do objeto chart.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -674,9 +674,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 16db85eee5fc6327494e016ddfc9584f3d263d5c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 622f7bc0491202803f57b7644468ee49e2787d89
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420157"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606952"

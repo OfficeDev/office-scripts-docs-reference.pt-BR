@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: Define um ou mais PivotFilters atuais do campo e os aplica ao campo. Se os filtros fornecidos forem inválidos ou não puderem ser aplicados, uma exceção será lançada.
+  summary: Define um ou mais dos PivotFilters atuais do campo e os aplica ao campo. Se os filtros fornecidos são inválidos ou não podem ser aplicados, uma exceção é lançada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: Um PivotFilter específico configurado ou uma interface PivotFilters que contém vários filtros configurados.
+      description: Um PivotFilter específico configurado ou uma interface PivotFilters contendo vários filtros configurados.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: Limpa todos os critérios de todos os filtros de campo. Isso removerá qualquer filtragem ativa no campo.
+  summary: Limpa todos os critérios de todos os filtros do campo. Isso remove qualquer filtragem ativa no campo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: Limpa todos os critérios existentes do filtro do campo de determinado tipo (se houver algum aplicado no momento).
+  summary: Limpa todos os critérios existentes do filtro do campo do tipo determinado (se um estiver aplicado no momento).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
   package: ExcelScript!
   fullName: getFilters()
-  summary: Obtém todos os filtros aplicados no campo no momento.
+  summary: Obtém todos os filtros atualmente aplicados no campo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: ID do PivotField..
+  summary: ID do PivotField.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: O tipo de filtro a ser verificado. Se nenhum tipo for fornecido, este método verificará se o filtro foi aplicado.
+      description: O tipo de filtro a ser consultado. Se nenhum tipo for fornecido, este método verificará se qualquer filtro é aplicado.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -256,18 +256,18 @@ methods:
       description: Especifica se a classificação é feita em ordem crescente ou decrescente.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: Especifica a hierarquia de valores no eixo dos dados a ser usado para a classificação.
+      description: Especifica a hierarquia de valores no eixo de dados a ser usado para classificação.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: Os itens que devem ser usados para o escopo da classificação. Eles serão os itens que compõem a linha ou coluna que você deseja classificar. Se uma cadeia de caracteres é usada em vez de um PivotItem, a cadeia de caracteres representa a ID do PivotItem. Se não houver nenhum item além da hierarquia de dados no eixo que você deseja classificar, isso poderá ficar vazio.
+      description: Os itens que devem ser usados para o escopo da classificação. Esses serão os itens que com a linha ou coluna que você deseja classificar. Se uma cadeia de caracteres for usada em vez de um PivotItem, a cadeia de caracteres representará a ID do PivotItem. Se não houver itens diferentes da hierarquia de dados no eixo em que você deseja classificar, isso pode estar vazio.
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f9bc753c30f6ec8c165cdf9966aab8c5be2040cc
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554612"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606396"

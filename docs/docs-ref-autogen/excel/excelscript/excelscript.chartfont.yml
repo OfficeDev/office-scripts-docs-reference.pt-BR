@@ -3,7 +3,7 @@ name: ExcelScript.ChartFont
 uid: ExcelScript!ExcelScript.ChartFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFont
-summary: Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
+summary: Esse objeto representa os atributos de fonte (como nome da fonte, tamanho da fonte e cor) para um objeto chart.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Representação do código de cor HTML da cor do texto (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor do texto (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Tipo de sublinhado aplicado à fonte. Consulte ExcelScript. ChartUnderlineStyle para obter detalhes.
+  summary: Tipo de sublinhado aplicado à fonte. Consulte `ExcelScript.ChartUnderlineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Representação do código de cor HTML da cor do texto (por exemplo, \# FF0000 representa vermelho).
+  summary: Representação de código de cor HTML da cor do texto (por exemplo, \# FF0000 representa Vermelho).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Tipo de sublinhado aplicado à fonte. Consulte ExcelScript. ChartUnderlineStyle para obter detalhes.
+  summary: Tipo de sublinhado aplicado à fonte. Consulte `ExcelScript.ChartUnderlineStyle` para obter detalhes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 58486871c20f86feee8008975bd8790f284b09d0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419933"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606896"

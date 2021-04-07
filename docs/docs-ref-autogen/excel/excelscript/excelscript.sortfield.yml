@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#ascending:member
   package: ExcelScript!
   fullName: ascending
-  summary: Especifica se a classificação é feita de modo ascendente.
+  summary: Especifica se a classificação é feita de forma crescente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#color:member
   package: ExcelScript!
   fullName: color
-  summary: Especifica a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.
+  summary: Especifica a cor que é o destino da condição se a classificação estiver na fonte ou cor da célula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: Especifica o ícone que é o destino da condição se a classificação estiver no ícone da célula.
+  summary: Especifica o ícone que é o destino da condição, se a classificação estiver no ícone da célula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#key:member
   package: ExcelScript!
   fullName: key
-  summary: Especifica a coluna (ou linha, dependendo da orientação de classificação) em que a condição está ativada. Representado como um deslocamento da primeira coluna (ou linha).
+  summary: Especifica a coluna (ou linha, dependendo da orientação de classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: Especifica o subcampo que é o nome da propriedade de destino de um valor avançado a ser classificado.
+  summary: Especifica o subcampo que é o nome da propriedade de destino de um valor rico a ser classificação.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e357fd813e45dcb01b36c18a57e930c7b07708da
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420381"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605994"

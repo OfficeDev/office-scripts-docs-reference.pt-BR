@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: Especifica se a tabela dinâmica permite o aplicativo de vários PivotFilters em um determinado campo PivotField na tabela.
+  summary: Especifica se a Tabela Dinâmica permite a aplicação de vários PivotFilters em um dado PivotField na tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Obtém um RowColumnPivotHierarchy por nome. Se o RowColumnPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém um RowColumnPivotHierarchy por nome. Se RowColumnPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Obtém uma DataPivotHierarchy por nome. Se o DataPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém uma DataPivotHierarchy por nome. Se DataPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: Especifica se a tabela dinâmica permite que valores no corpo de dados sejam editados pelo usuário.
+  summary: Especifica se a Tabela Dinâmica permite que os valores no corpo dos dados sejam editados pelo usuário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Obtém um FilterPivotHierarchy por nome. Se o FilterPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém um FilterPivotHierarchy por nome. Se FilterPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Obtém o PivotHierarchy por nome. Se o PivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém o PivotHierarchy por nome. Se PivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Id da Tabela Dinâmica.
+  summary: ID da tabela dinâmica.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Obtém um RowColumnPivotHierarchy por nome. Se o RowColumnPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
+  summary: Obtém um RowColumnPivotHierarchy por nome. Se RowColumnPivotHierarchy não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: getUseCustomSortLists()
-  summary: Especifica se a tabela dinâmica usa listas personalizadas ao classificar.
+  summary: Especifica se a Tabela Dinâmica usa listas personalizadas ao classificar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: Especifica se a tabela dinâmica permite o aplicativo de vários PivotFilters em um determinado campo PivotField na tabela.
+  summary: Especifica se a Tabela Dinâmica permite a aplicação de vários PivotFilters em um dado PivotField na tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: Especifica se a tabela dinâmica permite que valores no corpo de dados sejam editados pelo usuário.
+  summary: Especifica se a Tabela Dinâmica permite que os valores no corpo dos dados sejam editados pelo usuário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -485,7 +485,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: setUseCustomSortLists(useCustomSortLists)
-  summary: Especifica se a tabela dinâmica usa listas personalizadas ao classificar.
+  summary: Especifica se a Tabela Dinâmica usa listas personalizadas ao classificar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 46b240d2029153fbbc2cbcfca1d15f2e54430414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554605"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606375"
