@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxwhiskerOptions
 uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxwhiskerOptions
-summary: Representa as propriedades de uma caixa e um gráfico de caixas estreita.
+summary: Representa as propriedades de uma caixa e um gráfico de whisker.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: getQuartileCalculation()
-  summary: Especifica se o tipo de cálculo de quartil de uma caixa e um gráfico de caixa estreita.
+  summary: Especifica se o tipo de cálculo quartil de uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: getShowInnerPoints()
-  summary: Especifica se os pontos internos são mostrados em um gráfico de caixa e estreita.
+  summary: Especifica se os pontos internos são mostrados em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)
   package: ExcelScript!
   fullName: getShowMeanLine()
-  summary: Especifica se a linha de média é mostrada em um gráfico de caixa e estreitamento.
+  summary: Especifica se a linha média é mostrada em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: getShowMeanMarker()
-  summary: Especifica se o marcador médio é mostrado em um gráfico de caixa e mais à estreita.
+  summary: Especifica se o marcador médio é mostrado em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: getShowOutlierPoints()
-  summary: Especifica se os pontos de exceção são mostrados em um gráfico de caixa e mais à estreita.
+  summary: Especifica se os pontos de outlier são mostrados em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: setQuartileCalculation(quartileCalculation)
-  summary: Especifica se o tipo de cálculo de quartil de uma caixa e um gráfico de caixa estreita.
+  summary: Especifica se o tipo de cálculo quartil de uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: setShowInnerPoints(showInnerPoints)
-  summary: Especifica se os pontos internos são mostrados em um gráfico de caixa e estreita.
+  summary: Especifica se os pontos internos são mostrados em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -115,7 +115,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)
   package: ExcelScript!
   fullName: setShowMeanLine(showMeanLine)
-  summary: Especifica se a linha de média é mostrada em um gráfico de caixa e estreitamento.
+  summary: Especifica se a linha média é mostrada em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: setShowMeanMarker(showMeanMarker)
-  summary: Especifica se o marcador médio é mostrado em um gráfico de caixa e mais à estreita.
+  summary: Especifica se o marcador médio é mostrado em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -149,7 +149,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: setShowOutlierPoints(showOutlierPoints)
-  summary: Especifica se os pontos de exceção são mostrados em um gráfico de caixa e mais à estreita.
+  summary: Especifica se os pontos de outlier são mostrados em uma caixa e um gráfico de whisker.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,9 +163,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 12b3f06b1036fee3892bdc0ab9a63c1dbff335b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b53c861761fa2dbead962e9ec6e1b011af51f12b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420017"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914559"

@@ -3,7 +3,7 @@ name: ExcelScript.GeometricShape
 uid: ExcelScript!ExcelScript.GeometricShape:interface
 package: ExcelScript!
 fullName: ExcelScript.GeometricShape
-summary: Representa uma forma geométrica dentro de uma planilha. Uma forma geométrica pode ser um retângulo, uma seta de bloco, um símbolo de equação, um item de fluxograma, uma estrela, uma faixa, um texto explicativo ou qualquer outra forma básica no Excel.
+summary: Representa uma forma geométrica dentro de uma planilha. Uma forma geométrica pode ser um retângulo, seta de bloco, símbolo da equação, item de fluxograma, estrela, faixa, texto explicante ou qualquer outra forma básica no Excel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,9 +23,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4dfea045b85b1e12ab56c49603ae13d4e82f6b12
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412458"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914377"

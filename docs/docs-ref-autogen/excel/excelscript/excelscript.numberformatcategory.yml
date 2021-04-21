@@ -11,11 +11,11 @@ fields:
 - name: accounting
   uid: ExcelScript!ExcelScript.NumberFormatCategory.accounting:member
   package: ExcelScript!
-  summary: Os formatos de contabilidade alinham os símbolos de moeda e os pontos decimais em uma coluna.
+  summary: Os formatos contábeis são alinhados aos símbolos de moeda e pontos decimais em uma coluna.
 - name: currency
   uid: ExcelScript!ExcelScript.NumberFormatCategory.currency:member
   package: ExcelScript!
-  summary: Os formatos de moeda são usados para valores monetários gerais. Use os formatos de contabilidade para alinhar pontos decimais em uma coluna.
+  summary: Formatos de moeda são usados para valores monetários gerais. Use formatos contábeis para alinhar pontos decimais em uma coluna.
 - name: custom
   uid: ExcelScript!ExcelScript.NumberFormatCategory.custom:member
   package: ExcelScript!
@@ -23,11 +23,11 @@ fields:
 - name: date
   uid: ExcelScript!ExcelScript.NumberFormatCategory.date:member
   package: ExcelScript!
-  summary: Os formatos de data exibem números de série de data e hora como valores de data. Os formatos de data que começam com um asterisco (*) respondem às alterações nas configurações regionais de data e hora especificadas para o sistema operacional. Formatos sem um asterisco não são afetados pelas configurações do sistema operacional.
+  summary: Formatos de data exibem números de série de data e hora como valores de data. Os formatos de data que começam com um asterisco (*) respondem a alterações nas configurações regionais de data e hora especificadas para o sistema operacional. Formatos sem um asterisco não são afetados pelas configurações do sistema operacional.
 - name: fraction
   uid: ExcelScript!ExcelScript.NumberFormatCategory.fraction:member
   package: ExcelScript!
-  summary: Os formatos de fração exibem o valor da célula como um número inteiro com o restante arredondado para o valor de fração mais próximo.
+  summary: Formatos fracionados exibem o valor da célula como um número inteiro com o restante arredondado para o valor de fração mais próximo.
 - name: general
   uid: ExcelScript!ExcelScript.NumberFormatCategory.general:member
   package: ExcelScript!
@@ -35,11 +35,11 @@ fields:
 - name: number
   uid: ExcelScript!ExcelScript.NumberFormatCategory.number:member
   package: ExcelScript!
-  summary: O número é usado para exibição geral de números. Moeda e contabilidade oferecem formatação especializada para valor monetário.
+  summary: O número é usado para exibição geral de números. Moeda e Contabilidade oferecem formatação especializada para valor monetário.
 - name: percentage
   uid: ExcelScript!ExcelScript.NumberFormatCategory.percentage:member
   package: ExcelScript!
-  summary: Os formatos de porcentagem multiplicam o valor da célula por 100 e exibem o resultado com um símbolo de porcentagem.
+  summary: Os formatos percentuais multiplicam o valor da célula por 100 e exibem o resultado com um símbolo de porcentagem.
 - name: scientific
   uid: ExcelScript!ExcelScript.NumberFormatCategory.scientific:member
   package: ExcelScript!
@@ -47,19 +47,19 @@ fields:
 - name: special
   uid: ExcelScript!ExcelScript.NumberFormatCategory.special:member
   package: ExcelScript!
-  summary: Formatos especiais são úteis para rastrear valores de lista e de banco de dados.
+  summary: Formatos especiais são úteis para controlar valores de lista e banco de dados.
 - name: text
   uid: ExcelScript!ExcelScript.NumberFormatCategory.text:member
   package: ExcelScript!
-  summary: As células de formato de texto são tratadas como texto, mesmo quando um número está na célula. A célula é exibida exatamente como inserida.
+  summary: As células de formato de texto são tratadas como texto mesmo quando um número está na célula. A célula é exibida exatamente como inserida.
 - name: time
   uid: ExcelScript!ExcelScript.NumberFormatCategory.time:member
   package: ExcelScript!
-  summary: Os formatos de hora exibem números de série de data e hora como valores de data. Os formatos de tempo que começam com um asterisco (*) respondem a alterações nas configurações regionais de data e hora especificadas para o sistema operacional. Formatos sem um asterisco não são afetados pelas configurações do sistema operacional.
+  summary: Formatos de hora exibem números de série de data e hora como valores de data. Os formatos de hora que começam com um asterisco (*) respondem a alterações nas configurações regionais de data e hora especificadas para o sistema operacional. Formatos sem um asterisco não são afetados pelas configurações do sistema operacional.
 metadata:
-  ms.openlocfilehash: 777a00f106fd556e7702ec022cc3baa78008871c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e5918eeb718dd94b8c443a5cfed0b2e537542975
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415313"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914332"
