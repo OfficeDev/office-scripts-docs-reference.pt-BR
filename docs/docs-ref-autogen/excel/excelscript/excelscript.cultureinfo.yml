@@ -3,7 +3,7 @@ name: ExcelScript.CultureInfo
 uid: ExcelScript!ExcelScript.CultureInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
-summary: Fornece informações com base nas configurações de cultura do sistema atual. Isso inclui os nomes de cultura, a formatação de números e outras configurações dependentes de cultura.
+summary: Fornece informações com base nas configurações atuais de cultura do sistema. Isso inclui os nomes de cultura, a formatação de números e outras configurações culturalmente dependentes.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
   package: ExcelScript!
   fullName: getDatetimeFormat()
-  summary: Define o formato culturalmente apropriado para exibir data e hora. Isso é baseado nas configurações atuais de cultura do sistema.
+  summary: Define o formato culturalmente apropriado de exibição de data e hora. Isso se baseia nas configurações atuais de cultura do sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtém o nome da cultura no formato languagecode2-Country/regioncode2 (por exemplo, "zh-CN" ou "en-US"). Isso é baseado nas configurações atuais do sistema.
+  summary: Obtém o nome da cultura no formato languagecode2-country/regioncode2 (por exemplo, "zh-cn" ou "en-us"). Isso se baseia nas configurações atuais do sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Define o formato culturalmente apropriado para exibir números. Isso é baseado nas configurações atuais de cultura do sistema.
+  summary: Define o formato culturalmente apropriado de exibição de números. Isso se baseia nas configurações atuais de cultura do sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415656"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913707"

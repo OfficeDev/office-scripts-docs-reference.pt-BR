@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member
   package: ExcelScript!
   fullName: footer
-  summary: Especifica a margem de rodapé do layout da página na unidade especificada para ser usada para impressão.
+  summary: Especifica a margem do rodapé de layout de página na unidade especificada para ser usada para impressão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member
   package: ExcelScript!
   fullName: header
-  summary: Especifica a margem do cabeçalho do layout da página na unidade especificada para ser usada para impressão.
+  summary: Especifica a margem do header de layout da página na unidade especificada para ser usada para impressão.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 3cd60d73c21b4ed612a6cd7b470c5e26f961056d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f778f3a4f1d6b23382ec7b2dc956671a9bba9a8
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415279"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914325"
