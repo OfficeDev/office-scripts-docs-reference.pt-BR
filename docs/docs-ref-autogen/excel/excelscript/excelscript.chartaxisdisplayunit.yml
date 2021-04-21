@@ -19,11 +19,11 @@ fields:
 - name: hundredMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
   package: ExcelScript!
-  summary: Isso definirá o eixo nas unidades de centenas de milhões.
+  summary: Isso definirá o eixo em unidades de centenas de milhões.
 - name: hundreds
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
   package: ExcelScript!
-  summary: Isso definirá o eixo nas unidades de centenas.
+  summary: Isso definirá o eixo em unidades de centenas.
 - name: hundredThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
   package: ExcelScript!
@@ -31,11 +31,11 @@ fields:
 - name: millions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
   package: ExcelScript!
-  summary: Isso definirá o eixo nas unidades de milhões.
+  summary: Isso definirá o eixo em unidades de milhões.
 - name: none
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
   package: ExcelScript!
-  summary: Opção padrão. Isso redefinirá a unidade de exibição para o eixo e definirá o rótulo de unidade como invisível.
+  summary: Opção padrão. Isso redefinirá a unidade de exibição para o eixo e definirá o rótulo da unidade invisível.
 - name: tenMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
   package: ExcelScript!
@@ -51,11 +51,11 @@ fields:
 - name: trillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
   package: ExcelScript!
-  summary: Isso definirá o eixo em unidades de trilhãos.
+  summary: Isso definirá o eixo em unidades de trilhões.
 metadata:
-  ms.openlocfilehash: ce73f608460520b055d6e811a4691fc16517df76
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 08e418c2cfe3a94b7d9293a1c4fa239af1044b0e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417083"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913256"

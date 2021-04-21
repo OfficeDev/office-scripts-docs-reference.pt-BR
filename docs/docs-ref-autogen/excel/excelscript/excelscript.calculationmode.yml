@@ -11,19 +11,19 @@ fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
   package: ExcelScript!
-  summary: O comportamento de recálculo padrão em que o Excel calcula novos resultados de fórmula cada vez que os dados relevantes são alterados.
+  summary: O comportamento de recálculo padrão em que o Excel calcula novos resultados de fórmula sempre que os dados relevantes são alterados.
 - name: automaticExceptTables
   uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
   package: ExcelScript!
-  summary: Calcula novos resultados de fórmula cada vez que os dados relevantes são alterados, a menos que a fórmula esteja em uma tabela de dados.
+  summary: Calcula novos resultados de fórmula sempre que os dados relevantes são alterados, a menos que a fórmula esteja em uma tabela de dados.
 - name: manual
   uid: ExcelScript!ExcelScript.CalculationMode.manual:member
   package: ExcelScript!
-  summary: Os cálculos ocorrem somente quando o usuário ou o suplemento os solicita.
+  summary: Os cálculos só ocorrem quando o usuário ou o complemento os solicita.
 metadata:
-  ms.openlocfilehash: 21802549487f1e9e5b59b90c31094a5d2cdfc0c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417223"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913982"

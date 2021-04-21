@@ -11,19 +11,19 @@ fields:
 - name: compact
   uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
   package: ExcelScript!
-  summary: Um formulário horizontalmente compactado com rótulos do próximo campo na mesma coluna.
+  summary: Um formulário compactado horizontalmente com rótulos do próximo campo na mesma coluna.
 - name: outline
   uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
   package: ExcelScript!
-  summary: Os itens de campos internos estão na mesma linha dos campos externos, e os subtotais estão sempre na parte inferior.
+  summary: Os itens dos campos internos estão na mesma linha que os itens e subtotais de campos externos estão sempre na parte inferior.
 - name: tabular
   uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
   package: ExcelScript!
-  summary: Os itens de campos internos estão sempre em uma nova linha em relação aos itens dos campos externos.
+  summary: Os itens dos campos internos estão sempre em uma nova linha em relação aos itens dos campos externos.
 metadata:
-  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 00e8342cd618db35b9f2f4a49bf8ab454be15c58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415173"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913537"

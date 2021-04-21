@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: A chave da propriedade personalizada. A chave está limitada a 255 caracteres fora do Excel na Web (chaves maiores são automaticamente aparadas para 255 caracteres em outras plataformas).
+  summary: A chave da propriedade personalizada. A chave é limitada a 255 caracteres fora do Excel na Web (chaves maiores são automaticamente cortadas para 255 caracteres em outras plataformas).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: O tipo de valor usado para a propriedade personalizada.
+  summary: O tipo do valor usado para a propriedade personalizada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c1a2f549413c7c33b66a60e232fb80bfeb60658a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415600"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914489"

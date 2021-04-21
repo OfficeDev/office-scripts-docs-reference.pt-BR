@@ -238,6 +238,23 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
       description: ''
+- name: addNamedSheetView(name)
+  uid: ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: addNamedSheetView(name)
+  summary: Cria um novo exibição de planilha com o nome determinado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addNamedSheetView(name: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: O nome do exibição de planilha a ser criado. Ocorre um erro quando o nome fornecido já existe, está vazio ou é um nome reservado pela planilha.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
 - name: addPivotTable(name, source, destination)
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
@@ -426,6 +443,32 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```javascript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+- name: enterTemporaryNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: enterTemporaryNamedSheetView()
+  summary: Cria e ativa um novo modo de exibição de planilha temporária. As exibições temporárias são removidas ao fechar o aplicativo, sair do modo de exibição temporário com o método exit ou alternar para outro modo de exibição de planilha. O exibição de planilha temporária também pode ser acccessed com a cadeia de caracteres vazia (""), se a exibição temporária existir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enterTemporaryNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: exitActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: exitActiveNamedSheetView()
+  summary: Sai do exibição de planilha ativa no momento.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exitActiveNamedSheetView(): void;'
+    return:
+      type: void
+      description: ''
 - name: findAll(text, criteria)
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
@@ -445,6 +488,19 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getActiveNamedSheetView()
+  summary: Obtém a exibição de planilha ativa da planilha no momento.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
       description: ''
 - name: getAutoFilter()
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
@@ -667,6 +723,36 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
+      description: ''
+- name: getNamedSheetView(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetView(key)
+  summary: Obtém uma exibição de planilha usando seu nome.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetView(key: string): NamedSheetView;'
+    parameters:
+    - id: key
+      description: O nome sensível a caso do modo de exibição de planilha. Use a cadeia de caracteres vazia ("") para obter o exibição de planilha temporária, se o exibição temporário existir.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getNamedSheetViews()
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetViews()
+  summary: Retorna uma coleção de exibições de planilha presentes na planilha.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetViews(): NamedSheetView[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />[]
       description: ''
 - name: getNames()
   uid: ExcelScript!ExcelScript.Worksheet#getNames:member(1)
@@ -1292,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 821018eb13c005fc3de20385737536175e4686e4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 0264cc15d8a8218728682ed849333c8b5222960a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607281"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914660"
