@@ -757,6 +757,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
+- name: getMergedAreas()
+  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
+  package: ExcelScript!
+  fullName: getMergedAreas()
+  summary: Retorna um objeto RangeAreas que representa as áreas mescladas nesse intervalo. Observe que, se a contagem de áreas mescladas nesse intervalo for superior a 512, a API não retornará o resultado. Se RangeAreas não existir, retornará um objeto nulo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMergedAreas(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
@@ -1768,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5078d20a7a7558619d9393ab529fd3cd46c8f433
-  ms.sourcegitcommit: 02aeeff79f2bdb28393fdcacd6266820f7c4d085
+  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52589303"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068291"
