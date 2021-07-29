@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: 'autoFill( destinationRange?: Range | string, autoFillType?: AutoFillType ): void;'
     parameters:
     - id: destinationRange
       description: O intervalo de destino para AutoFill. Se o intervalo de destino for `null`<!-- -->, os dados são preenchidos com base nas células ao redor (que é o comportamento ao clicar duas vezes na alça de preenchimento do intervalo da interface do usuário).
@@ -115,13 +111,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: 'copyFrom( sourceRange: Range | RangeAreas | string, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean ): void;'
     parameters:
     - id: sourceRange
       description: O intervalo de origem `RangeAreas` ou para copiar. Quando a fonte tem vários intervalos, seu formulário deve ser capaz de ser criado removendo linhas completas ou colunas de um intervalo `RangeAreas` retangular.
@@ -465,11 +455,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getExtendedRange( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: A direção da célula ativa.
@@ -528,7 +514,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormulaR1C1(): string;'
+    content: 'getFormulaR1C1(): cadeia de caracteres;'
     return:
       type: string
       description: ''
@@ -779,7 +765,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormat(): string;'
+    content: 'getNumberFormat(): cadeia de caracteres;'
     return:
       type: string
       description: ''
@@ -907,11 +893,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getRangeEdge( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: A direção da célula ativa.
@@ -1067,11 +1049,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: 'getSpecialCells( cellType: SpecialCellType, cellValueType?: SpecialCellValueType ): RangeAreas;'
     parameters:
     - id: cellType
       description: O tipo de células a ser incluído.
@@ -1203,7 +1181,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: 'getValue(): cadeia de caracteres | number | boolean;'
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
@@ -1216,7 +1194,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
+    content: 'getValues(): (string | número | boolean)[][];'
     return:
       type: (string | number | boolean)[][]
       description: ''
@@ -1281,7 +1259,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getWorksheet(): Worksheet;'
+    content: 'getWorksheet(): Planilha;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: ''
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: 'removeDuplicates( colunas: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
     parameters:
     - id: columns
       description: As colunas dentro do intervalo que podem conter duplicatas. Pelo menos uma coluna precisa ser especificada. Indexados com zero.
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: 'replaceAll( text: string, replacement: string, criteria: ReplaceCriteria ): number;'
     parameters:
     - id: text
       description: Cadeia de caracteres a ser achada.
@@ -1707,7 +1676,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Representa os valores brutos do intervalo especificado. Os dados retornados podem ser uma cadeia de caracteres, número ou booleano. Células que contêm um erro retornarão a cadeia de caracteres de erro. Se o valor retornado começar com um sinal de mais ("+"), menos ("-"), ou igual ("="), Excel interpretará esse valor como uma fórmula.
+  summary: Define os valores brutos do intervalo especificado. Os dados fornecidos podem ser uma cadeia de caracteres, número ou booleano. Se o valor fornecido começar com um sinal de mais ("+"), menos ("-"), ou igual ("="), Excel interpretará esse valor como uma fórmula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1750,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068291"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617910"
