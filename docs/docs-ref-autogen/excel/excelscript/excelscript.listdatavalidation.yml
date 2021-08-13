@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ListDataValidation
-uid: ExcelScript!ExcelScript.ListDataValidation:interface
+uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.ListDataValidation
 summary: Representa os critérios de validação de dados de lista.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: inCellDropDown
-  uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
-  package: ExcelScript!
-  fullName: inCellDropDown
-  summary: Especifica se a lista deve ser exibida em um drop-down de célula. O padrão é `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'inCellDropDown: boolean;'
-    return:
-      type: boolean
-- name: source
-  uid: ExcelScript!ExcelScript.ListDataValidation#source:member
-  package: ExcelScript!
-  fullName: source
-  summary: Origem da lista para validação de dados Ao definir o valor, ele pode ser passado como um objeto ou uma cadeia de caracteres que contém um número separado por `Range` vírgula, booleano ou data.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'source: string | Range;'
-    return:
-      type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-metadata:
-  ms.openlocfilehash: fdc280019cb5828cac3464e444d69ce01a971b16
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914349"
+  - name: inCellDropDown
+    uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+    package: ExcelScript!
+    fullName: inCellDropDown
+    summary: Especifica se a lista deve ser exibida em um drop-down de célula. O padrão é `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type: boolean
+  - name: source
+    uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+    package: ExcelScript!
+    fullName: source
+    summary: 'Origem da lista para validação de dados Ao definir o valor, ele pode ser passado como um objeto ou uma cadeia de caracteres que contém um número separado por `Range` vírgula, booleano ou data.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: string | Range;'
+      return:
+        type: 'string | <xref uid="ExcelScript!ExcelScript.Range:interface" />'

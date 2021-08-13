@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationRule
-uid: ExcelScript!ExcelScript.DataValidationRule:interface
+uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationRule
 summary: Uma regra de validação de dados contém diferentes tipos de validação de dados. Você só pode usar um deles de cada vez de acordo com o `ExcelScript.DataValidationType`<!-- -->.
@@ -9,94 +9,87 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: custom
-  uid: ExcelScript!ExcelScript.DataValidationRule#custom:member
-  package: ExcelScript!
-  fullName: custom
-  summary: Critérios de validação de dados personalizados.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'custom?: CustomDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CustomDataValidation:interface" />
-- name: date
-  uid: ExcelScript!ExcelScript.DataValidationRule#date:member
-  package: ExcelScript!
-  fullName: date
-  summary: Critérios de validação de dados de data.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'date?: DateTimeDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
-- name: decimal
-  uid: ExcelScript!ExcelScript.DataValidationRule#decimal:member
-  package: ExcelScript!
-  fullName: decimal
-  summary: Critérios de validação de dados decimais.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'decimal?: BasicDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
-- name: list
-  uid: ExcelScript!ExcelScript.DataValidationRule#list:member
-  package: ExcelScript!
-  fullName: list
-  summary: Critérios de validação de dados da lista.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'list?: ListDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ListDataValidation:interface" />
-- name: textLength
-  uid: ExcelScript!ExcelScript.DataValidationRule#textLength:member
-  package: ExcelScript!
-  fullName: textLength
-  summary: Critérios de validação de dados de comprimento de texto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'textLength?: BasicDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
-- name: time
-  uid: ExcelScript!ExcelScript.DataValidationRule#time:member
-  package: ExcelScript!
-  fullName: time
-  summary: Critérios de validação de dados de tempo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'time?: DateTimeDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
-- name: wholeNumber
-  uid: ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member
-  package: ExcelScript!
-  fullName: wholeNumber
-  summary: Critérios de validação de dados de número inteiro.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'wholeNumber?: BasicDataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
-metadata:
-  ms.openlocfilehash: 97deabadd4c31780a564c1b5d485585dbd1bfd64
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914017"
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
+    package: ExcelScript!
+    fullName: custom
+    summary: Critérios de validação de dados personalizados.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'custom?: CustomDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CustomDataValidation:interface" />'
+  - name: date
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#date:member'
+    package: ExcelScript!
+    fullName: date
+    summary: Critérios de validação de dados de data.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date?: DateTimeDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />'
+  - name: decimal
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
+    package: ExcelScript!
+    fullName: decimal
+    summary: Critérios de validação de dados decimais.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'decimal?: BasicDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />'
+  - name: list
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#list:member'
+    package: ExcelScript!
+    fullName: list
+    summary: Critérios de validação de dados da lista.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'list?: ListDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ListDataValidation:interface" />'
+  - name: textLength
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
+    package: ExcelScript!
+    fullName: textLength
+    summary: Critérios de validação de dados de comprimento de texto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textLength?: BasicDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />'
+  - name: time
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#time:member'
+    package: ExcelScript!
+    fullName: time
+    summary: Critérios de validação de dados de tempo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'time?: DateTimeDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />'
+  - name: wholeNumber
+    uid: 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
+    package: ExcelScript!
+    fullName: wholeNumber
+    summary: Critérios de validação de dados de número inteiro.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'wholeNumber?: BasicDataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />'

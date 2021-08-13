@@ -1,22 +1,22 @@
-# <a name="office-scripts-api-reference"></a>Referência da API de scripts do Office
+# <a name="office-scripts-api-reference"></a>Office Referência da API de Scripts
 
-Bem-vindo ao repositório documentação de referência da API de scripts do Office. Para obter a melhor experiência, recomendamos que você veja esse conteúdo no [docs.Microsoft.com](https://docs.microsoft.com/javascript/api/office-scripts/overview).
+Bem-vindo ao repositório de documentação de referência da API Office Scripts. Para a melhor experiência, recomendamos que você veja esse conteúdo em [docs.microsoft.com](https://docs.microsoft.com/javascript/api/office-scripts/overview).
 
-> **Observação**: você pode encontrar arquivos de origem para a documentação de scripts do Office, incluindo tutoriais e guias de instruções no repositório do [OfficeDev/Office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs) .
+> **Observação**: você pode encontrar arquivos de origem para Office de scripts, incluindo tutoriais e guias de como fazer no repositório [officeDev/office-scripts-docs.](https://github.com/OfficeDev/office-scripts-docs)
 
 ## <a name="give-us-your-feedback"></a>Envie seus comentários
 
 Seus comentários são importantes para nós.
 
-* Para nos informar sobre dúvidas ou problemas encontrados nos documentos, [envie um problema](https://github.com/OfficeDev/office-scripts-docs-reference/issues) neste repositório. Certifique-se de declarar a versão + o número de compilação do cliente que você está usando e forneça etapas de reprodução, saída do console e mensagens de erro, conforme apropriado.
+* Para nos dizer sobre quaisquer perguntas ou problemas que você encontrar nos documentos, [envie um problema](https://github.com/OfficeDev/office-scripts-docs-reference/issues) neste repositório. Certifique-se de dizer a versão + número de com build do cliente que você está usando e forneça etapas de repro, saída do console e mensagens de erro, conforme apropriado.
 
-* Também Agradecemos suas contribuições para esta documentação. Para contribuir, bifurcar este repositório, atualizar os arquivos conforme julgar necessários e enviar uma solicitação pull com suas alterações propostas. Para mais detalhes, confira [Contribuir para este artigo](Contributing.md).
+* Também saudamos suas contribuições para esta documentação. Para contribuir, forquilha esse repositório, atualize os arquivos conforme você considera necessário e envie uma solicitação pull com suas alterações propostas. Para mais detalhes, confira [Contribuir para este artigo](Contributing.md).
 
-    > **Importante**: não modifique arquivos na pasta [/docs/docs-ref-AutoGen](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) deste repositório. Todos os arquivos nessa pasta são gerados automaticamente, portanto, não é possível atualizá-los por solicitação pull. Para solicitar uma alteração em qualquer um dos arquivos na pasta [/docs/docs-ref-AutoGen](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) , [envie um problema](https://github.com/OfficeDev/office-scripts-docs-reference/issues) neste repositório.
+    > **IMPORTANTE**: Não modifique arquivos na [pasta /docs/docs-ref-autogen](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) deste repositório. Todos os arquivos nessa pasta são gerados automaticamente, portanto, não é possível atualizá-los por meio de solicitação pull. Para solicitar uma alteração em qualquer um dos arquivos na [pasta /docs/docs-ref-autogen,](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) envie um [problema](https://github.com/OfficeDev/office-scripts-docs-reference/issues) neste repositório.
 
-* Para nos informar sobre sua experiência de programação, o que você gostaria de ver em versões futuras, exemplos de código e assim por diante, [envie um problema](https://github.com/OfficeDev/office-scripts-docs-reference/issues) neste repositório.
+* Para nos dizer sobre sua experiência de programação, o que você gostaria de ver em versões futuras, exemplos de código e assim por diante, envie um [problema](https://github.com/OfficeDev/office-scripts-docs-reference/issues) neste repositório.
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de software livre da Microsoft
+## <a name="microsoft-open-source-code-of-conduct"></a>Código Aberto de Conduta da Microsoft
 
-Este projeto adotou o [Código de Conduta de software livre da Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Para obter mais informações, consulte o [código das perguntas frequentes sobre a conduta](https://opensource.microsoft.com/codeofconduct/faq/)ou entre em contato com a [opencode@microsoft.com](mailto:opencode@microsoft.com) com outras dúvidas ou comentários.
+Este projeto adotou o [Código Aberto de Conduta da Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Para obter mais informações, consulte [o Código de Conduta perguntas frequentes](https://opensource.microsoft.com/codeofconduct/faq/)ou entre em contato [opencode@microsoft.com](mailto:opencode@microsoft.com) com quaisquer perguntas ou comentários adicionais.

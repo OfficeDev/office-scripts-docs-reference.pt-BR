@@ -1,212 +1,205 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItem
-uid: ExcelScript!ExcelScript.NamedItem:interface
+uid: 'ExcelScript!ExcelScript.NamedItem:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (como visto no tipo abaixo), objeto range ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
+summary: 'Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (como visto no tipo abaixo), objeto range ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.NamedItem#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Exclui o nome fornecido.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getArrayValues()
-  uid: ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)
-  package: ExcelScript!
-  fullName: getArrayValues()
-  summary: Retorna um objeto que contém valores e tipos do item nomeado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getArrayValues(): NamedItemArrayValues;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />
-      description: ''
-- name: getComment()
-  uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
-  package: ExcelScript!
-  fullName: getComment()
-  summary: Especifica o comentário associado a esse nome.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getComment(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFormula()
-  uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
-  package: ExcelScript!
-  fullName: getFormula()
-  summary: A fórmula do item nomeado. As fórmulas sempre começam com um sinal de igual ("=").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormula(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.NamedItem#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: O nome do objeto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: Retorna o objeto Range associado ao nome. Se o tipo do item nomeado não for um intervalo, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getScope()
-  uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
-  package: ExcelScript!
-  fullName: getScope()
-  summary: 'Especifica se o nome tem escopo para a pasta de trabalho ou para uma planilha específica. Os valores possíveis são: Planilha, Pasta de Trabalho.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getScope(): NamedItemScope;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: Especifica o tipo do valor retornado pela fórmula do nome. Consulte `ExcelScript.NamedItemType` para obter detalhes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): NamedItemType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.NamedItem#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: Representa o valor calculado pela fórmula do nome. Para um intervalo nomeado, retornará o endereço do intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): string | number;'
-    return:
-      type: string | number
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: Especifica se o objeto está visível.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: Retorna a planilha à qual o item nomeado é escopo. Se o item tiver escopo para a lista de trabalho, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
-      description: ''
-- name: setComment(comment)
-  uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
-  package: ExcelScript!
-  fullName: setComment(comment)
-  summary: Especifica o comentário associado a esse nome.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setComment(comment: string): void;'
-    parameters:
-    - id: comment
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: A fórmula do item nomeado. As fórmulas sempre começam com um sinal de igual ("=").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: Especifica se o objeto está visível.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 66e993a391736f6e86eee57ad703fc334ee36dea
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913586"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Exclui o nome fornecido.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getArrayValues()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
+    package: ExcelScript!
+    fullName: getArrayValues()
+    summary: Retorna um objeto que contém valores e tipos do item nomeado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getArrayValues(): NamedItemArrayValues;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />'
+        description: ''
+  - name: getComment()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
+    package: ExcelScript!
+    fullName: getComment()
+    summary: Especifica o comentário associado a esse nome.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getComment(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFormula()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
+    package: ExcelScript!
+    fullName: getFormula()
+    summary: A fórmula do item nomeado. As fórmulas sempre começam com um sinal de igual ("=").
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: O nome do objeto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 'Retorna o objeto Range associado ao nome. Se o tipo do item nomeado não for um intervalo, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getScope()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
+    package: ExcelScript!
+    fullName: getScope()
+    summary: 'Especifica se o nome tem escopo para a pasta de trabalho ou para uma planilha específica. Os valores possíveis são: Planilha, Pasta de Trabalho.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getScope(): NamedItemScope;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />'
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: Especifica o tipo do valor retornado pela fórmula do nome. Consulte `ExcelScript.NamedItemType` para obter detalhes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): NamedItemType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />'
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: 'Representa o valor calculado pela fórmula do nome. Para um intervalo nomeado, retornará o endereço do intervalo.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): string | number;'
+      return:
+        type: string | number
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: Especifica se o objeto está visível.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: 'Retorna a planilha à qual o item nomeado é escopo. Se o item tiver escopo para a lista de trabalho, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined'
+        description: ''
+  - name: setComment(comment)
+    uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
+    package: ExcelScript!
+    fullName: setComment(comment)
+    summary: Especifica o comentário associado a esse nome.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setComment(comment: string): void;'
+      parameters:
+        - id: comment
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: A fórmula do item nomeado. As fórmulas sempre começam com um sinal de igual ("=").
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: Especifica se o objeto está visível.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

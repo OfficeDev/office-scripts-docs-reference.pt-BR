@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotDateFilter
-uid: ExcelScript!ExcelScript.PivotDateFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotDateFilter
 summary: Modelo configurável para um filtro de data a ser aplicado a um PivotField. O `condition` define quais critérios precisam ser definidos para que o filtro funcione.
@@ -9,82 +9,75 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: comparator
-  uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
-  package: ExcelScript!
-  fullName: comparator
-  summary: O comparador é o valor estático ao qual outros valores são comparados. O tipo de comparação é definido pela condição.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'comparator?: FilterDatetime;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
-- name: condition
-  uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
-  package: ExcelScript!
-  fullName: condition
-  summary: Especifica a condição do filtro, que define os critérios de filtragem necessários.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'condition: DateFilterCondition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DateFilterCondition:enum" />
-- name: exclusive
-  uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
-  package: ExcelScript!
-  fullName: exclusive
-  summary: Se `true`<!-- -->, filter *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendem aos critérios).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'exclusive?: boolean;'
-    return:
-      type: boolean
-- name: lowerBound
-  uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
-  package: ExcelScript!
-  fullName: lowerBound
-  summary: O limite inferior do intervalo para a condição `between` de filtro.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'lowerBound?: FilterDatetime;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
-- name: upperBound
-  uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
-  package: ExcelScript!
-  fullName: upperBound
-  summary: O limite superior do intervalo para a condição `between` de filtro.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'upperBound?: FilterDatetime;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
-- name: wholeDays
-  uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
-  package: ExcelScript!
-  fullName: wholeDays
-  summary: Para `equals`<!-- -->, `before`<!-- -->, `after`<!-- -->, e `between` condições de filtro, indica se as comparações devem ser feitas como dias inteiros.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'wholeDays?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 8e26efffafca1f76a5bc8d80a4c5ad5416423f91
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914318"
+  - name: comparator
+    uid: 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
+    package: ExcelScript!
+    fullName: comparator
+    summary: O comparador é o valor estático ao qual outros valores são comparados. O tipo de comparação é definido pela condição.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comparator?: FilterDatetime;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />'
+  - name: condition
+    uid: 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
+    package: ExcelScript!
+    fullName: condition
+    summary: 'Especifica a condição do filtro, que define os critérios de filtragem necessários.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'condition: DateFilterCondition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DateFilterCondition:enum" />'
+  - name: exclusive
+    uid: 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
+    package: ExcelScript!
+    fullName: exclusive
+    summary: 'Se `true`<!-- -->, filter *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendem aos critérios).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type: boolean
+  - name: lowerBound
+    uid: 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
+    package: ExcelScript!
+    fullName: lowerBound
+    summary: O limite inferior do intervalo para a condição `between` de filtro.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerBound?: FilterDatetime;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />'
+  - name: upperBound
+    uid: 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
+    package: ExcelScript!
+    fullName: upperBound
+    summary: O limite superior do intervalo para a condição `between` de filtro.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upperBound?: FilterDatetime;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />'
+  - name: wholeDays
+    uid: 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
+    package: ExcelScript!
+    fullName: wholeDays
+    summary: 'Para `equals`<!-- -->, `before`<!-- -->, `after`<!-- -->, e `between` condições de filtro, indica se as comparações devem ser feitas como dias inteiros.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'wholeDays?: boolean;'
+      return:
+        type: boolean

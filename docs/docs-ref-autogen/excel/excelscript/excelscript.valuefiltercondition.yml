@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ValueFilterCondition
-uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
+uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
 package: ExcelScript!
 fullName: ExcelScript.ValueFilterCondition
 summary: Enum representando todas as condições aceitas pelas quais um filtro de valor pode ser aplicado. Usado para configurar o tipo de PivotFilter aplicado ao campo. `PivotFilter.exclusive` pode ser definido como `true` para reverter muitas dessas condições.
@@ -8,78 +8,63 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: between
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
-  package: ExcelScript!
-  summary: >-
-    Entre `lowerBound` e `upperBound` critérios.
+  - name: between
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+    package: ExcelScript!
+    summary: |-
+      Entre `lowerBound` e `upperBound` critérios.
 
+      Critérios Necessários: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
+  - name: bottomN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+    package: ExcelScript!
+    summary: |-
+      Na parte inferior N (`threshold`<!-- -->) \[ itens, por cento, soma \] da categoria de valor.
 
-    Critérios Necessários: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-- name: bottomN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
-  package: ExcelScript!
-  summary: >-
-    Na parte inferior N (`threshold`<!-- -->) \[ itens, por cento, soma \] da categoria de valor.
+      Critérios Necessários: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: equals
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+    package: ExcelScript!
+    summary: |-
+      É igual ao critério do comparador.
 
+      Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
+  - name: greaterThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+    package: ExcelScript!
+    summary: |-
+      Critério maior do que o do comparador.
 
-    Critérios Necessários: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: equals
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
-  package: ExcelScript!
-  summary: >-
-    É igual ao critério do comparador.
+      Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: greaterThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Maior ou igual ao critério do comparador.
 
+      Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+    package: ExcelScript!
+    summary: |-
+      Menor que o critério do comparador.
 
-    Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-- name: greaterThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
-  package: ExcelScript!
-  summary: >-
-    Critério maior do que o do comparador.
+      Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Menor ou igual ao critério do comparador.
 
+      Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: topN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+    package: ExcelScript!
+    summary: |-
+      Na parte superior N (`threshold`<!-- -->) \[ itens, por cento, soma \] da categoria de valor.
 
-    Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: greaterThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Maior ou igual ao critério do comparador.
-
-
-    Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
-  package: ExcelScript!
-  summary: >-
-    Menor que o critério do comparador.
-
-
-    Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Menor ou igual ao critério do comparador.
-
-
-    Critérios Necessários: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: topN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
-  package: ExcelScript!
-  summary: >-
-    Na parte superior N (`threshold`<!-- -->) \[ itens, por cento, soma \] da categoria de valor.
-
-
-    Critérios Necessários: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: unknown
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
-  package: ExcelScript!
-  summary: '`ValueFilterCondition` é desconhecido ou sem suporte.'
-metadata:
-  ms.openlocfilehash: 74b546f8625a2e025318666956c019507d604c3e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914611"
+      Critérios Necessários: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+    package: ExcelScript!
+    summary: '`ValueFilterCondition` é desconhecido ou sem suporte.'

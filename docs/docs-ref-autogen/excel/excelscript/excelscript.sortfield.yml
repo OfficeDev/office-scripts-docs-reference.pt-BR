@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SortField
-uid: ExcelScript!ExcelScript.SortField:interface
+uid: 'ExcelScript!ExcelScript.SortField:interface'
 package: ExcelScript!
 fullName: ExcelScript.SortField
 summary: Representa uma condição em uma operação de classificação.
@@ -9,94 +9,87 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: ascending
-  uid: ExcelScript!ExcelScript.SortField#ascending:member
-  package: ExcelScript!
-  fullName: ascending
-  summary: Especifica se a classificação é feita de forma crescente.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'ascending?: boolean;'
-    return:
-      type: boolean
-- name: color
-  uid: ExcelScript!ExcelScript.SortField#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: Especifica a cor que é o destino da condição se a classificação estiver na fonte ou cor da célula.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: dataOption
-  uid: ExcelScript!ExcelScript.SortField#dataOption:member
-  package: ExcelScript!
-  fullName: dataOption
-  summary: Representa as opções de classificação adicionais para esse campo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'dataOption?: SortDataOption;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />
-- name: icon
-  uid: ExcelScript!ExcelScript.SortField#icon:member
-  package: ExcelScript!
-  fullName: icon
-  summary: Especifica o ícone que é o destino da condição, se a classificação estiver no ícone da célula.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'icon?: Icon;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
-- name: key
-  uid: ExcelScript!ExcelScript.SortField#key:member
-  package: ExcelScript!
-  fullName: key
-  summary: Especifica a coluna (ou linha, dependendo da orientação de classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'key: number;'
-    return:
-      type: number
-- name: sortOn
-  uid: ExcelScript!ExcelScript.SortField#sortOn:member
-  package: ExcelScript!
-  fullName: sortOn
-  summary: Especifica o tipo de classificação dessa condição.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'sortOn?: SortOn;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SortOn:enum" />
-- name: subField
-  uid: ExcelScript!ExcelScript.SortField#subField:member
-  package: ExcelScript!
-  fullName: subField
-  summary: Especifica o subcampo que é o nome da propriedade de destino de um valor rico a ser classificação.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'subField?: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: c5db98a57482b252606bcdc7ae88fe5810f26103
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913353"
+  - name: ascending
+    uid: 'ExcelScript!ExcelScript.SortField#ascending:member'
+    package: ExcelScript!
+    fullName: ascending
+    summary: Especifica se a classificação é feita de forma crescente.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ascending?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'ExcelScript!ExcelScript.SortField#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: Especifica a cor que é o destino da condição se a classificação estiver na fonte ou cor da célula.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: dataOption
+    uid: 'ExcelScript!ExcelScript.SortField#dataOption:member'
+    package: ExcelScript!
+    fullName: dataOption
+    summary: Representa as opções de classificação adicionais para esse campo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataOption?: SortDataOption;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />'
+  - name: icon
+    uid: 'ExcelScript!ExcelScript.SortField#icon:member'
+    package: ExcelScript!
+    fullName: icon
+    summary: 'Especifica o ícone que é o destino da condição, se a classificação estiver no ícone da célula.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
+  - name: key
+    uid: 'ExcelScript!ExcelScript.SortField#key:member'
+    package: ExcelScript!
+    fullName: key
+    summary: 'Especifica a coluna (ou linha, dependendo da orientação de classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key: number;'
+      return:
+        type: number
+  - name: sortOn
+    uid: 'ExcelScript!ExcelScript.SortField#sortOn:member'
+    package: ExcelScript!
+    fullName: sortOn
+    summary: Especifica o tipo de classificação dessa condição.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortOn?: SortOn;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SortOn:enum" />'
+  - name: subField
+    uid: 'ExcelScript!ExcelScript.SortField#subField:member'
+    package: ExcelScript!
+    fullName: subField
+    summary: Especifica o subcampo que é o nome da propriedade de destino de um valor rico a ser classificação.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type: string

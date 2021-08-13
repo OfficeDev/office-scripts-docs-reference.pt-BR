@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisCategoryType
-uid: ExcelScript!ExcelScript.ChartAxisCategoryType:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisCategoryType
 summary: Especifica o tipo do eixo de categoria.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member
-  package: ExcelScript!
-  summary: O Excel controla o tipo de eixo.
-- name: dateAxis
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member
-  package: ExcelScript!
-  summary: O eixo agrupa os dados em uma escala de tempo.
-- name: textAxis
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member
-  package: ExcelScript!
-  summary: O eixo agrupa os dados por um conjunto arbitrário de categorias.
-metadata:
-  ms.openlocfilehash: b9018475b15766a4fcf66dad2be5353812923ef5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420101"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+    package: ExcelScript!
+    summary: O Excel controla o tipo de eixo.
+  - name: dateAxis
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+    package: ExcelScript!
+    summary: O eixo agrupa os dados em uma escala de tempo.
+  - name: textAxis
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+    package: ExcelScript!
+    summary: O eixo agrupa os dados por um conjunto arbitrário de categorias.

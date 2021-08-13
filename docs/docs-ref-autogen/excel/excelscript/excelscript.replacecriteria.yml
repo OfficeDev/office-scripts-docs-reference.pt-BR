@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ReplaceCriteria
-uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
 summary: Representa os critérios de substituição a serem usados.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: Especifica se a combinação precisa ser completa ou parcial. Uma combinação completa corresponde ao conteúdo inteiro da célula. Uma combinação parcial corresponde a uma subdstring dentro do conteúdo da célula (por exemplo, corresponde `cat` parcialmente `caterpillar` e `scatter`<!-- -->). O padrão `false` é (parcial).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: Especifica se a combinação é sensível a minúsculas. O padrão `false` é (sem maiúsculas de minúsculas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 68dd8e155cf367ff10b8ce7c2fc33bfa1b162a63
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914220"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 'Especifica se a combinação precisa ser completa ou parcial. Uma combinação completa corresponde ao conteúdo inteiro da célula. Uma combinação parcial corresponde a uma subdstring dentro do conteúdo da célula (por exemplo, corresponde `cat` parcialmente `caterpillar` e `scatter`<!-- -->). O padrão `false` é (parcial).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: Especifica se a combinação é sensível a minúsculas. O padrão `false` é (sem maiúsculas de minúsculas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartTitleFormat
-uid: ExcelScript!ExcelScript.ChartTitleFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartTitleFormat
 summary: Fornece acesso às opções de formatação para um título de gráfico.
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Representa o formato de borda do título do gráfico, que inclui cor, estilo de linha e peso.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartTitleFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartTitleFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Representa os atributos de fonte (como nome da fonte, tamanho da fonte e cor) de um objeto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 2d1b270a0abd25c0433ff436f004681ef76f91de
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914531"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 'Representa o formato de borda do título do gráfico, que inclui cor, estilo de linha e peso.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartTitleFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 'Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartTitleFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Representa os atributos de fonte (como nome da fonte, tamanho da fonte e cor) de um objeto.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

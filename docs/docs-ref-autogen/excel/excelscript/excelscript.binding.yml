@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Binding
-uid: ExcelScript!ExcelScript.Binding:interface
+uid: 'ExcelScript!ExcelScript.Binding:interface'
 package: ExcelScript!
 fullName: ExcelScript.Binding
 summary: Representa uma associação do Office.js definida na pasta de trabalho.
@@ -9,88 +9,81 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.Binding#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Especifica a associação.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Binding#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Representa o identificador de associação.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.Binding#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: Retorna o intervalo representado pela associação. Lançará um erro se a associação não for do tipo correto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getTable()
-  uid: ExcelScript!ExcelScript.Binding#getTable:member(1)
-  package: ExcelScript!
-  fullName: getTable()
-  summary: Retorna a tabela representada pela associação. Lançará um erro se a associação não for do tipo correto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTable(): Table;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.Binding#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Retorna o texto representado pela associação. Lançará um erro se a associação não for do tipo correto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.Binding#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: Retorna o tipo da associação. Consulte `ExcelScript.BindingType` para obter detalhes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): BindingType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 78a858eca5b9ad2e26e3349976abae2cca455e54
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913989"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Binding#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Especifica a associação.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Binding#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Representa o identificador de associação.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.Binding#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: Retorna o intervalo representado pela associação. Lançará um erro se a associação não for do tipo correto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getTable()
+    uid: 'ExcelScript!ExcelScript.Binding#getTable:member(1)'
+    package: ExcelScript!
+    fullName: getTable()
+    summary: Retorna a tabela representada pela associação. Lançará um erro se a associação não for do tipo correto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTable(): Table;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.Binding#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: Retorna o texto representado pela associação. Lançará um erro se a associação não for do tipo correto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: Retorna o tipo da associação. Consulte `ExcelScript.BindingType` para obter detalhes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): BindingType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BindingType:enum" />'
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotLabelFilter
-uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
 summary: Modelo configurável para um filtro de rótulo a ser aplicado a um PivotField. O `condition` define quais critérios precisam ser definidos para que o filtro funcione.
@@ -9,70 +9,63 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: condition
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
-  package: ExcelScript!
-  fullName: condition
-  summary: Especifica a condição do filtro, que define os critérios de filtragem necessários.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'condition: LabelFilterCondition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
-- name: exclusive
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
-  package: ExcelScript!
-  fullName: exclusive
-  summary: Se `true`<!-- -->, filter *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendem aos critérios).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'exclusive?: boolean;'
-    return:
-      type: boolean
-- name: lowerBound
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
-  package: ExcelScript!
-  fullName: lowerBound
-  summary: 'O limite inferior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'lowerBound?: string;'
-    return:
-      type: string
-- name: substring
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
-  package: ExcelScript!
-  fullName: substring
-  summary: A subdistragem usada para `beginsWith`<!-- -->, `endsWith`<!-- -->e condições `contains` de filtro.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'substring?: string;'
-    return:
-      type: string
-- name: upperBound
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
-  package: ExcelScript!
-  fullName: upperBound
-  summary: 'O limite superior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'upperBound?: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: aff1aa4aa7669b1e8608c3eb22a55abc9c0ee320
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913544"
+  - name: condition
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+    package: ExcelScript!
+    fullName: condition
+    summary: 'Especifica a condição do filtro, que define os critérios de filtragem necessários.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'condition: LabelFilterCondition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />'
+  - name: exclusive
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+    package: ExcelScript!
+    fullName: exclusive
+    summary: 'Se `true`<!-- -->, filter *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendem aos critérios).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type: boolean
+  - name: lowerBound
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+    package: ExcelScript!
+    fullName: lowerBound
+    summary: 'O limite inferior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerBound?: string;'
+      return:
+        type: string
+  - name: substring
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+    package: ExcelScript!
+    fullName: substring
+    summary: 'A subdistragem usada para `beginsWith`<!-- -->, `endsWith`<!-- -->e condições `contains` de filtro.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'substring?: string;'
+      return:
+        type: string
+  - name: upperBound
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+    package: ExcelScript!
+    fullName: upperBound
+    summary: 'O limite superior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upperBound?: string;'
+      return:
+        type: string

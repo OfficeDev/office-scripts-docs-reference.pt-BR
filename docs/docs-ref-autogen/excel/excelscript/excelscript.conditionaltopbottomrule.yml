@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalTopBottomRule
-uid: ExcelScript!ExcelScript.ConditionalTopBottomRule:interface
+uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomRule
 summary: Representa a regra do formato condicional superior/inferior.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: rank
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member
-  package: ExcelScript!
-  fullName: rank
-  summary: A classificação entre 1 e 1000 para classificações numéricas ou 1 e 100 para classificações percentuais.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'rank: number;'
-    return:
-      type: number
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: Formatar valores com base na classificação superior ou inferior.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalTopBottomCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: 7ed95d94dcade1c0fe7b898eae45e7c5b058f9a5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913714"
+  - name: rank
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+    package: ExcelScript!
+    fullName: rank
+    summary: A classificação entre 1 e 1000 para classificações numéricas ou 1 e 100 para classificações percentuais.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rank: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: Formatar valores com base na classificação superior ou inferior.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalTopBottomCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />'

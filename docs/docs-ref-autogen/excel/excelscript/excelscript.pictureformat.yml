@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PictureFormat
-uid: ExcelScript!ExcelScript.PictureFormat:enum
+uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
 package: ExcelScript!
 fullName: ExcelScript.PictureFormat
 summary: O formato da imagem.
@@ -8,34 +8,27 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bmp
-  uid: ExcelScript!ExcelScript.PictureFormat.bmp:member
-  package: ExcelScript!
-  summary: Imagem de bitmap.
-- name: gif
-  uid: ExcelScript!ExcelScript.PictureFormat.gif:member
-  package: ExcelScript!
-  summary: Formato GIF.
-- name: jpeg
-  uid: ExcelScript!ExcelScript.PictureFormat.jpeg:member
-  package: ExcelScript!
-  summary: Grupo de especialistas geográficos conjuntos.
-- name: png
-  uid: ExcelScript!ExcelScript.PictureFormat.png:member
-  package: ExcelScript!
-  summary: Portable Network Graphics.
-- name: svg
-  uid: ExcelScript!ExcelScript.PictureFormat.svg:member
-  package: ExcelScript!
-  summary: Gráfico vetorial escalonável.
-- name: unknown
-  uid: ExcelScript!ExcelScript.PictureFormat.unknown:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 17f4104923cd1c1d008f67c9e2b2b4190ea26dcf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415264"
+  - name: bmp
+    uid: 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
+    package: ExcelScript!
+    summary: Imagem bitmap.
+  - name: gif
+    uid: 'ExcelScript!ExcelScript.PictureFormat.gif:member'
+    package: ExcelScript!
+    summary: Formato de intercâmbio de gráficos.
+  - name: jpeg
+    uid: 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
+    package: ExcelScript!
+    summary: Grupo de Especialistas Em Conjunto de Especialistas Em Fotografia.
+  - name: png
+    uid: 'ExcelScript!ExcelScript.PictureFormat.png:member'
+    package: ExcelScript!
+    summary: Elementos gráficos de rede portáteis.
+  - name: svg
+    uid: 'ExcelScript!ExcelScript.PictureFormat.svg:member'
+    package: ExcelScript!
+    summary: Gráfico vetorial escalonável.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
+    package: ExcelScript!
+    summary: ''

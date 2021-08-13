@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ReadingOrder
-uid: ExcelScript!ExcelScript.ReadingOrder:enum
+uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.ReadingOrder
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: context
-  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
-  package: ExcelScript!
-  summary: O sentido de leitura é determinado pelo idioma do primeiro caractere inserido. Se o caractere de um idioma da direita para a esquerda for inserido primeiro, o sentido de leitura será da direita para a esquerda. Se o caractere de um idioma da esquerda para a direita for inserido primeiro, o sentido de leitura será da esquerda para a direita.
-- name: leftToRight
-  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
-  package: ExcelScript!
-  summary: Ordem de leitura da esquerda para a direita
-- name: rightToLeft
-  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
-  package: ExcelScript!
-  summary: Ordem de leitura da direita para a esquerda
-metadata:
-  ms.openlocfilehash: 364d838721992c4fb52488de1652cc03750a8eaa
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914227"
+  - name: context
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
+    package: ExcelScript!
+    summary: 'O sentido de leitura é determinado pelo idioma do primeiro caractere inserido. Se o caractere de um idioma da direita para a esquerda for inserido primeiro, o sentido de leitura será da direita para a esquerda. Se o caractere de um idioma da esquerda para a direita for inserido primeiro, o sentido de leitura será da esquerda para a direita.'
+  - name: leftToRight
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
+    package: ExcelScript!
+    summary: Ordem de leitura da esquerda para a direita
+  - name: rightToLeft
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
+    package: ExcelScript!
+    summary: Ordem de leitura da direita para a esquerda

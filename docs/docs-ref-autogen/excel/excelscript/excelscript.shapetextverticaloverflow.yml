@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextVerticalOverflow
-uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
 summary: Especifica o estouro vertical do quadro de texto em uma forma.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: clip
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
-  package: ExcelScript!
-  summary: Oculte texto que não se ajusta verticalmente no quadro de texto.
-- name: ellipsis
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
-  package: ExcelScript!
-  summary: Oculte texto que não se ajusta verticalmente no quadro de texto e adicione reticências (...) ao final do texto visível.
-- name: overflow
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
-  package: ExcelScript!
-  summary: Permita que o texto exceda o quadro de texto verticalmente (pode ser partindo da parte superior, inferior ou ambas, dependendo do alinhamento do texto).
-metadata:
-  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913381"
+  - name: clip
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    package: ExcelScript!
+    summary: Oculte texto que não se ajusta verticalmente no quadro de texto.
+  - name: ellipsis
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    package: ExcelScript!
+    summary: Oculte texto que não se ajusta verticalmente no quadro de texto e adicione reticências (...) ao final do texto visível.
+  - name: overflow
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    package: ExcelScript!
+    summary: 'Permita que o texto exceda o quadro de texto verticalmente (pode ser partindo da parte superior, inferior ou ambas, dependendo do alinhamento do texto).'

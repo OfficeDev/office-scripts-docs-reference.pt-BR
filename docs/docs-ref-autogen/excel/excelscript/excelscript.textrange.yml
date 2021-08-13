@@ -1,81 +1,74 @@
 ### YamlMime:TSType
 name: ExcelScript.TextRange
-uid: ExcelScript!ExcelScript.TextRange:interface
+uid: 'ExcelScript!ExcelScript.TextRange:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextRange
-summary: Contém o texto que é anexado a uma forma, bem como propriedades e métodos para manipular o texto.
+summary: 'Contém o texto que é anexado a uma forma, bem como propriedades e métodos para manipular o texto.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Retorna um `ShapeFont` objeto que representa os atributos de fonte para o intervalo de texto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ShapeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />
-      description: ''
-- name: getSubstring(start, length)
-  uid: ExcelScript!ExcelScript.TextRange#getSubstring:member(1)
-  package: ExcelScript!
-  fullName: getSubstring(start, length)
-  summary: Retorna um objeto TextRange para a subcadeia de caracteres no intervalo especificado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubstring(start: number, length?: number): TextRange;'
-    parameters:
-    - id: start
-      description: O índice baseado em zero do primeiro caractere a obter do intervalo de texto.
-      type: number
-    - id: length
-      description: Opcional. O número de caracteres a serem retornados no novo intervalo de texto. Se o comprimento for omitido, todos os caracteres do início ao final do último parágrafo do intervalo de texto serão retornados.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.TextRange#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Representa o conteúdo de texto sem formatação do intervalo de texto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.TextRange#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: Representa o conteúdo de texto sem formatação do intervalo de texto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 330faf3cabf13b2c07016407ca922173c1e66519
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913315"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: Retorna um `ShapeFont` objeto que representa os atributos de fonte para o intervalo de texto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ShapeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />'
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+    package: ExcelScript!
+    fullName: 'getSubstring(start, length)'
+    summary: Retorna um objeto TextRange para a subcadeia de caracteres no intervalo especificado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      parameters:
+        - id: start
+          description: O índice baseado em zero do primeiro caractere a obter do intervalo de texto.
+          type: number
+        - id: length
+          description: 'Opcional. O número de caracteres a serem retornados no novo intervalo de texto. Se o comprimento for omitido, todos os caracteres do início ao final do último parágrafo do intervalo de texto serão retornados.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextRange:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: Representa o conteúdo de texto sem formatação do intervalo de texto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: Representa o conteúdo de texto sem formatação do intervalo de texto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

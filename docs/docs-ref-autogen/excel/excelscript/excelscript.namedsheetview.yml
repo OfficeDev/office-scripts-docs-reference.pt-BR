@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedSheetView
-uid: ExcelScript!ExcelScript.NamedSheetView:interface
+uid: 'ExcelScript!ExcelScript.NamedSheetView:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedSheetView
 summary: Representa uma exibição de planilha nomeada de uma planilha. Um exibição de planilha armazena as regras de classificação e filtro para uma planilha específica. Cada exibição de planilha (até mesmo um exibição de planilha temporária) tem um nome exclusivo com escopo de planilha que é usado para acessar o exibição.
@@ -9,83 +9,76 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: activate()
-  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
-  package: ExcelScript!
-  fullName: activate()
-  summary: Ativa esse modo de exibição de planilha. Isso equivale a usar "Alternar para" na interface do usuário do Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'activate(): void;'
-    return:
-      type: void
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Remove o exibição de planilha da planilha.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate(name)
-  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate(name)
-  summary: Cria uma cópia desse exibição de planilha.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(name?: string): NamedSheetView;'
-    parameters:
-    - id: name
-      description: O nome do exibição de planilha duplicada. Se nenhum nome for fornecido, um será gerado.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Obtém ou define o nome do exibição de planilha. O nome de exibição de planilha temporária é a cadeia de caracteres vazia (""). Nomear o exibição usando a propriedade name faz com que o exibição de planilha seja salvo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Obtém ou define o nome do exibição de planilha. O nome de exibição de planilha temporária é a cadeia de caracteres vazia (""). Nomear o exibição usando a propriedade name faz com que o exibição de planilha seja salvo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913678"
+  - name: activate()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#activate:member(1)'
+    package: ExcelScript!
+    fullName: activate()
+    summary: Ativa esse modo de exibição de planilha. Isso equivale a usar "Switch To" na interface Excel interface do usuário.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Remove o exibição de planilha da planilha.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate(name)
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate(name)
+    summary: Cria uma cópia desse exibição de planilha.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(name?: string): NamedSheetView;'
+      parameters:
+        - id: name
+          description: 'O nome do exibição de planilha duplicada. Se nenhum nome for fornecido, um será gerado.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Obtém ou define o nome do exibição de planilha. O nome de exibição de planilha temporária é a cadeia de caracteres vazia (""). Nomear o exibição usando a propriedade name faz com que o exibição de planilha seja salvo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Obtém ou define o nome do exibição de planilha. O nome de exibição de planilha temporária é a cadeia de caracteres vazia (""). Nomear o exibição usando a propriedade name faz com que o exibição de planilha seja salvo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

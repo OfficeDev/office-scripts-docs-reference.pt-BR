@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DatetimeFormatInfo
-uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
+uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
 summary: Define o formato culturalmente apropriado de exibição de números. Isso se baseia nas configurações atuais de cultura do sistema.
@@ -9,75 +9,68 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDateSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
-  package: ExcelScript!
-  fullName: getDateSeparator()
-  summary: Obtém a cadeia de caracteres usada como separador de data. Isso se baseia nas configurações atuais do sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDateSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongDatePattern()
-  summary: Obtém a cadeia de caracteres de formato para um valor de data longa. Isso se baseia nas configurações atuais do sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongTimePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongTimePattern()
-  summary: Obtém a cadeia de caracteres de formato por um valor de longo tempo. Isso se baseia nas configurações atuais do sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongTimePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShortDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getShortDatePattern()
-  summary: Obtém a cadeia de caracteres de formato para um valor de data curta. Isso se baseia nas configurações atuais do sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShortDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTimeSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
-  package: ExcelScript!
-  fullName: getTimeSeparator()
-  summary: Obtém a cadeia de caracteres usada como separador de tempo. Isso se baseia nas configurações atuais do sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTimeSeparator(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914468"
+  - name: getDateSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getDateSeparator()
+    summary: Obtém a cadeia de caracteres usada como separador de data. Isso se baseia nas configurações atuais do sistema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDateSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongDatePattern()
+    summary: Obtém a cadeia de caracteres de formato para um valor de data longa. Isso se baseia nas configurações atuais do sistema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongTimePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongTimePattern()
+    summary: Obtém a cadeia de caracteres de formato por um valor de longo tempo. Isso se baseia nas configurações atuais do sistema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongTimePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShortDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getShortDatePattern()
+    summary: Obtém a cadeia de caracteres de formato para um valor de data curta. Isso se baseia nas configurações atuais do sistema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShortDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTimeSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getTimeSeparator()
+    summary: Obtém a cadeia de caracteres usada como separador de tempo. Isso se baseia nas configurações atuais do sistema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTimeSeparator(): string;'
+      return:
+        type: string
+        description: ''

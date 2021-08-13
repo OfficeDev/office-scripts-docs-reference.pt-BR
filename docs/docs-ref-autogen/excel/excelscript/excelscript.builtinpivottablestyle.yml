@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BuiltInPivotTableStyle
-uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum
+uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.BuiltInPivotTableStyle
 summary: Representa um estilo de tabela dinâmica integrado
@@ -8,350 +8,343 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: dark1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: dark11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: dark12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: dark13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: dark14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: dark15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e linhas listradas."
-- name: dark22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com corpo sombreado e bordas brancas."
-- name: dark3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido, linhas listradas e corpo sombreado."
-- name: dark8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: dark9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda externa."
-- name: light1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member
-  package: ExcelScript!
-  summary: "\"Destaque 2\" (laranja no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: light11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: light12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member
-  package: ExcelScript!
-  summary: "\"Destaque 4\" (amarelo no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: light13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member
-  package: ExcelScript!
-  summary: "\"Destaque 5\" (azul claro no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: light14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member
-  package: ExcelScript!
-  summary: "\"Destaque 6\" (verde no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: light15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido e linhas com borda listada."
-- name: light22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member
-  package: ExcelScript!
-  summary: "\"Destaque 2\" (laranja no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member
-  package: ExcelScript!
-  summary: "\"Destaque 4\" (amarelo no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member
-  package: ExcelScript!
-  summary: "\"Destaque 5\" (azul claro no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com bordas de header, bordas de rodapé e colunas bordadas."
-- name: light3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com bordas de header e bordas de rodapé."
-- name: light8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: light9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member
-  package: ExcelScript!
-  summary: "\"Destaque 1\" (azul no tema \"Office\" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas."
-- name: medium1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: medium11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: medium12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: medium13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member
-  package: ExcelScript!
-  summary: "\"Destaque 5\" (azul claro no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: medium14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: medium15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado."
-- name: medium16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado."
-- name: medium17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado."
-- name: medium18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido, rodapé preenchido e corpo sombreado."
-- name: medium19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado."
-- name: medium2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado."
-- name: medium21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado."
-- name: medium22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com a primeira coluna preenchida e o corpo sombreado."
-- name: medium23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema padrão \"Office\" com a primeira coluna preenchida e corpo sombreado."
-- name: medium24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema padrão \"Office\" com a primeira coluna preenchida e corpo sombreado."
-- name: medium25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com a primeira coluna preenchida e corpo sombreado."
-- name: medium26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com a primeira coluna preenchida e corpo sombreado."
-- name: medium27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com a primeira coluna preenchida e corpo sombreado."
-- name: medium28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema padrão \"Office\" com a primeira coluna preenchida e corpo sombreado."
-- name: medium3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member
-  package: ExcelScript!
-  summary: "\"Ênfase 2\" (laranja no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member
-  package: ExcelScript!
-  summary: "\"Ênfase 3\" (cinza no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member
-  package: ExcelScript!
-  summary: "\"Ênfase 4\" (amarelo no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member
-  package: ExcelScript!
-  summary: "\"Ênfase 5\" (azul claro no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member
-  package: ExcelScript!
-  summary: "\"Ênfase 6\" (verde no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda do rodapé."
-- name: medium8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member
-  package: ExcelScript!
-  summary: "\"Escuro 1\" (preto no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: medium9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member
-  package: ExcelScript!
-  summary: "\"Ênfase 1\" (azul no tema \"Office\" padrão) com o header preenchido, linhas listradas e borda total da linha."
-- name: none
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member
-  package: ExcelScript!
-  summary: Nenhum
-metadata:
-  ms.openlocfilehash: 3d3c366ae0a5114c1cf82f16bf4dd37bc476d202
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068300"
+  - name: dark1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: dark11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: dark12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: dark13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: dark14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: dark15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido, rodapé preenchido e linhas listradas.'
+  - name: dark22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com corpo sombreado e bordas brancas.'
+  - name: dark3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido, linhas listradas e corpo sombreado.'
+  - name: dark8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: dark9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido, linhas listradas e borda externa.'
+  - name: light1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member'
+    package: ExcelScript!
+    summary: '"Destaque 2" (laranja no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: light11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: light12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member'
+    package: ExcelScript!
+    summary: '"Destaque 4" (amarelo no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: light13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member'
+    package: ExcelScript!
+    summary: '"Destaque 5" (azul claro no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: light14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member'
+    package: ExcelScript!
+    summary: '"Destaque 6" (verde no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: light15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido e linhas com borda listada.'
+  - name: light22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member'
+    package: ExcelScript!
+    summary: '"Destaque 2" (laranja no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member'
+    package: ExcelScript!
+    summary: '"Destaque 4" (amarelo no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member'
+    package: ExcelScript!
+    summary: '"Destaque 5" (azul claro no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com bordas de header, bordas de rodapé e colunas bordadas.'
+  - name: light3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com bordas de header e bordas de rodapé.'
+  - name: light8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: light9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member'
+    package: ExcelScript!
+    summary: '"Destaque 1" (azul no tema "Office" padrão) com bordas de header, bordas de rodapé, borda da primeira coluna e linhas listradas.'
+  - name: medium1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: medium11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: medium12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: medium13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member'
+    package: ExcelScript!
+    summary: '"Destaque 5" (azul claro no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: medium14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: medium15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado.'
+  - name: medium16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado.'
+  - name: medium17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado.'
+  - name: medium18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido, rodapé preenchido e corpo sombreado.'
+  - name: medium19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado.'
+  - name: medium2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado.'
+  - name: medium21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido, o rodapé preenchido e o corpo sombreado.'
+  - name: medium22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com a primeira coluna preenchida e o corpo sombreado.'
+  - name: medium23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema padrão "Office" com a primeira coluna preenchida e corpo sombreado.'
+  - name: medium24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema padrão "Office" com a primeira coluna preenchida e corpo sombreado.'
+  - name: medium25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com a primeira coluna preenchida e corpo sombreado.'
+  - name: medium26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com a primeira coluna preenchida e corpo sombreado.'
+  - name: medium27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com a primeira coluna preenchida e corpo sombreado.'
+  - name: medium28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema padrão "Office" com a primeira coluna preenchida e corpo sombreado.'
+  - name: medium3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member'
+    package: ExcelScript!
+    summary: '"Ênfase 2" (laranja no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member'
+    package: ExcelScript!
+    summary: '"Ênfase 3" (cinza no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member'
+    package: ExcelScript!
+    summary: '"Ênfase 4" (amarelo no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member'
+    package: ExcelScript!
+    summary: '"Ênfase 5" (azul claro no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member'
+    package: ExcelScript!
+    summary: '"Ênfase 6" (verde no tema "Office" padrão) com o header preenchido, linhas listradas e borda do rodapé.'
+  - name: medium8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member'
+    package: ExcelScript!
+    summary: '"Escuro 1" (preto no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: medium9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member'
+    package: ExcelScript!
+    summary: '"Ênfase 1" (azul no tema "Office" padrão) com o header preenchido, linhas listradas e borda total da linha.'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member'
+    package: ExcelScript!
+    summary: Nenhum
