@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Icon
-uid: ExcelScript!ExcelScript.Icon:interface
+uid: 'ExcelScript!ExcelScript.Icon:interface'
 package: ExcelScript!
 fullName: ExcelScript.Icon
 summary: Representa um ícone de célula.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: index
-  uid: ExcelScript!ExcelScript.Icon#index:member
-  package: ExcelScript!
-  fullName: index
-  summary: Especifica o índice do ícone em determinado conjunto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'index: number;'
-    return:
-      type: number
-- name: set
-  uid: ExcelScript!ExcelScript.Icon#set:member
-  package: ExcelScript!
-  fullName: set
-  summary: Especifica o conjunto do qual o ícone faz parte.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'set: IconSet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IconSet:enum" />
-metadata:
-  ms.openlocfilehash: ab334757411d73be50d01dd2aa6623cc85f7edbb
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412341"
+  - name: index
+    uid: 'ExcelScript!ExcelScript.Icon#index:member'
+    package: ExcelScript!
+    fullName: index
+    summary: Especifica o índice do ícone no conjunto determinado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index: number;'
+      return:
+        type: number
+  - name: set
+    uid: 'ExcelScript!ExcelScript.Icon#set:member'
+    package: ExcelScript!
+    fullName: set
+    summary: Especifica o conjunto do que o ícone faz parte.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set: IconSet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IconSet:enum" />'

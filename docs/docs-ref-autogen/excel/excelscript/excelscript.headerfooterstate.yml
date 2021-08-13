@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.HeaderFooterState
-uid: ExcelScript!ExcelScript.HeaderFooterState:enum
+uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
 package: ExcelScript!
 fullName: ExcelScript.HeaderFooterState
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: default
-  uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
-  package: ExcelScript!
-  summary: Somente um header/rodapé geral é usado para todas as páginas impressas.
-- name: firstAndDefault
-  uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
-  package: ExcelScript!
-  summary: Há um header/rodapé de primeira página separado e um header/rodapé geral usado para todas as outras páginas.
-- name: firstOddAndEven
-  uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
-  package: ExcelScript!
-  summary: Há um header/rodapé de primeira página separado, em seguida, há um header/rodapé separado para páginas ímpares e mesmo.
-- name: oddAndEven
-  uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
-  package: ExcelScript!
-  summary: Há um header/rodapé diferente para páginas ímpares e mesmo.
-metadata:
-  ms.openlocfilehash: 56adb02d9f1d03352bfb5382c00767ba553f376f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913615"
+  - name: default
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+    package: ExcelScript!
+    summary: Somente um header/rodapé geral é usado para todas as páginas impressas.
+  - name: firstAndDefault
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+    package: ExcelScript!
+    summary: Há um header/rodapé de primeira página separado e um header/rodapé geral usado para todas as outras páginas.
+  - name: firstOddAndEven
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+    package: ExcelScript!
+    summary: 'Há um header/rodapé de primeira página separado, em seguida, há um header/rodapé separado para páginas ímpares e mesmo.'
+  - name: oddAndEven
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+    package: ExcelScript!
+    summary: Há um header/rodapé diferente para páginas ímpares e mesmo.

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartPivotOptions
-uid: ExcelScript!ExcelScript.ChartPivotOptions:interface
+uid: 'ExcelScript!ExcelScript.ChartPivotOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartPivotOptions
 summary: Encapsula as opções de gráfico dinâmico.
@@ -9,133 +9,126 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getShowAxisFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowAxisFieldButtons()
-  summary: Especifica se os botões do campo de eixo serão exibidos em um Gráfico Gráfico Dinâmica. A propriedade corresponde ao comando "Mostrar Botões de Campo do Eixo" na lista baixa "Botões de Campo" da guia "Analisar", que está disponível quando um Gráfico Dinâmica é `showAxisFieldButtons` selecionado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowAxisFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowLegendFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowLegendFieldButtons()
-  summary: Especifica se os botões do campo de legenda serão exibidos em um Gráfico Dinâmica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowLegendFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowReportFilterFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowReportFilterFieldButtons()
-  summary: Especifica se os botões do campo de filtro de relatório serão exibidos em um Gráfico Dinâmica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowReportFilterFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowValueFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowValueFieldButtons()
-  summary: Especifica se os botões do campo mostrar valor serão exibidos em um Gráfico Dinâmica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowValueFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setShowAxisFieldButtons(showAxisFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowAxisFieldButtons(showAxisFieldButtons)
-  summary: Especifica se os botões do campo de eixo serão exibidos em um Gráfico Gráfico Dinâmica. A propriedade corresponde ao comando "Mostrar Botões de Campo do Eixo" na lista baixa "Botões de Campo" da guia "Analisar", que está disponível quando um Gráfico Dinâmica é `showAxisFieldButtons` selecionado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
-    parameters:
-    - id: showAxisFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowLegendFieldButtons(showLegendFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowLegendFieldButtons(showLegendFieldButtons)
-  summary: Especifica se os botões do campo de legenda serão exibidos em um Gráfico Dinâmica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
-    parameters:
-    - id: showLegendFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  summary: Especifica se os botões do campo de filtro de relatório serão exibidos em um Gráfico Dinâmica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setShowReportFilterFieldButtons(
-                  showReportFilterFieldButtons: boolean
-              ): void;
-    parameters:
-    - id: showReportFilterFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowValueFieldButtons(showValueFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowValueFieldButtons(showValueFieldButtons)
-  summary: Especifica se os botões do campo mostrar valor serão exibidos em um Gráfico Dinâmica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
-    parameters:
-    - id: showValueFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2b62f48341a400860e419e75d062157439d8429f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912043"
+  - name: getShowAxisFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowAxisFieldButtons()
+    summary: 'Especifica se os botões do campo de eixo serão exibidos em um Gráfico Dinâmico. A propriedade corresponde ao comando "Mostrar Botões de Campo do Eixo" na lista baixa "Botões de Campo" da guia "Analisar", que está disponível quando um Gráfico Dinâmico `showAxisFieldButtons` está selecionado.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowAxisFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowLegendFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowLegendFieldButtons()
+    summary: Especifica se os botões do campo de legenda serão exibidos em um Gráfico Dinâmico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowLegendFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowReportFilterFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowReportFilterFieldButtons()
+    summary: Especifica se os botões do campo de filtro de relatório serão exibidos em um Gráfico Dinâmico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowReportFilterFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowValueFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowValueFieldButtons()
+    summary: Especifica se os botões do campo mostrar valor serão exibidos em um Gráfico Dinâmico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowValueFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setShowAxisFieldButtons(showAxisFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowAxisFieldButtons(showAxisFieldButtons)
+    summary: 'Especifica se os botões do campo de eixo serão exibidos em um Gráfico Dinâmico. A propriedade corresponde ao comando "Mostrar Botões de Campo do Eixo" na lista baixa "Botões de Campo" da guia "Analisar", que está disponível quando um Gráfico Dinâmico `showAxisFieldButtons` está selecionado.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
+      parameters:
+        - id: showAxisFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowLegendFieldButtons(showLegendFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowLegendFieldButtons(showLegendFieldButtons)
+    summary: Especifica se os botões do campo de legenda serão exibidos em um Gráfico Dinâmico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
+      parameters:
+        - id: showLegendFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    summary: Especifica se os botões do campo de filtro de relatório serão exibidos em um Gráfico Dinâmico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setShowReportFilterFieldButtons(
+                    showReportFilterFieldButtons: boolean
+                ): void;
+      parameters:
+        - id: showReportFilterFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowValueFieldButtons(showValueFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowValueFieldButtons(showValueFieldButtons)
+    summary: Especifica se os botões do campo mostrar valor serão exibidos em um Gráfico Dinâmico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
+      parameters:
+        - id: showValueFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
