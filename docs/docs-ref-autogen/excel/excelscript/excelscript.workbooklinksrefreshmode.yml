@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: ExcelScript.WorkbookLinksRefreshMode
+uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum
+package: ExcelScript!
+fullName: ExcelScript.WorkbookLinksRefreshMode
+summary: Representa o modo de atualização dos links da agenda de trabalho.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.automatic:member
+  package: ExcelScript!
+  summary: Os links da workbook são atualizados em um intervalo definido determinado pelo Excel aplicativo.
+- name: manual
+  uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.manual:member
+  package: ExcelScript!
+  summary: Os links da lista de trabalho são atualizados manualmente.
+metadata:
+  ms.openlocfilehash: b10e670da4146f94e49053a67d15c391909009de
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793419"

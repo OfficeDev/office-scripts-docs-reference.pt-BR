@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: ExcelScript.LinkedWorkbook
+uid: ExcelScript!ExcelScript.LinkedWorkbook:interface
+package: ExcelScript!
+fullName: ExcelScript.LinkedWorkbook
+summary: Contém informações sobre uma lista de trabalho vinculada. Se uma workbook tiver links apontando para dados em outra workbook, a segunda lista de trabalho será vinculada à primeira. Nesse cenário, a segunda workbook é chamada de "workbook vinculada".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: breakLinks()
+  uid: ExcelScript!ExcelScript.LinkedWorkbook#breakLinks:member(1)
+  package: ExcelScript!
+  fullName: breakLinks()
+  summary: Faz uma solicitação para quebrar os links apontando para a lista de trabalho vinculada. Os links em fórmulas são substituídos por dados buscados mais recentes. O objeto `LinkedWorkbook` atual é invalidado e removido de `LinkedWorkbookCollection`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakLinks(): void;'
+    return:
+      type: void
+      description: ''
+- name: refreshLinks()
+  uid: ExcelScript!ExcelScript.LinkedWorkbook#refreshLinks:member(1)
+  package: ExcelScript!
+  fullName: refreshLinks()
+  summary: Faz uma solicitação para atualizar os dados recuperados da lista de trabalho vinculada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshLinks(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 62aaa5917dd461c5b2e2b9b12281f41897ecfc57
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793420"

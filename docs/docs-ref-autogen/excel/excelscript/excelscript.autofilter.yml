@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.AutoFilter
-uid: 'ExcelScript!ExcelScript.AutoFilter:interface'
+uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
 summary: Representa o `AutoFilter` objeto. O AutoFilter transforma os valores na Excel em filtros específicos com base no conteúdo da célula.
@@ -9,122 +9,129 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'apply(range, columnIndex, criteria)'
-    uid: 'ExcelScript!ExcelScript.AutoFilter#apply:member(1)'
-    package: ExcelScript!
-    fullName: 'apply(range, columnIndex, criteria)'
-    summary: Aplica o AutoFiltro a um intervalo. Isso filtra a coluna se o índice de coluna e os critérios de filtro forem especificados.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        apply(
-                    range: Range | string,
-                    columnIndex?: number,
-                    criteria?: FilterCriteria
-                ): void;
-      parameters:
-        - id: range
-          description: O intervalo no qual o AutoFilter será aplicado.
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-        - id: columnIndex
-          description: O índice de coluna baseado em zero ao qual o AutoFilter é aplicado.
-          type: number
-        - id: criteria
-          description: Os critérios de filtro.
-          type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: clearCriteria()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)'
-    package: ExcelScript!
-    fullName: clearCriteria()
-    summary: Limpa os critérios de filtro do AutoFiltro.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clearCriteria(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getCriteria()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)'
-    package: ExcelScript!
-    fullName: getCriteria()
-    summary: Uma matriz que contém todos os critérios de filtro no intervalo de autofiltro.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCriteria(): FilterCriteria[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />[]'
-        description: ''
-  - name: getEnabled()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)'
-    package: ExcelScript!
-    fullName: getEnabled()
-    summary: Especifica se o AutoFilter está habilitado.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getEnabled(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getIsDataFiltered()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)'
-    package: ExcelScript!
-    fullName: getIsDataFiltered()
-    summary: Especifica se o Filtro Automático tem critérios de filtro.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIsDataFiltered(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: 'Retorna o `Range` objeto que representa o intervalo ao qual o AutoFilter se aplica. Se não houver nenhum `Range` objeto associado ao AutoFilter, este método retornará um objeto com sua propriedade definida `isNullObject` como `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: reapply()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#reapply:member(1)'
-    package: ExcelScript!
-    fullName: reapply()
-    summary: Aplica o objeto Autofilter especificado que está atualmente no intervalo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'reapply(): void;'
-      return:
-        type: void
-        description: ''
-  - name: remove()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#remove:member(1)'
-    package: ExcelScript!
-    fullName: remove()
-    summary: Remove o Filtro automático do intervalo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'remove(): void;'
-      return:
-        type: void
-        description: ''
+- name: apply(range, columnIndex, criteria)
+  uid: ExcelScript!ExcelScript.AutoFilter#apply:member(1)
+  package: ExcelScript!
+  fullName: apply(range, columnIndex, criteria)
+  summary: Aplica o AutoFiltro a um intervalo. Isso filtra a coluna se o índice de coluna e os critérios de filtro forem especificados.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      apply(
+                  range: Range | string,
+                  columnIndex?: number,
+                  criteria?: FilterCriteria
+              ): void;
+    parameters:
+    - id: range
+      description: O intervalo no qual o AutoFilter será aplicado.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: columnIndex
+      description: O índice de coluna baseado em zero ao qual o AutoFilter é aplicado.
+      type: number
+    - id: criteria
+      description: Os critérios de filtro.
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+    return:
+      type: void
+      description: ''
+- name: clearCriteria()
+  uid: ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)
+  package: ExcelScript!
+  fullName: clearCriteria()
+  summary: Limpa os critérios de filtro e o estado de classificação do AutoFilter.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearCriteria(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCriteria()
+  uid: ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)
+  package: ExcelScript!
+  fullName: getCriteria()
+  summary: Uma matriz que contém todos os critérios de filtro no intervalo de autofiltro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCriteria(): FilterCriteria[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />[]
+      description: ''
+- name: getEnabled()
+  uid: ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)
+  package: ExcelScript!
+  fullName: getEnabled()
+  summary: Especifica se o AutoFilter está habilitado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnabled(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsDataFiltered()
+  uid: ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)
+  package: ExcelScript!
+  fullName: getIsDataFiltered()
+  summary: Especifica se o Filtro Automático tem critérios de filtro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsDataFiltered(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Retorna o `Range` objeto que representa o intervalo ao qual o AutoFilter se aplica. Se não houver nenhum `Range` objeto associado ao AutoFilter, este método retornará um objeto com sua propriedade definida `isNullObject` como `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: reapply()
+  uid: ExcelScript!ExcelScript.AutoFilter#reapply:member(1)
+  package: ExcelScript!
+  fullName: reapply()
+  summary: Aplica o objeto Autofilter especificado que está atualmente no intervalo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapply(): void;'
+    return:
+      type: void
+      description: ''
+- name: remove()
+  uid: ExcelScript!ExcelScript.AutoFilter#remove:member(1)
+  package: ExcelScript!
+  fullName: remove()
+  summary: Remove o Filtro automático do intervalo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'remove(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e798066ad83627541c710f23dd17468bc22e9c66
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793349"
