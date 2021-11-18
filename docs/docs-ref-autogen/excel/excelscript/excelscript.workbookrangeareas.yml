@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorkbookRangeAreas
-uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
 summary: Representa uma coleção de um ou mais intervalos retangulares em várias planilhas.
@@ -9,59 +9,66 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getAddresses()
-    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
-    package: ExcelScript!
-    fullName: getAddresses()
-    summary: 'Retorna uma matriz de endereços no estilo A1. Os valores de endereço contêm o nome da planilha para cada bloco retangular de células (por exemplo, "Sheet1! A1:B4, Sheet1! D1:D4"). Somente leitura.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAddresses(): string[];'
-      return:
-        type: 'string[]'
-        description: ''
-  - name: getAreas()
-    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
-    package: ExcelScript!
-    fullName: getAreas()
-    summary: Retorna o `RangeAreasCollection` objeto. Cada `RangeAreas` um na coleção representa um ou mais intervalos de retângulos em uma planilha.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAreas(): RangeAreas[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />[]'
-        description: ''
-  - name: getRangeAreasBySheet(key)
-    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
-    package: ExcelScript!
-    fullName: getRangeAreasBySheet(key)
-    summary: 'Retorna o objeto com base no nome `RangeAreas` da planilha ou na ID da coleção. Se a planilha não existir, essa função retornará um objeto com sua `isNullObject` propriedade definida como `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeAreasBySheet(key: string): RangeAreas;'
-      parameters:
-        - id: key
-          description: O nome ou a ID da planilha.
-          type: string
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getRanges()
-    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
-    package: ExcelScript!
-    fullName: getRanges()
-    summary: Retorna intervalos que compõem esse objeto em um `RangeCollection` objeto.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRanges(): Range[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />[]'
-        description: ''
+- name: getAddresses()
+  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
+  package: ExcelScript!
+  fullName: getAddresses()
+  summary: Retorna uma matriz de endereços no estilo A1. Os valores de endereço contêm o nome da planilha para cada bloco retangular de células (por exemplo, "Sheet1! A1:B4, Sheet1! D1:D4"). Somente leitura.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddresses(): string[];'
+    return:
+      type: string[]
+      description: ''
+- name: getAreas()
+  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
+  package: ExcelScript!
+  fullName: getAreas()
+  summary: Retorna o `RangeAreasCollection` objeto. Cada `RangeAreas` um na coleção representa um ou mais intervalos de retângulos em uma planilha.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAreas(): RangeAreas[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />[]
+      description: ''
+- name: getRangeAreasBySheet(key)
+  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
+  package: ExcelScript!
+  fullName: getRangeAreasBySheet(key)
+  summary: Retorna o objeto com base no nome `RangeAreas` da planilha ou na ID da coleção. Se a planilha não existir, essa função retornará `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeAreasBySheet(key: string): RangeAreas;'
+    parameters:
+    - id: key
+      description: O nome ou a ID da planilha.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getRanges()
+  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
+  package: ExcelScript!
+  fullName: getRanges()
+  summary: Retorna intervalos que compõem esse objeto em um `RangeCollection` objeto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRanges(): Range[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
+      description: ''
+metadata:
+  ms.openlocfilehash: d564fd517a586b22ce7a8b00545027741b87f31b
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064924"

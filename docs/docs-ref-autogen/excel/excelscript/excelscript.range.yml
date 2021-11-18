@@ -627,7 +627,11 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Renderiza o intervalo como uma imagem png codificada com base64.
+  summary: >-
+    Renderiza o intervalo como uma imagem png codificada com base64.
+
+
+    **Observação**: há um problema conhecido que faz com que texto ou texto empacotado que excede a largura da célula seja renderizada na mesma linha `Range.getImage` sem quebra de linha. Isso torna a imagem resultante ilegível, já que o texto transbordou por toda a linha. Como solução alternativa, certifique-se de que os dados no intervalo se encaixem em cada uma das células como uma única linha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793377"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064903"
