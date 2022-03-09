@@ -124,7 +124,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: O intervalo de origem `RangeAreas` ou para copiar. Quando a fonte tem vários intervalos, seu formulário deve ser capaz de ser criado removendo linhas completas ou colunas de um intervalo `RangeAreas` retangular.
+      description: O intervalo de origem ou `RangeAreas` para copiar. Quando a fonte `RangeAreas` tem vários intervalos, seu formulário deve ser capaz de ser criado removendo linhas completas ou colunas de um intervalo retangular.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: O tipo de dados de célula ou formatação a ser copiado. O padrão é "All".
@@ -192,7 +192,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
   package: ExcelScript!
   fullName: getAbsoluteResizedRange(numRows, numColumns)
-  summary: Obtém um objeto com a mesma célula superior esquerda que o objeto atual, mas com os números especificados de `Range` `Range` linhas e colunas.
+  summary: Obtém `Range` um objeto com a mesma célula superior esquerda que `Range` o objeto atual, mas com os números especificados de linhas e colunas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
   package: ExcelScript!
   fullName: getColumnHidden()
-  summary: Representa se todas as colunas no intervalo atual estão ocultas. O valor `true` é quando todas as colunas em um intervalo são ocultas. O valor `false` é quando nenhuma coluna no intervalo está oculta. O valor `null` é quando algumas colunas em um intervalo são ocultas e outras colunas no mesmo intervalo não são ocultas.
+  summary: Representa se todas as colunas no intervalo atual estão ocultas. O valor é `true` quando todas as colunas em um intervalo são ocultas. O valor é `false` quando nenhuma coluna no intervalo está oculta. O valor é `null` quando algumas colunas em um intervalo são ocultas e outras colunas no mesmo intervalo não são ocultas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -421,7 +421,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
   package: ExcelScript!
   fullName: getDirectPrecedents()
-  summary: Retorna um objeto que representa o intervalo que contém todos os precedentes diretos de uma célula na mesma planilha ou `WorkbookRangeAreas` em várias planilhas.
+  summary: Retorna um `WorkbookRangeAreas` objeto que representa o intervalo que contém todos os precedentes diretos de uma célula na mesma planilha ou em várias planilhas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Obtém um objeto que representa a coluna inteira do intervalo (por exemplo, se o intervalo atual representa as células "B4:E11", é um intervalo que representa `getEntireColumn` colunas "B:E").
+  summary: Obtém um objeto que representa a coluna inteira do intervalo (por exemplo, se o intervalo atual representa as células "B4:E11", `getEntireColumn` é um intervalo que representa colunas "B:E").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Obtém um objeto que representa a linha inteira do intervalo (por exemplo, se o intervalo atual representa as células "B4:E11", é um intervalo que representa linhas `GetEntireRow` "4:11").
+  summary: Obtém um objeto que representa a linha inteira do intervalo (por exemplo, se o intervalo atual representa as células "B4:E11", `GetEntireRow` é um intervalo que representa linhas "4:11").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Representa se todas as células têm uma borda de despejo. Retorna se todas as células têm uma borda de vazamento ou se todas as células `true` não têm uma borda de `false` vazamento. Retorna se houver células com e sem bordas `null` de vazamento dentro do intervalo.
+  summary: Representa se todas as células têm uma borda de despejo. Retorna `true` se todas as células têm uma borda de vazamento ou `false` se todas as células não têm uma borda de vazamento. Retorna `null` se houver células com e sem bordas de vazamento dentro do intervalo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -601,7 +601,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
-  summary: Representa se todas as células no intervalo atual estão ocultas. O valor `true` é quando todas as células em um intervalo são ocultas. O valor `false` é quando nenhuma célula no intervalo está oculta. Valor é `null` quando algumas células em um intervalo são ocultas e outras células no mesmo intervalo não são ocultas.
+  summary: Representa se todas as células no intervalo atual estão ocultas. O valor é `true` quando todas as células em um intervalo são ocultas. O valor é `false` quando nenhuma célula no intervalo está oculta. Valor é `null` quando algumas células em um intervalo são ocultas e outras células no mesmo intervalo não são ocultas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,7 +631,7 @@ methods:
     Renderiza o intervalo como uma imagem png codificada com base64.
 
 
-    **Observação**: há um problema conhecido que faz com que texto ou texto empacotado que excede a largura da célula seja renderizada na mesma linha `Range.getImage` sem quebra de linha. Isso torna a imagem resultante ilegível, já que o texto transbordou por toda a linha. Como solução alternativa, certifique-se de que os dados no intervalo se encaixem em cada uma das células como uma única linha.
+    **Observação**: há um problema conhecido `Range.getImage` que faz com que texto ou texto empacotado que excede a largura da célula seja renderizada na mesma linha sem quebra de linha. Isso torna a imagem resultante ilegível, já que o texto transbordou por toda a linha. Como solução alternativa, certifique-se de que os dados no intervalo se encaixem em cada uma das células como uma única linha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -893,7 +893,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Representa o estilo de intervalo atual. Se os estilos das células são inconsistentes, `null` serão retornados. Para estilos personalizados, o nome do estilo será retornado. Para estilos integrados, uma cadeia de caracteres que representa um valor `BuiltInStyle` no número será retornada.
+  summary: Representa o estilo de intervalo atual. Se os estilos das células são inconsistentes, `null` serão retornados. Para estilos personalizados, o nome do estilo será retornado. Para estilos integrados, uma cadeia de caracteres que representa um valor no `BuiltInStyle` número será retornada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -930,7 +930,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
-  summary: Obtém um objeto semelhante ao objeto atual, mas com seu canto inferior direito expandido (ou contratado) por algum número de linhas `Range` `Range` e colunas.
+  summary: Obtém `Range` um objeto semelhante `Range` ao objeto atual, mas com seu canto inferior direito expandido (ou contratado) por algum número de linhas e colunas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -980,7 +980,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
-  summary: Representa se todas as linhas no intervalo atual estão ocultas. O valor `true` é quando todas as linhas em um intervalo são ocultas. O valor `false` é quando nenhuma linha no intervalo está oculta. O valor `null` é quando algumas linhas em um intervalo são ocultas e outras linhas no mesmo intervalo não são ocultas.
+  summary: Representa se todas as linhas no intervalo atual estão ocultas. O valor é `true` quando todas as linhas em um intervalo são ocultas. O valor é `false` quando nenhuma linha no intervalo está oculta. O valor é `null` quando algumas linhas em um intervalo são ocultas e outras linhas no mesmo intervalo não são ocultas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1040,7 +1040,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Representa se todas as células seriam salvas como uma fórmula de matriz. Retorna se todas as células seriam salvas como uma fórmula de matriz ou se todas as células `true` `false` não seriam salvas como uma fórmula de matriz. Retorna `null` se algumas células seriam salvas como uma fórmula de matriz e algumas não seriam.
+  summary: Representa se todas as células seriam salvas como uma fórmula de matriz. Retorna `true` se todas as células seriam salvas como uma fórmula de matriz ou `false` se todas as células não seriam salvas como uma fórmula de matriz. Retorna `null` se algumas células seriam salvas como uma fórmula de matriz e algumas não seriam.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1146,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Representa o valor text do intervalo especificado. O valor de texto não depende da largura da célula. A substituição de sinal que acontece Excel interface do usuário não afetará o valor de texto \# retornado pela API. Se o intervalo contiver várias células, os dados da primeira célula (representados pelo índice de linha de 0 e índice de coluna de 0) serão retornados.
+  summary: Representa o valor text do intervalo especificado. O valor de texto não depende da largura da célula. A \# substituição de sinal que acontece Excel interface do usuário não afetará o valor de texto retornado pela API. Se o intervalo contiver várias células, os dados da primeira célula (representados pelo índice de linha de 0 e índice de coluna de 0) serão retornados.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição de sinal de número ( ) que acontece na interface do usuário Excel não afetará o valor de texto retornado \# pela API.
+  summary: Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição de sinal de número (\#) que acontece na interface do usuário Excel não afetará o valor de texto retornado pela API.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1301,7 +1301,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Especifica como o intervalo pode ser agrupado por linhas ou colunas. Um erro é lançado quando a opção de grupo difere da propriedade ou do intervalo (ou seja, é true e é "ByColumns" ou é true e `InvalidArgument` `isEntireRow` é `isEntireColumn` `range.isEntireRow` `groupOption` `range.isEntireColumn` `groupOption` "ByRows").
+      description: Especifica como o intervalo pode ser agrupado por linhas ou colunas. Um `InvalidArgument` erro é lançado quando a opção de `isEntireRow` `isEntireColumn` grupo difere da propriedade ou do intervalo (ou seja, `range.isEntireRow` é true `groupOption` e é "ByColumns" `range.isEntireColumn` ou é true `groupOption` e é "ByRows").
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1339,7 +1339,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script inserts headers at the top of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Create headers for 3 columns.\n  let myHeaders = [[\"NAME\", \"ID\", \"ROLE\"]];\n\n  // Add a blank first row and push existing data down a row.\n  let firstRow = currentSheet.getRange(\"1:1\");\n  firstRow.insert(ExcelScript.InsertShiftDirection.down);\n\n  // Add the headers.\n  currentSheet.getRange(\"A1:C1\").setValues(myHeaders);\n}\n```"
 - name: merge(across)
   uid: ExcelScript!ExcelScript.Range#merge:member(1)
   package: ExcelScript!
@@ -1443,7 +1443,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
-  summary: Representa se todas as colunas no intervalo atual estão ocultas. O valor `true` é quando todas as colunas em um intervalo são ocultas. O valor `false` é quando nenhuma coluna no intervalo está oculta. O valor `null` é quando algumas colunas em um intervalo são ocultas e outras colunas no mesmo intervalo não são ocultas.
+  summary: Representa se todas as colunas no intervalo atual estão ocultas. O valor é `true` quando todas as colunas em um intervalo são ocultas. O valor é `false` quando nenhuma coluna no intervalo está oculta. O valor é `null` quando algumas colunas em um intervalo são ocultas e outras colunas no mesmo intervalo não são ocultas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1536,7 +1536,7 @@ methods:
       type: string[][]
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script sets the values of a range, then adds SUM formulas to calcuate\n * the totals for each row of that range. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Set the values of a range.\n  let values = [[1, 2, 4], [8, 16, 32], [64, 128, 256]];\n  let valueRange = currentSheet.getRange(\"A1:C3\");\n  valueRange.setValues(values);\n\n  // Set the formulas of a range.\n  let formulas = [[\"=SUM(A1:C1)\"], [\"=SUM(A2:C2)\"], [\"=SUM(A3:C3)\"]];\n  let formulaRange = currentSheet.getRange(\"D1:D3\");\n  formulaRange.setFormulas(formulas);\n}\n```"
 - name: setFormulasLocal(formulasLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
@@ -1660,7 +1660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Representa o estilo de intervalo atual. Se os estilos das células são inconsistentes, `null` serão retornados. Para estilos personalizados, o nome do estilo será retornado. Para estilos integrados, uma cadeia de caracteres que representa um valor `BuiltInStyle` no número será retornada.
+  summary: Representa o estilo de intervalo atual. Se os estilos das células são inconsistentes, `null` serão retornados. Para estilos personalizados, o nome do estilo será retornado. Para estilos integrados, uma cadeia de caracteres que representa um valor no `BuiltInStyle` número será retornada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1677,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
-  summary: Representa se todas as linhas no intervalo atual estão ocultas. O valor `true` é quando todas as linhas em um intervalo são ocultas. O valor `false` é quando nenhuma linha no intervalo está oculta. O valor `null` é quando algumas linhas em um intervalo são ocultas e outras linhas no mesmo intervalo não são ocultas.
+  summary: Representa se todas as linhas no intervalo atual estão ocultas. O valor é `true` quando todas as linhas em um intervalo são ocultas. O valor é `false` quando nenhuma linha no intervalo está oculta. O valor é `null` quando algumas linhas em um intervalo são ocultas e outras linhas no mesmo intervalo não são ocultas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1711,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Define os valores brutos do intervalo especificado. Os dados fornecidos podem ser uma cadeia de caracteres, número ou booleano. Se o valor fornecido começar com um sinal de mais ("+"), menos ("-"), ou igual ("="), Excel interpretará esse valor como uma fórmula.
+  summary: Define os valores brutos do intervalo especificado. Os dados fornecidos podem ser uma cadeia de caracteres, número ou booleano. Se o valor fornecido começar com ++"), menos ("-"), ou sinal de igual ("="), Excel interpretará esse valor como uma fórmula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a5e4a206a975656e3441d91791c0ae29cce414b0
-  ms.sourcegitcommit: 01a0e187975bd85f9ba8d25f63337803613ab6b3
+  ms.openlocfilehash: 6b6236c13056dc9f23d2dc9766a1ab586e9c6339
+  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/18/2021
-  ms.locfileid: "61566966"
+  ms.lasthandoff: 03/09/2022
+  ms.locfileid: "63391614"
