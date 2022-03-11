@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.Worksheet:interface
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
 summary: Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, gráficos, etc.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script creates a new worksheet named \"Plum\" and sets its tab color to purple.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const newSheet = workbook.addWorksheet(\"Plum\")\n  newSheet.setTabColor(\"purple\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -67,10 +67,10 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: A célula à qual o comentário é adicionado. Pode ser um `Range` objeto ou uma cadeia de caracteres. Se for uma cadeia de caracteres, ela deverá conter o endereço completo, incluindo o nome da planilha. Um `InvalidArgument` erro será lançado se o intervalo fornecido for maior do que uma célula.
+      description: A célula à qual o comentário é adicionado. Pode ser um objeto `Range` ou uma cadeia de caracteres. Se for uma cadeia de caracteres, ela deverá conter o endereço completo, incluindo o nome da planilha. Um `InvalidArgument` erro será lançado se o intervalo fornecido for maior do que uma célula.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: O conteúdo do comentário. Pode ser uma cadeia de caracteres ou `CommentRichContent` um objeto. Cadeias de caracteres são usadas para texto sem texto. `CommentRichContent` os objetos permitem outros recursos de comentário, como menções.
+      description: O conteúdo do comentário. Pode ser uma cadeia de caracteres ou um `CommentRichContent` objeto. Cadeias de caracteres são usadas para texto sem texto. `CommentRichContent` os objetos permitem outros recursos de comentário, como menções.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
       description: Opcional. O tipo de conteúdo contido no comentário. O valor padrão é enum `ContentType.Plain`<!-- -->.
@@ -300,13 +300,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: A fonte de dados em que a nova slicer será baseada. Pode ser um `PivotTable` objeto, um `Table` objeto ou uma cadeia de caracteres. Quando um objeto PivotTable é passado, a fonte de dados é a origem do `PivotTable` objeto. Quando um `Table` objeto é passado, a fonte de dados é o `Table` objeto. Quando uma cadeia de caracteres é passada, ela é interpretada como o nome ou a ID de uma tabela dinâmica ou tabela.
+      description: A fonte de dados em que a nova slicer será baseada. Pode ser um objeto `PivotTable` , um objeto `Table` ou uma cadeia de caracteres. Quando um objeto PivotTable é passado, a fonte de dados é a origem do `PivotTable` objeto. Quando um `Table` objeto é passado, a fonte de dados é o `Table` objeto. Quando uma cadeia de caracteres é passada, ela é interpretada como o nome ou a ID de uma tabela dinâmica ou tabela.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: O campo na fonte de dados a ser filtrado. Pode ser um `PivotField` objeto, um `TableColumn` objeto, a ID de um `PivotField` ou o nome ou A ID de um `TableColumn`<!-- -->.
+      description: O campo na fonte de dados a ser filtrado. Pode ser um objeto `PivotField` , um objeto, a `TableColumn` ID de um `PivotField` ou o nome ou A ID de um `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Opcional. A planilha na qual a nova slicer será criada. Pode ser um `Worksheet` objeto ou o nome ou A ID de uma planilha. Esse parâmetro pode ser omitido se a coleção slicer for recuperada de uma planilha.
+      description: Opcional. A planilha na qual a nova slicer será criada. Pode ser um objeto `Worksheet` ou o nome ou A ID de uma planilha. Esse parâmetro pode ser omitido se a coleção slicer for recuperada de uma planilha.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -381,7 +381,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: A chave que identifica o objeto de propriedade personalizada. É insensível a maiúsculas e minúsculas. A chave é limitada a 255 caracteres (valores maiores causarão um erro `InvalidArgument` a ser lançado.)
+      description: A chave que identifica o objeto de propriedade personalizada. É insensível a maiúsculas e minúsculas. A chave é limitada a 255 caracteres (valores maiores causarão um `InvalidArgument` erro a ser lançado.)
       type: string
     - id: value
       description: O valor dessa propriedade personalizada.
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: Localiza todas as ocorrências da cadeia de caracteres determinada com base nos critérios especificados e retorna-as como um objeto, compreendendo um ou mais `RangeAreas` intervalos retangulares.
+  summary: Localiza todas as ocorrências da `RangeAreas` cadeia de caracteres determinada com base nos critérios especificados e retorna-as como um objeto, compreendendo um ou mais intervalos retangulares.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -514,7 +514,7 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
@@ -594,7 +594,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: A célula na qual o comentário está. Pode ser um `Range` objeto ou uma cadeia de caracteres. Se for uma cadeia de caracteres, ela deverá conter o endereço completo, incluindo o nome da planilha. Um `InvalidArgument` erro será lançado se o intervalo fornecido for maior do que uma célula.
+      description: A célula na qual o comentário está. Pode ser um objeto `Range` ou uma cadeia de caracteres. Se for uma cadeia de caracteres, ela deverá conter o endereço completo, incluindo o nome da planilha. Um `InvalidArgument` erro será lançado se o intervalo fornecido for maior do que uma célula.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtém `NamedItem` um objeto usando seu nome. Se o objeto não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém um `NamedItem` objeto usando seu nome. Se o objeto não existir, essa função retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Obtém o objeto começando em um índice de linha específico e índice de coluna e abrangendo um determinado número de `Range` linhas e colunas.
+  summary: Obtém `Range` o objeto começando em um índice de linha específico e índice de coluna e abrangendo um determinado número de linhas e colunas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: A cor da guia da planilha. Ao recuperar a cor da guia, se a planilha for invisível, o valor será `null`<!-- -->. Se a planilha estiver visível, mas a cor da guia estiver definida como automática, uma cadeia de caracteres vazia será retornada. Caso contrário, a propriedade será definida como uma cor, no formato \# RRGGBB (por exemplo, "FFA500"). Ao definir a cor, use uma cadeia de caracteres vazia para definir uma cor "automática" ou uma cor real caso contrário.
+  summary: A cor da guia da planilha. Ao recuperar a cor da guia, se a planilha for invisível, o valor será `null`<!-- -->. Se a planilha estiver visível, mas a cor da guia estiver definida como automática, uma cadeia de caracteres vazia será retornada. Caso contrário, a propriedade será definida como uma cor, \#no formato RRGGBB (por exemplo, "FFA500"). Ao definir a cor, use uma cadeia de caracteres vazia para definir uma cor "automática" ou uma cor real caso contrário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: A cor da guia da planilha. Ao recuperar a cor da guia, se a planilha for invisível, o valor será `null`<!-- -->. Se a planilha estiver visível, mas a cor da guia estiver definida como automática, uma cadeia de caracteres vazia será retornada. Caso contrário, a propriedade será definida como uma cor, no formato \# RRGGBB (por exemplo, "FFA500"). Ao definir a cor, use uma cadeia de caracteres vazia para definir uma cor "automática" ou uma cor real caso contrário.
+  summary: A cor da guia da planilha. Ao recuperar a cor da guia, se a planilha for invisível, o valor será `null`<!-- -->. Se a planilha estiver visível, mas a cor da guia estiver definida como automática, uma cadeia de caracteres vazia será retornada. Caso contrário, a propriedade será definida como uma cor, \#no formato RRGGBB (por exemplo, "FFA500"). Ao definir a cor, use uma cadeia de caracteres vazia para definir uma cor "automática" ou uma cor real caso contrário.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Mostra grupos de linhas ou colunas por seus níveis de contorno. Descreve grupos e resume uma lista de dados na planilha. Os `rowLevels` `columnLevels` parâmetros e especificam quantos níveis do contorno serão exibidos. O intervalo de argumentos aceitável está entre 0 e 8. Um valor 0 não altera a exibição atual. Um valor maior do que o número atual de níveis exibe todos os níveis.
+  summary: Mostra grupos de linhas ou colunas por seus níveis de contorno. Descreve grupos e resume uma lista de dados na planilha. Os `rowLevels` parâmetros `columnLevels` e especificam quantos níveis do contorno serão exibidos. O intervalo de argumentos aceitável está entre 0 e 8. Um valor 0 não altera a exibição atual. Um valor maior do que o número atual de níveis exibe todos os níveis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1eef5e7e31219028c6c86b4b4784ef9f0a74011f
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240560"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434825"
