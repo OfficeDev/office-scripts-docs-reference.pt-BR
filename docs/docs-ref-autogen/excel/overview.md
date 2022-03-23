@@ -2,19 +2,19 @@
 title: Referência da API de scripts do Office
 description: Uma visão geral das APIs javaScript Office scripts.
 ms.date: 06/29/2020
-ms.openlocfilehash: 3ce3344fb49b2811719feb13f8fb4118f1a20060db9d85a06d1be939f22bf3c5
-ms.sourcegitcommit: 6a0182075a558c4fe664fedfee08fea76513b192
+ms.openlocfilehash: b9ac5b191dbbb72301fc1f4fe11c81bd2b45ae17
+ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "58183423"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755988"
 ---
 # <a name="office-scripts-api-reference"></a>Referência da API de scripts do Office
 
-A OFFICE scripts permite automatizar tarefas comuns em Excel na Web. Use esta documentação de referência para saber mais sobre as classes, métodos e outros tipos disponíveis para seus scripts. Todos os objetos acessíveis Office scripts podem ser encontrados no índice de conteúdo à esquerda da página.
+A OFFICE scripts permite automatizar tarefas comuns no Excel na Web. Use esta documentação de referência para saber mais sobre as classes, métodos e outros tipos disponíveis para seus scripts. Todos os objetos acessíveis Office scripts podem ser encontrados no índice de conteúdo à esquerda da página.
 
 > [!NOTE]
-> Se você estiver procurando as APIs JavaScript para o desenvolvimento de Office de Office, visite Office referência da API JavaScript de [complementos.](/javascript/api/overview?view=excel-js-preview)
+> Se você estiver procurando as APIs JavaScript para desenvolver Office de Office, visite Office referência da [API JavaScript de complementos](/javascript/api/overview?view=excel-js-preview&preserve-view=true).
 
 ## <a name="common-classes"></a>Classes comuns
 
@@ -27,10 +27,10 @@ A lista a seguir divide os conceitos básicos do modelo de objeto Office Scripts
 - Uma [Planilha contém](/javascript/api/office-scripts/excelscript/excelscript.worksheet) matrizes preenchidas com os objetos presentes na planilha individual.
 - Uma [Workbook](/javascript/api/office-scripts/excelscript/excelscript.workbook) contém matrizes de alguns desses objetos de dados para toda a Workbook.
 
-Para obter mais informações sobre o modelo de objeto Office Scripts, visite [Scripting fundamentals for Office Scripts no Excel na Web](/office/dev/scripts/develop/scripting-fundamentals)
+Para obter mais informações sobre o modelo de objeto Office Scripts, visite [Scripts básicos para Office Scripts no Excel na Web](/office/dev/scripts/develop/scripting-fundamentals)
 
 ## <a name="see-also"></a>Confira também
 
 - [Sobre Office scripts](/office/dev/scripts/overview/excel)
-- [Gravar, editar e criar scripts do Office no Excel na Web](/office/dev/scripts/tutorials/excel-tutorial)
+- [Grave, edite e crie Scripts do Office no Excel na web](/office/dev/scripts/tutorials/excel-tutorial)
 - [Fundamentos de script para scripts do Office no Excel na Web](/office/dev/scripts/develop/scripting-fundamentals)
