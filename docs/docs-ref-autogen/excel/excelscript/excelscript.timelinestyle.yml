@@ -1,80 +1,87 @@
 ### YamlMime:TSType
 name: ExcelScript.TimelineStyle
-uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+uid: ExcelScript!ExcelScript.TimelineStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TimelineStyle
-summary: 'Representa um `TimelineStyle`<!-- -->, que define elementos de estilo por região na linha do tempo.'
+summary: Representa um `TimelineStyle`<!-- -->, que define os elementos de estilo por região na linha do tempo.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: Exclui o estilo da tabela.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: duplicate()
-    uid: 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
-    package: ExcelScript!
-    fullName: duplicate()
-    summary: Cria uma duplicata desse estilo de linha do tempo com cópias de todos os elementos de estilo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'duplicate(): TimelineStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />'
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: Obtém o nome do estilo da linha do tempo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getReadOnly()
-    uid: 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
-    package: ExcelScript!
-    fullName: getReadOnly()
-    summary: Especifica se esse `TimelineStyle` objeto é somente leitura.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadOnly(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: Obtém o nome do estilo da linha do tempo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Exclui o estilo de tabela.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate()
+  summary: Cria uma duplicata desse estilo de linha do tempo com cópias de todos os elementos de estilo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): TimelineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Obtém o nome do estilo da linha do tempo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getReadOnly()
+  uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
+  package: ExcelScript!
+  fullName: getReadOnly()
+  summary: Especifica se esse objeto `TimelineStyle` é somente leitura.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Define o nome do estilo da linha do tempo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1fc949973fdf7c21fba522a12f5145f0cec884e4
+  ms.sourcegitcommit: 5e9cd6fc2480832684fc0dbc264cfcf8e422c735
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64963516"
