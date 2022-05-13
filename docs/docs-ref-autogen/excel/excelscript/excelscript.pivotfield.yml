@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: Define um ou mais dos PivotFilters atuais do campo e os aplica ao campo. Se os filtros fornecidos são inválidos ou não podem ser aplicados, uma exceção é lançada.
+  summary: Define um ou mais dos PivotFilters atuais do campo e os aplica ao campo. Se os filtros fornecidos forem inválidos ou não puderem ser aplicados, uma exceção será lançada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,11 +21,11 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: Um PivotFilter específico configurado ou uma interface PivotFilters contendo vários filtros configurados.
+      description: Um PivotFilter específico configurado ou uma interface PivotFilters que contém vários filtros configurados.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
 - name: clearAllFilters()
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: Limpa todos os critérios existentes do filtro do campo do tipo determinado (se um estiver aplicado no momento).
+  summary: Limpa todos os critérios existentes do filtro do campo do tipo fornecido (se um estiver aplicado no momento).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
   package: ExcelScript!
   fullName: getFilters()
-  summary: Obtém todos os filtros atualmente aplicados no campo.
+  summary: Obtém todos os filtros aplicados no campo no momento.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
   package: ExcelScript!
   fullName: getItems()
-  summary: Retorna PivotFields associados ao PivotField.
+  summary: Retorna os PivotItems associados ao PivotField.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: Obtém um PivotItem pelo nome. Se o PivotItem não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém um PivotItem por nome. Se o PivotItem não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: O tipo de filtro a ser consultado. Se nenhum tipo for fornecido, este método verificará se qualquer filtro é aplicado.
+      description: O tipo de filtro a ser verificado. Se nenhum tipo for fornecido, esse método verificará se algum filtro foi aplicado.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: Classifica o Campo dinâmico por valores especificados em um determinado escopo. O escopo define quais valores específicos serão usados para classificar quando houver vários valores do mesmo DataPivotHierarchy.
+  summary: Classifica o Campo dinâmico por valores especificados em um determinado escopo. O escopo define quais valores específicos serão usados para classificar quando houver vários valores da mesma DataPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,15 +259,15 @@ methods:
       description: Especifica a hierarquia de valores no eixo de dados a ser usado para classificação.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: Os itens que devem ser usados para o escopo da classificação. Esses serão os itens que com a linha ou coluna que você deseja classificar. Se uma cadeia de caracteres for usada em vez de um PivotItem, a cadeia de caracteres representará a ID do PivotItem. Se não houver itens diferentes da hierarquia de dados no eixo em que você deseja classificar, isso pode estar vazio.
+      description: Os itens que devem ser usados para o escopo da classificação. Esses serão os itens que compõem a linha ou coluna na qual você deseja classificar. Se uma cadeia de caracteres for usada em vez de um PivotItem, a cadeia de caracteres representará a ID do PivotItem. Se não houver itens além da hierarquia de dados no eixo em que você deseja classificar, isso poderá estar vazio.
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6d5e709d288c028cf167f0b1495a8b9ba963c335
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b101e242560b91b8f743585d90e374bd5fbc2851
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064791"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394181"

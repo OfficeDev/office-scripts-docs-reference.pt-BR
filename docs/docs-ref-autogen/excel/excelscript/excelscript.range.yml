@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Preenche o intervalo do intervalo atual até o intervalo de destino usando a lógica de Preenchimento Automático especificada. O intervalo de destino pode ser `null`<!-- -->ou pode estender a origem horizontal ou verticalmente. Não há suporte para intervalos descontíguos.
+  summary: Preenche um intervalo do intervalo atual até o intervalo de destino usando a lógica de Preenchimento Automático especificada. O intervalo de destino pode ser `null` ou pode estender o intervalo de origem horizontal ou verticalmente. Não há suporte para intervalos descontíguos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Localiza certa cadeia de caracteres com base em critérios especificados. Se o intervalo atual for maior que uma única célula, a pesquisa será limitada a esse intervalo, caso contrário, a pesquisa cobrirá toda a planilha começando após essa célula. Se não houver nenhuma partida, essa função retornará `undefined`<!-- -->.
+  summary: Localiza certa cadeia de caracteres com base em critérios especificados. Se o intervalo atual for maior que uma única célula, a pesquisa será limitada a esse intervalo, caso contrário, a pesquisa cobrirá toda a planilha começando após essa célula. Se não houver nenhuma partida, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtém o objeto de intervalo que representa a interseção retangular dos intervalos determinados. Se nenhuma interseção for encontrada, essa função retornará `undefined`<!-- -->.
+  summary: Obtém o objeto de intervalo que representa a interseção retangular dos intervalos determinados. Se nenhuma interseção for encontrada, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: Retorna um objeto RangeAreas que representa as áreas mescladas nesse intervalo. Observe que, se a contagem de áreas mescladas nesse intervalo for maior que 512, a API não retornará o resultado. Se RangeAreas não existir, retornará um objeto nulo.
+  summary: Retorna um `RangeAreas` objeto que representa as áreas mescladas nesse intervalo. Observe que, se a contagem de áreas mescladas nesse intervalo for maior que 512, esse método não retornará o resultado. Se o `RangeAreas` objeto não existir, essa função retornará um objeto com sua propriedade `isNullObject` definida como `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtém `RangeAreas` o objeto, composto por um ou mais intervalos, que representa todas as células que correspondem ao tipo e valor especificados. Se nenhuma célula especial for encontrada, essa função retornará `undefined`<!-- -->.
+  summary: Obtém `RangeAreas` o objeto, composto por um ou mais intervalos, que representa todas as células que correspondem ao tipo e valor especificados. Se nenhuma célula especial for encontrada, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1090,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtém objeto range que contém o intervalo de despejo quando chamado em uma célula âncora. Se o intervalo não for uma célula de âncora ou o intervalo de despejo não puder ser encontrado, essa função retornará `undefined`<!-- -->.
+  summary: Obtém objeto range que contém o intervalo de despejo quando chamado em uma célula âncora. Se o intervalo não for uma célula de âncora ou o intervalo de despejo não puder ser encontrado, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtém o objeto de intervalo que contém a célula de âncora para a célula que está sendo derramada. Se não for uma célula derrame ou mais de uma célula for fornecida, essa função retornará `undefined`<!-- -->.
+  summary: Obtém o objeto de intervalo que contém a célula de âncora para a célula que está sendo derramada. Se não for uma célula desmentida ou mais de uma célula for fornecida, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Retorna o intervalo usado do objeto de intervalo determinado. Se não houver células usadas dentro do intervalo, essa função retornará `undefined`<!-- -->.
+  summary: Retorna o intervalo usado do objeto de intervalo determinado. Se não houver células usadas dentro do intervalo, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715957"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394146"

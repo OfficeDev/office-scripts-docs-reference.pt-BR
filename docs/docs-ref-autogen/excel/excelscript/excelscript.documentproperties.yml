@@ -3,7 +3,7 @@ name: ExcelScript.DocumentProperties
 uid: ExcelScript!ExcelScript.DocumentProperties:interface
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
-summary: Representa as propriedades da workbook.
+summary: Representa as propriedades da pasta de trabalho.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Obrigatório. A chave da propriedade personalizada, que não tem maiúsculas de minúsculas. A chave é limitada a 255 caracteres fora do Excel na Web (chaves maiores são automaticamente cortadas para 255 caracteres em outras plataformas).
+      description: Obrigatório. A chave da propriedade personalizada, que não diferencia maiúsculas de minúsculas. A chave é limitada a 255 caracteres fora do Excel na Web (chaves maiores são cortadas automaticamente para 255 caracteres em outras plataformas).
       type: string
     - id: value
-      description: Obrigatório. O valor da propriedade personalizada. O valor é limitado a 255 caracteres fora do Excel na Web (valores maiores são automaticamente cortados para 255 caracteres em outras plataformas).
+      description: Obrigatório. O valor da propriedade personalizada. O valor é limitado a 255 caracteres fora do Excel na Web (valores maiores são cortados automaticamente para 255 caracteres em outras plataformas).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)
   package: ExcelScript!
   fullName: getAuthor()
-  summary: O autor da workbook.
+  summary: O autor da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -59,7 +59,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)
   package: ExcelScript!
   fullName: getCategory()
-  summary: A categoria da guia de trabalho.
+  summary: A categoria da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: Os comentários da workbook.
+  summary: Os comentários da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)
   package: ExcelScript!
   fullName: getCompany()
-  summary: A empresa da workbook.
+  summary: A empresa da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Obtém a data de criação da pasta de trabalho. Somente leitura.
+  summary: Obtém a data de criação da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: Obtém a coleção de propriedades personalizadas da pasta de trabalho. Somente leitura.
+  summary: Obtém a coleção de propriedades personalizadas da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Se a propriedade personalizada não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém um objeto de propriedade personalizada por sua chave, que diferencia maiúsculas de minúsculas. Se a propriedade personalizada não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -141,7 +141,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)
   package: ExcelScript!
   fullName: getKeywords()
-  summary: As palavras-chave da workbook.
+  summary: As palavras-chave da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,7 +154,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)
   package: ExcelScript!
   fullName: getLastAuthor()
-  summary: Obtém o último autor da pasta de trabalho. Somente leitura.
+  summary: Obtém o último autor da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
   package: ExcelScript!
   fullName: getManager()
-  summary: O gerente da workbook.
+  summary: O gerente da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,7 +180,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)
   package: ExcelScript!
   fullName: getRevisionNumber()
-  summary: Obtém o número de revisão da pasta de trabalho. Somente leitura.
+  summary: Obtém o número de revisão da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -193,7 +193,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)
   package: ExcelScript!
   fullName: getSubject()
-  summary: O assunto da workbook.
+  summary: O assunto da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: O título da guia de trabalho.
+  summary: O título da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -219,7 +219,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)
   package: ExcelScript!
   fullName: setAuthor(author)
-  summary: O autor da workbook.
+  summary: O autor da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -236,7 +236,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)
   package: ExcelScript!
   fullName: setCategory(category)
-  summary: A categoria da guia de trabalho.
+  summary: A categoria da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)
   package: ExcelScript!
   fullName: setComments(comments)
-  summary: Os comentários da workbook.
+  summary: Os comentários da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)
   package: ExcelScript!
   fullName: setCompany(company)
-  summary: A empresa da workbook.
+  summary: A empresa da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -287,7 +287,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)
   package: ExcelScript!
   fullName: setKeywords(keywords)
-  summary: As palavras-chave da workbook.
+  summary: As palavras-chave da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
   package: ExcelScript!
   fullName: setManager(manager)
-  summary: O gerente da workbook.
+  summary: O gerente da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)
   package: ExcelScript!
   fullName: setRevisionNumber(revisionNumber)
-  summary: Obtém o número de revisão da pasta de trabalho. Somente leitura.
+  summary: Obtém o número de revisão da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)
   package: ExcelScript!
   fullName: setSubject(subject)
-  summary: O assunto da workbook.
+  summary: O assunto da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
   package: ExcelScript!
   fullName: setTitle(title)
-  summary: O título da guia de trabalho.
+  summary: O título da pasta de trabalho.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 625ea9b1b9ce99a2f4b8e750ba181865016dc6ad
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b145a889420ad995959a9445c8cd936f8e588d39
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064910"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394133"

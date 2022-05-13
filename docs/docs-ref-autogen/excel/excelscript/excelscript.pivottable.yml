@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: Especifica se a Tabela Dinâmica permite a aplicação de vários PivotFilters em um dado PivotField na tabela.
+  summary: Especifica se a Tabela Dinâmica permite a aplicação de vários PivotFilters em um determinado PivotField na tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Obtém um RowColumnPivotHierarchy por nome. Se RowColumnPivotHierarchy não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém um RowColumnPivotHierarchy por nome. Se RowColumnPivotHierarchy não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Obtém uma DataPivotHierarchy por nome. Se DataPivotHierarchy não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém uma DataPivotHierarchy por nome. Se DataPivotHierarchy não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Obtém um FilterPivotHierarchy por nome. Se FilterPivotHierarchy não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém um FilterPivotHierarchy por nome. Se FilterPivotHierarchy não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Obtém o PivotHierarchy por nome. Se PivotHierarchy não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém o PivotHierarchy por nome. Se o PivotHierarchy não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: ID da tabela dinâmica.
+  summary: ID da Tabela Dinâmica.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Obtém um RowColumnPivotHierarchy por nome. Se RowColumnPivotHierarchy não existir, essa função retornará `undefined`<!-- -->.
+  summary: Obtém um RowColumnPivotHierarchy por nome. Se RowColumnPivotHierarchy não existir, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: getUseCustomSortLists()
-  summary: Especifica se a Tabela Dinâmica usa listas personalizadas ao classificar.
+  summary: Especifica se a Tabela Dinâmica usa listas personalizadas durante a classificação.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: Especifica se a Tabela Dinâmica permite a aplicação de vários PivotFilters em um dado PivotField na tabela.
+  summary: Especifica se a Tabela Dinâmica permite a aplicação de vários PivotFilters em um determinado PivotField na tabela.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -485,7 +485,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: setUseCustomSortLists(useCustomSortLists)
-  summary: Especifica se a Tabela Dinâmica usa listas personalizadas ao classificar.
+  summary: Especifica se a Tabela Dinâmica usa listas personalizadas durante a classificação.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: dd8d395e4cc4c09f3443c686bf19c4a441e5c28e
-  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
+  ms.openlocfilehash: fa1e1616bb66cac6a98078b5d73d36f71cedd19d
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 03/30/2022
-  ms.locfileid: "64536514"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394027"

@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormat
 uid: ExcelScript!ExcelScript.ConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
-summary: Um objeto encapsulando o intervalo, o formato, a regra e outras propriedades de um formato condicional.
+summary: Um objeto que encapsula o intervalo, o formato, a regra e outras propriedades de um formato condicional.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
   fullName: getColorScale()
-  summary: Retorna as propriedades de formato condicional da escala de cores se o formato condicional atual for um `ColorScale` tipo.
+  summary: Retornará as propriedades de formato condicional da escala de cores se o formato condicional atual for um `ColorScale` tipo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
   package: ExcelScript!
   fullName: getPriority()
-  summary: A prioridade (ou índice) na coleção de formato condicional em que esse formato condicional existe no momento. Alterar isso também altera as prioridades de outros formatos condicionais, para permitir uma ordem de prioridade contígua. Use uma prioridade negativa para começar por trás. Prioridades maiores do que os limites obterão e definirão como a prioridade máxima (ou mínima, se negativa). Observe também que, se você alterar a prioridade, terá que buscar uma nova cópia do objeto nesse novo local de prioridade se quiser fazer outras alterações nele.
+  summary: A prioridade (ou índice) dentro da coleção de formato condicional na qual esse formato condicional existe no momento. Alterar isso também altera as prioridades de outros formatos condicionais para permitir uma ordem de prioridade contígua. Use uma prioridade negativa para começar por trás. Prioridades maiores que os limites obterão e definirão como a prioridade máxima (ou mínima, se negativa). Observe também que, se você alterar a prioridade, precisará buscar novamente uma nova cópia do objeto nesse novo local de prioridade se quiser fazer outras alterações nele.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Retorna o intervalo ao qual o formato conditonal é aplicado. Se o formato condicional for aplicado a vários intervalos, essa função retornará `undefined`<!-- -->.
+  summary: Retorna o intervalo ao qual o formato conditonal é aplicado. Se o formato condicional for aplicado a vários intervalos, esse método retornará `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
   package: ExcelScript!
   fullName: getStopIfTrue()
-  summary: Se as condições desse formato condicional forem atendidas, nenhum formato de prioridade mais baixa terá efeito nessa célula. O valor está em barras de dados, conjuntos de ícones e escalas de cores, pois `null` não há nenhum conceito para `StopIfTrue` isso.
+  summary: Se as condições desse formato condicional forem atendidas, nenhum formato de prioridade mais baixa terá efeito nessa célula. O valor está `null` em barras de dados, conjuntos de ícones e escalas de cores, pois não há nenhum conceito `StopIfTrue` para eles.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
   package: ExcelScript!
   fullName: getTextComparison()
-  summary: Retorna as propriedades de formato condicional de texto específico se o formato condicional atual for um tipo de texto. Por exemplo, para formatar células correspondentes à palavra "Text".
+  summary: Retorna as propriedades de formato condicional de texto específico se o formato condicional atual for um tipo de texto. Por exemplo, para formatar células correspondentes à palavra "Texto".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Um tipo de formato condicional. Somente um pode ser definido por vez.
+  summary: Um tipo de formato condicional. Apenas um pode ser definido por vez.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
   package: ExcelScript!
   fullName: setPriority(priority)
-  summary: A prioridade (ou índice) na coleção de formato condicional em que esse formato condicional existe no momento. Alterar isso também altera as prioridades de outros formatos condicionais, para permitir uma ordem de prioridade contígua. Use uma prioridade negativa para começar por trás. Prioridades maiores do que os limites obterão e definirão como a prioridade máxima (ou mínima, se negativa). Observe também que, se você alterar a prioridade, terá que buscar uma nova cópia do objeto nesse novo local de prioridade se quiser fazer outras alterações nele.
+  summary: A prioridade (ou índice) dentro da coleção de formato condicional na qual esse formato condicional existe no momento. Alterar isso também altera as prioridades de outros formatos condicionais para permitir uma ordem de prioridade contígua. Use uma prioridade negativa para começar por trás. Prioridades maiores que os limites obterão e definirão como a prioridade máxima (ou mínima, se negativa). Observe também que, se você alterar a prioridade, precisará buscar novamente uma nova cópia do objeto nesse novo local de prioridade se quiser fazer outras alterações nele.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
   package: ExcelScript!
   fullName: setStopIfTrue(stopIfTrue)
-  summary: Se as condições desse formato condicional forem atendidas, nenhum formato de prioridade mais baixa terá efeito nessa célula. O valor está em barras de dados, conjuntos de ícones e escalas de cores, pois `null` não há nenhum conceito para `StopIfTrue` isso.
+  summary: Se as condições desse formato condicional forem atendidas, nenhum formato de prioridade mais baixa terá efeito nessa célula. O valor está `null` em barras de dados, conjuntos de ícones e escalas de cores, pois não há nenhum conceito `StopIfTrue` para eles.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d76b9ca2141a89c44983f5dda3bd7b0609016220
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 268983e49cd3b24c52841add0c9c6cc39613b7c7
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240574"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394159"
