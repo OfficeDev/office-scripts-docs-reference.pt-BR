@@ -1,71 +1,78 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotLabelFilter
-uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: Modelo configurável para um filtro de rótulo a ser aplicado a um PivotField. O `condition` define quais critérios precisam ser definidos para que o filtro funcione.
-remarks: ''
+summary: Modelo configurável para um filtro de rótulo a ser aplicado a um PivotField. Define `condition` quais critérios precisam ser definidos para que o filtro opere.
+remarks: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script filters items that start with \"L\" from the \"Type\" field\n * of the \"Farm Sales\" PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable.\n  const pivotTable = workbook.getActiveWorksheet().getPivotTable(\"Farm Sales\");\n\n  // Get the \"Type\" field.\n  const field = pivotTable.getHierarchy(\"Type\").getPivotField(\"Type\");\n\n  // Filter out any types that start with \"L\" (such as \"Lemons\" and \"Limes\").\n  const filter: ExcelScript.PivotLabelFilter = {\n    condition: ExcelScript.LabelFilterCondition.beginsWith,\n    substring: \"L\",\n    exclusive: true\n  };\n\n  // Apply the label filter to the field.\n  field.applyFilter({ labelFilter: filter });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: condition
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
-    package: ExcelScript!
-    fullName: condition
-    summary: 'Especifica a condição do filtro, que define os critérios de filtragem necessários.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'condition: LabelFilterCondition;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />'
-  - name: exclusive
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
-    package: ExcelScript!
-    fullName: exclusive
-    summary: 'Se `true`<!-- -->, filter *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendem aos critérios).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type: boolean
-  - name: lowerBound
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
-    package: ExcelScript!
-    fullName: lowerBound
-    summary: 'O limite inferior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'lowerBound?: string;'
-      return:
-        type: string
-  - name: substring
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
-    package: ExcelScript!
-    fullName: substring
-    summary: 'A subdistragem usada para `beginsWith`<!-- -->, `endsWith`<!-- -->e condições `contains` de filtro.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'substring?: string;'
-      return:
-        type: string
-  - name: upperBound
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
-    package: ExcelScript!
-    fullName: upperBound
-    summary: 'O limite superior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'upperBound?: string;'
-      return:
-        type: string
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: Especifica a condição do filtro, que define os critérios de filtragem necessários.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: LabelFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: Se `true`<!-- -->, o filtro *exclui itens* que atendem aos critérios. O padrão é `false` (filtrar para incluir itens que atendam aos critérios).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: 'O limite inferior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: string;'
+    return:
+      type: string
+- name: substring
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
+  package: ExcelScript!
+  fullName: substring
+  summary: A subcadeia de caracteres usada para `beginsWith`<!-- -->, `endsWith`<!-- -->e condições `contains` de filtro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'substring?: string;'
+    return:
+      type: string
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: 'O limite superior do intervalo para a condição `between` de filtro. Observação: uma cadeia de caracteres numérica é tratada como um número ao ser comparada com outras cadeias de caracteres numéricas.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 63e09ab08dae58b5cf99510c533c6bb206bdac6f
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767137"
