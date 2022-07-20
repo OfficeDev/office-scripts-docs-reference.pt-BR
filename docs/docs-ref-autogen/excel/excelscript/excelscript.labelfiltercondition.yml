@@ -1,77 +1,93 @@
 ### YamlMime:TSEnum
 name: ExcelScript.LabelFilterCondition
-uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
+uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.LabelFilterCondition
-summary: Enum representando todas as condições aceitas pelas quais um filtro de rótulo pode ser aplicado. Usado para configurar o tipo de PivotFilter aplicado ao campo. `PivotFilter.criteria.exclusive` pode ser definido como `true` para reverter muitas dessas condições.
-remarks: ''
+summary: Enumeração que representa todas as condições aceitas pelas quais um filtro de rótulo pode ser aplicado. Usado para configurar o tipo de PivotFilter aplicado ao campo. `PivotFilter.criteria.exclusive` pode ser definido para `true` inverter muitas dessas condições.
+remarks: "\n\n#### <a name=\"examples\"></a>Exemplos\n\n```TypeScript\n/**\n * This script filters items that start with \"L\" from the \"Type\" field\n * of the \"Farm Sales\" PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable.\n  const pivotTable = workbook.getActiveWorksheet().getPivotTable(\"Farm Sales\");\n\n  // Get the \"Type\" field.\n  const field = pivotTable.getHierarchy(\"Type\").getPivotField(\"Type\");\n\n  // Filter out any types that start with \"L\" (such as \"Lemons\" and \"Limes\").\n  const filter: ExcelScript.PivotLabelFilter = {\n    condition: ExcelScript.LabelFilterCondition.beginsWith,\n    substring: \"L\",\n    exclusive: true\n  };\n\n  // Apply the label filter to the field.\n  field.applyFilter({ labelFilter: filter });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: beginsWith
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member'
-    package: ExcelScript!
-    summary: |-
-      O rótulo começa com o critério de subdstring.
+- name: beginsWith
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
+  package: ExcelScript!
+  summary: >-
+    O rótulo começa com o critério de subcadeia de caracteres.
 
-      Critérios Necessários: {`substring`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-  - name: between
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.between:member'
-    package: ExcelScript!
-    summary: |-
-      Entre `lowerBound` e `upperBound` critérios.
 
-      Critérios Necessários: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-  - name: contains
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.contains:member'
-    package: ExcelScript!
-    summary: |-
-      O rótulo contém o critério de subdstring.
+    Critérios Obrigatórios: {`substring`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+- name: between
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    Entre e `lowerBound` `upperBound` critérios.
 
-      Critérios Necessários: {`substring`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-  - name: endsWith
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member'
-    package: ExcelScript!
-    summary: |-
-      O rótulo termina com o critério de subdstring.
 
-      Critérios Necessários: {`substring`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-  - name: equals
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.equals:member'
-    package: ExcelScript!
-    summary: |-
-      É igual ao critério do comparador.
+    Critérios Obrigatórios: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+- name: contains
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
+  package: ExcelScript!
+  summary: >-
+    O rótulo contém o critério de subcadeia de caracteres.
 
-      Critérios Necessários: {`comparator`<!-- -->}<!-- -->. Critérios Opcionais: {`exclusive`<!-- -->}<!-- -->.
-  - name: greaterThan
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member'
-    package: ExcelScript!
-    summary: |-
-      Critério maior do que o do comparador.
 
-      Critérios Necessários: {`comparator`<!-- -->}<!-- -->.
-  - name: greaterThanOrEqualTo
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      Maior ou igual ao critério do comparador.
+    Critérios Obrigatórios: {`substring`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+- name: endsWith
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
+  package: ExcelScript!
+  summary: >-
+    O rótulo termina com o critério de subcadeia de caracteres.
 
-      Critérios Necessários: {`comparator`<!-- -->}<!-- -->.
-  - name: lessThan
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member'
-    package: ExcelScript!
-    summary: |-
-      Menor que o critério do comparador.
 
-      Critérios Necessários: {`comparator`<!-- -->}<!-- -->.
-  - name: lessThanOrEqualTo
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      Menor ou igual ao critério do comparador.
+    Critérios Obrigatórios: {`substring`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    É igual ao critério do comparador.
 
-      Critérios Necessários: {`comparator`<!-- -->}<!-- -->.
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.unknown:member'
-    package: ExcelScript!
-    summary: '`LabelFilterCondition` é desconhecido ou sem suporte.'
+
+    Critérios Obrigatórios: {`comparator`<!-- -->}<!-- -->. Critérios opcionais: {`exclusive`<!-- -->}<!-- -->.
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member
+  package: ExcelScript!
+  summary: >-
+    Critério maior que o comparador.
+
+
+    Critérios Obrigatórios: {`comparator`<!-- -->}<!-- -->.
+- name: greaterThanOrEqualTo
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Maior ou igual ao critério do comparador.
+
+
+    Critérios Obrigatórios: {`comparator`<!-- -->}<!-- -->.
+- name: lessThan
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member
+  package: ExcelScript!
+  summary: >-
+    Critério menor que comparador.
+
+
+    Critérios Obrigatórios: {`comparator`<!-- -->}<!-- -->.
+- name: lessThanOrEqualTo
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Menor ou igual ao critério do comparador.
+
+
+    Critérios Obrigatórios: {`comparator`<!-- -->}<!-- -->.
+- name: unknown
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: '`LabelFilterCondition` é desconhecido ou sem suporte.'
+metadata:
+  ms.openlocfilehash: 41094f3d6d1003438bb848187fde74d9baf9df2c
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890349"
