@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: Cria e ativa uma nova exibição de planilha temporária. As exibições temporárias são removidas ao fechar o aplicativo, sair do modo de exibição temporário com o método de saída ou alternar para outro modo de exibição de planilha. A exibição de planilha temporária também pode ser acumulada com a cadeia de caracteres vazia (""), se a exibição temporária existir.
+  summary: Cria e ativa uma nova exibição de planilha temporária. As exibições temporárias são removidas ao fechar o aplicativo, sair do modo de exibição temporário com o método de saída ou alternar para outro modo de exibição de planilha. A exibição de planilha temporária também pode ser acessada com a cadeia de caracteres vazia (""), se o modo de exibição temporário existir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b17f068406c43a3314853b12680a1c2ea0ba7e16
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: feaa88a1fe2186a58f01c79ee3e43d4da1864917
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767172"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423859"
